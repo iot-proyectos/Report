@@ -2,26 +2,26 @@
  <h1>Universidad Peruana de Ciencias Aplicadas</h1>
  <img style="height: 200px" src=https://seeklogo.com/images/U/universidad-peruana-de-ciencias-aplicadas-upc-logo-B98C3A365C-seeklogo.com.png>
   <h2>Carrera: Ingeniería de Software</h2>
-  <h2>Ciclo: 2025-10</h2>
+  <h2>Ciclo: 2026-10</h2>
 <br>
-  <h2>Curso: 1ASI0730 Aplicaciones Web</h2>
+  <h2>Curso: 1ASI0572 Desarrollo de Soluciones IOT</h2>
   <h2>Sección: 4378</h2>
-  <h2>Profesor: Angel Augusto Velasquez Nuñez</h2>
+  <h2>Profesor: Leon Baca, Marco Antonio </h2>
 <br>
- <h1>Informe TF1</h1>
+ <h1>Informe del Trabajo Final</h1>
   <h2>Startup: IA: Inteligencia Artesanal</h2>
   <h2>Producto: OsitoPolar</h2>
 <br>
   <h2>Integrantes</h2>
 <ul style="list-style: none;">
-  <li><h3>U202222001 Aliaga Urbina Wilder Gonzalo</h3></li>
-  <li><h3>U202220138 Ramírez Cabrera Kenyi Efraín</h3></li>
-  <li><h3>U202223286 Rodriguez Parco Joseph Pablo</h3></li>
-  <li><h3>U202123655 Rojas Reategui Victor Manuel</h3></li>
-  <li><h3>U20231d149 Alejos Jesus Anyelo Bill</h3></li>
+  <li><h3>########## ###########, ##########</h3></li>
+  <li><h3>########## ###########, ##########</h3></li>
+  <li><h3>U202223990 Cacho Seminario, Diego Alonso</h3></li>
+  <li><h3>########## ###########, ##########</h3></li>
+  <li><h3>########## ###########, ##########</h3></li>
 </ul>
 <br>
-   <h3>Abril 2025</h3>
+   <h3>Abril 2026</h3>
 
 </div>
 
@@ -29,45 +29,32 @@
 ## Registro de Versiones del Informe
 
 
-| Versión | Fecha      | Autor               | Descripción de modificación                                     |
+| Versión | Fecha      | Autor                | Descripción de modificación                                     |
 |---------|------------|----------------------|-----------------------------------------------------------------|
-| 0.1     | 09/04/2025 | Kenyi Ramírez        | Desarrollo del Capítulo 1 y sección 2.1                         |
-| 0.2     | 22/04/2025 | Joseph Rodriguez     | Desarrollo del Capítulo 2 (entrevistas, competidores, segmentación) |
-| 0.2.1   | 26/04/2025 | Kenyi Ramírez        | Desarrollo del Capítulo 3 (To-Be, User Stories, Backlog)        |
-| 0.3     | 03/05/2025 | Wilder Aliaga        | Desarrollo del Capítulo 4 (diseño UI/UX, arquitectura, BD)      |
-| 0.4     | 07/05/2025 | Victor Rojas         | Desarrollo del Capítulo 5.1 y prototipado                       |
-| 0.4.1   | 10/05/2025 | Joseph Rodriguez     | Desarrollo del Capítulo 5.2.1 al 5.2.2                          |
-| 0.4.2   | 11/05/2025 | Kenyi Ramírez        | Desarrollo del Capítulo 5.2.3                                   |
-| 0.4.3   | 13/05/2025 | Italo Verona         | Desarrollo del Capítulo 5.3 (validaciones, entrevistas)         |
-| 1.0     | 14/05/2025 | Wilder Aliaga        | Revisión final y entrega del documento TB1                      |
-| 1.1     | 16/05/2025 | Victor Rojas         | Correcciones generales al documento TB1                         |
-| 2.0     | 18/05/2025 | Kenyi Ramírez        | Entrega del documento TP                                        |
-| 3.0     | 10/06/2025 | Joseph Rodriguez     | Inicio del Sprint 3 (documentación capítulo 5.2.3)              |
-| 3.1     | 18/06/2025 | Wilder Aliaga        | Avances en evidencias y endpoints del Sprint 3                  |
-| 3.2     | 21/06/2025 | Kenyi Ramírez        | Redacción de conclusiones y cierre del capítulo 5.2.3           |
+| 1.0     | 23/04/2026 | Diego Cacho          | Implementación de datos del trabajo                             |
 
 
 ## Project Report Collaboration Insights *(POR MODIFICAR POR CADA ENTREGA)
 - **URL de la organización del proyecto:**  
-  [https://github.com/Inteligencia-Artesanal-Aplicaciones-Web](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web)
+  [https://github.com/##########](https://github.com/############)
 
 
 - **URL del repositorio del informe del proyecto:**  
-  [https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/upc-AppWeb-Inteligencia-Artesanal-Report_v2](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/upc-AppWeb-Inteligencia-Artesanal-Report_v2)
+  [https://github.com/##########/Report](https://github.com/############/Report)
 
 
 - **URL del repositorio del landing page del proyecto:**  
-  [https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page)
+  [https://github.com/##########/Landing-Page](https://github.com/############/Landing-Page)
 
   ![Insights landing](assets/TF/Insights%20landing.png)
 
 
 - **URL del repositorio del frontend del proyecto:**  
-  [https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend)
+  [https://github.com/##########/OsitoPolar-Frontend](https://github.com/############/OsitoPolar-Frontend)
 ![frontinsights.png](assets/TF/frontinsights.png)
 
 - **URL del repositorio del backend del proyecto:**  
-  [https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform)
+  [https://github.com/##########/OsitoPolar-Platform](https://github.com/############/OsitoPolar-Platform)
 ![backinsights.png](assets/TF/backinsights.png)
 
 
