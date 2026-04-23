@@ -218,48 +218,49 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 
 ### 1.1.2 Perfiles de integrantes del equipo
 
-| **Integrante** | **Joseph Pablo Rodriguez Parco** |
+| **Integrante** | **##################** |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U202223286 |
+| **Código del Estudiante** | U########### |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Estudiante de Ingeniería de Software con afinidad por proyectos Web, Interesado en ML, Data Science y aprender por sobre todas las cosas. |
-| **Foto** | <img src="assets/chapter01/Joseph-Rodriguez-Picture.png" alt="Joseph" width="200" height="200"> |
+| **Descripción** | ################. |
+| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
 
 ---
 
-| **Integrante** | **Wilder Gonzalo Aliaga Urbina** |
+| **Integrante** | **Diego Alonso Cacho Seminario** |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U202222001 |
+| **Código del Estudiante** | U202223990 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Soy Gonzalo Aliaga, tengo 19 años y actualmente curso el sexto ciclo de la carrera de Ingeniería de Software. Me caracterizo por mi sentido de responsabilidad y mi habilidad para trabajar en equipo. Disfruto colaborar con mis compañeros y aportar al cumplimiento de objetivos en el ámbito académico y en proyectos grupales. Poseo experiencia en diversos lenguajes de programación, como C++, Python y Java, además de conocimientos en bases de datos SQL y NoSQL. |
-| **Foto** | <img src="assets/chapter01/Gonzalo-Aliaga-picture.png" alt="Gonzalo" width="200" height="200"> |
+| **Descripción** | Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 21 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C#, Python, Flutter, Unity 2D/3D, html/css/js. |
+| **Foto** | <img src="assets/chapter01/Diego-Cacho-picture.png" alt="Diego" width="200" height="200"> |
 
 ---
 
-| **Integrante** | **Victor Manuel Rojas Reategui** |
+| **Integrante** | **##################** |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U202123655 |
+| **Código del Estudiante** | U########### |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Soy Victor Rojas y voy en el 5to ciclo de la carrera de Ingeniería de Software. Me gusta lo rápido que cambia la tecnología en la actualidad, por lo que este curso me ayudará a expandir mis conocimientos y a explorar nuevas aplicaciones de mi carrera que no había experimentado antes. |
-| **Foto** | <img src="assets/chapter01/Victor-Rojas-Picture.jpg" alt="Victor" width="200" height="200"> |
+| **Descripción** | ################. |
+| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
 
 ---
 
-| **Integrante** | **Italo Sebastian Verona Flores** |
+| **Integrante** | **##################** |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U20221E617 |
+| **Código del Estudiante** | U########### |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Mi nombre es Italo Verona, tengo 20 años y actualmente curso el 5to ciclo de la carrera de Ingeniería de Software en la UPC. Una vez terminé la carrera quisiera especializarme en ciberseguridad en el país de España. Luego quisiera vivir en Finlandia. El objetivo de estudiar ciberseguridad es poder reforzar la seguridad informática que hoy en día es muy peligrosa ya sea para las personas o las empresas de todo el mundo. |
-| **Foto** | <img src="assets/chapter01/Italo-Verona-Picture.jpg" alt="Italo" width="200" height="200"> |
+| **Descripción** | ################. |
+| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
 
 ---
 
-| **Integrante** | **Kenyi Efrain Ramirez Cabrera** |
+| **Integrante** | **##################** |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U202220138 |
+| **Código del Estudiante** | U########### |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Soy Kenyi Ramirez, estudio la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Soy una persona comprometida y trabajadora. Poseo un nivel intermedio en los lenguajes C++, Python, Java y HTML, los cuales aplico para garantizar resultados efectivos en mis tareas. |
-| **Foto** | <img src="assets/chapter01/Kenyi-Ramirez-Picture.png" alt="Kenyi" width="200" height="200"> |
+| **Descripción** | ################. |
+| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
+
 ## 1.2 Solution Profile
 
 ### 1.2.1 Antecedentes y Problematica
