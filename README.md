@@ -2301,32 +2301,98 @@ En esta sección se presenta la arquitectura de software basada en el dominio pa
 #### 4.6.1. Software Architecture Context Diagram
 Este diagrama muestra cómo interactúan los usuarios (Clientes y Empresas Proveedoras) con OsitoPolar. Los usuarios usan la plataforma para gestionar y monitorear equipos de refrigeración. Además, OsitoPolar se conecta con los servicios de correo para enviar notificaciones y con el servicio de pago para procesar transacciones.
 
-![OsitoPolar-SystemContext.png]( assets/chapter04/Domain-Driven%20Software%20Architecture/OsitoPolar-SystemContext.png)
+![System Context Diagram](assets/chapter04/DSL/Contexto-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Contexto-dark-key.png)
 
 #### 4.6.2. Software Architecture Container Diagrams
 Este diagrama ilustra los diferentes contenedores dentro de OsitoPolar y cómo interactúan entre sí. Los contenedores representan las diferentes capas y servicios que componen la plataforma, como la interfaz de usuario (webapp), la API y la base de datos.
 
-![OsitoPolar-Container.png](<assets/chapter04/Domain-Driven Software Architecture/OsitoPolar-Container.jpeg>)
+![Container Diagram](assets/chapter04/DSL/Contenedores-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Contenedores-dark-key.png)
 
 #### 4.6.3. Software Architecture Components Diagrams
 
-**Mi Equipo Bounded Context**
+**IAM Bounded Context**
 
-Este diagrama representa los componentes encargados de la gestión de equipos. Los usuarios pueden agregar equipos, monitorearlos en tiempo real y ver el estado de los mismos.
+Este diagrama representa los componentes encargados de la gestión de identidad y acceso, incluyendo autenticación, autorización y administración de usuarios.
 
-![OsitoPolar-Component-MiEquipo.png]( assets/chapter04/Domain-Driven%20Software%20Architecture/OsitoPolar-Component-MiEquipo.png)
+![IAM Components Diagram](assets/chapter04/DSL/IAM_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/IAM_Components-dark-key.png)
 
-**Notificaciones Bounded Context**
+**Profiles Bounded Context**
 
-Este diagrama describe los componentes que gestionan las notificaciones, esenciales para mantener a los usuarios informados sobre el estado de los equipos y otros eventos importantes.
+Este diagrama describe los componentes que gestionan los perfiles de usuarios y empresas dentro de la plataforma OsitoPolar.
 
-![OsitoPolar-Component-Notificaciones.png]( assets/chapter04/Domain-Driven%20Software%20Architecture/OsitoPolar-Component-Notificaciones.png)
+![Profiles Components Diagram](assets/chapter04/DSL/Profiles_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Profiles_Components-dark-key.png)
 
-**Ordenes de trabajo Bounded Context**
+**Equipment Management Bounded Context**
 
-Este diagrama se centra en la gestión de las órdenes de trabajo. Aquí se muestran los componentes involucrados en el proceso de crear, gestionar y completar órdenes de trabajo.
+Este diagrama representa los componentes encargados de la gestión de equipos de refrigeración. Los usuarios pueden registrar equipos, monitorearlos en tiempo real y consultar su estado.
 
-![OsitoPolar-Component-OrdenesTrabajo.png]( assets/chapter04/Domain-Driven%20Software%20Architecture/OsitoPolar-Component-OrdenesTrabajo.png)
+![Equipment Components Diagram](assets/chapter04/DSL/Equipment_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Equipment_Components-dark-key.png)
+
+**IoT Monitoring Bounded Context**
+
+Este diagrama describe los componentes responsables del monitoreo IoT de los equipos, incluyendo la recopilación y procesamiento de datos de sensores en tiempo real.
+
+![IoT Monitoring Components Diagram](assets/chapter04/DSL/IoTMonitoring_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/IoTMonitoring_Components-dark-key.png)
+
+**Edge API Bounded Context**
+
+Este diagrama ilustra los componentes del API perimetral que actúa como punto de entrada para los dispositivos IoT y la comunicación con los servicios de la plataforma.
+
+![Edge API Components Diagram](assets/chapter04/DSL/EdgeAPI_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/EdgeAPI_Components-dark-key.png)
+
+**Service Request Bounded Context**
+
+Este diagrama describe los componentes encargados de gestionar las solicitudes de servicio técnico, desde su creación hasta su resolución.
+
+![Service Request Components Diagram](assets/chapter04/DSL/ServiceRequest_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/ServiceRequest_Components-dark-key.png)
+
+**Work Order Bounded Context**
+
+Este diagrama se centra en la gestión de órdenes de trabajo, mostrando los componentes involucrados en el ciclo de vida completo de una orden de trabajo técnico.
+
+![Work Order Components Diagram](assets/chapter04/DSL/WorkOrder_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/WorkOrder_Components-dark-key.png)
+
+**Subscriptions Bounded Context**
+
+Este diagrama representa los componentes que gestionan los planes de suscripción, facturación y acceso diferenciado a funcionalidades según el plan contratado.
+
+![Subscriptions Components Diagram](assets/chapter04/DSL/Subscriptions_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Subscriptions_Components-dark-key.png)
+
+**Notifications Bounded Context**
+
+Este diagrama describe los componentes que gestionan el envío de notificaciones, alertas y comunicaciones hacia los usuarios sobre el estado de equipos y eventos relevantes.
+
+![Notifications Components Diagram](assets/chapter04/DSL/Notifications_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Notifications_Components-dark-key.png)
+
+**Analytics Bounded Context**
+
+Este diagrama ilustra los componentes encargados del procesamiento y visualización de datos analíticos, métricas de rendimiento y reportes de los equipos monitoreados.
+
+![Analytics Components Diagram](assets/chapter04/DSL/Analytics_Components-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Analytics_Components-dark-key.png)
 
 ### 4.7. Software Object-Oriented Design
 En esta sección se presenta el diseño de software orientado a objetos para OsitoPolar. Se incluyen diagramas de clases y un diccionario de clases que detallan la estructura y los atributos de las principales entidades del sistema, ofreciendo una visión clara de cómo se organizan y gestionan los componentes clave dentro de la plataforma.
