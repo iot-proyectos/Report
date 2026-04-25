@@ -17,7 +17,7 @@
   <li><h3>########## ###########, ##########</h3></li>
   <li><h3> u20231c069 Mora Blas, Diego Alonzo</h3></li>
   <li><h3>U202223990 Cacho Seminario, Diego Alonso</h3></li>
-  <li><h3>########## ###########, ##########</h3></li>
+  <li><h3>U20231C996 Hernandez Poma, Sebastian Eduardo</h3></li>
   <li><h3>########## ###########, ##########</h3></li>
 </ul>
 <br>
@@ -32,7 +32,7 @@
 | Versión | Fecha      | Autor                | Descripción de modificación                                     |
 |---------|------------|----------------------|-----------------------------------------------------------------|
 | 1.0     | 23/04/2026 | Diego Cacho          | Implementación de datos del trabajo                             |
-
+| 1.0     | 25/04/2026 | Sebastian Hernandez          |                             |
 
 ## Project Report Collaboration Insights *(POR MODIFICAR POR CADA ENTREGA)
 - **URL de la organización del proyecto:**  
@@ -197,8 +197,8 @@ del ABET – EAC - Student Outcome 5.
 
 | Criterio específico                                                    | Acciones realizadas                                                                                                                                                                                                    | Conclusiones                          |
 | :--------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------ |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta.       | **Cacho Seminario, Diego Alonso**<br>TB1: Para el desarrollo de la TB1, aporte creando los documentos de exposicion, reporte de participación y además prepare el reporte principal con los items anteriores para la entrega. <br><br>**Mora Blas, Diego Alonzo**<br>TB1: .<br><br>**#######, ########**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró realizar las primeras partes del trabajo, verificamos el funcionamiento del proyecto junto al su escalabilidad con soluciones basadas en IoT. |
-| Participación y colaboración en plataformas y herramientas de trabajo. | **Cacho Seminario, Diego Alonso**<br>TB1: Como primera entrega utilice las herramientas de Github y Canva para poder redactar y crear la información necesaria para el trabajo de Osito Polar.<br><br>**Mora Blas, Diego Alonzo**<br>TB1: .<br><br>**#######, ########**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró utilizar las herramientas apropiadas para la entrega, se uso GitHub como repositorio principal para el proyecto, Google Docs para el reporte de participación y Canva como herramienta para crear el video de exposición. . |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta.       | **Cacho Seminario, Diego Alonso**<br>TB1: Para el desarrollo de la TB1, aporte creando los documentos de exposicion, reporte de participación y además prepare el reporte principal con los items anteriores para la entrega. <br><br>**Mora Blas, Diego Alonzo**<br>TB1: .<br><br>**Hernandez Poma, Sebastian Eduardo**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró realizar las primeras partes del trabajo, verificamos el funcionamiento del proyecto junto al su escalabilidad con soluciones basadas en IoT. |
+| Participación y colaboración en plataformas y herramientas de trabajo. | **Cacho Seminario, Diego Alonso**<br>TB1: Como primera entrega utilice las herramientas de Github y Canva para poder redactar y crear la información necesaria para el trabajo de Osito Polar.<br><br>**Mora Blas, Diego Alonzo**<br>TB1: .<br><br>**Hernandez Poma, Sebastian Eduardo**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró utilizar las herramientas apropiadas para la entrega, se uso GitHub como repositorio principal para el proyecto, Google Docs para el reporte de participación y Canva como herramienta para crear el video de exposición. . |
 
 
 
@@ -236,12 +236,12 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 
 ---
 
-| **Integrante** | **##################** |
+| **Integrante** | **Hernandez Poma, SebastIan Eduardo** |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U########### |
+| **Código del Estudiante** | U20231C996 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | ################. |
-| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
+| **Descripción** | Estudiante de Ingeniería de Software con interés en el desarrollo de soluciones tecnológicas innovadoras y enfocadas en la experiencia del usuario. Destaca por su orientación al aprendizaje continuo, la resolución de problemas y la aplicación de metodologías modernas en proyectos de software. Posee habilidades en análisis, diseño y desarrollo de aplicaciones, así como una visión estratégica para integrar tecnología y creatividad en entornos profesionales. |
+| **Foto** | <img src="assets/chapter01/sehp.png" alt="Joseph" width="200" height="200"> |
 
 ---
 
