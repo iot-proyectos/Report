@@ -18,7 +18,7 @@
   <li><h3> u20231c069 Mora Blas, Diego Alonzo</h3></li>
   <li><h3>U202223990 Cacho Seminario, Diego Alonso</h3></li>
   <li><h3>U20231C996 Hernandez Poma, Sebastian Eduardo</h3></li>
-  <li><h3>########## ###########, ##########</h3></li>
+  <li><h3>U20231C111 Inga Orihuela, Christian Fabrizio</h3></li>
 </ul>
 <br>
    <h3>Abril 2026</h3>
@@ -245,12 +245,12 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 
 ---
 
-| **Integrante** | **##################** |
+| **Integrante** | **Christian Fabrizio Inga Orihuela** |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U########### |
+| **Código del Estudiante** | U20231C111 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | ################. |
-| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
+| **Descripción** | Tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Cuento con una gran disposición para el trabajo colaborativo y la capacidad de adaptarme rápidamente a diferentes metodologías de aprendizaje y dinámicas de grupo, asegurando siempre un desempeño confiable y organizado. |
+| **Foto** | <img src="assets/chapter01/Chris.jpeg" alt="Chris" width="200" height="250"> |
 
 ---
 
