@@ -1314,7 +1314,48 @@ Escala de Story Points (Fibonacci):
 | 36    | US-36         | Registrar evento de alerta manual              | Como desarrollador, quiero permitir registrar una alerta manual vía API para que los técnicos puedan ingresar incidentes detectados en campo.                              | 3            |
 | 37    | US-37         | Evaluar servicio                               | Como desarrollador, quiero implementar un endpoint RESTful que permita a los clientes registrar y actualizar una evaluación de servicio, para reflejar su experiencia.     | 8            |
 
+## Capítulo IV: Solution Software Design
+### 4.1. Strategic-Level Domain-Driven Design.
 
+#### 4.1.1. Design-Level EventStorming.
+
+##### 4.1.1.1 Candidate Context Discovery.
+
+##### 4.1.1.2 Domain Message Flows Modeling.
+
+##### 4.1.1.3 Bounded Context Canvases.
+
+#### 4.1.2. Context Mapping.
+
+#### 4.1.3. Software Architecture.
+
+##### 4.1.3.1. Software Architecture System Landscape Diagram.
+
+##### 4.1.3.2. Software Architecture Context Level Diagrams.
+
+##### 4.1.3.2. Software Architecture Container Level Diagrams.
+
+##### 4.1.3.3. Software Architecture Deployment Diagrams.
+
+### 4.2. Tactical-Level Domain-Driven Design
+
+#### 4.2.X. Bounded Context: 
+
+##### 4.2.X.1. Domain Layer.
+
+##### 4.2.X.2. Interface Layer.
+
+##### 4.2.X.3. Application Layer.
+
+##### 4.2.X.4. Infrastructure Layer.
+
+##### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.
+
+###### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
+
+###### 4.2.X.6.2. Bounded Context Database Design Diagram.
 
 ## Capítulo IV: Product Design <a id="c4"></a>
 
