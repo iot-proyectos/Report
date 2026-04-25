@@ -15,7 +15,7 @@
   <h2>Integrantes</h2>
 <ul style="list-style: none;">
   <li><h3>########## ###########, ##########</h3></li>
-  <li><h3>########## ###########, ##########</h3></li>
+  <li><h3> u20231c069 Mora Blas, Diego Alonzo</h3></li>
   <li><h3>U202223990 Cacho Seminario, Diego Alonso</h3></li>
   <li><h3>########## ###########, ##########</h3></li>
   <li><h3>########## ###########, ##########</h3></li>
@@ -195,10 +195,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de
 conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro
 del ABET – EAC - Student Outcome 5.
 
-| Criterio específico | Acciones realizadas | Conclusiones |
-| :--- | :--- | :--- |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta. | **Cacho Seminario, Diego Alonso**<br>TB1: .<br><br>**#######, #######**<br>TB1: .<br><br>**#######, ########**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró.... . |
-| Participación y colaboración en plataformas y herramientas de trabajo. | **Cacho Seminario, Diego Alonso**<br>TB1: .<br><br>**#######, #######**<br>TB1: .<br><br>**#######, ########**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró.... . |
+| Criterio específico                                                    | Acciones realizadas                                                                                                                                                                                                    | Conclusiones                          |
+| :--------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------ |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta.       | **Cacho Seminario, Diego Alonso**<br>TB1: .<br><br>**Mora Blas, Diego Alonzo**<br>TB1: .<br><br>**#######, ########**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró.... . |
+| Participación y colaboración en plataformas y herramientas de trabajo. | **Cacho Seminario, Diego Alonso**<br>TB1: .<br><br>**Mora Blas, Diego Alonzo**<br>TB1: .<br><br>**#######, ########**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró.... . |
 
 
 
@@ -218,21 +218,21 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 
 ### 1.1.2 Perfiles de integrantes del equipo
 
-| **Integrante** | **##################** |
-|----------------|----------------------------------|
-| **Código del Estudiante** | U########### |
-| **Carrera** | Ingeniería de Software |
-| **Descripción** | ################. |
-| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
+| **Integrante**            | **Diego Alonzo Mora Blas**                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Código del Estudiante** | U20231c069                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Carrera**               | Ingeniería de Software                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Descripción**           | Estudiante de Ingenieria de Software cursando el 7mo ciclo de mi carrera en la UPC. Soy una persona la cual aprende rapido y se adapta con gran facilidad al contexto del proyecto. Como miembro de equipo he realizado cursos de Ciberseguridad llegando a poder realizar pruebas de penetraciones de nivel intermedio ademas de conocimientos en multiples vulnerabilidad y manejos de diferentes lenguajes de programacion. |
+| **Foto**                  | <img src="assets/chapter01/Diego-Mora-picture.png" alt="DiegoM" width="200" height="200">                                                                                                                                                                                                                                                                                                                                      |
 
 ---
 
-| **Integrante** | **Diego Alonso Cacho Seminario** |
-|----------------|----------------------------------|
-| **Código del Estudiante** | U202223990 |
-| **Carrera** | Ingeniería de Software |
-| **Descripción** | Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 21 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C#, Python, Flutter, Unity 2D/3D, html/css/js. |
-| **Foto** | <img src="assets/chapter01/Diego-Cacho-picture.png" alt="Diego" width="200" height="200"> |
+| **Integrante**            | **Diego Alonso Cacho Seminario**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Código del Estudiante** | U202223990                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Carrera**               | Ingeniería de Software                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Descripción**           | Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 21 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C#, Python, Flutter, Unity 2D/3D, html/css/js. |
+| **Foto**                  | <img src="assets/chapter01/Diego-Cacho-picture.png" alt="Diego" width="200" height="200">                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 ---
 
