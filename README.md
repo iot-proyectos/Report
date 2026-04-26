@@ -32,7 +32,7 @@
 | Versión | Fecha      | Autor                | Descripción de modificación                                     |
 |---------|------------|----------------------|-----------------------------------------------------------------|
 | 1.0     | 23/04/2026 | Diego Cacho          | Implementación de datos del trabajo                             |
-| 1.0     | 25/04/2026 | Sebastian Hernandez  |                                                                 |
+| 1.0     | 25/04/2026 | Sebastian Hernandez  | Adaptación de arquitectura IoT: integración de capa Edge API, ESP32 Firmware e IoT Monitoring Bounded Context al workspace Structurizr DSL. Generación de diagramas C4 (Context, Container, Components) y diagramas de base de datos para los 9 bounded contexts del sistema. |
 | 1.1     | 25/04/2026 | Raúl Medina          |Actualizacion capitulo 4                                         |
 
 ## Project Report Collaboration Insights *(POR MODIFICAR POR CADA ENTREGA)
@@ -279,8 +279,8 @@ del ABET – EAC - Student Outcome 5.
 
 | Criterio específico                                                    | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Conclusiones                                                                                                                                                                                                                                                |
 | :--------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta.       | **Cacho Seminario, Diego Alonso**<br>TB1: Para el desarrollo de la TB1, aporte creando los documentos de exposicion, reporte de participación y además prepare el reporte principal con los items anteriores para la entrega. <br><br>**Mora Blas, Diego Alonzo**<br>TB1: En esta TB1 aporte analizando las diferentes capas de abstraccion de nuestro codigo para analizar y tener registrado nuestros distintos bounded context.<br><br>**Hernandez Poma, Sebastian Eduardo**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró realizar las primeras partes del trabajo, verificamos el funcionamiento del proyecto junto al su escalabilidad con soluciones basadas en IoT.                                                                               |
-| Participación y colaboración en plataformas y herramientas de trabajo. | **Cacho Seminario, Diego Alonso**<br>TB1: Como primera entrega utilice las herramientas de Github y Canva para poder redactar y crear la información necesaria para el trabajo de Osito Polar.<br><br>**Mora Blas, Diego Alonzo**<br>TB1: Como equipo logramos coordinar de manera precisa nuestros distintos objetivos apoyandonos de herramientas como Github y Canva.<br><br>**Hernandez Poma, Sebastian Eduardo**<br>TB1: .<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: .                                                           | Durante la TB1, el equipo logró utilizar las herramientas apropiadas para la entrega, se uso GitHub como repositorio principal para el proyecto, Google Docs para el reporte de participación y Canva como herramienta para crear el video de exposición. . |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta.       | **Cacho Seminario, Diego Alonso**<br>TB1: Para el desarrollo de la TB1, aporte creando los documentos de exposicion, reporte de participación y además prepare el reporte principal con los items anteriores para la entrega. <br><br>**Mora Blas, Diego Alonzo**<br>TB1: En esta TB1 aporte analizando las diferentes capas de abstraccion de nuestro codigo para analizar y tener registrado nuestros distintos bounded context.<br><br>**Hernandez Poma, Sebastian Eduardo**<br>TB1: Lideró la adaptación de la arquitectura del sistema al paradigma IoT, incorporando los bounded contexts de Edge API e IoT Monitoring al modelo Domain-Driven Design. Definió la estructura de los diagramas C4 en Structurizr DSL (System Context, Container y Component Level) para los 9 microservicios del sistema, incluyendo los nuevos componentes de la capa Edge (ESP32 Firmware, Edge API con buffer SQLite). Diseñó los esquemas de base de datos para todos los bounded contexts usando DBML, con especial énfasis en las tablas sensor_readings, alerts y business_rules del IoT Monitoring context. Colaboró en la integración de Firebase FCM para push notifications y la definición del flujo de datos ESP32 → Edge API → Cloud API.<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: . | Durante la TB1, el equipo logró realizar las primeras partes del trabajo, verificamos el funcionamiento del proyecto junto al su escalabilidad con soluciones basadas en IoT. <br><br>La separación en bounded contexts con responsabilidades claras, especialmente la distinción entre Edge API (procesamiento local) y IoT Monitoring (cloud), permitió diseñar una arquitectura escalable y resiliente que funciona offline. El uso de Structurizr DSL facilitó la colaboración del equipo al mantener la arquitectura como código versionable.                                                                               |
+| Participación y colaboración en plataformas y herramientas de trabajo. | **Cacho Seminario, Diego Alonso**<br>TB1: Como primera entrega utilice las herramientas de Github y Canva para poder redactar y crear la información necesaria para el trabajo de Osito Polar.<br><br>**Mora Blas, Diego Alonzo**<br>TB1: Como equipo logramos coordinar de manera precisa nuestros distintos objetivos apoyandonos de herramientas como Github y Canva.<br><br>**Hernandez Poma, Sebastian Eduardo**<br>TB1: Lideró la adaptación de la arquitectura del sistema al paradigma IoT, incorporando los bounded contexts de Edge API e IoT Monitoring al modelo Domain-Driven Design. Definió la estructura de los diagramas C4 en Structurizr DSL (System Context, Container y Component Level) para los 9 microservicios del sistema, incluyendo los nuevos componentes de la capa Edge (ESP32 Firmware, Edge API con buffer SQLite). Diseñó los esquemas de base de datos para todos los bounded contexts usando DBML, con especial énfasis en las tablas sensor_readings, alerts y business_rules del IoT Monitoring context. Colaboró en la integración de Firebase FCM para push notifications y la definición del flujo de datos ESP32 → Edge API → Cloud API.<br><br>**########, #########**<br>TB1: .<br><br>**##########, ############**<br>TB1: .                                                           | Durante la TB1, el equipo logró utilizar las herramientas apropiadas para la entrega, se uso GitHub como repositorio principal para el proyecto, Google Docs para el reporte de participación y Canva como herramienta para crear el video de exposición. . <br><br>La separación en bounded contexts con responsabilidades claras, especialmente la distinción entre Edge API (procesamiento local) y IoT Monitoring (cloud), permitió diseñar una arquitectura escalable y resiliente que funciona offline. El uso de Structurizr DSL facilitó la colaboración del equipo al mantener la arquitectura como código versionable. |
 
 
 
@@ -1665,11 +1665,27 @@ A continuación se presenta el diagrama del Context Mapping utilizando notación
 
 ##### 4.1.3.1. Software Architecture System Landscape Diagram.
 
+![System Landscape Diagram](assets/chapter04/DSL/SystemLandscape-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/SystemLandscape-dark-key.png)
+
 ##### 4.1.3.2. Software Architecture Context Level Diagrams.
+
+![System Context Diagram](assets/chapter04/DSL/Contexto-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Contexto-dark-key.png)
 
 ##### 4.1.3.2. Software Architecture Container Level Diagrams.
 
+![Container Diagram](assets/chapter04/DSL/Contenedores-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/Contenedores-dark-key.png)
+
 ##### 4.1.3.3. Software Architecture Deployment Diagrams.
+
+![Deployment Diagram](assets/chapter04/DSL/DeploymentDiagram-dark.png)
+*Leyenda:*
+![Key](assets/chapter04/DSL/DeploymentDiagram-dark-key.png)
 
 ### 4.2. Tactical-Level Domain-Driven Design
 
@@ -1807,7 +1823,68 @@ La capa de infraestructura provee las implementaciones concretas de los contrato
 
 ###### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-![IAM Domain Class Diagram](assets/chapter04/DSL/IAM_Components-dark.png)
+```mermaid
+classDiagram
+    class User {
+        -Long id
+        -String username
+        -String email
+        -String passwordHash
+        -Role role
+        -Boolean isActive
+        -DateTime createdAt
+        +register(username, email, password) User
+        +login(email, password) String
+        +changePassword(oldPassword, newPassword) void
+        +deactivate() void
+    }
+
+    class Role {
+        <<enumeration>>
+        ADMIN
+        TECHNICIAN
+        CLIENT
+    }
+
+    class RefreshToken {
+        -Long id
+        -Long userId
+        -String token
+        -DateTime expiresAt
+        -Boolean revoked
+        +revoke() void
+        +isExpired() Boolean
+    }
+
+    class AuthService {
+        <<service>>
+        +signUp(command SignUpCommand) User
+        +signIn(command SignInCommand) TokenPair
+        +refreshToken(token String) TokenPair
+        +revokeToken(token String) void
+    }
+
+    class TokenPair {
+        <<value object>>
+        -String accessToken
+        -String refreshToken
+        -DateTime expiresAt
+    }
+
+    class IUserRepository {
+        <<interface>>
+        +findById(id Long) User
+        +findByEmail(email String) User
+        +save(user User) User
+        +existsByEmail(email String) Boolean
+    }
+
+    User --> Role
+    User "1" --> "0..*" RefreshToken
+    AuthService --> IUserRepository
+    AuthService --> TokenPair
+    IUserRepository <|.. UserRepository
+```
 
 ###### 4.2.1.6.2. Bounded Context Database Design Diagram
 
@@ -1927,7 +2004,68 @@ La capa de infraestructura provee la implementación concreta de persistencia me
 
 ###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Profiles Domain Class Diagram](assets/chapter04/DSL/Profiles_Components-dark.png)
+```mermaid
+classDiagram
+    class OwnerProfile {
+        -Long id
+        -Long userId
+        -String businessName
+        -String ruc
+        -String phone
+        -String address
+        -Sector sector
+        +updateInfo(businessName, phone, address) void
+        +changeSector(sector Sector) void
+    }
+
+    class ProviderProfile {
+        -Long id
+        -Long userId
+        -String companyName
+        -String ruc
+        -String phone
+        -String specialization
+        -Decimal rating
+        +updateInfo(companyName, phone) void
+        +updateRating(newRating Decimal) void
+    }
+
+    class Sector {
+        <<enumeration>>
+        FOOD
+        PHARMA
+        HOSPITALITY
+        OTHER
+    }
+
+    class IOwnerProfileRepository {
+        <<interface>>
+        +findById(id Long) OwnerProfile
+        +findByUserId(userId Long) OwnerProfile
+        +save(profile OwnerProfile) OwnerProfile
+    }
+
+    class IProviderProfileRepository {
+        <<interface>>
+        +findById(id Long) ProviderProfile
+        +findByUserId(userId Long) ProviderProfile
+        +save(profile ProviderProfile) ProviderProfile
+    }
+
+    class ProfileService {
+        <<service>>
+        +createOwnerProfile(command CreateOwnerCommand) OwnerProfile
+        +createProviderProfile(command CreateProviderCommand) ProviderProfile
+        +getOwnerProfile(userId Long) OwnerProfile
+        +getProviderProfile(userId Long) ProviderProfile
+    }
+
+    OwnerProfile --> Sector
+    ProfileService --> IOwnerProfileRepository
+    ProfileService --> IProviderProfileRepository
+    IOwnerProfileRepository <|.. OwnerProfileRepository
+    IProviderProfileRepository <|.. ProviderProfileRepository
+```
 
 ###### 4.2.2.6.2. Bounded Context Database Design Diagram
 
@@ -2054,7 +2192,83 @@ El Domain Layer del bounded context **Equipment Management** gestiona el ciclo
 
 ###### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Equipment Domain Class Diagram](assets/chapter04/DSL/Equipment_Components-dark.png)
+```mermaid
+classDiagram
+    class Equipment {
+        -Long id
+        -Long ownerProfileId
+        -String name
+        -String brand
+        -String model
+        -String serialNumber
+        -EquipmentType type
+        -EquipmentStatus status
+        -TemperatureRange tempRange
+        -Decimal maxConsumption
+        +activate() void
+        +deactivate() void
+        +setMaintenance() void
+        +triggerAlert() void
+        +updateThresholds(range TemperatureRange) void
+    }
+
+    class TemperatureRange {
+        <<value object>>
+        -Decimal minTemp
+        -Decimal maxTemp
+        -Decimal minHumidity
+        -Decimal maxHumidity
+        +isWithinRange(temp, humidity) Boolean
+    }
+
+    class EquipmentType {
+        <<enumeration>>
+        REFRIGERATOR
+        FREEZER
+        COLD_ROOM
+        SHOWCASE
+        OTHER
+    }
+
+    class EquipmentStatus {
+        <<enumeration>>
+        ACTIVE
+        INACTIVE
+        MAINTENANCE
+        ALERT
+    }
+
+    class EquipmentDocument {
+        -Long id
+        -Long equipmentId
+        -DocumentType docType
+        -String fileUrl
+        -DateTime uploadedAt
+    }
+
+    class IEquipmentRepository {
+        <<interface>>
+        +findById(id Long) Equipment
+        +findByOwnerId(ownerId Long) List~Equipment~
+        +save(equipment Equipment) Equipment
+        +delete(id Long) void
+    }
+
+    class EquipmentService {
+        <<service>>
+        +registerEquipment(command RegisterEquipmentCommand) Equipment
+        +updateEquipment(id Long, command UpdateEquipmentCommand) Equipment
+        +getEquipmentByOwner(ownerId Long) List~Equipment~
+        +changeStatus(id Long, status EquipmentStatus) void
+    }
+
+    Equipment --> EquipmentType
+    Equipment --> EquipmentStatus
+    Equipment --> TemperatureRange
+    Equipment "1" --> "0..*" EquipmentDocument
+    EquipmentService --> IEquipmentRepository
+    IEquipmentRepository <|.. EquipmentRepository
+```
 
 ###### 4.2.3.6.2. Bounded Context Database Design Diagram
 
@@ -2172,7 +2386,119 @@ El Domain Layer del bounded context **Service Requests** gestiona las solicitu
 
 ###### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-![ServiceRequest Domain Class Diagram](assets/chapter04/DSL/ServiceRequest_Components-dark.png)
+```mermaid
+classDiagram
+    class SensorReading {
+        -Long id
+        -Long equipmentId
+        -String deviceId
+        -Decimal temperature
+        -Decimal humidity
+        -Decimal consumptionKwh
+        -DateTime readingAt
+        -ReadingSource source
+        +isAnomalous(rules List~BusinessRule~) Boolean
+    }
+
+    class Alert {
+        -Long id
+        -Long equipmentId
+        -Long readingId
+        -AlertType alertType
+        -Severity severity
+        -String message
+        -Decimal triggeredValue
+        -Decimal thresholdValue
+        -Boolean resolved
+        -DateTime resolvedAt
+        +resolve() void
+        +isActive() Boolean
+    }
+
+    class BusinessRule {
+        -Long id
+        -Long equipmentId
+        -RuleType ruleType
+        -Decimal thresholdValue
+        -Severity severity
+        -Boolean isActive
+        +evaluate(reading SensorReading) Boolean
+        +activate() void
+        +deactivate() void
+    }
+
+    class AlertType {
+        <<enumeration>>
+        HIGH_TEMP
+        LOW_TEMP
+        HIGH_HUMIDITY
+        LOW_HUMIDITY
+        HIGH_CONSUMPTION
+        CONNECTION_LOST
+    }
+
+    class RuleType {
+        <<enumeration>>
+        MAX_TEMP
+        MIN_TEMP
+        MAX_HUMIDITY
+        MIN_HUMIDITY
+        MAX_CONSUMPTION
+    }
+
+    class Severity {
+        <<enumeration>>
+        LOW
+        MEDIUM
+        HIGH
+        CRITICAL
+    }
+
+    class ReadingSource {
+        <<enumeration>>
+        PHYSICAL
+        SIMULATED
+    }
+
+    class ThresholdEvaluationService {
+        <<domain service>>
+        +evaluate(reading SensorReading, rules List~BusinessRule~) List~Alert~
+        +generateAlert(reading SensorReading, rule BusinessRule) Alert
+    }
+
+    class ISensorReadingRepository {
+        <<interface>>
+        +save(reading SensorReading) SensorReading
+        +findByEquipmentId(id Long) List~SensorReading~
+        +findByDateRange(equipmentId Long, from DateTime, to DateTime) List~SensorReading~
+    }
+
+    class IAlertRepository {
+        <<interface>>
+        +save(alert Alert) Alert
+        +findActiveByEquipmentId(id Long) List~Alert~
+        +resolve(alertId Long) void
+    }
+
+    class IBusinessRuleRepository {
+        <<interface>>
+        +findActiveByEquipmentId(id Long) List~BusinessRule~
+        +save(rule BusinessRule) BusinessRule
+    }
+
+    SensorReading --> ReadingSource
+    Alert --> AlertType
+    Alert --> Severity
+    BusinessRule --> RuleType
+    BusinessRule --> Severity
+    Alert --> SensorReading
+    ThresholdEvaluationService --> SensorReading
+    ThresholdEvaluationService --> BusinessRule
+    ThresholdEvaluationService --> Alert
+    ISensorReadingRepository <|.. SensorReadingRepository
+    IAlertRepository <|.. AlertRepository
+    IBusinessRuleRepository <|.. BusinessRuleRepository
+```
 
 ###### 4.2.4.6.2. Bounded Context Database Design Diagram
 
@@ -2285,7 +2611,70 @@ El Domain Layer del bounded context **Work Orders** gestiona las órdenes de t
 
 ###### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 
-![WorkOrder Domain Class Diagram](assets/chapter04/DSL/WorkOrder_Components-dark.png)
+```mermaid
+classDiagram
+    class ServiceRequest {
+        -Long id
+        -Long ownerProfileId
+        -Long equipmentId
+        -Long providerProfileId
+        -String title
+        -String description
+        -Priority priority
+        -RequestStatus status
+        -DateTime requestedAt
+        +accept(providerId Long) void
+        +complete() void
+        +cancel() void
+        +assignProvider(providerId Long) void
+    }
+
+    class Priority {
+        <<enumeration>>
+        LOW
+        MEDIUM
+        HIGH
+        URGENT
+    }
+
+    class RequestStatus {
+        <<enumeration>>
+        PENDING
+        ACCEPTED
+        IN_PROGRESS
+        COMPLETED
+        CANCELLED
+    }
+
+    class ServiceRequestPhoto {
+        -Long id
+        -Long serviceRequestId
+        -String photoUrl
+        -DateTime uploadedAt
+    }
+
+    class IServiceRequestRepository {
+        <<interface>>
+        +findById(id Long) ServiceRequest
+        +findByOwnerId(ownerId Long) List~ServiceRequest~
+        +findByProviderId(providerId Long) List~ServiceRequest~
+        +save(request ServiceRequest) ServiceRequest
+    }
+
+    class ServiceRequestService {
+        <<service>>
+        +createRequest(command CreateServiceRequestCommand) ServiceRequest
+        +acceptRequest(requestId Long, providerId Long) ServiceRequest
+        +completeRequest(requestId Long) ServiceRequest
+        +cancelRequest(requestId Long) void
+    }
+
+    ServiceRequest --> Priority
+    ServiceRequest --> RequestStatus
+    ServiceRequest "1" --> "0..*" ServiceRequestPhoto
+    ServiceRequestService --> IServiceRequestRepository
+    IServiceRequestRepository <|.. ServiceRequestRepository
+```
 
 ###### 4.2.5.6.2. Bounded Context Database Design Diagram
 
@@ -2402,7 +2791,82 @@ El Domain Layer del bounded context **Analytics** gestiona la recopilación y 
 
 ###### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Analytics Domain Class Diagram](assets/chapter04/DSL/Analytics_Components-dark.png)
+```mermaid
+classDiagram
+    class WorkOrder {
+        -Long id
+        -Long serviceRequestId
+        -Long technicianId
+        -Long equipmentId
+        -String title
+        -String description
+        -WorkOrderStatus status
+        -DateTime scheduledAt
+        -String diagnosis
+        -String solution
+        +start() void
+        +complete(diagnosis, solution String) void
+        +cancel() void
+        +addActivity(activity WorkOrderActivity) void
+    }
+
+    class WorkOrderStatus {
+        <<enumeration>>
+        ASSIGNED
+        IN_PROGRESS
+        COMPLETED
+        CANCELLED
+    }
+
+    class WorkOrderActivity {
+        -Long id
+        -Long workOrderId
+        -ActivityType activityType
+        -String description
+        -String fileUrl
+        -DateTime loggedAt
+    }
+
+    class ActivityType {
+        <<enumeration>>
+        NOTE
+        PHOTO
+        STATUS_CHANGE
+        PART_USED
+    }
+
+    class SparePart {
+        -Long id
+        -Long workOrderId
+        -String partName
+        -Integer quantity
+        -Decimal unitCost
+        +totalCost() Decimal
+    }
+
+    class IWorkOrderRepository {
+        <<interface>>
+        +findById(id Long) WorkOrder
+        +findByTechnicianId(id Long) List~WorkOrder~
+        +findByEquipmentId(id Long) List~WorkOrder~
+        +save(workOrder WorkOrder) WorkOrder
+    }
+
+    class WorkOrderService {
+        <<service>>
+        +createWorkOrder(command CreateWorkOrderCommand) WorkOrder
+        +startWorkOrder(id Long) WorkOrder
+        +completeWorkOrder(id Long, command CompleteWorkOrderCommand) WorkOrder
+        +addActivity(id Long, activity WorkOrderActivity) void
+    }
+
+    WorkOrder --> WorkOrderStatus
+    WorkOrder "1" --> "0..*" WorkOrderActivity
+    WorkOrder "1" --> "0..*" SparePart
+    WorkOrderActivity --> ActivityType
+    WorkOrderService --> IWorkOrderRepository
+    IWorkOrderRepository <|.. WorkOrderRepository
+```
 
 ###### 4.2.6.6.2. Bounded Context Database Design Diagram
 
@@ -2520,7 +2984,83 @@ El Domain Layer del bounded context **Subscriptions and Payments** gestiona lo
 
 ###### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Subscriptions Domain Class Diagram](assets/chapter04/DSL/Subscriptions_Components-dark.png)
+```mermaid
+classDiagram
+    class Plan {
+        -Long id
+        -String name
+        -String description
+        -Decimal priceMonthly
+        -Integer maxEquipment
+        -Integer maxTechnicians
+        -Boolean isActive
+        +activate() void
+        +deactivate() void
+    }
+
+    class Subscription {
+        -Long id
+        -Long ownerProfileId
+        -Long planId
+        -SubscriptionStatus status
+        -DateTime startedAt
+        -DateTime expiresAt
+        +cancel() void
+        +renew(plan Plan) void
+        +isActive() Boolean
+        +isExpired() Boolean
+    }
+
+    class SubscriptionStatus {
+        <<enumeration>>
+        ACTIVE
+        CANCELLED
+        EXPIRED
+        TRIAL
+    }
+
+    class Payment {
+        -Long id
+        -Long subscriptionId
+        -Decimal amount
+        -String currency
+        -PaymentStatus status
+        -String izipayRef
+        -DateTime paidAt
+        +markCompleted(ref String) void
+        +markFailed() void
+    }
+
+    class PaymentStatus {
+        <<enumeration>>
+        PENDING
+        COMPLETED
+        FAILED
+        REFUNDED
+    }
+
+    class ISubscriptionRepository {
+        <<interface>>
+        +findById(id Long) Subscription
+        +findByOwnerId(ownerId Long) Subscription
+        +save(subscription Subscription) Subscription
+    }
+
+    class SubscriptionService {
+        <<service>>
+        +subscribe(ownerId Long, planId Long) Subscription
+        +cancelSubscription(subscriptionId Long) void
+        +processPayment(subscriptionId Long) Payment
+        +renewSubscription(subscriptionId Long) Subscription
+    }
+
+    Subscription --> Plan
+    Subscription --> SubscriptionStatus
+    Subscription "1" --> "0..*" Payment
+    Payment --> PaymentStatus
+    SubscriptionService --> ISubscriptionRepository
+    ISubscriptionRepository <|.. SubscriptionRepository
+```
 
 ###### 4.2.7.6.2. Bounded Context Database Design Diagram
 
@@ -2623,7 +3163,72 @@ El Domain Layer del bounded context **Technicians** gestiona la información d
 
 ###### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Notifications Domain Class Diagram](assets/chapter04/DSL/Notifications_Components-dark.png)
+```mermaid
+classDiagram
+    class Notification {
+        -Long id
+        -Long userId
+        -NotificationChannel channel
+        -NotificationType type
+        -String title
+        -String body
+        -Long referenceId
+        -String referenceType
+        -Boolean isRead
+        -DateTime sentAt
+        +markAsRead() void
+        +isSent() Boolean
+    }
+
+    class NotificationChannel {
+        <<enumeration>>
+        EMAIL
+        PUSH
+        SMS
+    }
+
+    class NotificationType {
+        <<enumeration>>
+        ALERT
+        WORK_ORDER
+        PAYMENT
+        SYSTEM
+    }
+
+    class NotificationPreference {
+        -Long id
+        -Long userId
+        -Boolean emailEnabled
+        -Boolean pushEnabled
+        -Boolean alertHighTemp
+        -Boolean alertLowTemp
+        -Boolean alertWorkOrder
+        -String fcmToken
+        +updateFcmToken(token String) void
+        +toggle(channel NotificationChannel) void
+    }
+
+    class INotificationRepository {
+        <<interface>>
+        +save(notification Notification) Notification
+        +findByUserId(userId Long) List~Notification~
+        +markAsRead(id Long) void
+    }
+
+    class NotificationService {
+        <<service>>
+        +sendPush(userId Long, title String, body String) void
+        +sendEmail(userId Long, subject String, body String) void
+        +getPreferences(userId Long) NotificationPreference
+        +updatePreferences(userId Long, prefs NotificationPreference) void
+    }
+
+    Notification --> NotificationChannel
+    Notification --> NotificationType
+    NotificationService --> INotificationRepository
+    NotificationService --> NotificationPreference
+    INotificationRepository <|.. NotificationRepository
+```
 
 ###### 4.2.8.6.2. Bounded Context Database Design Diagram
 
