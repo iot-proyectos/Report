@@ -5,7 +5,7 @@
   <h2>Ciclo: 2026-10</h2>
 <br>
   <h2>Curso: 1ASI0572 Desarrollo de Soluciones IOT</h2>
-  <h2>Sección: 4378</h2>
+  <h2>Sección: 6776</h2>
   <h2>Profesor: Leon Baca, Marco Antonio </h2>
 <br>
  <h1>Informe del Trabajo Final</h1>
