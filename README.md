@@ -261,7 +261,7 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 | **Código del Estudiante** | U202210938 |
 | **Carrera** | Ingeniería de Software |
 | **Descripción** | Tengo 21 años y estudio Ingeniería de Software. Profesionalmente, me especializo como desarrollador enfocado en automatización (RPA), infraestructura en la nube y liderazgo de equipos ágiles con Scrum; de hecho, actualmente estoy desarrollando mi tesis sobre una plataforma de inteligencia predictiva para el sector minero y diseñando un sistema automatizado de monitoreo de combustible. Esta misma disciplina que aplico en mis proyectos la llevo a mi estilo de vida: jugué fútbol a nivel competitivo en divisiones menores y hoy mantengo un riguroso régimen de fitness y nutrición enfocado en ganar masa muscular y mejorar mi movilidad. En el plano personal, soy alguien muy apegado a mis dos hermanas y a mi familia materna. |
-| **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
+| **Foto** | <img src="assets/chapter01/Raul.jpeg" alt="Raul" width="200" height="200"> |
 
 ## 1.2 Solution Profile
 
