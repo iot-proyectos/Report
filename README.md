@@ -18,6 +18,7 @@
   <li><h3> u20231c069 Mora Blas, Diego Alonzo</h3></li>
   <li><h3>U202223990 Cacho Seminario, Diego Alonso</h3></li>
   <li><h3>U20231C996 Hernandez Poma, Sebastian Eduardo</h3></li>
+  <li><h3>U202210938 Medina Cruzado, Raúl Adrian</h3></li>
   <li><h3>U20231C111 Inga Orihuela, Christian Fabrizio</h3></li>
 </ul>
 <br>
@@ -32,7 +33,8 @@
 | Versión | Fecha      | Autor                | Descripción de modificación                                     |
 |---------|------------|----------------------|-----------------------------------------------------------------|
 | 1.0     | 23/04/2026 | Diego Cacho          | Implementación de datos del trabajo                             |
-| 1.0     | 25/04/2026 | Sebastian Hernandez          |                             |
+| 1.0     | 25/04/2026 | Sebastian Hernandez  |                                                                 |
+| 1.1     | 25/04/2026 | Raúl Medina          |Actualizacion capitulo 4                                         |
 
 ## Project Report Collaboration Insights *(POR MODIFICAR POR CADA ENTREGA)
 - **URL de la organización del proyecto:**  
@@ -254,11 +256,11 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 
 ---
 
-| **Integrante** | **##################** |
+| **Integrante** | **Medina Cruzado, Raúl Adrian* |
 |----------------|----------------------------------|
-| **Código del Estudiante** | U########### |
+| **Código del Estudiante** | U202210938 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | ################. |
+| **Descripción** | Tengo 21 años y estudio Ingeniería de Software. Profesionalmente, me especializo como desarrollador enfocado en automatización (RPA), infraestructura en la nube y liderazgo de equipos ágiles con Scrum; de hecho, actualmente estoy desarrollando mi tesis sobre una plataforma de inteligencia predictiva para el sector minero y diseñando un sistema automatizado de monitoreo de combustible. Esta misma disciplina que aplico en mis proyectos la llevo a mi estilo de vida: jugué fútbol a nivel competitivo en divisiones menores y hoy mantengo un riguroso régimen de fitness y nutrición enfocado en ganar masa muscular y mejorar mi movilidad. En el plano personal, soy alguien muy apegado a mis dos hermanas y a mi familia materna. |
 | **Foto** | <img src="assets/chapter01/############.png" alt="Joseph" width="200" height="200"> |
 
 ## 1.2 Solution Profile
