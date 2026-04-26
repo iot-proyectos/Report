@@ -34,29 +34,27 @@
 | 1.0     | 23/04/2026 | Diego Cacho          | Implementación de datos del trabajo                             |
 | 1.0     | 25/04/2026 | Sebastian Hernandez  | Adaptación de arquitectura IoT: integración de capa Edge API, ESP32 Firmware e IoT Monitoring Bounded Context al workspace Structurizr DSL. Generación de diagramas C4 (Context, Container, Components) y diagramas de base de datos para los 9 bounded contexts del sistema. |
 | 1.1     | 25/04/2026 | Raúl Medina          |Actualizacion capitulo 4                                         |
+| 1.0     | 25/04/2026 | Christian Inga          | Correcciones del informe                                         |
 
-## Project Report Collaboration Insights *(POR MODIFICAR POR CADA ENTREGA)
+## Project Report Collaboration Insights *
 - **URL de la organización del proyecto:**  
-  [https://github.com/##########](https://github.com/############)
+  [https://github.com/iot-proyectos](https://github.com/iot-proyectos)
 
 
 - **URL del repositorio del informe del proyecto:**  
-  [https://github.com/##########/Report](https://github.com/############/Report)
+  [https://github.com/iot-proyectos/Report](https://github.com/iot-proyectos/Report)
 
+  ![Insights Informe](assets/chapter01/insightsTB1.png)
 
 - **URL del repositorio del landing page del proyecto:**  
-  [https://github.com/##########/Landing-Page](https://github.com/############/Landing-Page)
 
-  ![Insights landing](assets/TF/Insights%20landing.png)
+
 
 
 - **URL del repositorio del frontend del proyecto:**  
-  [https://github.com/##########/OsitoPolar-Frontend](https://github.com/############/OsitoPolar-Frontend)
-![frontinsights.png](assets/TF/frontinsights.png)
 
 - **URL del repositorio del backend del proyecto:**  
-  [https://github.com/##########/OsitoPolar-Platform](https://github.com/############/OsitoPolar-Platform)
-![backinsights.png](assets/TF/backinsights.png)
+
 
 
 ## Contenido
