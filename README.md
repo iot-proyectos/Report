@@ -1374,6 +1374,8 @@ Para esta sección el objetivo fue visualizar cómo los bounded contexts colabor
 6. **Analytics** evalúa si la lectura supera el `TemperatureRange` configurado y genera el estado `Critical` o `Warning`.
 7. La plataforma muestra en el dashboard del cliente las lecturas y alertas en tiempo real.
 
+![Historia_A](assets/chapter04/histori_A.png)
+
 **Historia B — Cliente solicita servicio técnico para un equipo**
 
 1. El cliente detecta una anomalía en su equipo y crea una `ServiceRequest` en **Service Requests** con `CreateServiceRequestCommand`, indicando equipo, descripción, prioridad y urgencia.
@@ -1385,6 +1387,8 @@ Para esta sección el objetivo fue visualizar cómo los bounded contexts colabor
 7. **Work Orders** emite `WorkOrderResolved`, y el cliente puede agregar `CustomerFeedbackRating` (1-5 estrellas).
 8. **Technicians** actualiza el `AverageRating` del técnico con la nueva calificación recibida.
 
+![Historia_A](assets/chapter04/Historia_B.png)
+
 **Historia C — Empresa gestiona suscripción y accede a analítica avanzada**
 
 1. El cliente selecciona un plan en **Subscriptions and Payments** con `CreateSubscriptionCommand`.
@@ -1394,7 +1398,7 @@ Para esta sección el objetivo fue visualizar cómo los bounded contexts colabor
 5. Con el plan activo, el cliente accede a las vistas de **Analytics** para consultar lecturas históricas de temperatura y energía, promedios diarios y el estado general del equipo mediante `GetEquipmentAnalyticsQuery`.
 
 ---
-
+![Historia_C](assets/chapter04/Historia_C.png)
 
 ##### 4.1.1.3 Bounded Context Canvases.
 A continuación se presentan los Bounded Context Canvases de los ocho contextos identificados para la plataforma OsitoPolar:
@@ -1572,6 +1576,7 @@ Las relaciones identificadas son las siguientes:
 
 A continuación se presenta el diagrama del Context Mapping utilizando notación estándar de Domain-Driven Design (DDD):
 
+![Context Mapping](assets/chapter04/context_diagram.png)
 
 
 #### 4.1.3. Software Architecture.
