@@ -1339,23 +1339,961 @@ Escala de Story Points (Fibonacci):
 
 ### 4.2. Tactical-Level Domain-Driven Design
 
-#### 4.2.X. Bounded Context: 
+#### 4.2.1. Bounded Context: IAM (Identity and Access Management)
 
-##### 4.2.X.1. Domain Layer.
+##### 4.2.1.1. Domain Layer
 
-##### 4.2.X.2. Interface Layer.
+El Domain Layer del bounded context **IAM** encapsula toda la lógica de autenticación y autorización de usuarios en la plataforma. Su responsabilidad principal es gestionar el ciclo de vida de los usuarios, incluyendo el registro (`SignUp`) y el inicio de sesión (`SignIn`), asegurando que las credenciales sean manejadas de forma segura mediante hashing de contraseñas.
 
-##### 4.2.X.3. Application Layer.
+**Aggregate Root:**
 
-##### 4.2.X.4. Infrastructure Layer.
+- `User` — Entidad raíz que representa a un usuario del sistema. Contiene `Id`, `Username`, `PasswordHash` y `SubscriptionId`(referencia al plan de suscripción). Expone métodos como `UpdateUsername`, `UpdatePasswordHash` y `UpdateSubscription`.
 
-##### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+**Commands:**
 
-##### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.
+- `SignUpCommand(Username, Password, Role)` — Registra un nuevo usuario.
+- `SignInCommand(Username, Password)` — Autentica un usuario existente.
 
-###### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
+**Queries:**
 
-###### 4.2.X.6.2. Bounded Context Database Design Diagram.
+- `GetAllUsersQuery` — Retorna todos los usuarios registrados.
+- `GetUserByIdQuery(int Id)` — Retorna un usuario por su identificador.
+- `GetUserByUsernameQuery(string Username)` — Retorna un usuario por su nombre de usuario.
+
+**Repositories:**
+
+- `IUserRepository` — Contrato de persistencia con operaciones de búsqueda por username.
+
+**Domain Services:**
+
+- `IUserCommandService` — Interfaz para manejar comandos de usuario (SignUp, SignIn).
+- `IUserQueryService` — Interfaz para manejar consultas de usuario.
+
+**Outbound Services (Application):**
+
+- `IHashingService` — Abstracción para hashing de contraseñas (implementado con BCrypt).
+- `ITokenService` — Abstracción para generación y validación de JWT tokens.
+
+---
+
+##### 4.2.1.2. Interface Layer
+
+La capa de interfaz expone los endpoints REST de autenticación y gestión de usuarios, además de publicar una fachada ACL para que otros bounded contexts puedan consultar información de usuarios sin acoplarse directamente.
+
+**Controllers REST:**
+
+- `AuthenticationController` (`/api/v1/authentication`)
+    - `POST /sign-up` — Registra un nuevo usuario.
+    - `POST /sign-in` — Inicia sesión y retorna un JWT token.
+- `UsersController` (`/api/v1/users`)
+    - `GET /` — Lista todos los usuarios.
+    - `GET /{id}` — Retorna un usuario por ID.
+
+**Resources:**
+
+- `SignUpResource(Username, Password, Role)`
+- `SignInResource(Username, Password)`
+- `AuthenticatedUserResource(Id, Username, Token)`
+- `UserResource(Id, Username)`
+
+**Assemblers (Transform):**
+
+- `SignUpCommandFromResourceAssembler`
+- `SignInCommandFromResourceAssembler`
+- `AuthenticatedUserResourceFromEntityAssembler`
+- `UserResourceFromEntityAssembler`
+
+**ACL (Anti-Corruption Layer):**
+
+- `IIamContextFacade` — Interfaz publicada para otros contextos.
+- `IamContextFacade` — Implementación que permite crear usuarios y consultar IDs por username desde otros bounded contexts.
+
+---
+
+##### 4.2.1.3. Application Layer
+
+La capa de aplicación orquesta los casos de uso del bounded context IAM, coordinando el repositorio de usuarios con los servicios de hashing y token para ejecutar los flujos de autenticación.
+
+**Command Services:**
+
+- `UserCommandService` — Implementa `IUserCommandService`.
+    - `Handle(SignUpCommand)`: Verifica que el username no exista, hashea la contraseña con `IHashingService` y persiste el nuevo usuario.
+    - `Handle(SignInCommand)`: Verifica credenciales con BCrypt, genera y retorna un JWT mediante `ITokenService`.
+
+**Query Services:**
+
+- `UserQueryService` — Implementa `IUserQueryService`.
+    - `Handle(GetAllUsersQuery)`: Retorna todos los usuarios.
+    - `Handle(GetUserByIdQuery)`: Retorna usuario por ID.
+    - `Handle(GetUserByUsernameQuery)`: Retorna usuario por username.
+
+**Outbound Services:**
+
+- `IHashingService` / `ITokenService` — Interfaces de servicios externos definidas en Application para ser implementadas en Infrastructure.
+
+---
+
+##### 4.2.1.4. Infrastructure Layer
+
+La capa de infraestructura provee las implementaciones concretas de los contratos definidos en el dominio y la aplicación: persistencia con Entity Framework Core, hashing con BCrypt, tokens JWT y middleware de autorización.
+
+**Persistence (EFC):**
+
+- `UserRepository` — Implementa `IUserRepository` usando `AppDbContext`. Permite búsqueda por username.
+- `ModelBuilderExtensions.ApplyIamConfiguration()` — Configura la tabla `users` con columnas `id`, `username`, `password_hash`, `subscription_id`, `created_at`, `updated_at`.
+
+**Hashing:**
+
+- `HashingService` — Implementa `IHashingService` usando la librería BCrypt.Net para hashear y verificar contraseñas.
+
+**Tokens JWT:**
+
+- `TokenService` — Implementa `ITokenService`. Genera tokens JWT firmados con clave secreta, incluyendo claims de `id` y `username`.
+- `TokenSettings` — Configuración del secreto JWT leído desde `appsettings.json`.
+
+**Middleware Pipeline:**
+
+- `RequestAuthorizationMiddleware` — Middleware que valida el JWT en cada request y adjunta el usuario autenticado al contexto HTTP.
+- `AuthorizeAttribute` / `AllowAnonymousAttribute` — Atributos para marcar endpoints que requieren o no autenticación.
+- `RequestAuthorizationMiddlewareExtensions` — Método de extensión para registrar el middleware en el pipeline de ASP.NET Core.
+
+---
+
+##### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+![IAM Component Diagram](assets/chapter04/DSL/IAM_Components-dark.png)
+
+**Leyenda:**
+
+![IAM Component Diagram Key](assets/chapter04/DSL/IAM_Components-dark-key.png)
+
+---
+
+##### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+![IAM Domain Class Diagram](assets/chapter04/DSL/IAM_Components-dark.png)
+
+###### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+![IAM Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+
+---
+
+#### 4.2.2. Bounded Context: Profiles
+
+##### 4.2.2.1. Domain Layer
+
+El Domain Layer del bounded context **Profiles** gestiona la información personal de los usuarios registrados en la plataforma (clientes y técnicos). Se encarga de representar los datos de perfil de manera estructurada mediante Value Objects, garantizando la validación de cada dato de dominio.
+
+**Aggregate Root:**
+
+- `Profile` — Entidad raíz que representa el perfil de un usuario. Contiene `Id`, `Name` (PersonName), `Email` (EmailAddress) y `Address` (StreetAddress). Expone propiedades computadas como `FullName`, `EmailAddress` y `StreetAddress`.
+
+**Value Objects:**
+
+- `PersonName(FirstName, LastName)` — Encapsula el nombre completo. Expone `FullName`.
+- `EmailAddress(Address)` — Encapsula y valida el correo electrónico.
+- `StreetAddress(Street, Number, City, PostalCode, Country)` — Encapsula la dirección física. Expone `FullAddress`.
+
+**Commands:**
+
+- `CreateProfileCommand(FirstName, LastName, Email, Street, Number, City, PostalCode, Country)` — Crea un nuevo perfil de usuario.
+
+**Queries:**
+
+- `GetAllProfilesQuery` — Retorna todos los perfiles.
+- `GetProfileByIdQuery(int Id)` — Retorna un perfil por su ID.
+- `GetProfileByEmailQuery(string Email)` — Retorna un perfil por su email.
+
+**Repositories:**
+
+- `IProfileRepository` — Contrato de persistencia con búsqueda por email.
+
+**Domain Services:**
+
+- `IProfileCommandService` — Interfaz para ejecutar comandos de perfil.
+- `IProfileQueryService` — Interfaz para ejecutar consultas de perfil.
+
+---
+
+##### 4.2.2.2. Interface Layer
+
+La capa de interfaz expone los endpoints REST para crear y consultar perfiles. Además, publica una fachada ACL que permite que el bounded context IAM cree perfiles automáticamente al registrar un usuario.
+
+**Controllers REST:**
+
+- `ProfilesController` (`/api/v1/profiles`)
+    - `POST /` — Crea un nuevo perfil.
+    - `GET /` — Lista todos los perfiles.
+    - `GET /{profileId}` — Retorna un perfil por ID.
+
+**Resources:**
+
+- `CreateProfileResource(FirstName, LastName, Email, Street, Number, City, PostalCode, Country)`
+- `ProfileResource(Id, FullName, Email, StreetAddress)`
+
+**Assemblers (Transform):**
+
+- `CreateProfileCommandFromResourceAssembler`
+- `ProfileResourceFromEntityAssembler`
+
+**ACL (Anti-Corruption Layer):**
+
+- `IProfilesContextFacade` — Interfaz publicada para otros contextos.
+- `ProfilesContextFacade` — Implementación que permite crear perfiles y obtener IDs por email desde otros bounded contexts (principalmente IAM).
+
+---
+
+##### 4.2.2.3. Application Layer
+
+La capa de aplicación orquesta los casos de uso del bounded context Profiles, coordinando la creación y consulta de perfiles mediante el repositorio y la unidad de trabajo.
+
+**Command Services:**
+
+- `ProfileCommandService` — Implementa `IProfileCommandService`.
+    - `Handle(CreateProfileCommand)`: Verifica que no exista un perfil con el mismo email, crea el perfil y lo persiste.
+
+**Query Services:**
+
+- `ProfileQueryService` — Implementa `IProfileQueryService`.
+    - `Handle(GetAllProfilesQuery)`: Retorna todos los perfiles.
+    - `Handle(GetProfileByIdQuery)`: Retorna perfil por ID.
+    - `Handle(GetProfileByEmailQuery)`: Retorna perfil por email.
+
+**ACL (Application):**
+
+- `ProfilesContextFacade` — Implementación de la fachada que expone operaciones simplificadas para otros BCs.
+
+---
+
+##### 4.2.2.4. Infrastructure Layer
+
+La capa de infraestructura provee la implementación concreta de persistencia mediante Entity Framework Core.
+
+**Persistence (EFC):**
+
+- `ProfileRepository` — Implementa `IProfileRepository` usando `AppDbContext`. Permite búsqueda por email.
+- `ModelBuilderExtensions.ApplyProfilesConfiguration()` — Configura la tabla `profiles` con value objects mapeados como owned entities: `PersonName` → columnas `first_name`, `last_name`; `EmailAddress` → columna `email_address`; `StreetAddress` → columnas `street`, `number`, `city`, `postal_code`, `country`.
+
+---
+
+##### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Profiles Component Diagram](assets/chapter04/DSL/Profiles_Components-dark.png)
+
+**Leyenda:**
+
+![Profiles Component Diagram Key](assets/chapter04/DSL/Profiles_Components-dark-key.png)
+
+---
+
+##### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+![Profiles Domain Class Diagram](assets/chapter04/DSL/Profiles_Components-dark.png)
+
+###### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+![Profiles Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+
+---
+
+#### 4.2.3. Bounded Context: Equipment Management
+
+##### 4.2.3.1. Domain Layer
+
+El Domain Layer del bounded context **Equipment Management** gestiona el ciclo de vida completo de los equipos de refrigeración y climatización que la plataforma monitorea. Permite crear, actualizar y consultar equipos, así como gestionar su estado operativo, ubicación y consumo energético.
+
+**Aggregate Root:**
+
+- `Equipment` — Entidad raíz que representa un equipo físico. Contiene `Id`, `EquipmentIdentifier` (VO), `OwnerId`, `OwnershipType`, `Status`, `Type`, `Location`, `RentalInfo` y `EnergyConsumption`. Expone métodos como `UpdateLocation`, `UpdatePowerState` y `UpdateTemperature`.
+
+**Entities:**
+
+- `Location(Coordinates, Address)` — Representa la ubicación física del equipo.
+- `RentalInfo` — Información de alquiler del equipo (si aplica).
+- `EnergyConsumption` — Registro de consumo energético del equipo.
+
+**Value Objects:**
+
+- `EquipmentIdentifier(SerialNumber, Model, Brand)` — Identificador único de negocio del equipo.
+- `Coordinates(Latitude, Longitude)` — Coordenadas geográficas.
+- `EEquipmentStatus` — Enum: `Active`, `Inactive`, `UnderMaintenance`, `Retired`.
+- `EEquipmentType` — Enum: `Refrigerator`, `Freezer`, `AirConditioner`, etc.
+- `EOwnershipType` — Enum: `Owned`, `Rented`.
+
+**Commands:**
+
+- `CreateEquipmentCommand`
+- `UpdateEquipmentLocationCommand`
+- `UpdateEquipmentPowerStateCommand`
+- `UpdateEquipmentTemperatureCommand`
+- `DeleteEquipmentCommand`
+
+**Queries:**
+
+- `GetAllEquipmentsQuery`
+- `GetEquipmentByIdQuery(int Id)`
+- `GetEquipmentsByOwnerIdQuery(int OwnerId)`
+- `GetEquipmentsByStatusQuery(EEquipmentStatus Status)`
+- `GetEquipmentsByTypeQuery(EEquipmentType Type)`
+
+**Repositories:**
+
+- `IEquipmentRepository` — Contrato de persistencia con búsquedas por OwnerId, Status y Type.
+
+**Domain Services:**
+
+- `IEquipmentCommandService`
+- `IEquipmentQueryService`
+
+---
+
+##### 4.2.3.2. Interface Layer
+
+**Controllers REST:**
+
+- `EquipmentsController` (`/api/v1/equipments`)
+    - `POST /` — Crea un nuevo equipo.
+    - `GET /` — Lista todos los equipos.
+    - `GET /{id}` — Retorna equipo por ID.
+    - `PUT /{id}/location` — Actualiza ubicación.
+    - `PUT /{id}/power-state` — Actualiza estado de encendido.
+    - `PUT /{id}/temperature` — Actualiza temperatura configurada.
+    - `DELETE /{id}` — Elimina un equipo.
+
+**Resources:**
+
+- `CreateEquipmentResource`, `EquipmentResource`, `UpdateEquipmentLocationResource`, `UpdateEquipmentPowerStateResource`, `UpdateEquipmentTemperatureResource`, `EquipmentOperationParametersResource`
+
+**Assemblers:**
+
+- `CreateEquipmentCommandFromResourceAssembler`
+- `EquipmentResourceFromEntityAssembler`
+
+---
+
+##### 4.2.3.3. Application Layer
+
+**Command Services:**
+
+- `EquipmentCommandService` — Implementa `IEquipmentCommandService`.
+    - `Handle(CreateEquipmentCommand)`: Crea y persiste un nuevo equipo.
+    - `Handle(UpdateEquipmentLocationCommand)`: Actualiza la ubicación del equipo.
+    - `Handle(UpdateEquipmentPowerStateCommand)`: Cambia el estado de energía.
+    - `Handle(UpdateEquipmentTemperatureCommand)`: Actualiza la temperatura configurada.
+    - `Handle(DeleteEquipmentCommand)`: Elimina el equipo del sistema.
+
+**Query Services:**
+
+- `EquipmentQueryService` — Implementa `IEquipmentQueryService`.
+    - Maneja todas las queries de búsqueda de equipos.
+
+---
+
+##### 4.2.3.4. Infrastructure Layer
+
+**Persistence (EFC):**
+
+- `EquipmentRepository` — Implementa `IEquipmentRepository` con EF Core.
+- `ModelBuilderExtensions.ApplyEquipmentConfiguration()` — Configura las tablas:
+    - `equipments` — Tabla principal con columnas de identificador, tipo, estado, propietario.
+    - Value Objects `EquipmentIdentifier`, `Coordinates` mapeados como owned entities.
+    - Relaciones con `energy_consumptions`, `locations`, `rental_infos`.
+
+---
+
+##### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Equipment Component Diagram](assets/chapter04/DSL/Equipment_Components-dark.png)
+
+**Leyenda:**
+
+![Equipment Component Diagram Key](assets/chapter04/DSL/Equipment_Components-dark-key.png)
+
+---
+
+##### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+![Equipment Domain Class Diagram](assets/chapter04/DSL/Equipment_Components-dark.png)
+
+###### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+![Equipment Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+
+---
+
+#### 4.2.4. Bounded Context: Service Requests
+
+##### 4.2.4.1. Domain Layer
+
+El Domain Layer del bounded context **Service Requests** gestiona las solicitudes de servicio técnico que los clientes realizan para sus equipos. Modela el flujo completo desde la creación de la solicitud hasta su resolución, incluyendo asignación de técnico, cambios de estado y retroalimentación del cliente.
+
+**Aggregate Root:**
+
+- `ServiceRequest` — Entidad raíz con `Id`, `OrderNumber`, `Title`, `Description`, `IssueDetails`, `Status`, `Priority`, `Urgency`, `IsEmergency`, `ServiceType`, `ClientId`, `CompanyId`, `EquipmentId`, `AssignedTechnicianId`, fechas de programación, detalles de resolución y `CustomerFeedbackRating`.
+
+**Value Objects (Enums):**
+
+- `EServiceRequestStatus` — `Pending`, `Accepted`, `InProgress`, `Resolved`, `Cancelled`, `Rejected`.
+- `EPriority` — `Low`, `Medium`, `High`, `Critical`.
+- `EUrgency` — `Normal`, `Urgent`, `Emergency`.
+- `EServiceType` — `Diagnostic`, `Repair`, `Maintenance`, `Installation`.
+
+**Commands:**
+
+- `CreateServiceRequestCommand`
+- `UpdateServiceRequestCommand`
+- `UpdateServiceRequestStatusCommand`
+- `AssignTechnicianToServiceRequestCommand`
+- `CancelServiceRequestCommand`
+- `RejectServiceRequestCommand`
+- `AddCustomerFeedbackToServiceRequestCommand`
+
+**Queries:**
+
+- `GetAllServiceRequestsQuery`
+- `GetServiceRequestByIdQuery(int Id)`
+- `GetServiceRequestsByStatusQuery(EServiceRequestStatus Status)`
+- `GetServiceRequestsByEquipmentIdQuery(int EquipmentId)`
+
+**Domain Methods (comportamiento en el agregado):**
+
+- `AssignTechnician(technicianId)` — Asigna técnico y cambia estado a `Accepted`.
+- `UpdateStatus(newStatus)` — Cambia el estado con reglas de negocio.
+- `Reject()` — Solo desde estado `Pending`.
+- `Cancel()` — No permitido desde `Resolved`, `Cancelled` o `Rejected`.
+- `AddResolutionDetails(...)` — Agrega resolución y cambia a `Resolved`.
+- `AddCustomerFeedback(rating)` — Solo desde `Resolved`, rating 1-5.
+
+---
+
+##### 4.2.4.2. Interface Layer
+
+**Controllers REST:**
+
+- `ServiceRequestsController` (`/api/v1/service-requests`)
+    - `POST /` — Crea una nueva solicitud.
+    - `GET /` — Lista todas las solicitudes.
+    - `GET /{id}` — Retorna solicitud por ID.
+    - `PUT /{id}/status` — Actualiza el estado.
+    - `PUT /{id}/assign-technician` — Asigna técnico.
+    - `PUT /{id}/customer-feedback` — Agrega retroalimentación.
+    - `PUT /{id}/cancel` — Cancela la solicitud.
+    - `PUT /{id}/reject` — Rechaza la solicitud.
+
+**Resources:**
+
+- `CreateServiceRequestResource`, `ServiceRequestResource`, `UpdateServiceRequestResource`, `UpdateServiceRequestStatusResource`, `AssignTechnicianToServiceRequestResource`, `AddCustomerFeedbackToServiceRequestResource`
+
+**Assemblers:**
+
+- `CreateServiceRequestCommandFromResourceAssembler`
+- `ServiceRequestResourceFromEntityAssembler`
+- `AssignTechnicianToServiceRequestCommandFromResourceAssembler`
+- `AddCustomerFeedbackToServiceRequestCommandFromResourceAssembler`
+- `UpdateServiceRequestCommandFromResourceAssembler`
+
+---
+
+##### 4.2.4.3. Application Layer
+
+**Command Services:**
+
+- `ServiceRequestCommandService` — Implementa `IServiceRequestCommandService`.
+    - Maneja todos los comandos: crear, actualizar, asignar técnico, cancelar, rechazar, agregar feedback.
+
+**Query Services:**
+
+- `ServiceRequestQueryService` — Implementa `IServiceRequestQueryService`.
+    - Maneja todas las queries de búsqueda y filtrado de solicitudes.
+
+---
+
+##### 4.2.4.4. Infrastructure Layer
+
+**Persistence (EFC):**
+
+- `ServiceRequestRepository` — Implementa `IServiceRequestRepository`.
+- `ModelBuilderExtensions.ApplyServiceRequestsConfiguration()` — Configura la tabla `service_requests` con todas las columnas, enums como strings y relaciones con `equipments`.
+
+---
+
+##### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+![ServiceRequest Component Diagram](assets/chapter04/DSL/ServiceRequest_Components-dark.png)
+
+**Leyenda:**
+
+![ServiceRequest Component Diagram Key](assets/chapter04/DSL/ServiceRequest_Components-dark-key.png)
+
+---
+
+##### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+![ServiceRequest Domain Class Diagram](assets/chapter04/DSL/ServiceRequest_Components-dark.png)
+
+###### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+![ServiceRequest Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+
+---
+
+#### 4.2.5. Bounded Context: Work Orders
+
+##### 4.2.5.1. Domain Layer
+
+El Domain Layer del bounded context **Work Orders** gestiona las órdenes de trabajo que se generan para atender las solicitudes de servicio. Una `WorkOrder` representa el trabajo técnico concreto que un técnico debe ejecutar sobre un equipo, incluyendo programación, asignación, resolución y retroalimentación.
+
+**Aggregate Root:**
+
+- `WorkOrder` — Entidad raíz con `Id`, `WorkOrderNumber` (generado automáticamente como `WO-YYYYMMDD-XXXXXXXX`), `ServiceRequestId` (opcional), `Title`, `Description`, `IssueDetails`, `Status`, `Priority`, `AssignedTechnicianId`, `ScheduledDate`, `TimeSlot`, `ServiceAddress`, `ResolutionDetails`, `TechnicianNotes`, `Cost`, `CustomerFeedbackRating` y `EquipmentId`.
+
+**Value Objects (Enums):**
+
+- `EWorkOrderStatus` — `Created`, `Assigned`, `InProgress`, `Completed`, `Resolved`, `Cancelled`.
+- (Comparte `EPriority` y `EServiceType` del namespace de ServiceRequests).
+
+**Commands:**
+
+- `CreateWorkOrderCommand`
+- `UpdateWorkOrderStatusCommand`
+- `AssignTechnicianToWorkOrderCommand`
+- `AddWorkOrderResolutionDetailsCommand`
+- `AddWorkOrderCustomerFeedbackCommand`
+
+**Queries:**
+
+- `GetAllWorkOrdersQuery`
+- `GetWorkOrderByIdQuery(int Id)`
+- `GetWorkOrderByWorkOrderNumberQuery(string Number)`
+- `GetWorkOrderByServiceRequestIdQuery(int ServiceRequestId)`
+- `GetWorkOrdersByEquipmentIdQuery(int EquipmentId)`
+- `GetWorkOrdersByStatusQuery(EWorkOrderStatus Status)`
+- `GetWorkOrdersByTechnicianIdQuery(int TechnicianId)`
+
+**Domain Methods:**
+
+- `AssignTechnician(technicianId)` — Asigna técnico y cambia a estado `Assigned`.
+- `UpdateStatus(newStatus)` — Cambia el estado, registra `ActualCompletionDate` si es `Completed`/`Resolved`.
+- `AddResolutionDetails(resolution, notes, cost)` — Agrega resolución y marca como `Resolved`.
+- `SetCustomerFeedbackRating(rating)` — Rating 1-5 con validación.
+
+---
+
+##### 4.2.5.2. Interface Layer
+
+**Controllers REST:**
+
+- `WorkOrdersController` (`/api/v1/work-orders`)
+    - `POST /` — Crea una nueva orden de trabajo.
+    - `GET /` — Lista todas las órdenes.
+    - `GET /{id}` — Retorna orden por ID.
+    - `PUT /{id}/status` — Actualiza el estado.
+    - `PUT /{id}/assign-technician` — Asigna técnico.
+    - `PUT /{id}/resolution` — Agrega detalles de resolución.
+    - `PUT /{id}/customer-feedback` — Agrega retroalimentación del cliente.
+
+**Resources:**
+
+- `CreateWorkOrderResource`, `WorkOrderResource`, `UpdateWorkOrderStatusResource`, `AssignTechnicianResource`, `AddCustomerFeedbackResource`
+
+**Assemblers:**
+
+- `CreateWorkOrderCommandFromResourceAssembler`
+- `WorkOrderResourceFromEntityAssembler`
+- `UpdateWorkOrderStatusCommandFromResourceAssembler`
+- `AddWorkOrderCustomerFeedbackCommandFromResourceAssembler`
+
+---
+
+##### 4.2.5.3. Application Layer
+
+**Command Services:**
+
+- `WorkOrderCommandService` — Implementa `IWorkOrderCommandService`.
+    - Maneja todos los comandos: crear, actualizar estado, asignar técnico, agregar resolución y feedback.
+
+**Query Services:**
+
+- `WorkOrderQueryService` — Implementa `IWorkOrderQueryService`.
+    - Maneja todas las queries de búsqueda por ID, número, técnico, equipo y estado.
+
+---
+
+##### 4.2.5.4. Infrastructure Layer
+
+**Persistence (EFC):**
+
+- `WorkOrderRepository` — Implementa `IWorkOrderRepository`.
+- `ModelBuilderExtensions.ApplyWorkOrdersConfiguration()` — Configura la tabla `work_orders` con todas las columnas, enums como strings y FK a `equipments`.
+
+---
+
+##### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+![WorkOrder Component Diagram](assets/chapter04/DSL/WorkOrder_Components-dark.png)
+
+**Leyenda:**
+
+![WorkOrder Component Diagram Key](assets/chapter04/DSL/WorkOrder_Components-dark-key.png)
+
+---
+
+##### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+![WorkOrder Domain Class Diagram](assets/chapter04/DSL/WorkOrder_Components-dark.png)
+
+###### 4.2.5.6.2. Bounded Context Database Design Diagram
+
+![WorkOrder Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+
+---
+
+#### 4.2.6. Bounded Context: Analytics
+
+##### 4.2.6.1. Domain Layer
+
+El Domain Layer del bounded context **Analytics** gestiona la recopilación y análisis de datos operativos de los equipos de refrigeración: lecturas de temperatura, consumo energético y promedios diarios de temperatura.
+
+**Aggregate Root:**
+
+- `EquipmentAnalytics` — Entidad raíz asociada a un equipo (`EquipmentId`). Agrupa colecciones de `TemperatureReadings` y `EnergyReadings`. Expone métodos como `RecordTemperature`, `RecordEnergyConsumption`, `GetTemperatureStatus` y `GetEnergyStatus`.
+
+**Entities:**
+
+- `TemperatureReading(Id, EquipmentId, Temperature, Timestamp, Status)` — Lectura de temperatura puntual.
+- `EnergyReading(Id, EquipmentId, Consumption, Unit, Timestamp, Status)` — Lectura de consumo energético.
+- `DailyTemperatureAverage(Id, EquipmentId, Date, AverageTemperature, MinTemperature, MaxTemperature)` — Promedio diario de temperatura calculado.
+
+**Value Objects:**
+
+- `TemperatureRange(Min, Max)` — Rango válido de temperatura con métodos `IsWithinRange` y `IsValid`.
+- `AnalyticsTimeframe(Hours)` — Ventana temporal para consultas analíticas. Máximo 8760h (1 año).
+- `EReadingStatus` — Enum: `Normal`, `Warning`, `Critical`.
+
+**Commands:**
+
+- `RecordTemperatureReadingCommand(EquipmentId, Temperature, Timestamp?)`
+- `RecordEnergyReadingCommand(EquipmentId, Consumption, Unit)`
+
+**Queries:**
+
+- `GetEquipmentAnalyticsQuery(int EquipmentId)`
+- `GetTemperatureReadingsQuery(int EquipmentId, int Hours = 24)`
+- `GetEnergyReadingsQuery(int EquipmentId, int Hours = 24)`
+- `GetDailyTemperatureAveragesQuery(int EquipmentId, int Days = 7)`
+
+**Repositories:**
+
+- `IAnalyticsRepository` — Contrato con operaciones para temperatura, energía y promedios diarios.
+
+---
+
+##### 4.2.6.2. Interface Layer
+
+**Controllers REST:**
+
+- `AnalyticsController` (`/api/v1/analytics/equipments`)
+    - `GET /{equipmentId}/readings?type=all|temperature|energy&hours=24` — Lecturas unificadas.
+    - `GET /{equipmentId}/summaries?type=daily-averages&days=7` — Resúmenes analíticos.
+    - `GET /overview?ids=1,2,3` — Vista general de múltiples equipos.
+
+**Resources:**
+
+- `UnifiedReadingResource(Id, EquipmentId, Type, Value, Unit, Timestamp, Status)`
+- `AnalyticsSummaryResource(Id, EquipmentId, Date, Type, AverageTemperature, Min, Max)`
+- `CreateTemperatureReadingResource`, `CreateEnergyReadingResource`
+
+**Assemblers:**
+
+- `CreateTemperatureReadingCommandFromResourceAssembler`
+- `CreateEnergyReadingCommandFromResourceAssembler`
+- `TemperatureReadingResourceFromEntityAssembler`
+- `EnergyReadingResourceFromEntityAssembler`
+- `DailyTemperatureAverageResourceFromEntityAssembler`
+
+---
+
+##### 4.2.6.3. Application Layer
+
+**Command Services:**
+
+- `AnalyticsCommandService` — Implementa `IAnalyticsCommandService`.
+    - `Handle(RecordTemperatureReadingCommand)`: Valida rango -50°C a 100°C, persiste la lectura.
+    - `Handle(RecordEnergyReadingCommand)`: Valida que el consumo no sea negativo, persiste la lectura.
+
+**Query Services:**
+
+- `AnalyticsQueryService` — Implementa `IAnalyticsQueryService`.
+    - `Handle(GetTemperatureReadingsQuery)`: Lecturas de temperatura por equipo en ventana de horas.
+    - `Handle(GetDailyTemperatureAveragesQuery)`: Promedios diarios por equipo.
+    - `Handle(GetEnergyReadingsQuery)`: Lecturas de energía por equipo.
+
+---
+
+##### 4.2.6.4. Infrastructure Layer
+
+**Persistence (EFC):**
+
+- `AnalyticsRepository` — Implementa `IAnalyticsRepository`.
+- `ModelBuilderExtensions.ApplyAnalyticsConfiguration()` — Configura las tablas:
+    - `temperature_readings` — con índice compuesto `(equipment_id, timestamp)`. FK a `equipments`.
+    - `energy_readings` — con índice compuesto `(equipment_id, timestamp)`. FK a `equipments`.
+    - `daily_temperature_averages` — con índice único `(equipment_id, date)`. FK a `equipments`.
+    - `equipment_analytics` — con índice único por `equipment_id`. FK a `equipments`.
+
+---
+
+##### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Analytics Component Diagram](assets/chapter04/DSL/Analytics_Components-dark.png)
+
+**Leyenda:**
+
+![Analytics Component Diagram Key](assets/chapter04/DSL/Analytics_Components-dark-key.png)
+
+---
+
+##### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+![Analytics Domain Class Diagram](assets/chapter04/DSL/Analytics_Components-dark.png)
+
+###### 4.2.6.6.2. Bounded Context Database Design Diagram
+
+![Analytics Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+
+---
+
+#### 4.2.7. Bounded Context: Subscriptions and Payments
+
+##### 4.2.7.1. Domain Layer
+
+El Domain Layer del bounded context **Subscriptions and Payments** gestiona los planes de suscripción y el procesamiento de pagos de los usuarios de la plataforma, integrándose con Stripe como pasarela de pago externa.
+
+**Aggregates:**
+
+- `Subscription` — Entidad raíz con `Id`, `UserId`, `PlanName`, `BillingCycle`, `Features`, `StartDate`, `EndDate`, `Status`. Permite gestionar el ciclo de vida de la suscripción.
+- `Payment` — Entidad raíz con `Id`, `UserId`, `SubscriptionId`, `StripeSession`, `Amount`, `Status`. Representa una transacción de pago.
+
+**Value Objects:**
+
+- `BillingCycle` — Representa el ciclo de facturación (mensual, anual).
+- `Feature` — Representa una característica incluida en un plan.
+- `Price(Amount, Currency)` — Precio del plan.
+- `PaymentStatus` — Estado del pago (Pending, Completed, Failed, Refunded).
+- `StripeSession(SessionId, SessionUrl)` — Datos de la sesión de pago en Stripe.
+
+**Commands:**
+
+- `CreateSubscriptionCommand`
+- `DeleteSubscriptionCommand`
+- `UpgradePlanCommand`
+- `CreatePaymentSessionCommand`
+- `ProcessPaymentWebhookCommand`
+
+**Queries:**
+
+- `GetSubscriptionByIdQuery(int Id)`
+- `GetPlansQuery`
+
+**Domain Services:**
+
+- `ISubscriptionCommandService`, `ISubscriptionQueryService`
+- `IPaymentCommandService`
+- `IStripeService` — Abstracción de la integración con Stripe.
+
+---
+
+##### 4.2.7.2. Interface Layer
+
+**Controllers REST:**
+
+- `SubscriptionsController` (`/api/v1/subscriptions`)
+    - `POST /` — Crea una nueva suscripción con sesión de pago Stripe.
+    - `GET /{id}` — Retorna suscripción por ID.
+    - `PUT /{id}/upgrade` — Actualiza el plan.
+    - `DELETE /{id}` — Cancela la suscripción.
+
+**Resources:**
+
+- `CreateSubscriptionResource(UserId, PlanName, BillingCycle)`
+- `SubscriptionResource(Id, UserId, PlanName, Status, StartDate, EndDate)`
+
+**Assemblers:**
+
+- `CreateSubscriptionCommandFromResourceAssembler`
+- `SubscriptionResourceFromEntityAssembler`
+- `UpgradeSubscriptionCommandFromResourceAssembler`
+
+---
+
+##### 4.2.7.3. Application Layer
+
+**Command Services:**
+
+- `SubscriptionsCommandServices` — Implementa `ISubscriptionCommandService`.
+    - `Handle(CreateSubscriptionCommand)`: Crea la suscripción y genera la sesión de pago en Stripe.
+    - `Handle(UpgradePlanCommand)`: Actualiza el plan del usuario.
+    - `Handle(DeleteSubscriptionCommand)`: Cancela la suscripción.
+- `PaymentCommandService` — Implementa `IPaymentCommandService`.
+    - `Handle(CreatePaymentSessionCommand)`: Crea sesión de Stripe Checkout.
+    - `Handle(ProcessPaymentWebhookCommand)`: Procesa webhooks de Stripe para confirmar pagos.
+
+**Query Services:**
+
+- `SubscriptionQueryService` — Retorna suscripciones por ID y lista planes disponibles.
+
+---
+
+##### 4.2.7.4. Infrastructure Layer
+
+**Persistence (EFC):**
+
+- `SubscriptionRepository` — Implementa `ISubscriptionRepository`.
+- `PaymentRepository` — Implementa `IPaymentRepository`.
+- `ModelBuilderExtensions.ApplySubscriptionsConfiguration()` — Configura tablas `subscriptions` y `payments`, con value objects `BillingCycle`, `Price`, `StripeSession` mapeados como columnas.
+
+**External Integration:**
+
+- `StripeSettings` — Configuración del API key de Stripe leída desde `appsettings.json`.
+- Implementación de `IStripeService` usando el SDK oficial de Stripe para crear sesiones de Checkout y procesar webhooks.
+
+---
+
+##### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Subscriptions Component Diagram](assets/chapter04/DSL/Subscriptions_Components-dark.png)
+
+**Leyenda:**
+
+![Subscriptions Component Diagram Key](assets/chapter04/DSL/Subscriptions_Components-dark-key.png)
+
+---
+
+##### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
+
+![Subscriptions Domain Class Diagram](assets/chapter04/DSL/Subscriptions_Components-dark.png)
+
+###### 4.2.7.6.2. Bounded Context Database Design Diagram
+
+![Subscriptions Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+
+---
+
+#### 4.2.8. Bounded Context: Technicians
+
+##### 4.2.8.1. Domain Layer
+
+El Domain Layer del bounded context **Technicians** gestiona la información de los técnicos de servicio disponibles en la plataforma. Permite registrar técnicos, consultarlos y calcular métricas de rendimiento como el promedio de calificaciones recibidas.
+
+**Entity Principal:**
+
+- `Technician` — Entidad principal con `Id`, `FirstName`, `LastName`, `Email`, `Phone`, `Specialization`, `IsAvailable` y `AverageRating`. Representa a un técnico de mantenimiento de equipos de refrigeración.
+
+**Domain Events:**
+
+- `TechnicianCreatedEvent` — Evento publicado al crear un nuevo técnico.
+
+**Commands:**
+
+- `CreateTechnicianCommand(FirstName, LastName, Email, Phone, Specialization)`
+
+**Queries:**
+
+- `GetAllTechniciansQuery` — Retorna todos los técnicos.
+- `GetTechnicianByIdQuery(int Id)` — Retorna técnico por ID.
+- `GetTechnicianAverageRatingQuery(int TechnicianId)` — Calcula el promedio de calificaciones del técnico.
+
+**Repositories:**
+
+- `ITechnicianRepository` — Contrato de persistencia con búsqueda por ID y listado.
+
+**Domain Services:**
+
+- `ITechnicianCommandService`
+- `ITechnicianQueryService`
+
+---
+
+##### 4.2.8.2. Interface Layer
+
+**Controllers REST:**
+
+- `TechniciansController` (`/api/v1/technicians`)
+    - `POST /` — Registra un nuevo técnico.
+    - `GET /` — Lista todos los técnicos.
+    - `GET /{id}` — Retorna técnico por ID.
+
+**Resources:**
+
+- `CreateTechnicianResource(FirstName, LastName, Email, Phone, Specialization)`
+- `TechnicianResource(Id, FirstName, LastName, Email, Phone, Specialization, IsAvailable, AverageRating)`
+
+**Assemblers:**
+
+- `CreateTechnicianCommandFromResourceAssembler`
+- `TechnicianResourceFromEntityAssembler`
+
+---
+
+##### 4.2.8.3. Application Layer
+
+**Command Services:**
+
+- `TechnicianCommandService` — Implementa `ITechnicianCommandService`.
+    - `Handle(CreateTechnicianCommand)`: Valida y persiste el nuevo técnico. Publica `TechnicianCreatedEvent`.
+
+**Query Services:**
+
+- `TechnicianQueryService` — Implementa `ITechnicianQueryService`.
+    - `Handle(GetAllTechniciansQuery)`: Retorna lista de todos los técnicos.
+    - `Handle(GetTechnicianByIdQuery)`: Retorna técnico por ID.
+    - `Handle(GetTechnicianAverageRatingQuery)`: Calcula y retorna el promedio de calificaciones.
+
+---
+
+##### 4.2.8.4. Infrastructure Layer
+
+**Persistence (EFC):**
+
+- `TechnicianRepository` — Implementa `ITechnicianRepository` usando EF Core.
+- `ModelBuilderExtensions.ApplyTechniciansConfiguration()` — Configura la tabla `technicians` con columnas de datos personales, especialización, disponibilidad y calificación promedio.
+
+---
+
+##### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Notifications Component Diagram](assets/chapter04/DSL/Notifications_Components-dark.png)
+
+**Leyenda:**
+
+![Notifications Component Diagram Key](assets/chapter04/DSL/Notifications_Components-dark-key.png)
+
+---
+
+##### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams
+
+![Notifications Domain Class Diagram](assets/chapter04/DSL/Notifications_Components-dark.png)
+
+###### 4.2.8.6.2. Bounded Context Database Design Diagram
+
+![Notifications Database Design](assets/chapter04/DSL/Contenedores-dark.png)
 
 ## Capítulo IV: Product Design <a id="c4"></a>
 

@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 488.5
   },
   "right": {
     "id": "33effbd108452e0e",
@@ -183,7 +183,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "8719da2b2d3b2722",
+  "active": "d2a24813d014eb01",
   "lastOpenFiles": [
     "assets/chapter01/Chris.jpeg",
     "assets/chapter04/DSL/WorkOrder_Components-dark.png",
