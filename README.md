@@ -1320,12 +1320,259 @@ Escala de Story Points (Fibonacci):
 #### 4.1.1. Design-Level EventStorming.
 
 ##### 4.1.1.1 Candidate Context Discovery.
+La sesión de Candidate Context Discovery se realizó inmediatamente después del taller de EventStorming, con una duración aproximada de 1 hora 30 minutos. Se utilizó como insumo la línea de tiempo de eventos generada, los clusters de eventos y agregados identificados, y los eventos pivote que marcaban transiciones de estado relevantes en la plataforma OsitoPolar.
+
+Se aplicó la técnica **Start-with-Value**, cuyo principio consiste en priorizar aquellas partes del dominio que representan el mayor valor para el negocio. Esta técnica permitió separar con claridad qué bounded contexts debían considerarse Core, y cuáles como Supporting o Generic.
+
+El proceso se organizó en tres pasos:
+
+**1. Identificación de valor estratégico**
+
+Cada integrante respondió a la pregunta: *¿Qué parte del sistema genera directamente valor para los usuarios y diferencia a OsitoPolar de otras soluciones de gestión de equipos de refrigeración?*
+
+**2. Agrupación de eventos en torno al valor**
+
+Se revisaron los clusters del EventStorming, destacando aquellos que respondían a las necesidades críticas de monitoreo, gestión técnica y trazabilidad de equipos. Los eventos fueron agrupados en bloques temáticos antes de la delimitación formal de los bounded contexts.
+
+**3. Clasificación Core, Supporting, Generic**
+
+Los contexts se categorizaron según su aporte al negocio y nivel de complejidad de su modelo.
+
+**Candidate Contexts identificados:**
+
+| Candidate Context | Eventos Clave Asociados | Clasificación | Descripción | Justificación |
+|---|---|---|---|---|
+| **IAM** | Usuario registrado, Sesión iniciada, Token generado | Generic | Gestión de usuarios, roles y autenticación mediante JWT. | Necesario para operar pero no diferenciador; existen soluciones estándar que podrían cubrirlo. |
+| **Profiles** | Perfil creado, Perfil actualizado | Generic | Datos personales del usuario fuera del contexto de autenticación. | Complementa al IAM pero no representa valor diferenciador del negocio. |
+| **Subscriptions and Payments** | Plan elegido, Suscripción confirmada, Pago procesado, Suscripción cancelada | Supporting | Gestión de planes de suscripción y pagos vía Stripe. | Clave para la sostenibilidad económica del negocio, pero externalizable a través de proveedores estándar. |
+| **Technicians** | Técnico registrado, Técnico asignado, Calificación registrada | Supporting | Administración del catálogo de técnicos de servicio y sus métricas de rendimiento. | Apoya el flujo de atención técnica pero no constituye el núcleo diferenciador de la solución. |
+| **Equipment Management** | Equipo registrado, Ubicación actualizada, Estado de equipo cambiado, Equipo eliminado | Core | Gestión del ciclo de vida completo de equipos de refrigeración y climatización. | Es el núcleo operativo de OsitoPolar; sin la gestión de equipos no existe base para el monitoreo ni para los servicios. |
+| **Service Requests** | Solicitud creada, Técnico asignado, Solicitud resuelta, Feedback agregado | Core | Gestión del flujo de solicitudes de servicio técnico desde su creación hasta la resolución y retroalimentación. | Constituye el mecanismo principal de interacción entre clientes y técnicos; diferencia a OsitoPolar frente a métodos informales. |
+| **Work Orders** | Orden de trabajo creada, Orden asignada, Orden en progreso, Orden resuelta, Feedback del cliente registrado | Core | Gestión de las órdenes de trabajo técnico concretas que ejecutan los técnicos sobre los equipos. | Provee trazabilidad completa del trabajo realizado sobre cada equipo, valor diferenciador frente a la gestión manual. |
+| **Analytics** | Lectura de temperatura registrada, Lectura de energía registrada, Alerta de rango generada, Promedio diario calculado | Core | Recopilación, procesamiento y visualización de lecturas de temperatura y consumo energético de los equipos. | Es el núcleo técnico de OsitoPolar; la detección de anomalías térmicas y el análisis energético constituyen la propuesta de valor principal para el cliente. |
+
+**Clasificación estratégica final:**
+
+- **Core:** Equipment Management, Service Requests, Work Orders, Analytics.
+- **Supporting:** Subscriptions and Payments, Technicians.
+- **Generic:** IAM, Profiles.
+
+Se definieron ocho bounded contexts candidatos, de los cuales 4 son Core, 2 Supporting y 2 Generic. La técnica Start-with-Value permitió asegurar que la atención principal del diseño táctico se concentre en los contextos de Equipment Management, Service Requests, Work Orders y Analytics, dado que allí reside la propuesta de valor diferenciadora de OsitoPolar: la gestión integral de equipos de refrigeración, la trazabilidad del servicio técnico y el análisis del desempeño operativo de los equipos.
+
+---
 
 ##### 4.1.1.2 Domain Message Flows Modeling.
+Para esta sección el objetivo fue visualizar cómo los bounded contexts colaboran (mediante mensajes, eventos y solicitudes sincrónicas) para soportar los casos de uso clave de la plataforma OsitoPolar. Se aplicó Domain Storytelling para describir las interacciones tanto operativas como técnicas en la gestión de equipos de refrigeración.
+
+**Historia A — Cliente registra un equipo y recibe alertas de temperatura**
+
+1. El **Cliente** (negocio de refrigeración) realiza el `SignUp` en el contexto **IAM**, que genera un JWT y emite el evento `UserRegistered`.
+2. **IAM** notifica al contexto **Profiles**, que crea el perfil del usuario mediante `CreateProfileCommand`.
+3. El cliente crea un equipo en **Equipment Management** con `CreateEquipmentCommand`, registrando modelo, marca, ubicación y tipo.
+4. **Equipment Management** persiste el equipo y emite `EquipmentRegistered`.
+5. El sistema IoT o el técnico registra lecturas de temperatura mediante `RecordTemperatureReadingCommand` en el contexto **Analytics**.
+6. **Analytics** evalúa si la lectura supera el `TemperatureRange` configurado y genera el estado `Critical` o `Warning`.
+7. La plataforma muestra en el dashboard del cliente las lecturas y alertas en tiempo real.
+
+**Historia B — Cliente solicita servicio técnico para un equipo**
+
+1. El cliente detecta una anomalía en su equipo y crea una `ServiceRequest` en **Service Requests** con `CreateServiceRequestCommand`, indicando equipo, descripción, prioridad y urgencia.
+2. **Service Requests** registra la solicitud en estado `Pending`.
+3. La empresa de servicios consulta las solicitudes pendientes y asigna un técnico disponible del contexto **Technicians** mediante `AssignTechnicianToServiceRequestCommand`.
+4. **Service Requests** cambia el estado a `Accepted` y notifica al técnico asignado.
+5. Se crea una `WorkOrder` en **Work Orders** con `CreateWorkOrderCommand`, vinculada a la `ServiceRequest` y al equipo correspondiente.
+6. El técnico ejecuta el trabajo, actualiza el estado de la orden a `InProgress` y luego a `Resolved` mediante `AddWorkOrderResolutionDetailsCommand`.
+7. **Work Orders** emite `WorkOrderResolved`, y el cliente puede agregar `CustomerFeedbackRating` (1-5 estrellas).
+8. **Technicians** actualiza el `AverageRating` del técnico con la nueva calificación recibida.
+
+**Historia C — Empresa gestiona suscripción y accede a analítica avanzada**
+
+1. El cliente selecciona un plan en **Subscriptions and Payments** con `CreateSubscriptionCommand`.
+2. **Subscriptions and Payments** genera una sesión de Stripe Checkout y redirige al cliente para el pago.
+3. Stripe procesa el pago y envía el webhook, que es manejado con `ProcessPaymentWebhookCommand`.
+4. La suscripción queda confirmada en estado `Active` y se actualiza el `SubscriptionId` del usuario en **IAM**.
+5. Con el plan activo, el cliente accede a las vistas de **Analytics** para consultar lecturas históricas de temperatura y energía, promedios diarios y el estado general del equipo mediante `GetEquipmentAnalyticsQuery`.
+
+---
+
 
 ##### 4.1.1.3 Bounded Context Canvases.
+A continuación se presentan los Bounded Context Canvases de los ocho contextos identificados para la plataforma OsitoPolar:
+
+---
+
+**IAM (Identity and Access Management)**
+
+Gestiona el registro de usuarios y la autenticación mediante JWT, controlando el acceso basado en roles en toda la plataforma.
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Generic |
+| **Responsabilidad** | Registro (`SignUp`), autenticación (`SignIn`) y autorización de usuarios. |
+| **Aggregate Root** | `User` (Id, Username, PasswordHash, SubscriptionId) |
+| **Comandos clave** | `SignUpCommand`, `SignInCommand` |
+| **Queries clave** | `GetUserByIdQuery`, `GetUserByUsernameQuery` |
+| **Eventos publicados** | `UserRegistered` |
+| **Colaboraciones entrantes** | Ninguna (primer punto de entrada al sistema) |
+| **Colaboraciones salientes** | → Profiles (crea perfil al registrar usuario vía `IamContextFacade`) |
+| **Sistemas externos** | BCrypt (hashing), JWT (tokens) |
+
+---
+
+**Profiles**
+
+Almacena los datos personales de los usuarios (nombre, email, dirección) fuera del contexto de autenticación, accesibles por otros bounded contexts mediante fachada ACL.
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Generic |
+| **Responsabilidad** | Persistencia y consulta de datos de perfil de usuario. |
+| **Aggregate Root** | `Profile` (Id, PersonName, EmailAddress, StreetAddress) |
+| **Comandos clave** | `CreateProfileCommand` |
+| **Queries clave** | `GetProfileByIdQuery`, `GetProfileByEmailQuery` |
+| **Eventos publicados** | Ninguno |
+| **Colaboraciones entrantes** | ← IAM (crea perfil al registrar usuario) |
+| **Colaboraciones salientes** | Expone `IProfilesContextFacade` a otros contextos |
+| **Sistemas externos** | Ninguno |
+
+---
+
+**Equipment Management**
+
+Gestiona el ciclo de vida completo de los equipos de refrigeración y climatización: registro, ubicación, estado operativo y consumo energético.
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Core |
+| **Responsabilidad** | CRUD de equipos y gestión de su estado, ubicación y tipo. |
+| **Aggregate Root** | `Equipment` (Id, EquipmentIdentifier, OwnerId, Status, Type, Location, EnergyConsumption) |
+| **Comandos clave** | `CreateEquipmentCommand`, `UpdateEquipmentLocationCommand`, `UpdateEquipmentPowerStateCommand`, `UpdateEquipmentTemperatureCommand`, `DeleteEquipmentCommand` |
+| **Queries clave** | `GetEquipmentByIdQuery`, `GetEquipmentsByOwnerIdQuery`, `GetEquipmentsByStatusQuery` |
+| **Eventos publicados** | `EquipmentRegistered`, `EquipmentStatusChanged` |
+| **Colaboraciones entrantes** | ← IAM (autenticación de propietario) |
+| **Colaboraciones salientes** | → Analytics (equipos referenciados en lecturas), → Service Requests (equipo vinculado a solicitud), → Work Orders (equipo vinculado a orden) |
+| **Sistemas externos** | Ninguno |
+
+---
+
+**Service Requests**
+
+Gestiona el flujo completo de solicitudes de servicio técnico: desde su creación por el cliente hasta la asignación del técnico, la resolución y la retroalimentación.
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Core |
+| **Responsabilidad** | Ciclo de vida de solicitudes de servicio técnico con reglas de estado estrictas. |
+| **Aggregate Root** | `ServiceRequest` (Id, OrderNumber, Status, Priority, Urgency, ClientId, CompanyId, EquipmentId, AssignedTechnicianId) |
+| **Comandos clave** | `CreateServiceRequestCommand`, `AssignTechnicianToServiceRequestCommand`, `UpdateServiceRequestStatusCommand`, `AddCustomerFeedbackToServiceRequestCommand`, `CancelServiceRequestCommand`, `RejectServiceRequestCommand` |
+| **Queries clave** | `GetServiceRequestByIdQuery`, `GetServiceRequestsByStatusQuery`, `GetServiceRequestsByEquipmentIdQuery` |
+| **Eventos publicados** | `ServiceRequestCreated`, `TechnicianAssigned`, `ServiceRequestResolved` |
+| **Colaboraciones entrantes** | ← Equipment Management (referencia al equipo), ← Technicians (técnico asignado) |
+| **Colaboraciones salientes** | → Work Orders (se genera una Work Order al aceptar la solicitud) |
+| **Sistemas externos** | Ninguno |
+
+---
+
+**Work Orders**
+
+Gestiona las órdenes de trabajo técnico que los técnicos ejecutan sobre los equipos, incluyendo programación, resolución y retroalimentación del cliente.
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Core |
+| **Responsabilidad** | Trazabilidad completa del trabajo técnico realizado: asignación, ejecución, resolución y calificación. |
+| **Aggregate Root** | `WorkOrder` (Id, WorkOrderNumber, ServiceRequestId, Status, AssignedTechnicianId, EquipmentId, Cost, CustomerFeedbackRating) |
+| **Comandos clave** | `CreateWorkOrderCommand`, `AssignTechnicianToWorkOrderCommand`, `UpdateWorkOrderStatusCommand`, `AddWorkOrderResolutionDetailsCommand`, `AddWorkOrderCustomerFeedbackCommand` |
+| **Queries clave** | `GetWorkOrderByIdQuery`, `GetWorkOrdersByTechnicianIdQuery`, `GetWorkOrdersByEquipmentIdQuery` |
+| **Eventos publicados** | `WorkOrderCreated`, `WorkOrderResolved` |
+| **Colaboraciones entrantes** | ← Service Requests (vinculada a una solicitud), ← Technicians (técnico asignado), ← Equipment Management (equipo referenciado) |
+| **Colaboraciones salientes** | → Technicians (actualización del rating del técnico) |
+| **Sistemas externos** | Ninguno |
+
+---
+
+**Analytics**
+
+Recopila, procesa y consulta lecturas de temperatura y consumo energético de los equipos de refrigeración, detectando anomalías y calculando promedios históricos.
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Core |
+| **Responsabilidad** | Ingesta de lecturas IoT, detección de estados anómalos y consultas analíticas históricas. |
+| **Aggregate Root** | `EquipmentAnalytics` (EquipmentId, TemperatureReadings, EnergyReadings) |
+| **Comandos clave** | `RecordTemperatureReadingCommand`, `RecordEnergyReadingCommand` |
+| **Queries clave** | `GetTemperatureReadingsQuery`, `GetEnergyReadingsQuery`, `GetDailyTemperatureAveragesQuery`, `GetEquipmentAnalyticsQuery` |
+| **Eventos publicados** | `AnomalousReadingDetected` |
+| **Colaboraciones entrantes** | ← Equipment Management (referencia de equipos monitoreados) |
+| **Colaboraciones salientes** | Ninguna (solo expone queries) |
+| **Sistemas externos** | Dispositivos IoT / sensores de temperatura y energía |
+
+---
+
+**Subscriptions and Payments**
+
+Gestiona la selección de planes de suscripción y el procesamiento de pagos vía Stripe, controlando el ciclo de vida desde la elección del plan hasta la confirmación de la suscripción activa.
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Supporting |
+| **Responsabilidad** | Alta, renovación y cancelación de suscripciones; integración de pagos con Stripe. |
+| **Aggregates** | `Subscription` (Id, UserId, PlanName, BillingCycle, Status), `Payment` (Id, UserId, SubscriptionId, StripeSession, Amount, Status) |
+| **Comandos clave** | `CreateSubscriptionCommand`, `UpgradePlanCommand`, `DeleteSubscriptionCommand`, `CreatePaymentSessionCommand`, `ProcessPaymentWebhookCommand` |
+| **Queries clave** | `GetSubscriptionByIdQuery`, `GetPlansQuery` |
+| **Eventos publicados** | `SubscriptionConfirmed`, `SubscriptionCancelled` |
+| **Colaboraciones entrantes** | ← IAM (UserId del usuario suscriptor) |
+| **Colaboraciones salientes** | → IAM (actualiza `SubscriptionId` en el usuario) |
+| **Sistemas externos** | Stripe (pagos y webhooks) |
+
+---
+
+**Technicians**
+
+Gestiona el catálogo de técnicos de servicio disponibles en la plataforma, incluyendo sus datos, especialización, disponibilidad y métricas de rendimiento (calificación promedio).
+
+| Elemento | Detalle |
+|---|---|
+| **Clasificación** | Supporting |
+| **Responsabilidad** | Registro, consulta y gestión del rendimiento de técnicos de servicio. |
+| **Entidad Principal** | `Technician` (Id, FirstName, LastName, Email, Phone, Specialization, IsAvailable, AverageRating) |
+| **Comandos clave** | `CreateTechnicianCommand` |
+| **Queries clave** | `GetAllTechniciansQuery`, `GetTechnicianByIdQuery`, `GetTechnicianAverageRatingQuery` |
+| **Eventos publicados** | `TechnicianCreatedEvent` |
+| **Colaboraciones entrantes** | ← Work Orders (retroalimentación del cliente que actualiza el rating) |
+| **Colaboraciones salientes** | → Service Requests (técnico asignado a solicitud), → Work Orders (técnico asignado a orden) |
+| **Sistemas externos** | Ninguno |
+
+---
 
 #### 4.1.2. Context Mapping.
+
+
+El mapa de contextos (Context Map) define las relaciones estratégicas y de integración entre los ocho Bounded Contexts identificados para la plataforma OsitoPolar. Estas relaciones establecen cómo fluyen los datos y qué contexto tiene el control sobre los contratos de integración.
+
+Las relaciones identificadas son las siguientes:
+
+- **IAM → Profiles** [Partnership / ACL]: Al registrar un usuario, IAM invoca la fachada `IProfilesContextFacade` de Profiles para crear el perfil correspondiente. IAM actúa como Upstream (U) y Profiles como Downstream (D). Profiles implementa un ACL para traducir el modelo de IAM al suyo propio.
+
+- **IAM ← Subscriptions and Payments** [Customer/Supplier]: Subscriptions and Payments actualiza el `SubscriptionId` del usuario en IAM al confirmar una suscripción activa. Subscriptions and Payments es Upstream (U), IAM es Downstream (D).
+
+- **Equipment Management → Analytics** [Customer/Supplier]: Analytics consume el `EquipmentId` de Equipment Management como clave de referencia para asociar lecturas a equipos. Equipment Management es Upstream (U), Analytics es Downstream (D).
+
+- **Equipment Management → Service Requests** [Customer/Supplier]: Service Requests referencia el `EquipmentId` de Equipment Management al crear solicitudes de servicio. Equipment Management es Upstream (U), Service Requests es Downstream (D).
+
+- **Equipment Management → Work Orders** [Customer/Supplier]: Work Orders referencia el `EquipmentId` de Equipment Management. Equipment Management es Upstream (U), Work Orders es Downstream (D).
+
+- **Technicians → Service Requests** [Customer/Supplier]: Service Requests consume el `TechnicianId` de Technicians al asignar un técnico a una solicitud. Technicians es Upstream (U), Service Requests es Downstream (D).
+
+- **Technicians → Work Orders** [Customer/Supplier]: Work Orders consume el `TechnicianId` de Technicians al asignar un técnico a una orden. Technicians es Upstream (U), Work Orders es Downstream (D).
+
+- **Service Requests → Work Orders** [Partnership]: Al aceptar una solicitud de servicio, se genera automáticamente una Work Order vinculada. Service Requests es Upstream (U), Work Orders es Downstream (D).
+
+- **Work Orders → Technicians** [Customer/Supplier]: Work Orders notifica al contexto Technicians cuando se registra la calificación de un cliente, para actualizar el `AverageRating` del técnico. Work Orders es Upstream (U), Technicians es Downstream (D).
+
+A continuación se presenta el diagrama del Context Mapping utilizando notación estándar de Domain-Driven Design (DDD):
+
+
 
 #### 4.1.3. Software Architecture.
 
