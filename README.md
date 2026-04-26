@@ -14,7 +14,6 @@
 <br>
   <h2>Integrantes</h2>
 <ul style="list-style: none;">
-  <li><h3>########## ###########, ##########</h3></li>
   <li><h3> u20231c069 Mora Blas, Diego Alonzo</h3></li>
   <li><h3>U202223990 Cacho Seminario, Diego Alonso</h3></li>
   <li><h3>U20231C996 Hernandez Poma, Sebastian Eduardo</h3></li>
@@ -2549,10 +2548,10 @@ El Domain Layer del bounded context **Technicians** gestiona la información d
 
 ![Notifications Database Design](assets/chapter04/DSL/Contenedores-dark.png)
 
-## Capítulo IV: Product Design <a id="c4"></a>
+## Capítulo V: Product Design <a id="c4"></a>
 
-### 4.1. Style Guidelines
-#### 4.1.1. General Style Guidelines
+### 5.1. Style Guidelines
+#### 5.1.1. General Style Guidelines
 
 Se busca que el tono sea equilibrado, entre lo profesional y lo accesible, con un lenguaje claro, empático y respetuoso para atraer usuarios potenciales y mantener a nuestros usuarios.
 Se eligió una paleta de colores fría pero amigable, y una tipografía moderna que combine profesionalismo y accesibilidad.
@@ -2612,7 +2611,7 @@ Se eligieron variantes de color verde, rojo, azul y amarillo para ciertos fondos
 Se establecerá un espaciado de 8 px y un margen mínimo de 16 px. Para el diseño modular, se implementarán grids flexibles que se adaptarán tanto a web como a dispositivos móviles, utilizando configuraciones de 12 y 4 columnas respectivamente.
 
 
-#### 4.1.2. Web Style Guidelines
+#### 5.1.2. Web Style Guidelines
 
 En esta sección definimos los estándares visuales y de interacción para la versión web de OsitoPolar, asegurando una experiencia de usuario coherente, profesional y accesible en todos los dispositivos.
 Es necesario que las interfaces web sean responsivas porque nos trae muchas ventajas tanto para el usuario como para el equipo desarrollador, entre las cuales tenemos: usabilidad en cualquier dispositivo, mejor eficiencia de costos y tiempo en el desarrollo y satisfacción del usuario.
@@ -2662,9 +2661,9 @@ De la misma forma se opta por una paleta de rojo claro para diferenciar ventanas
 </figure>
 
 
-### 4.2. Information Architecture
+### 5.2. Information Architecture
 
-#### 4.2.1. Organization Systems
+#### 5.2.1. Organization Systems
 
 En esta sección, hemos implementado diferentes sistemas de organización basados en los grupos de información relevantes. La disposición visual del contenido se ha realizado de las siguientes maneras:
 
@@ -2674,7 +2673,7 @@ En esta sección, hemos implementado diferentes sistemas de organización basado
 
 - **Organización matricial**: Aplicada en áreas donde es necesario comparar o analizar datos relacionados, proporcionando al usuario una visión clara y estructurada de las opciones disponibles.
 
-#### 4.2.2. Labeling Systems
+#### 5.2.2. Labeling Systems
 
 En nuestra empresa, aplicamos estos sistemas de organización visual de la siguiente manera:
 
@@ -2684,7 +2683,7 @@ Organización Secuencial: El proceso de agendar mantenimiento o visitas técnica
 
 Organización Matricial: Usamos tablas comparativas para mostrar claramente las diferencias entre planes de suscripción y servicios, facilitando la elección del usuario.
 
-#### 4.2.3. SEO Tags and Meta Tags
+#### 5.2.3. SEO Tags and Meta Tags
 
 **Landing Page**
 -Title: OsitoPolar - Monitorea y Gestiona tus Equipos de Congelación en Tiempo Real
@@ -2698,7 +2697,7 @@ Organización Matricial: Usamos tablas comparativas para mostrar claramente las 
 -Meta Keywords: gestión de equipos de frío, monitoreo en tiempo real, mantenimiento predictivo, OsitoPolar, alerta de fallas, reporte de eficiencia
 -Meta Author: OsitoPolar
 
-#### 4.2.4. Searching Systems
+#### 5.2.4. Searching Systems
 
 Estas decisiones están orientadas a facilitar la navegación eficiente, evitando que los usuarios se sientan abrumados por grandes volúmenes de datos y asegurando que encuentren rápidamente lo que necesitan.
 
@@ -2742,7 +2741,7 @@ Los resultados pueden ordenarse por criterios como relevancia, estado del equipo
 **Revisiones y Comentarios**  
 Los usuarios pueden ver un resumen de las revisiones y comentarios de los técnicos o clientes anteriores sobre el equipo o servicio, lo que les ayuda a evaluar la calidad del servicio y tomar decisiones informadas.
 
-#### 4.2.5. Navigation Systems
+#### 5.2.5. Navigation Systems
 
 La estructura de navegación y las opciones disponibles en **OsitoPolar** están diseñadas para ofrecer una experiencia de usuario fluida y eficiente. A continuación, se resumen las secciones y elementos clave:
 
@@ -2766,8 +2765,8 @@ La estructura de navegación y las opciones disponibles en **OsitoPolar** están
 4. **Branding y Identidad**
     - **OsitoPolar**: Logo y nombre de la marca, repetidos en varias secciones para mantener la identidad visual de la plataforma.
 
-### 4.3. Landing Page UI Design
-#### 4.3.1. Landing Page Wireframe
+### 5.3. Landing Page UI Design
+#### 5.3.1. Landing Page Wireframe
 
 El wireframe de la página de inicio de OsitoPolar organiza los elementos clave para ofrecer una navegación intuitiva. Incluye un encabezado con el logo y un menú de navegación, seguido de una propuesta de valor clara con botones de acción destacados como "Solicitar Demo" y "¿Cómo Funciona?". La página cuenta con secciones para describir a los usuarios objetivo, las funcionalidades clave del sistema, y los beneficios que ofrece OsitoPolar. Al final, se encuentra un formulario de contacto para que los usuarios soliciten una demo, junto con enlaces legales en el pie de página.
 
@@ -2781,7 +2780,7 @@ El wireframe de la página de inicio de OsitoPolar organiza los elementos clave 
 </figure>
 
 
-#### 4.3.2. Landing Page Mockup
+#### 5.3.2. Landing Page Mockup
 
 El Landing Page Mock-up de OsitoPolar muestra un diseño limpio y organizado, con una estructura intuitiva que guía a los usuarios a través de la plataforma. Incluye una propuesta de valor destacada en la parte superior, seguida de secciones clave como las funcionalidades del sistema, los beneficios para empresas y proveedores, y una explicación clara de cómo funciona el servicio. También cuenta con testimonios de clientes, detalles sobre la empresa y un formulario para solicitar una demo, todo con un enfoque en facilitar la conversión de visitantes a usuarios activos.
 
@@ -2913,9 +2912,9 @@ El Landing Page Mock-up de OsitoPolar muestra un diseño limpio y organizado, co
 
 
 
-## 4.4. Web Applications UX/UI Design
+## 5.4. Web Applications UX/UI Design
 
-#### 4.4.1. Web Applications Wireframes
+#### 5.4.1. Web Applications Wireframes
 
 Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y organización de las pantallas principales, especificando la ubicación de los elementos de la interfaz de usuario y la navegación. Estos esquemas visuales sirven como una guía precisa para el diseño final, asegurando una experiencia de usuario fluida e intuitiva. Los wireframes están enfocados en la funcionalidad y facilidad de uso, permitiendo que diseñadores y desarrolladores visualicen cómo los usuarios interactúan con la aplicación, optimizando la disposición de los elementos para crear una experiencia eficiente y atractiva.
 
@@ -3146,7 +3145,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
 </figure>
 
 
-#### 4.4.2. Web Applications Wireflow Diagrams
+#### 5.4.2. Web Applications Wireflow Diagrams
 En esta sección se presentan los Wireflows para cada objetivo del usuario, teniendo en cuenta los User Personas relevantes. Cada diagrama ilustra el flujo de interacción del usuario y cómo las acciones realizadas afectan las pantallas dentro de la aplicación.
 
 
@@ -3275,7 +3274,7 @@ Como proveedor de equipos de refrigeración quiero estar pendiente de los ordene
 </figure>
 
 
-#### 4.4.3. Web Applications Mock-ups
+#### 5.4.3. Web Applications Mock-ups
 En esta sección se presentan y detallan los mock-ups de las aplicaciones de OsitoPolar. Se resalta la aplicación de los principios de diseño, la arquitectura de la información, el diseño inclusivo y el Design System implementado en los productos digitales. Cada mock-up muestra cómo estos conceptos se integran en la interfaz de usuario. A continuación, se mostrarán las maquetas de la aplicación web, que representan visualmente cómo se verá y funcionará la plataforma OsitoPolar. Estas maquetas son fundamentales para comunicar el diseño a los desarrolladores y clientes, asegurando que la experiencia del usuario se alinee con la visión del proyecto.
 
 <figure style="page-break-inside: avoid; text-align: center;">
@@ -3509,7 +3508,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
 
 Link de los mockups: https://shorturl.at/jMDBY
 
-#### 4.4.4. Web Applications User Flow Diagrams
+#### 5.4.4. Web Applications User Flow Diagrams
 ### User Goal 1: 
 - Como dueño de un negocio que utiliza equipos de refrigeración quiero estar pendiente del estado de cada equipo registrado.
 ![userflow1.png]( assets/chapter04/userflows/userflow1.png)
@@ -3524,28 +3523,28 @@ Link de los mockups: https://shorturl.at/jMDBY
 
 
 
-### 4.5. Web Applications Prototyping
+### 5.5. Web Applications Prototyping
 A continuación se presenta el prototipo de la aplicación web de OsitoPolar, el cual permite a los usuarios interactuar con la interfaz y explorar las diversas secciones de la plataforma. Este prototipo incluye las funcionalidades clave y características de la aplicación, proporcionando una vista preliminar de la experiencia del usuario. Además, facilita la evaluación y prueba de la interfaz antes de su implementación final, asegurando que el diseño sea intuitivo y eficiente.
 Link del prototipo: https://shorturl.at/oIUJN
 
-### 4.6 Domain Driven Software Architecture
+### 5.6 Domain Driven Software Architecture
 En esta sección se presenta la arquitectura de software basada en el dominio para OsitoPolar. Se detallan los diferentes diagramas que ilustran la estructura y organización del sistema, así como los componentes clave que lo integran, mostrando cómo se interconectan para proporcionar una solución eficiente y escalable.
 
-#### 4.6.1. Software Architecture Context Diagram
+#### 5.6.1. Software Architecture Context Diagram
 Este diagrama muestra cómo interactúan los usuarios (Clientes y Empresas Proveedoras) con OsitoPolar. Los usuarios usan la plataforma para gestionar y monitorear equipos de refrigeración. Además, OsitoPolar se conecta con los servicios de correo para enviar notificaciones y con el servicio de pago para procesar transacciones.
 
 ![System Context Diagram](assets/chapter04/DSL/Contexto-dark.png)
 *Leyenda:*
 ![Key](assets/chapter04/DSL/Contexto-dark-key.png)
 
-#### 4.6.2. Software Architecture Container Diagrams
+#### 5.6.2. Software Architecture Container Diagrams
 Este diagrama ilustra los diferentes contenedores dentro de OsitoPolar y cómo interactúan entre sí. Los contenedores representan las diferentes capas y servicios que componen la plataforma, como la interfaz de usuario (webapp), la API y la base de datos.
 
 ![Container Diagram](assets/chapter04/DSL/Contenedores-dark.png)
 *Leyenda:*
 ![Key](assets/chapter04/DSL/Contenedores-dark-key.png)
 
-#### 4.6.3. Software Architecture Components Diagrams
+#### 5.6.3. Software Architecture Components Diagrams
 
 **IAM Bounded Context**
 
@@ -3627,16 +3626,16 @@ Este diagrama ilustra los componentes encargados del procesamiento y visualizaci
 *Leyenda:*
 ![Key](assets/chapter04/DSL/Analytics_Components-dark-key.png)
 
-### 4.7. Software Object-Oriented Design
+### 5.7. Software Object-Oriented Design
 En esta sección se presenta el diseño de software orientado a objetos para OsitoPolar. Se incluyen diagramas de clases y un diccionario de clases que detallan la estructura y los atributos de las principales entidades del sistema, ofreciendo una visión clara de cómo se organizan y gestionan los componentes clave dentro de la plataforma.
 
-#### 4.7.1. Class Diagrams
+#### 5.7.1. Class Diagrams
 
 El diagrama de clases proporciona una representación visual de las clases del sistema, sus atributos y las relaciones entre ellas.
 
 ![Class-UML.png]( assets/chapter04/Class-UML.png)
 
-#### 4.7.2. Class Dictionary
+#### 5.7.2. Class Dictionary
 
 ## Clase: Solicitud
 | Nº | Nombre de atributo | Descripción                                              | Tipo de dato      |
@@ -3704,22 +3703,22 @@ El diagrama de clases proporciona una representación visual de las clases del s
 | 4  | name_cliente       | Almacena el nombre del cliente destinatario.                 | Cliente      |
 | 5  | status             | Indica si la notificación ha sido leída o procesada.         | bool         |
 
-### 4.8. Database Design
+### 5.8. Database Design
 
 Esta sección presenta la estructura lógica del sistema desde el punto de vista de almacenamiento y organización de los datos. Se describen las entidades principales del sistema, sus atributos, tipos de datos y relaciones entre ellas. El modelo de base de datos ha sido diseñado para garantizar integridad, consistencia y eficiencia en el acceso a la información.
 
 
 
-#### 4.8.1. Database Diagram
+#### 5.8.1. Database Diagram
 
 El diagrama de base de datos ilustra gráficamente cómo se relacionan las tablas dentro del sistema, incluyendo sus claves primarias, claves foráneas y los tipos de relaciones existentes (uno a uno, uno a muchos o muchos a muchos).
 
 ![diagram-class.png]( assets/chapter04/diagram-class.png)
 
-## Capítulo V: Product Implementation, Validation & Deployment <a id="c5"></a>
+## Capítulo VI: Product Implementation, Validation & Deployment <a id="c5"></a>
 
-### 5.1. Software Configuration Management
-#### 5.1.1. Software Development Environment Configuration
+### 6.1. Software Configuration Management
+#### 6.1.1. Software Development Environment Configuration
 
 ### Project Management
 
@@ -3785,7 +3784,7 @@ Para el despliegue de la Landing Page se utilizó GitHub Pages, una herramienta 
 
 
 
-#### 5.1.2. Source Code Management
+#### 6.1.2. Source Code Management
 
 Modelo de ramas Git Flow: main: rama principal donde siempre está el código estable y listo para producción. develop: rama de desarrollo donde se integran todas las nuevas funcionalidades antes de pasar a producción. feature/: ramas para trabajar nuevas funcionalidades. release/: ramas temporales para preparar una nueva versión estable. hotfix/: ramas para corregir errores en producción.
 
@@ -3825,7 +3824,7 @@ El flujo de trabajo se basará en un modelo de ramas Git Flow, el cuál se basa 
 
 3. **Feature branch (Ramas de funcionalidad):** Cada nueva funcionalidad o tarea específica se desarrollará en su propia rama. Una vez completada y probada, se integrará en la rama de desarrollo. Las ramas de funcionalidad seguirán un esquema de nombres descriptivos, como por ejemplo: `feature/chapter-01`.
 
-#### 5.1.3. Source Code Style Guide & Conventions
+#### 6.1.3. Source Code Style Guide & Conventions
 
 El equipo adoptará nomenclatura en inglés para todas las variables, funciones, clases y archivos del proyecto, con el objetivo de mantener flexibilidad, escalabilidad y coherencia en el desarrollo. HTML / CSS Se sigue el Google HTML/CSS Style Guide.
 
@@ -3862,7 +3861,7 @@ Se usó diferentes etiquetas para conformar la estructura del Landing Page del p
 - h1 - h4: Definen los diferentes títulos y subtítulos de la página siendo h1 el mayor nivel y h4 el más bajo.
 
 
-#### 5.1.4. Software Deployment Configuration
+#### 6.1.4. Software Deployment Configuration
 
 
 ### Landing page deployment:
@@ -3883,7 +3882,7 @@ Adicionalmente, se implementó un archivo "languages.js" que contiene los textos
 La URL que nos entrega Github Pages para acceder a la landing page es la siguiente: https://inteligencia-artesanal-aplicaciones-web.github.io/Landing-Page/
 
 
-### 5.2. Landing Page, Services & Applications Implementation.
+### 6.2. Landing Page, Services & Applications Implementation.
 
 ![Landing-Page.png]( assets/chapter-05/Landing-Page.png)
 
@@ -3892,8 +3891,8 @@ En el siguiente enlace se estará mostrando la landing page de la startup:
 
 En la sección siguiente se detallará el proceso de implementación, documentación y despliegue del Landing.
 
-#### 5.2.1. Sprint 1
-##### 5.2.1.1. Sprint Planning 1
+#### 6.2.1. Sprint 1
+##### 6.2.1.1. Sprint Planning 1
 <table>
 <tr>
     <th colspan="5">Sprint 1</th>
@@ -3947,7 +3946,7 @@ En la sección siguiente se detallará el proceso de implementación, documentac
 </table>
 
 
-##### 5.2.1.2. Aspect Leaders and Collaborators
+##### 6.2.1.2. Aspect Leaders and Collaborators
 
 Durante este primer Sprint, el equipo se enfocó principalmente en el desarrollo, la mejora estructural y visual de la Landing Page de OsitoPolar, asegurando su visualización en distintos dispositivos (diseño responsive), la integración armoniosa de imágenes y textos, y la implementación de un cambio de idioma dinámico mediante un botón.
 Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha elaborado la matriz de Liderazgo y Colaboración (LACX). Esta matriz asigna responsabilidades específicas a cada miembro del equipo en relación con los aspectos clave del Sprint.
@@ -3998,7 +3997,7 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
 </table>
 
 
-##### 5.2.1.3. Sprint Backlog 1
+##### 6.2.1.3. Sprint Backlog 1
 
 El objetivo principal de este Sprint es elaborar la Landing Page de nuestra plataforma OsitoPolar. Para ello, dividimos el desarrollo de esta según las User Stories pertenecientes a la Epic enfocada en Landing Page. La plataforma elegida para ser la herramienta de control de tareas fue Trello, el cuál se presenta una captura de pantalla de nuestro tablero y su enlace público.
 
@@ -4199,7 +4198,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
 
 </table>
 
-##### 5.2.1.4. Development Evidence for Sprint Review
+##### 6.2.1.4. Development Evidence for Sprint Review
 
 En este primer Sprint hemos realizado la implementación de nuestra Landing Page, donde todo el equipo ha aportado en varias tareas. En la siguiente tabla se muestran los commits realizados.
 
@@ -4312,7 +4311,7 @@ En este primer Sprint hemos realizado la implementación de nuestra Landing Page
 
 </table>
 
-##### 5.2.1.5. Execution Evidence for Sprint Review
+##### 6.2.1.5. Execution Evidence for Sprint Review
 
 Como equipo, lo que logramos en este primer Sprint fue la exitosa implementación de nuestra Landing Page y su posterior despliegue gracias a la herramienta GitHub Pages. A continuación, presentaremos lo logrado a través de imágenes mostrando las principales vistas.
 
@@ -4343,11 +4342,11 @@ Como equipo, lo que logramos en este primer Sprint fue la exitosa implementació
 - Para más detalles, visualizar el video: [Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223286_upc_edu_pe/EWpS23aHI95KiF5rJXhOyHgBoHAL62jYwnz8m4zMqxkGwA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bwYjby)
 
 
-##### 5.2.1.6. Services Documentation Evidence for Sprint Review
+##### 6.2.1.6. Services Documentation Evidence for Sprint Review
 
 Durante este Sprint solo se realizó la Landing Page, no se han documentado nuevos Endpoints relacionados con el alcance definido, por lo tanto, no se dispone de documentación generada en OpenAPI para esta entrega.
 
-##### 5.2.1.7. Software Deployment Evidence for Sprint Review
+##### 6.2.1.7. Software Deployment Evidence for Sprint Review
 
 Durante el presente Sprint, se llevó a cabo el despliegue de la Landing Page del proyecto utilizando GitHub Pages como proveedor de hosting. Esta actividad forma parte del proceso de Deployment, siendo un primer paso en la publicación de productos desarrollados en este Sprint.
 
@@ -4383,7 +4382,7 @@ Durante el presente Sprint, se llevó a cabo el despliegue de la Landing Page de
 7. Podemos visualizar el resultado.
    ![Deployment-step7.png]( assets/chapter-05/Deployment-step7.png)
 
-##### 5.2.1.8. Team Collaboration Insights during Sprint
+##### 6.2.1.8. Team Collaboration Insights during Sprint
 
 Durante este Sprint, el equipo ha colaborado activamente en el desarrollo de la Landing Page. Las actividades fueron gestionadas a través de GitHub, permitiendo una trazabilidad clara de los aportes de cada miembro del equipo. Se realizaron tareas de codificación, revisión, organización del repositorio y mejoras visuales y funcionales del producto.
 Cada miembro del equipo tuvo participación activa, realizando commits, revisando código, y apoyando en la estructura y documentación del proyecto.
@@ -4397,8 +4396,8 @@ Contributors:
 ![Contributors-LandingPage.png]( assets/chapter-05/Contributors-LandingPage.png)
 
 
-#### 5.2.2. Sprint 2
-##### 5.2.2.1. Sprint Planning 2
+#### 6.2.2. Sprint 2
+##### 6.2.2.1. Sprint Planning 2
 <table>
 <tr>
     <th colspan="5">Sprint 2</th>
@@ -4454,7 +4453,7 @@ Esto se confirmará cuando la landing page refleje los ajustes de diseño, la na
 </table>
 
 
-##### 5.2.2.2. Aspect Leaders and Collaborators
+##### 6.2.2.2. Aspect Leaders and Collaborators
 
 Durante este segundo Sprint, el equipo se enfocó en la corrección de la Landing Page y en el desarrollo del Single Page Aplication (Frontend) de OsitoPolar.
 Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha elaborado la matriz de Liderazgo y Colaboración (LACX). Esta matriz asigna responsabilidades específicas a cada miembro del equipo en relación con los aspectos clave del Sprint.
@@ -4510,7 +4509,7 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
   </tr>
 </table>
 
-##### 5.2.2.3. Sprint Backlog 2
+##### 6.2.2.3. Sprint Backlog 2
 
 El objetivo principal de este Sprint es elaborar la Single Page Aplication (frontend) de nuestra plataforma OsitoPolar. Para ello, dividimos el desarrollo de esta según las User Stories pertenecientes a la Epic y prioridad enfocada a los usuarios. La plataforma elegida para ser la herramienta de control de tareas fue Trello.
 
@@ -4650,13 +4649,13 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
 
 Link Trello Sprint Backlog #2: https://shorturl.at/VgV08
 
-##### 5.2.2.4. Development Evidence for Sprint Review
+##### 6.2.2.4. Development Evidence for Sprint Review
 
 En este segundo Sprint hemos realizado la implementación de nuestra Single Page Aplication. En la siguiente tabla se muestran los commits realizados.
 
 
 
-##### 5.2.2.5. Execution Evidence for Sprint Review
+##### 6.2.2.5. Execution Evidence for Sprint Review
 
 En este segundo Sprint realizamos mejoras y correcciones de idioma en la Landing Page y la implementación de nuestro Frontend.
 
@@ -4698,11 +4697,11 @@ En este segundo Sprint realizamos mejoras y correcciones de idioma en la Landing
 - Por último, la sección por defecto que muestra el mensaje que nos indica que la página no ha sido encontrada.
 ![SPA-Evidence6-S2.png]( assets/chapter-05/sprint-2/SPA-Evidence6-S2.png)
 
-##### 5.2.2.6. Services Documentation Evidence for Sprint Review
+##### 6.2.2.6. Services Documentation Evidence for Sprint Review
 
 No se emplearon servicios adicionales, ya que este segundo sprint se centró exclusivamente en la implementación de la primera versión del web application.
 
-##### 5.2.2.7. Software Deployment Evidence for Sprint Review
+##### 6.2.2.7. Software Deployment Evidence for Sprint Review
 
 Durante este Sprint hemos desplegado el frontend.
 
@@ -4737,7 +4736,7 @@ Durante este Sprint hemos desplegado el frontend.
 
 ![deploymentfinalS2.png]( assets/chapter-05/sprint-2/deploymentfinalS2.png)
 
-##### 5.2.2.8. Team Collaboration Insights during Sprint
+##### 6.2.2.8. Team Collaboration Insights during Sprint
 
 Durante este Sprint, el equipo ha colaborado en el desarrollo del frontend y correcciones de diseño e idioma. Los miembros del equipo revisaban y señalaban ciertos errores a quién se encargaba de los commits. Por falta de tiempo y experiencia en el equipo no se pudo realizar una colaboración perfecta. Las actividades fueron gestionadas a través de GitHub, permitiendo una trazabilidad clara de los aportes de cada miembro del equipo. Se realizaron tareas de codificación, revisión, organización del repositorio y mejoras visuales y funcionales del producto.
 
@@ -4753,11 +4752,11 @@ Durante este Sprint, el equipo ha colaborado en el desarrollo del frontend y cor
 
 
 
-### 5.2.3. Sprint 3
+### 6.2.3. Sprint 3
 
 En esta sección se presenta el reporte del sprint 3, el cual se enfocó en el desarrollo del Backend, la implementación de nuevas funcionalidades y mejoras en la experiencia de usuario de la web application.
 
-### 5.2.3.1. Sprint Planning 3
+### 6.2.3.1. Sprint Planning 3
 
 <table>
 <tr>
@@ -4811,7 +4810,7 @@ En esta sección se presenta el reporte del sprint 3, el cual se enfocó en el d
 </tr>
 </table>
 
-##### 5.2.3.2. Aspect Leaders and Collaborators
+##### 6.2.3.2. Aspect Leaders and Collaborators
 
 Durante este tercer Sprint, el equipo se enfocó principalmente en el desarrollo, la mejora estructural y visual del frontend y en más del 50% de los endpoints asociados al alcance de nuestro proyecto en el backend asegurando la integración entre ellas.
 Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha elaborado la matriz de Liderazgo y Colaboración (LACX). Esta matriz asigna responsabilidades específicas a cada miembro del equipo en relación con los aspectos clave del Sprint.
@@ -4873,7 +4872,7 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
   </tr>
 </table>
 
-##### 5.2.3.3. Sprint Backlog 3.
+##### 6.2.3.3. Sprint Backlog 3.
 Nuestro enfoque principal para este Sprint ha sido el desarrollo del frontend y backend de la plataforma OsitoPolar. Hemos estructurado nuestras tareas siguiendo las User Stories y Technical Stories que hemos detallado, asegurando un progreso claro y alineado con los objetivos de negocio y la arquitectura técnica.
 
 Para la gestión y el control de estas tareas, estamos utilizando Trello.
@@ -5462,7 +5461,7 @@ Enlace: https://trello.com/b/mGIGAFIk/sprint-backlog-3
 </tr>
 </table>
 
-##### 5.2.3.4. Development Evidence for Sprint Review.
+##### 6.2.3.4. Development Evidence for Sprint Review.
 
 En esta sección se presentan los commits realizados en el repositorio de backend y frontend durante el sprint 3.
 
@@ -5707,7 +5706,7 @@ A continuación se presenta un registro detallado de los commits realizados en e
 
 
 
-##### 5.2.3.5. Execution Evidence for Sprint Review.
+##### 6.2.3.5. Execution Evidence for Sprint Review.
 
 En esta sección se presentan las evidencias de la ejecución de la aplicación para el sprint 3.
 En esta sección, presentamos una recopilación visual y detallada de los avances logrados durante el sprint.
@@ -5728,7 +5727,7 @@ En esta sección, presentamos una recopilación visual y detallada de los avance
 ![front14.png](assets/chapter-05/TB2/front14.png)
 
 
-##### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+##### 6.2.3.6. Services Documentation Evidence for Sprint Review.
 
 Durante este sprint se logró documentar un total de 25 endpoints correspondientes a 6 controladores principales de la API. La documentación fue realizada utilizando Swagger, una herramienta que facilita la exploración, prueba y validación de servicios REST. Esta interfaz está disponible accediendo a la siguiente URL configurada en el servidor (https://ositopolar-platform.onrender.com/index.html).
 
@@ -5905,7 +5904,7 @@ Durante este sprint se logró documentar un total de 25 endpoints correspondient
 ![A3.png](assets/chapter-05/TB2/fixServices/A3.png)
 
 
-##### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+##### 6.2.3.7. Software Deployment Evidence for Sprint Review.
 Despliegue de la base de datos en FreeSqlDatabase
 
 ![sql1.png](assets/chapter-05/TB2/sql1.png)
@@ -5917,7 +5916,7 @@ Despligue de Backend en Render:
 ![s1l2.png](assets/chapter-05/TB2/render2.png)
 ![s1l2.png](assets/chapter-05/TB2/render3.png)
 
-##### 5.2.3.8. Team Collaboration Insights during Sprint.
+##### 6.2.3.8. Team Collaboration Insights during Sprint.
 
 **Frontend**
 ![Insights Frontend.png](assets/chapter-05/TB2/Insights%20Frontend.png)
@@ -5925,11 +5924,11 @@ Despligue de Backend en Render:
 **Backend**
 ![Insights Backend.png](assets/chapter-05/TB2/Insights%20Backend.png)
 
-### 5.2.4. Sprint 4
+### 6.2.4. Sprint 4
 
 En esta sección se presenta el reporte del sprint 4, el cual se enfocó en la culminación del desarrollo de la plataforma, implementando nuevas funcionalidades y mejoras en la experiencia de usuario.
 
-### 5.2.4.1. Sprint Planning 4
+### 6.2.4.1. Sprint Planning 4
 **(POR TERMINAR)**
 <table>
 <tr>
@@ -5983,7 +5982,7 @@ En esta sección se presenta el reporte del sprint 4, el cual se enfocó en la c
 </tr>
 </table>
 
-##### 5.2.4.2. Aspect Leaders and Collaborators
+##### 6.2.4.2. Aspect Leaders and Collaborators
 
 Durante este cuarto Sprint, el equipo se enfocó ...
 Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha elaborado la matriz de Liderazgo y Colaboración (LACX). Esta matriz asigna responsabilidades específicas a cada miembro del equipo en relación con los aspectos clave del Sprint.
@@ -6045,7 +6044,7 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
   </tr>
 </table>
 
-##### 5.2.4.3. Sprint Backlog 4.
+##### 6.2.4.3. Sprint Backlog 4.
 Nuestro enfoque principal para este Sprint ha sido el desarrollo del frontend y backend de la plataforma OsitoPolar. Hemos estructurado nuestras tareas siguiendo las User Stories y Technical Stories que hemos detallado, asegurando un progreso claro y alineado con los objetivos de negocio y la arquitectura técnica.
 
 Para la gestión y el control de estas tareas, estamos utilizando Trello.
@@ -6053,7 +6052,7 @@ Para la gestión y el control de estas tareas, estamos utilizando Trello.
 Enlace: 
 **(POR TERMINAR)**
 
-##### 5.2.4.4. Development Evidence for Sprint Review.
+##### 6.2.4.4. Development Evidence for Sprint Review.
 
 En esta sección se presentan los commits realizados en el repositorio de backend y frontend durante el sprint 4.
 
@@ -6217,13 +6216,13 @@ A continuación se presenta un registro detallado de los commits realizados en e
 | OsitoPolar-Backend | develop  | c50e588   | feat(EquipmentManagement): add IEquipmentCommandService and IEquipmentRepository for command and data access operations | feat(EquipmentManagement): add IEquipmentCommandService and IEquipmentRepository for command and data access operations | Jun 18, 2025        |
 | OsitoPolar-Backend | develop  | b37c3ca   | feat(EquipmentManagement): add IEquipmentQueryService and Location entity for equipment management | feat(EquipmentManagement): add IEquipmentQueryService and Location entity for equipment management | Jun 18, 2025        |
 
-##### 5.2.4.5. Execution Evidence for Sprint Review.
+##### 6.2.4.5. Execution Evidence for Sprint Review.
 
 En esta sección se presentan las evidencias de la ejecución de la aplicación para el sprint 4.
 En esta sección, presentamos una recopilación visual y detallada de los avances logrados durante el sprint.
 
 
-##### 5.2.4.6. Services Documentation Evidence for Sprint Review.
+##### 6.2.4.6. Services Documentation Evidence for Sprint Review.
 
 Durante este sprint se logró documentar un total de 25 endpoints correspondientes a 6 controladores principales de la API. La documentación fue realizada utilizando Swagger, una herramienta que facilita la exploración, prueba y validación de servicios REST. Esta interfaz está disponible accediendo a la siguiente URL configurada en el servidor (https://ositopolar-platform.onrender.com).
 
@@ -6382,11 +6381,11 @@ Durante este sprint se logró documentar un total de 25 endpoints correspondient
 ![A3.png](assets/chapter-05/TB2/fixServices/A3.png)
 
 
-##### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+##### 6.2.4.7. Software Deployment Evidence for Sprint Review.
 (Por hacer)
 
 
-##### 5.2.4.8. Team Collaboration Insights during Sprint.
+##### 6.2.4.8. Team Collaboration Insights during Sprint.
 
 **Landing Page**
 ![landinginsights.png](assets/TF/landinginsights.png)
@@ -6401,10 +6400,10 @@ Durante este sprint se logró documentar un total de 25 endpoints correspondient
 
 
 
-## 5.3. Validation Interviews.
+## 6.3. Validation Interviews.
 En esta sección se presentan los detalles de las entrevistas de validación realizadas.
 
-### 5.3.1. Diseño de Entrevistas.
+### 6.3.1. Diseño de Entrevistas.
 
 <h4>Objetivo de la Entrevista</h4>
 <p>Validar la usabilidad, efectividad y propuesta de valor de la plataforma OsitoPolar para los segmentos clave. Se evaluará si las funcionalidades cubren las necesidades operativas reales y si los flujos son intuitivos para usuarios con distintos perfiles técnicos.</p>
@@ -6512,7 +6511,7 @@ En esta sección se presentan los detalles de las entrevistas de validación rea
 </ul>
 
 
-### 5.3.2. Registro de Entrevistas.
+### 6.3.2. Registro de Entrevistas.
 En esta sección tenemos el análisis de las entrevistas por segmentos objetivos.
 
 | Entrevista 1: Negocio que utiliza maquinas de refrigeración                            |                                                                                                                                                                  |
@@ -6616,7 +6615,7 @@ En esta sección tenemos el análisis de las entrevistas por segmentos objetivos
 | Historial y Reportes Técnicos                        | Utiliza con frecuencia el historial técnico de cada equipo registrado, lo cual le ha permitido evitar errores y mejorar la continuidad del servicio. Sugiere habilitar la opción de exportación en PDF. En cuanto a los reportes, los considera prácticos y bien recibidos por los clientes, aunque recomienda enriquecerlos con gráficos más visuales de consumo energético o temperatura. También sugiere personalizar los campos según cliente o servicio.                                       |
 | Gestión de Cartera de Clientes | Afirma que la cartera de clientes está bien organizada dentro del panel, facilitando la consulta de facturación, servicios y tareas pendientes. Para mejorar, propone que el sistema incluya alertas automáticas para mantenimientos programados. En cuanto al filtrado de información, aunque lo considera funcional, sugiere implementar carpetas o etiquetas personalizadas para clientes con mayor volumen de órdenes activas.                                 |
 
-#### 5.3.3. Evaluaciones según heurísticas
+#### 6.3.3. Evaluaciones según heurísticas
 
 **UX Heuristics & Principles Evaluation**  
 **Usability – Inclusive Design – Information Architecture**
@@ -6716,7 +6715,7 @@ En esta sección tenemos el análisis de las entrevistas por segmentos objetivos
 4. Gestión avanzada por cliente con alertas y etiquetas
 
 
-## 5.4. Video About-the-Product.
+## 6.4. Video About-the-Product.
 En esta sección se muestra una captura del video about the product que se encuentra incrustado en el landing page, además del link en los anexos.
 
 Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222001_upc_edu_pe/EX7h3-WbRbpNqTqMmM-NKdwBEXUEHMmcoY4pT1Q0epIOkQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Dwh3nQ)
