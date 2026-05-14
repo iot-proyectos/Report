@@ -1,30 +1,77 @@
-<div align = "center">
- <h1>Universidad Peruana de Ciencias Aplicadas</h1>
- <img src="assets/UPC_logo_transparente.png" alt="Diego" width="250" height="250">
-  <h2>Carrera: Ingeniería de Software</h2>
-  <h2>Ciclo: 2026-10</h2>
-<br>
-  <h2>Curso: 1ASI0572 Desarrollo de Soluciones IOT</h2>
-  <h2>Sección: 6776</h2>
-  <h2>Profesor: Leon Baca, Marco Antonio </h2>
-<br>
- <h1>Informe del Trabajo Final</h1>
-  <h2>Startup: IA: Inteligencia Artesanal</h2>
-  <h2>Producto: OsitoPolar</h2>
-<br>
-  <h2>Integrantes</h2>
-<ul style="list-style: none;">
-  <li><h3> u20231c069 Mora Blas, Diego Alonzo</h3></li>
-  <li><h3>U202223990 Cacho Seminario, Diego Alonso</h3></li>
-  <li><h3>U20231C996 Hernandez Poma, Sebastian Eduardo</h3></li>
-  <li><h3>U202210938 Medina Cruzado, Raúl Adrian</h3></li>
-  <li><h3>U20231C111 Inga Orihuela, Christian Fabrizio</h3></li>
-</ul>
-<br>
-   <h3>Abril 2026</h3>
+<p align="center">
+COURSE PROJECT
 
+<p align="center">
+    <img src="assets/UPC_logo_transparente.png" alt="UPCLOGO" width="250" height="250"</img><br>
+    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
+    <br>
+    <strong>Facultad de Ingeniería</strong><br>
+    <strong>Carrera de Ingeniería de Software</strong><br>
+    <strong>Ciclo 2026-1</strong>
+</p>
+
+<p align="center">
+  <strong>Código del curso: </strong>1ASI0572<br>
+  <strong>Curso: </strong>Desarrollo de Soluciones IOT
+</p>
+
+<p align="center">
+  <strong>NRC: 6776</strong>
+</p>
+
+<p align="center">
+    <strong>Profesor: </strong>Leon Baca, Marco Antonio
+</p>
+
+<p align="center">
+    <strong>Informe de Trabajo Parcial</strong>
+</p>
+
+<p align="center">
+    <strong>Nombre del startup: </strong> IA: Inteligencia Artesanal
+</p>
+
+<p align="center">
+    <strong>Nombre del producto:</strong> OsitoPolar
+</p>
+
+<div>
+    <h3 align="center">Integrantes del equipo:</h3>
+    </div>
+<div>
+     <table align="center">
+        <tr>
+            <th style="text-align:center;">Nombre</th>
+            <th style="text-align:center;">Código</th>
+        </tr>
+        <tr>
+            <td>Mora Blas, Diego Alonzo</td>
+            <td>U20231c069</td>
+        </tr>
+        <tr>
+            <td>Cacho Seminario, Diego Alonso</td>
+            <td>U202223990</td>
+        </tr>
+        <tr>
+            <td>Hernandez Poma, Sebastian Eduardo</td>
+            <td>U20231C996</td>
+        </tr>
+        <tr>
+            <td>Medina Cruzado, Raúl Adrian</td>
+            <td>U202210938</td>
+        </tr>
+        <tr>
+            <td>RInga Orihuela, Christian Fabrizio</td>
+            <td>U20231C111</td>
+        </tr>
+    </table>
 </div>
 
+<p align="center">
+    <strong>Mayo, 2026</strong>
+</p>
+
+---
 
 ## Registro de Versiones del Informe
 
@@ -32,25 +79,24 @@
 | Versión | Fecha      | Autor                | Descripción de modificación                                     |
 |---------|------------|----------------------|-----------------------------------------------------------------|
 | 1.0     | 23/04/2026 | Diego Cacho          | Implementación de datos del trabajo                             |
-| 1.0     | 25/04/2026 | Sebastian Hernandez  | Adaptación de arquitectura IoT: integración de capa Edge API, ESP32 Firmware e IoT Monitoring Bounded Context al workspace Structurizr DSL. Generación de diagramas C4 (Context, Container, Components) y diagramas de base de datos para los 9 bounded contexts del sistema. |
-| 1.1     | 25/04/2026 | Raúl Medina          |Actualizacion capitulo 4                                         |
-| 1.0     | 25/04/2026 | Christian Inga          | Correcciones del informe                                         |
+| 1.1     | 25/04/2026 | Sebastian Hernandez  | Adaptación de arquitectura IoT: integración de capa Edge API, ESP32 Firmware e IoT Monitoring Bounded Context al workspace Structurizr DSL. Generación de diagramas C4 (Context, Container, Components) y diagramas de base de datos para los 9 bounded contexts del sistema. |
+| 1.2     | 25/04/2026 | Raúl Medina          |Actualizacion capitulo 4                                         |
+| 1.3     | 25/04/2026 | Christian Inga          | Correcciones del informe                                     |
+| 1.4     | 13/05/2026 | Christian Inga, Diego Cacho | Correcciones adicionales del informe                     |
+| 1.5     | 13/05/2026 | Sebastian Hernandez         | Despliegue del Landing Page                              |
+| 1.6     | 14/05/2026 | Sebastian Hernandez, Raúl Medina| Despliegue del Frontend App                          |
 
 ## Project Report Collaboration Insights *
 - **URL de la organización del proyecto:**  
   [https://github.com/iot-proyectos](https://github.com/iot-proyectos)
-
 
 - **URL del repositorio del informe del proyecto:**  
   [https://github.com/iot-proyectos/Report](https://github.com/iot-proyectos/Report)
 
   ![Insights Informe](assets/chapter01/insightsTB1.png)
 
-- **URL del repositorio del landing page del proyecto:**  
-
-
-
-
+- **URL del repositorio del landing page del proyecto:**
+  
 - **URL del repositorio del frontend del proyecto:**  
 
 - **URL del repositorio del backend del proyecto:**  
