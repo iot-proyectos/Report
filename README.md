@@ -1901,9 +1901,9 @@ classDiagram
         -Role role
         -Boolean isActive
         -DateTime createdAt
-        +register(username, email, password) User
-        +login(email, password) String
-        +changePassword(oldPassword, newPassword) void
+        +register(String username, String email, String password) User
+        +login(String email, String password) String
+        +changePassword(String oldPassword, String newPassword) void
         +deactivate() void
     }
 
@@ -1926,14 +1926,14 @@ classDiagram
 
     class AuthService {
         <<service>>
-        +signUp(command SignUpCommand) User
-        +signIn(command SignInCommand) TokenPair
-        +refreshToken(token String) TokenPair
-        +revokeToken(token String) void
+        +signUp(SignUpCommand command) User
+        +signIn(SignInCommand command) TokenPair
+        +refreshToken(String token) TokenPair
+        +revokeToken(String token) void
     }
 
     class TokenPair {
-        <<value object>>
+        <<valueObject>>
         -String accessToken
         -String refreshToken
         -DateTime expiresAt
@@ -1941,10 +1941,10 @@ classDiagram
 
     class IUserRepository {
         <<interface>>
-        +findById(id Long) User
-        +findByEmail(email String) User
-        +save(user User) User
-        +existsByEmail(email String) Boolean
+        +findById(Long id) User
+        +findByEmail(String email) User
+        +save(User user) User
+        +existsByEmail(String email) Boolean
     }
 
     class UserRepository {
@@ -2076,76 +2076,76 @@ La capa de infraestructura provee la implementación concreta de persistencia me
 
 ###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-```mermaid
-classDiagram
-    class OwnerProfile {
-        -Long id
-        -Long userId
-        -String businessName
-        -String ruc
-        -String phone
-        -String address
-        -Sector sector
-        +updateInfo(businessName, phone, address) void
-        +changeSector(sector Sector) void
-    }
+  ```mermaid
+  classDiagram
+      class OwnerProfile {
+          -Long id
+          -Long userId
+          -String businessName
+          -String ruc
+          -String phone
+          -String address
+          -Sector sector
+          +updateInfo(businessName, phone, address) void
+          +changeSector(sector Sector) void
+      }
 
-    class ProviderProfile {
-        -Long id
-        -Long userId
-        -String companyName
-        -String ruc
-        -String phone
-        -String specialization
-        -Decimal rating
-        +updateInfo(companyName, phone) void
-        +updateRating(newRating Decimal) void
-    }
+      class ProviderProfile {
+          -Long id
+          -Long userId
+          -String companyName
+          -String ruc
+          -String phone
+          -String specialization
+          -Decimal rating
+          +updateInfo(companyName, phone) void
+          +updateRating(newRating Decimal) void
+      }
 
-    class Sector {
-        <<enumeration>>
-        FOOD
-        PHARMA
-        HOSPITALITY
-        OTHER
-    }
+      class Sector {
+          <<enumeration>>
+          FOOD
+          PHARMA
+          HOSPITALITY
+          OTHER
+      }
 
-    class IOwnerProfileRepository {
-        <<interface>>
-        +findById(id Long) OwnerProfile
-        +findByUserId(userId Long) OwnerProfile
-        +save(profile OwnerProfile) OwnerProfile
-    }
+      class IOwnerProfileRepository {
+          <<interface>>
+          +findById(id Long) OwnerProfile
+          +findByUserId(userId Long) OwnerProfile
+          +save(profile OwnerProfile) OwnerProfile
+      }
 
-    class IProviderProfileRepository {
-        <<interface>>
-        +findById(id Long) ProviderProfile
-        +findByUserId(userId Long) ProviderProfile
-        +save(profile ProviderProfile) ProviderProfile
-    }
+      class IProviderProfileRepository {
+          <<interface>>
+          +findById(id Long) ProviderProfile
+          +findByUserId(userId Long) ProviderProfile
+          +save(profile ProviderProfile) ProviderProfile
+      }
 
-    class ProfileService {
-        <<service>>
-        +createOwnerProfile(command CreateOwnerCommand) OwnerProfile
-        +createProviderProfile(command CreateProviderCommand) ProviderProfile
-        +getOwnerProfile(userId Long) OwnerProfile
-        +getProviderProfile(userId Long) ProviderProfile
-    }
+      class ProfileService {
+          <<service>>
+          +createOwnerProfile(command CreateOwnerCommand) OwnerProfile
+          +createProviderProfile(command CreateProviderCommand) ProviderProfile
+          +getOwnerProfile(userId Long) OwnerProfile
+          +getProviderProfile(userId Long) ProviderProfile
+      }
 
-    class OwnerProfileRepository {
-        <<repository>>
-    }
+      class OwnerProfileRepository{
+          <<repository>>
+      }
 
-    class ProviderProfileRepository {
-        <<repository>>
-    }
+      class ProviderProfileRepository {
+          <<repository>>
+      }
 
-    OwnerProfile --> Sector
-    ProfileService --> IOwnerProfileRepository
-    ProfileService --> IProviderProfileRepository
-    IOwnerProfileRepository <|.. OwnerProfileRepository
-    IProviderProfileRepository <|.. ProviderProfileRepository
-```
+      OwnerProfile --> Sector
+      ProfileService --> IOwnerProfileRepository
+      ProfileService --> IProviderProfileRepository
+      IOwnerProfileRepository <|.. OwnerProfileRepository
+      IProviderProfileRepository <|.. ProviderProfileRepository
+  ```
 
 ###### 4.2.2.6.2. Bounded Context Database Design Diagram
 
