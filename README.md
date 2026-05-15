@@ -61,7 +61,7 @@ COURSE PROJECT
             <td>U202210938</td>
         </tr>
         <tr>
-            <td>RInga Orihuela, Christian Fabrizio</td>
+            <td>Inga Orihuela, Christian Fabrizio</td>
             <td>U20231C111</td>
         </tr>
     </table>
@@ -104,11 +104,13 @@ COURSE PROJECT
 - **URL del repositorio del backend del proyecto:**  
   [FALTA COLOCAR](FALTA COLOCA)
 
+<div style="page-break-after: always"></div>
+
 ## Contenido
 
 - [Student Outcome](#student-outcome)
 
-- [Capítulo I: Introducción](#c1)
+- [Capítulo I: Introducción](#capitulo-1-introducción)
     - [1.1. Startup Profile](#11-startup-profile)
         - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
         - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -121,7 +123,7 @@ COURSE PROJECT
             - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-- [Capítulo II: Requirements Elicitation & Analysis](#c2)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1. Competidores](#21-competidores)
         - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
         - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -139,14 +141,14 @@ COURSE PROJECT
 
 
 
-- [Capítulo III: Requirements Specification](#c3)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
     - [3.2. User Stories](#32-user-stories)
     - [3.3. Impact Mapping](#33-impact-mapping)
     - [3.4. Product Backlog](#34-product-backlog)
 
 
-- [Capítulo IV: Solution Software Design](#c4)
+- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
     - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
         - [4.1.1. Design-Level EventStorming](#411-design-level-eventstorming)
             - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
@@ -227,7 +229,7 @@ COURSE PROJECT
                 - [4.2.8.6.2. Bounded Context Database Design Diagram](#42862-bounded-context-database-design-diagram)
 
 
-- [Capítulo V: Product Design](#c5)
+- [Capítulo V: Product Design](#capítulo-v-product-design)
     - [5.1. Style Guidelines](#51-style-guidelines)
         - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
         - [5.1.2. Web Style Guidelines](#512-web-style-guidelines)
@@ -257,7 +259,7 @@ COURSE PROJECT
         - [5.8.1. Database Diagram](#581-database-diagram)
 
 
-- [Capítulo VI: Product Implementation, Validation & Deployment](#c6)
+- [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
     - [6.1. Software Configuration Management](#61-software-configuration-management)
         - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
         - [6.1.2. Source Code Management](#612-source-code-management)
@@ -309,6 +311,9 @@ COURSE PROJECT
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
+
+<div style="page-break-after: always"></div>
+
 ## Student Outcome
 El curso contribuye al cumplimiento del Student Outcome ABET:
 
@@ -327,6 +332,9 @@ del ABET – EAC - Student Outcome 5.
 | Trabaja en equipo para proporcionar liderazgo en forma conjunta.       | **Cacho Seminario, Diego Alonso**<br>**AV1:** Para el desarrollo de la AV1, aporte creando los documentos de exposicion, reporte de participación y además prepare el reporte principal con los items anteriores para la entrega. <br><br>**TP:** Como desarrollo del TP verifique y solucione diversos errores de la entrega anterior, se verificaron los formatos y estructura del informe además de corregir problemas al exportar el archivo principal. <br><br>**Mora Blas, Diego Alonzo**<br>**AV1:** En esta AV1 aporte analizando las diferentes capas de abstraccion de nuestro codigo para analizar y tener registrado nuestros distintos bounded context.<br><br>**Hernandez Poma, Sebastian Eduardo**<br>**AV1:** Lideró la adaptación de la arquitectura del sistema al paradigma IoT, incorporando los bounded contexts de Edge API e IoT Monitoring al modelo Domain-Driven Design. Definió la estructura de los diagramas C4 en Structurizr DSL (System Context, Container y Component Level) para los 9 microservicios del sistema, incluyendo los nuevos componentes de la capa Edge (ESP32 Firmware, Edge API con buffer SQLite). Diseñó los esquemas de base de datos para todos los bounded contexts usando DBML, con especial énfasis en las tablas sensor_readings, alerts y business_rules del IoT Monitoring context. Colaboró en la integración de Firebase FCM para push notifications y la definición del flujo de datos ESP32 → Edge API → Cloud API.<br><br>**Inga Orihuela, Christian Fabrizio**<br>**AV1:** Apoyé en la revisión general del informe, verificando la coherencia entre los apartados desarrollados por el equipo y realizando correcciones de redacción, estructura y formato. Asimismo, contribuí a que el documento mantuviera una presentación uniforme y alineada con los criterios solicitados para la entrega.<br><br>**##########, ############**<br>**AV1:** . | **AV1:** Durante la AV1, el equipo logró realizar las primeras partes del trabajo, verificamos el funcionamiento del proyecto junto al su escalabilidad con soluciones basadas en IoT. <br><br>La separación en bounded contexts con responsabilidades claras, especialmente la distinción entre Edge API (procesamiento local) y IoT Monitoring (cloud), permitió diseñar una arquitectura escalable y resiliente que funciona offline. El uso de Structurizr DSL facilitó la colaboración del equipo al mantener la arquitectura como código versionable.  <br><br>**TP:** El equipo realizo avances respecto a las correcciones detalladas en la entrega de la AV1, además de realiza el despliegue del Landing Page y el despliegue de la primera versión de la parte Web de nuestro Frontend.           |
 | Participación y colaboración en plataformas y herramientas de trabajo. | **Cacho Seminario, Diego Alonso**<br>**AV1:** Como primera entrega utilice las herramientas de Github y Canva para poder redactar y crear la información necesaria para el trabajo de Osito Polar. <br><br>**TP:** En la entrega del TP, se utilizaron principalmente las herramientas de GitHub, Canva y Structurizr para la correción de puntos anteriores del trabajo además para poder realizar la presentación del proyecto. <br><br>**Mora Blas, Diego Alonzo**<br>**AV1:** Como equipo logramos coordinar de manera precisa nuestros distintos objetivos apoyandonos de herramientas como Github y Canva.<br><br>**Hernandez Poma, Sebastian Eduardo**<br>**AV1:** Lideró la adaptación de la arquitectura del sistema al paradigma IoT, incorporando los bounded contexts de Edge API e IoT Monitoring al modelo Domain-Driven Design. Definió la estructura de los diagramas C4 en Structurizr DSL (System Context, Container y Component Level) para los 9 microservicios del sistema, incluyendo los nuevos componentes de la capa Edge (ESP32 Firmware, Edge API con buffer SQLite). Diseñó los esquemas de base de datos para todos los bounded contexts usando DBML, con especial énfasis en las tablas sensor_readings, alerts y business_rules del IoT Monitoring context. Colaboró en la integración de Firebase FCM para push notifications y la definición del flujo de datos ESP32 → Edge API → Cloud API.<br><br>**Inga Orihuela, Christian Fabrizio**<br>**AV1:** Participé en la gestión colaborativa del proyecto mediante el uso de Git y GitHub, revisando los avances del repositorio y apoyando en el control de versiones del trabajo. Además, utilicé GitHub como herramienta de colaboración para mantener organizado el desarrollo del proyecto.<br><br>**##########, ############**<br>**AV1:** .                                                           | **AV1:** Durante la AV1, el equipo logró utilizar las herramientas apropiadas para la entrega, se uso GitHub como repositorio principal para el proyecto, Google Docs para el reporte de participación y Canva como herramienta para crear el video de exposición. . <br><br>La separación en bounded contexts con responsabilidades claras, especialmente la distinción entre Edge API (procesamiento local) y IoT Monitoring (cloud), permitió diseñar una arquitectura escalable y resiliente que funciona offline. El uso de Structurizr DSL facilitó la colaboración del equipo al mantener la arquitectura como código versionable. <br><br>**TP:** Se utilizaron una seria de herramientas para el presente avance del Trabajo Parcial, entre ellas se utilizo GitHub, Canva, Structurizr, GitHub Pages, Trello, entre otras que nos permitieron avanzar de manera ordenada.|
 
+
+
+<div style="page-break-after: always"></div>
 
 
 # Capitulo 1: Introducción
@@ -387,6 +395,9 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 | **Carrera** | Ingeniería de Software |
 | **Descripción** | Tengo 21 años y estudio Ingeniería de Software. Profesionalmente, me especializo como desarrollador enfocado en automatización (RPA), infraestructura en la nube y liderazgo de equipos ágiles con Scrum; de hecho, actualmente estoy desarrollando mi tesis sobre una plataforma de inteligencia predictiva para el sector minero y diseñando un sistema automatizado de monitoreo de combustible. Esta misma disciplina que aplico en mis proyectos la llevo a mi estilo de vida: jugué fútbol a nivel competitivo en divisiones menores y hoy mantengo un riguroso régimen de fitness y nutrición enfocado en ganar masa muscular y mejorar mi movilidad. En el plano personal, soy alguien muy apegado a mis dos hermanas y a mi familia materna. |
 | **Foto** | <img src="assets/chapter01/Raul.jpeg" alt="Raul" width="200" height="200"> |
+
+
+<div style="page-break-after: always"></div>
 
 ## 1.2 Solution Profile
 
@@ -588,6 +599,7 @@ Asimismo, hemos identificado a nuestros usuarios clave y sus beneficios, y hemos
   </figcaption>
 </figure>
 
+<div style="page-break-after: always"></div>
 
 ## 1.3 Segmentos objetivos
 
@@ -626,8 +638,9 @@ Asimismo, hemos identificado a nuestros usuarios clave y sus beneficios, y hemos
 - Empresas que buscan mejorar la trazabilidad de sus servicios y ofrecer reportes automáticos.
 - Profesionales que desean brindar un servicio más personalizado y predictivo a sus clientes.
 
+<div style="page-break-after: always"></div>
 
-## Capítulo II: Requirements Elicitation & Analysis <a id="cap2"></a>
+## Capítulo II: Requirements Elicitation & Analysis 
 
 ### 2.1. Competidores
 
@@ -788,6 +801,8 @@ Hemos identificado diversas estrategias y tácticas para diferenciarse y competi
 - **Colaboraciones con Proveedores Locales**: Formaremos alianzas estratégicas con proveedores de equipos de refrigeración y servicios técnicos en Perú, lo que nos diferenciará de la competencia al contar con un sistema robusto y adaptado específicamente para el mercado peruano.
 
 ---
+
+<div style="page-break-after: always"></div>
 
 ### 2.2. Entrevistas.
 
@@ -1032,7 +1047,7 @@ Basándonos en las entrevistas, hemos llevado a cabo un análisis en el que dest
 En esta sección se presentan las fichas de User Personas construidas a partir de los datos recogidos del análisis de entrevistas al segmento #1: "Negocios que utilizan equipos de refrigeración" y al segmento #2: "Empresas proveedoras de servicios y equipos de refrigeración". Estas fichas permiten representar de forma clara y estratégica los perfiles del segmento objetivo, considerando sus metas, habilidades, motivaciones y dificultades. Al integrar tanto la perspectiva del usuario como las tendencias del sector, estas representaciones sirven como una herramienta clave para el diseño de soluciones digitales centradas en el usuario y alineadas con las oportunidades del mercado.
 
 ##### Segmento objetivo #1: Negocios que utilizan equipos de refrigeración
-<figure style="page-break-inside: avoid; text-align: center;">
+<figure style="text-align: center;">
   <img src="assets/chapter02/UserPersona-Carolina_Garcia.png" 
        alt="User Persona: Carolina García, descripción detallada del perfil de usuario." 
        style="max-width: 90%; height: auto; display: block; margin: 0 auto;">
@@ -1042,7 +1057,7 @@ En esta sección se presentan las fichas de User Personas construidas a partir d
 </figure>
 
 ##### Segmento objetivo #2: Empresas proveedoras de servicios y equipos de refrigeración
-<figure style="page-break-inside: avoid; text-align: center;">
+<figure style="text-align: center;">
   <img src="assets/chapter02/UserPersona-Luis-Rojas.png"
        alt="User Persona: Luis Rojas, descripción detallada de sus características y necesidades."
        style="max-width: 90%; height: auto; display: block; margin: 0 auto;">
@@ -1187,7 +1202,7 @@ Esta sección refleja la situación actual sin intervención de soluciones tecno
 #### 2.3.4. Empathy Mapping.
 
 **Segmento objetivo #1: Negocios que utilizan equipos de refrigeración**
-<figure style="page-break-inside: avoid; text-align: center;">
+<figure style="text-align: center;">
   <img src="assets/chapter02/EmpathyMap-segment-1.png"
        alt="Segmento 1 del Mapa de Empatía: Qué piensa y siente el usuario."
        style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
@@ -1197,7 +1212,7 @@ Esta sección refleja la situación actual sin intervención de soluciones tecno
 </figure>
 
 **Segmento objetivo #2: EMPRESAS PROVEEDORAS DE SERVICIOS Y EQUIPOS DE REFRIGERACIÓN**
-<figure style="page-break-inside: avoid; text-align: center;">
+<figure style="text-align: center;">
   <img src="assets/chapter02/EmpathyMap-segment-2.png"
        alt="Segmento 2 del Mapa de Empatía: Qué ve y qué oye el usuario."
        style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
@@ -1265,7 +1280,9 @@ Desde la perspectiva del usuario, este mapa nos permite visualizar su situación
 
 19. **Notification (Notificación):** Mensajes enviados automáticamente para informar sobre mantenimientos, fallas o cambios importantes.
 
-## Capítulo III: Requirements Specification <a id="c3"></a>
+<div style="page-break-after: always"></div>
+
+## Capítulo III: Requirements Specification
 
 ### 3.1. To-Be Scenario Mapping.
 **Segmento objetivo #1: CLIENTES (DUEÑOS DE EQUIPOS DE REFRIGERACIÓN)**
@@ -1292,6 +1309,7 @@ Desde la perspectiva del usuario, este mapa nos permite visualizar su situación
   </figcaption>
 </figure>
 
+<div style="page-break-after: always"></div>
 
 ### 3.2. User Stories.
 
@@ -1359,6 +1377,8 @@ El trabajo fue realizado de manera colaborativa, priorizando la comprensión del
 
 
 
+<div style="page-break-after: always"></div>
+
 ### 3.3. Impact Mapping.
 
 El siguiente Impact Mapping fue desarrollado en UXPressia de manera colaborativa por el equipo de OsitoPolar para alinear los objetivos de negocio con los requerimientos funcionales de la plataforma.
@@ -1373,6 +1393,7 @@ El siguiente Impact Mapping fue desarrollado en UXPressia de manera colaborativa
   </figcaption>
 </figure>
 
+<div style="page-break-after: always"></div>
 
 ### 3.4. Product Backlog.
 
@@ -1440,6 +1461,8 @@ Escala de Story Points (Fibonacci):
 | 35    | US-35         | Crear registro de intervención técnica         | Como desarrollador, quiero permitir registrar intervenciones técnicas realizadas a través de la API, para llevar seguimiento del mantenimiento.                            | 5            |
 | 36    | US-36         | Registrar evento de alerta manual              | Como desarrollador, quiero permitir registrar una alerta manual vía API para que los técnicos puedan ingresar incidentes detectados en campo.                              | 3            |
 | 37    | US-37         | Evaluar servicio                               | Como desarrollador, quiero implementar un endpoint RESTful que permita a los clientes registrar y actualizar una evaluación de servicio, para reflejar su experiencia.     | 8            |
+
+<div style="page-break-after: always"></div>
 
 ## Capítulo IV: Solution Software Design
 ### 4.1. Strategic-Level Domain-Driven Design.
@@ -1924,6 +1947,10 @@ classDiagram
         +existsByEmail(email String) Boolean
     }
 
+    class UserRepository {
+        <<repository>>
+    }
+
     User --> Role
     User "1" --> "0..*" RefreshToken
     AuthService --> IUserRepository
@@ -2103,6 +2130,14 @@ classDiagram
         +createProviderProfile(command CreateProviderCommand) ProviderProfile
         +getOwnerProfile(userId Long) OwnerProfile
         +getProviderProfile(userId Long) ProviderProfile
+    }
+
+    class OwnerProfileRepository {
+        <<repository>>
+    }
+
+    class ProviderProfileRepository {
+        <<repository>>
     }
 
     OwnerProfile --> Sector
@@ -2297,6 +2332,10 @@ classDiagram
         +findByOwnerId(ownerId Long) List~Equipment~
         +save(equipment Equipment) Equipment
         +delete(id Long) void
+    }
+
+    class EquipmentRepository {
+        <<repository>>
     }
 
     class EquipmentService {
@@ -2531,6 +2570,18 @@ classDiagram
         +save(rule BusinessRule) BusinessRule
     }
 
+    class SensorReadingRepository {
+        <<repository>>
+    }
+
+    class AlertRepository {
+        <<repository>>
+    }
+
+    class BusinessRuleRepository {
+        <<repository>>
+    }
+
     SensorReading --> ReadingSource
     Alert --> AlertType
     Alert --> Severity
@@ -2704,6 +2755,10 @@ classDiagram
         +findByOwnerId(ownerId Long) List~ServiceRequest~
         +findByProviderId(providerId Long) List~ServiceRequest~
         +save(request ServiceRequest) ServiceRequest
+    }
+
+    class ServiceRequestRepository {
+        <<repository>>
     }
 
     class ServiceRequestService {
@@ -2895,6 +2950,10 @@ classDiagram
         +findByTechnicianId(id Long) List~WorkOrder~
         +findByEquipmentId(id Long) List~WorkOrder~
         +save(workOrder WorkOrder) WorkOrder
+    }
+
+    class WorkOrderRepository {
+        <<repository>>
     }
 
     class WorkOrderService {
@@ -3091,6 +3150,10 @@ classDiagram
         +save(subscription Subscription) Subscription
     }
 
+    class SubscriptionRepository {
+        <<repository>>
+    }
+
     class SubscriptionService {
         <<service>>
         +subscribe(ownerId Long, planId Long) Subscription
@@ -3260,6 +3323,10 @@ classDiagram
         +markAsRead(id Long) void
     }
 
+    class NotificationRepository {
+        <<repository>>
+    }
+
     class NotificationService {
         <<service>>
         +sendPush(userId Long, title String, body String) void
@@ -3279,7 +3346,7 @@ classDiagram
 
 ![Notifications Database Design](assets/chapter04/DSL/Contenedores-dark.png)
 
-## Capítulo V: Product Design <a id="c5"></a>
+## Capítulo V: Product Design 
 
 ### 5.1. Style Guidelines
 #### 5.1.1. General Style Guidelines
@@ -4446,7 +4513,7 @@ El diagrama de base de datos ilustra gráficamente cómo se relacionan las tabla
 
 ![diagram-class.png]( assets/chapter04/diagram-class.png)
 
-## Capítulo VI: Product Implementation, Validation & Deployment <a id="c6"></a>
+## Capítulo VI: Product Implementation, Validation & Deployment 
 
 ### 6.1. Software Configuration Management
 #### 6.1.1. Software Development Environment Configuration
