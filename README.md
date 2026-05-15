@@ -70,8 +70,8 @@ COURSE PROJECT
 <p align="center">
     <strong>Mayo, 2026</strong>
 </p>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
----
 
 ## Registro de Versiones del Informe
 
