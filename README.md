@@ -97,6 +97,9 @@ COURSE PROJECT
 
 - **URL del repositorio del landing page del proyecto:**  
   [https://iot-proyectos.github.io/LandingPage/](https://iot-proyectos.github.io/LandingPage/)
+
+- **URL del repositorio del frontend del proyecto:**  
+  [https://github.com/iot-proyectos/OsitoPolar-Frontend.git](https://github.com/iot-proyectos/OsitoPolar-Frontend.git)
   
 <div style="page-break-after: always"></div>
 
