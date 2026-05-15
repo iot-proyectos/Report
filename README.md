@@ -98,12 +98,6 @@ COURSE PROJECT
 - **URL del repositorio del landing page del proyecto:**  
   [https://iot-proyectos.github.io/LandingPage/](https://iot-proyectos.github.io/LandingPage/)
   
-- **URL del repositorio del frontend del proyecto:**  
-  [FALTA COLOCAR](FALTA COLOCA)
-
-- **URL del repositorio del backend del proyecto:**  
-  [FALTA COLOCAR](FALTA COLOCA)
-
 <div style="page-break-after: always"></div>
 
 ## Contenido
