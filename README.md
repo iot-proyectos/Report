@@ -4701,7 +4701,7 @@ En la sección siguiente se detallará el proceso de implementación, documentac
   </tr>
   <tr>
     <td colspan="5">Date</td>
-    <td colspan="8">2025-04-22</td>
+    <td colspan="8">2026-05-10</td>
 </tr>
   <tr>
     <td colspan="5">Time</td>
@@ -4712,15 +4712,15 @@ En la sección siguiente se detallará el proceso de implementación, documentac
     <td colspan="8">Via Discord</td>
 <tr>
     <td colspan="5">Prepared By</td>
-    <td colspan="8">Kenyi Ramirez</td>
+    <td colspan="8">Cacho Seminario, Diego Alonso</td>
 </tr>
 <tr>
     <td colspan="5">Attendees (to planning meeting)</td>
-    <td colspan="8">Joseph Rodriguez, Wilder Aliaga, Victor Rojas, Italo Verona</td>
+    <td colspan="8">Osito Polar Team</td>
 </tr>
 <tr>
     <td colspan="5">Sprint  1 Review Summary</td>
-    <td colspan="8">Esta sección se dedicó a mejorar el codigo de la Landing page para poder usarse mejor y tener una estructura clara.</td>
+    <td colspan="8">Esta sección se dedicó a mejorar el codigo de la Landing page para poder usarse mejor y tener una estructura clara y desplegamos la primera versión del Web App.</td>
 </tr>
 <tr>
     <td colspan="5">Sprint 1 Retrospective Summary</td>
@@ -4731,7 +4731,7 @@ En la sección siguiente se detallará el proceso de implementación, documentac
 </tr>
 <tr>
     <td colspan="5">Sprint 1 Goal</td>
-       <td colspan="8">Nuestro enfoque está en implementar la landing page de OsitoPolar, asegurando su adaptabilidad a diferentes dispositivos, coherencia visual y funcionalidad multilingüe. Creemos que esto ofrece una experiencia de navegación más clara, atractiva y accesible a los usuarios potenciales de nuestra solución. Esto se confirmará cuando los usuarios puedan cambiar el idioma fácilmente desde la interfaz, navegar la página sin errores visuales desde cualquier dispositivo, y se valide que imágenes y textos estén correctamente integrados y espaciados. </td>
+       <td colspan="8">Nuestro enfoque está en implementar la landing page de OsitoPolar, asegurando su adaptabilidad a diferentes dispositivos, coherencia visual y funcionalidad multilingüe. Creemos que esto ofrece una experiencia de navegación más clara, atractiva y accesible a los usuarios potenciales de nuestra solución. Esto se confirmará cuando los usuarios puedan cambiar el idioma fácilmente desde la interfaz, navegar la página sin errores visuales desde cualquier dispositivo, y se valide que imágenes y textos estén correctamente integrados y espaciados. Además de realizar y desplegar la primera versión de la Web App. </td>
 
 </tr>
 <tr>
@@ -4757,37 +4757,37 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
     <td><strong>Responsividad y pruebas en distintos dispositivos<br>Leader (L) / Collaborator (C)</strong></td>
   </tr>
   <tr>
-    <td colspan="2">Ramírez Cabrera, Kenyi Efrain</td>
-    <td>Kenyi15upc</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso </td>
+    <td>Memesitos</td>
     <td>L</td>
     <td>C</td>
     <td>C</td>
   </tr>
   <tr>
-    <td colspan="2">Rodriguez Parco Joseph Pablo </td>
-    <td>eJosR-Coding</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo </td>
+    <td>Necxuz18</td>
     <td>C</td>
     <td>L</td>
     <td>L</td>
   </tr>
   <tr>
-    <td colspan="2"> Aliaga Urbina Wilder Gonzalo </td>
-    <td>Gonzalo1905</td>
+    <td colspan="2"> Medina Cruzado, Raúl Adrian </td>
+    <td>imisterdg</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
   </tr>
   <tr>
-    <td colspan="2">Verona Flores Italo Sebastián
+    <td colspan="2">Inga Orihuela, Christian Fabrizio
 </td>
-    <td>atomdragon1318</td>
+    <td>Christian1905</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
   </tr>
   <tr>
-    <td colspan="2">Rojas Reategui Victor Manuel </td>
-    <td>VRojas1603</td>
+    <td colspan="2">Mora Blas, Diego Alonzo </td>
+    <td>diegoalonzomora</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
