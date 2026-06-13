@@ -24,7 +24,7 @@ COURSE PROJECT
 </p>
 
 <p align="center">
-    <strong>Informe de Trabajo Parcial</strong>
+    <strong>Informe de Trabajo Final</strong>
 </p>
 
 <p align="center">
@@ -68,7 +68,7 @@ COURSE PROJECT
 </div>
 
 <p align="center">
-    <strong>Mayo, 2026</strong>
+    <strong>Junio, 2026</strong>
 </p>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -85,6 +85,7 @@ COURSE PROJECT
 | 1.4     | 13/05/2026 | Christian Inga, Diego Cacho | Correcciones adicionales del informe                     |
 | 1.5     | 13/05/2026 | Sebastian Hernandez         | Despliegue del Landing Page                              |
 | 1.6     | 14/05/2026 | Sebastian Hernandez, Raúl Medina| Despliegue del Frontend App                          |
+| 1.7     | 13/06/2026 | Diego Cacho             | Avance de documentacion                                      |
 
 ## Project Report Collaboration Insights *
 - **URL de la organización del proyecto:**  
