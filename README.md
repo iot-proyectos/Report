@@ -3421,9 +3421,9 @@ Se eligieron variantes de color verde, rojo, azul y amarillo para ciertos fondos
 Se establecerá un espaciado de 8 px y un margen mínimo de 16 px. Para el diseño modular, se implementarán grids flexibles que se adaptarán tanto a web como a dispositivos móviles, utilizando configuraciones de 12 y 4 columnas respectivamente.
 
 
-#### 5.1.2. Web Style Guidelines
+#### 5.1.2. Web, Mobile and IoT Style Guidelines
 
-En esta sección definimos los estándares visuales y de interacción para la versión web de OsitoPolar, asegurando una experiencia de usuario coherente, profesional y accesible en todos los dispositivos.
+En esta sección definimos los estándares visuales y de interacción para la versión web y mobile de OsitoPolar, asegurando una experiencia de usuario coherente, profesional y accesible en todos los dispositivos.
 Es necesario que las interfaces web sean responsivas porque nos trae muchas ventajas tanto para el usuario como para el equipo desarrollador, entre las cuales tenemos: usabilidad en cualquier dispositivo, mejor eficiencia de costos y tiempo en el desarrollo y satisfacción del usuario.
 
 Adoptando un enfoque mobile-first, usamos un sistema de grid de 12 columnas para que la interfaz se adapte a cualquier dispositivo.
@@ -4618,9 +4618,9 @@ Nomenclatura de numeración de las versiones: Major changes: Cuando el código o
 
 
 **Repositorio de Github:**
-- Enlace para acceder a la [organización en Github](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web)
-- Enlace para acceder al repositorio de la [Landing Page](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page)
-- Enlace para acceder al repositorio del [Informe](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/upc-AppWeb-Inteligencia-Artesanal-Report)
+- Enlace para acceder a la [organización en Github](https://github.com/iot-proyectos)
+- Enlace para acceder al repositorio de la [Landing Page](https://github.com/iot-proyectos/LandingPage)
+- Enlace para acceder al repositorio del [Informe](https://github.com/iot-proyectos/Report)
 
 **Flujo de trabajo de GitFlow**
 El flujo de trabajo se basará en un modelo de ramas Git Flow, el cuál se basa en la creación de ramas específicas para cada funcionalidad o corrección de errores. El modelo de "A succesful Git branching model"
@@ -4691,7 +4691,7 @@ Adicionalmente, se implementó un archivo "languages.js" que contiene los textos
 ### Github Pages:
 ![Github-Pages.png]( assets/chapter-05/Github-Pages.png)
 
-La URL que nos entrega Github Pages para acceder a la landing page es la siguiente: https://inteligencia-artesanal-aplicaciones-web.github.io/Landing-Page/
+La URL que nos entrega Github Pages para acceder a la landing page es la siguiente: https://iot-proyectos.github.io/LandingPage/
 
 
 ### 6.2. Landing Page, Services & Applications Implementation.
@@ -4699,7 +4699,7 @@ La URL que nos entrega Github Pages para acceder a la landing page es la siguien
 ![Landing-Page.png]( assets/chapter-05/Landing-Page.png)
 
 En el siguiente enlace se estará mostrando la landing page de la startup:
-[Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223286_upc_edu_pe/EWpS23aHI95KiF5rJXhOyHgBoHAL62jYwnz8m4zMqxkGwA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bwYjby)
+[Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQAeOr9bSx-2T4NJ5MMy6oFYAV1TUJryHsIL4ZEcVvphgsU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=7A15cz)
 
 En la sección siguiente se detallará el proceso de implementación, documentación y despliegue del Landing.
 
@@ -5472,7 +5472,7 @@ Como equipo, lo que logramos en este primer Sprint fue la exitosa implementació
   ![LandingPage-Evidence6.png]( assets/chapter-05/LandingPage-Evidence6.png)
 
 
-- Para más detalles, visualizar el video: [Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223286_upc_edu_pe/EWpS23aHI95KiF5rJXhOyHgBoHAL62jYwnz8m4zMqxkGwA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bwYjby)
+- Para más detalles, visualizar el video: [Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQAeOr9bSx-2T4NJ5MMy6oFYAUG9i8dFYt45TIvlXmJ_M_I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2Kps8L)
 
 
 ##### 6.2.1.6. Services Documentation Evidence for Sprint Review
@@ -5526,8 +5526,6 @@ Contributors:
 
 ![Contributors-LandingPage.png](assets/chapter-05/Contributors-LandingPage.png)
 
-![Contributors-LandingPage.png]( assets/chapter-05/Contributors-LandingPage.png)
-
 
 #### 6.2.2. Sprint 2
 ##### 6.2.2.1. Sprint Planning 2
@@ -5552,11 +5550,11 @@ Contributors:
     <td colspan="8">Via Discord</td>
 <tr>
     <td colspan="5">Prepared By</td>
-    <td colspan="8">Kenyi Ramirez</td>
+    <td colspan="8">Diego Cacho</td>
 </tr>
 <tr>
     <td colspan="5">Attendees (to planning meeting)</td>
-    <td colspan="8">Joseph Rodriguez, Wilder Aliaga, Victor Rojas, Italo Verona</td>
+    <td colspan="8">Diego Mora, Christian Inga, Sebastian Hernandez, Raúl Medina</td>
 </tr>
 <tr>
     <td colspan="5">Sprint 1 Review Summary</td>
@@ -5600,41 +5598,41 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
     <td><strong>Despliegue de la aplicación web<br>Leader (L) / Collaborator (C)</strong></td>
   </tr>
   <tr>
-    <td colspan="2">Ramírez Cabrera, Kenyi Efrain</td>
-    <td>Kenyi15upc</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso </td>
+    <td>Memesitos</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
   </tr>
   <tr>
-    <td colspan="2">Rodriguez Parco Joseph Pablo </td>
-    <td>eJosR-Coding</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo </td>
+    <td>Necxuz18</td>
     <td>L</td>
     <td>L</td>
     <td>L</td>
     <td>C</td>
   </tr>
   <tr>
-    <td colspan="2"> Aliaga Urbina Wilder Gonzalo </td>
-    <td>Gonzalo1905</td>
+    <td colspan="2"> Medina Cruzado, Raúl Adrian </td>
+    <td>imisterdg</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
   </tr>
   <tr>
-    <td colspan="2">Verona Flores Italo Sebastián
+    <td colspan="2">Inga Orihuela, Christian Fabrizio
 </td>
-    <td>atomdragon1318</td>
+    <td>Christian1905</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
   </tr>
   <tr>
-    <td colspan="2">Rojas Reategui Victor Manuel </td>
-    <td>VRojas1603</td>
+    <td colspan="2">Mora Blas, Diego Alonzo </td>
+    <td>diegoalonzomora</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
@@ -5806,9 +5804,6 @@ En este segundo Sprint realizamos mejoras y correcciones de idioma en la Landing
 - Tenemos en esta sección la visualización de los beneficios que obtendrá cada uno de nuestros usuarios de cada segmento.
 ![LandingPage-Evidence4-S2.png]( assets/chapter-05/sprint-2/LandingPage-Evidence4-S2.png)
 
-- También se encuentra la sección de nuestra misión y visión.
-![LandingPage-Evidence5-S2.png]( assets/chapter-05/sprint-2/LandingPage-Evidence5-S2.png)
-
 - La sección donde podemos solicitar una demo.
 ![LandingPage-Evidence6-S2.png]( assets/chapter-05/sprint-2/LandingPage-Evidence6-S2.png)
 
@@ -5875,9 +5870,9 @@ Durante este Sprint, el equipo ha colaborado en el desarrollo del frontend y cor
 
 **LandingPage**
 
-![Insights-LandingPage-S2.png]( assets/chapter-05/sprint-2/Insights-LandingPage-S2.png)
+![Insights-LandingPage-S2.png]( assets/chapter-05/sprint-2/Insights-LandingPage.png)
 
-![Contributors-LandingPageS2.png]( assets/chapter-05/sprint-2/Contributors-LandingPageS2.png)
+![Contributors-LandingPageS2.png]( assets/chapter-05/sprint-2/Contributors-LandingPage.png)
 
 ![alt text](assets/chapter-05/Insights-LandingPage.png)
 **Frontend**
