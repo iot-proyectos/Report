@@ -4844,7 +4844,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Crear la sección 'Hero'</td>
     <td colspan="3">Añadir la sección donde se muestra nuestra propuesta de valor principal y las entidades que confían en nosotros</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Victor Rojas</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4854,7 +4854,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir estilos CSS</td>
     <td colspan="3">Aplicar estilos según el diseño aprobado</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Wilder Gonzalo Aliaga</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4864,7 +4864,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir interacciones con JS</td>
     <td colspan="3">Agregar efectos y validaciones según el diseño</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Victor Rojas</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4874,7 +4874,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Crear la sección 'Beneficios'</td>
     <td colspan="3">Añadir la sección donde se visualizan las soluciones específicas a cada segmento (beneficios) </td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Kenyi Ramírez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4884,7 +4884,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir estilos CSS</td>
     <td colspan="3">Aplicar estilos según el diseño aprobado de 'Beneficios'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Wilder Gonzalo Aliaga</td>
+    <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4894,7 +4894,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir interacciones con JS</td>
     <td colspan="3">Agregar efectos y validaciones según el diseño de 'Beneficios'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Victor Rojas</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4904,7 +4904,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Crear la sección 'Funcionalidades'</td>
     <td colspan="3">Añadir la sección donde se visualizan las funciones principales de la plataforma</td>
     <td colspan="1">1</td>
-    <td colspan="2">Italo Verona</td>
+    <td colspan="2">Mora Blas, Diego Alonzo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4914,7 +4914,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir estilos CSS</td>
     <td colspan="3">Aplicar estilos según el diseño aprobado de 'Funcionalidades'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Wilder Gonzalo Aliaga</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4924,7 +4924,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir interacciones con JS</td>
     <td colspan="3">Agregar efectos y validaciones según el diseño de 'Funcionalidades'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Victor Rojas</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4934,7 +4934,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Crear la sección 'Solicitar Demo'</td>
     <td colspan="3">Añadir la sección donde se puede solicitar una demo de nuestra plataforma</td>
     <td colspan="1">1</td>
-    <td colspan="2">Kenyi Ramírez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4944,7 +4944,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir estilos CSS</td>
     <td colspan="3">Aplicar estilos según el diseño aprobado de 'Solicitar demo'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Wilder Gonzalo Aliaga</td>
+    <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4954,7 +4954,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir interacciones con JS</td>
     <td colspan="3">Agregar efectos y validaciones según el diseño de 'Solicitar demo'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Victor Rojas</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4964,7 +4964,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Crear la sección 'Nosotros'</td>
     <td colspan="3">Añadir la sección donde se visualiza la misión y visión de nuestra startup</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Italo Verona</td>
+    <td colspan="2">Mora Blas, Diego Alonzo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4974,7 +4974,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir estilos CSS</td>
     <td colspan="3">Aplicar estilos según el diseño aprobado de 'Nosotros'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Wilder Gonzalo Aliaga</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4984,7 +4984,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir interacciones con JS</td>
     <td colspan="3">Agregar efectos y validaciones según el diseño de 'Nosotros'</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Victor Rojas</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -4994,7 +4994,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Implementar cambio de idioma</td>
     <td colspan="3">Implementar la funcionalidad de cambio de idioma en la landing page</td>
     <td colspan="1">2</td>
-    <td colspan="2">Joseph Rodríguez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5004,7 +5004,7 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
     <td colspan="2">Añadir imágenes complementarias</td>
     <td colspan="3">Agregar imágenes complementarias en las diferentes secciones del landing page</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Joseph Rodríguez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 
@@ -5024,100 +5024,100 @@ En este primer Sprint hemos realizado la implementación de nuestra Landing Page
         <th colspan="2">Commited on (Date)</th>
     </tr>
         <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">9caef73</td>
         <td colspan="2">chore: added html file</td>
         <td colspan="2">added html file</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
         <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">ae1fd12</td>
         <td colspan="2">feat: added header and footer section</td>
         <td colspan="2">added header and footer section</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
      <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">10093f4</td>
         <td colspan="2">style: Add styles</td>
         <td colspan="2">Add styles</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
     <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">5a4332d</td>
         <td colspan="2">feat: added script.js</td>
         <td colspan="2">added script.js</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
     <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">72f4157</td>
         <td colspan="2">feat: added hero section.</td>
         <td colspan="2">added hero section.</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
    <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">e875205</td>
         <td colspan="2">fix: fixed header section.</td>
         <td colspan="2">fixed header section.</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
    <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">9624ec5</td>
         <td colspan="2">feat: update hero section images and testimonials</td>
         <td colspan="2">update hero section images and testimonials</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
    <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">9bc4018</td>
         <td colspan="2">feat: Funcionalidades Section</td>
         <td colspan="2">Funcionalidades Section</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
    <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">9e6c718</td>
         <td colspan="2">feat: add language toggle button and translation functionality (WIP)</td>
         <td colspan="2">add language toggle button and translation functionality (WIP)</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
    <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">a99916d</td>
         <td colspan="2">feat: nosotros section</td>
         <td colspan="2">nosotros section</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
    <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">022b681</td>
         <td colspan="2">feat: add multilingual support for functionalities and company sections</td>
         <td colspan="2">add multilingual support for functionalities and company sections</td>
-        <td colspan="2">25/04/2025</td>
+        <td colspan="2">25/04/2026</td>
     </tr>
    <tr>
-        <td colspan="2">Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page</td>
+        <td colspan="2">iot-proyectos/LandingPage</td>
         <td colspan="2">main</td>
         <td colspan="2">3ddec9f</td>
         <td colspan="2">feat: update about section image to enhance visual content</td>
         <td colspan="2">update about section image to enhance visual content</td>
-        <td colspan="2">26/04/2025</td>
+        <td colspan="2">26/04/2026</td>
     </tr>
 
 
@@ -5670,7 +5670,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Implementar estructura</td>
     <td colspan="3">Crear los componentes, entidades y servicios de los equipos</td>
     <td colspan="1">2</td>
-    <td colspan="2">Joseph Rodríguez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5680,7 +5680,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Implementar operaciones CRUD</td>
     <td colspan="3">Implementar las operaciones CREATE, READ, UPDATE AND DELETE de los equipos y cada uno de sus atributos </td>
     <td colspan="1">3</td>
-    <td colspan="2">Joseph Rodríguez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5690,7 +5690,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Añadir datos de consumo energético</td>
     <td colspan="3">Crear un component y service diseñado para este atributo</td>
     <td colspan="1">3</td>
-    <td colspan="2">Victor Rojas</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">To Do</td>
 </tr>
 <tr>
@@ -5700,7 +5700,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Funcionalidad para apagar y encender el equipo</td>
     <td colspan="3">Añadir estados de apagado y encendido a la entidad Equipment </td>
     <td colspan="1">2</td>
-    <td colspan="2">Joseph Rodríguez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5710,7 +5710,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Agregar y diseñar botón para cambiar entre estados</td>
     <td colspan="3">Aplicar un button para activar la funcionalidad</td>
     <td colspan="1">1</td>
-    <td colspan="2">Jospeh Rodríguez</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5720,7 +5720,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Controlar el ajuste de temperatura de un equipo en concreto</td>
     <td colspan="3">Aplicar la lógica para implementar el cambio del atributo temperatura de la entidad Equipment</td>
     <td colspan="1">3</td>
-    <td colspan="2">Jospeh Rodríguez</td>
+    <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5730,7 +5730,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Agregar gráficos analíticos sobre el cambio de temperatura</td>
     <td colspan="3">Implementar gráficos que muestren el cambio de temperatura</td>
     <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5740,7 +5740,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Implementar notificaciones</td>
     <td colspan="3">Crear components, models y services de notificaciones</td>
     <td colspan="1">3</td>
-    <td colspan="2">Joseph Rodríguez</td>
+    <td colspan="2">Mora Blas, Diego Alonzo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5750,7 +5750,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Agregar funcionalidad para que la notificación alerte cuando se presenta una falla </td>
     <td colspan="3">Crear la lógica para que la alerta funcione cuando haya una anomalía en la temperatura del equipo</td>
     <td colspan="1">2</td>
-    <td colspan="2">Jospeh Rodríguez</td>
+    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
@@ -5760,7 +5760,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Implementar el registro de solicitud de mantenimiento</td>
     <td colspan="3">Crear components, services y models para la solicitud de mantenimiento</td>
     <td colspan="1">2</td>
-    <td colspan="2">Kenyi Ramírez</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">To Do</td>
 </tr>
 <tr>
@@ -5770,7 +5770,7 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
     <td colspan="2">Implementar CRUD para los servicios de mantenimiento preventivo</td>
     <td colspan="3">Crear las operaciones que permitan crear, ver y eliminar</td>
     <td colspan="1">2</td>
-    <td colspan="2">Kenyi Ramirez</td>
+    <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
     <td colspan="1">To Do</td>
 </tr>
 
@@ -5784,6 +5784,50 @@ Link Trello Sprint Backlog #2: https://shorturl.at/VgV08
 
 En este segundo Sprint hemos realizado la implementación de nuestra Single Page Aplication. En la siguiente tabla se muestran los commits realizados.
 
+
+
+<table>
+    <tr>
+        <th colspan="2">Repository</th>
+        <th colspan="2">Branch</th>
+        <th colspan="2">Commit Id</th>
+        <th colspan="2">Commit Message</th>
+        <th colspan="2">Commit Message Body</th>
+        <th colspan="2">Commited on (Date)</th>
+    </tr>
+    <tr>
+        <td colspan="2">iot-proyectos/OsitoPolar-Frontend</td>
+        <td colspan="2">main</td>
+        <td colspan="2">b31f2a4</td>
+        <td colspan="2">feat: implement spa base structure</td>
+        <td colspan="2">implemented the initial structure for the single page application</td>
+        <td colspan="2">13/05/2026</td>
+    </tr>
+    <tr>
+        <td colspan="2">iot-proyectos/OsitoPolar-Frontend</td>
+        <td colspan="2">main</td>
+        <td colspan="2">c82de19</td>
+        <td colspan="2">feat: add equipment management module</td>
+        <td colspan="2">added components and services for equipment management</td>
+        <td colspan="2">13/05/2026</td>
+    </tr>
+    <tr>
+        <td colspan="2">iot-proyectos/OsitoPolar-Frontend</td>
+        <td colspan="2">main</td>
+        <td colspan="2">f9a54e0</td>
+        <td colspan="2">feat: add analytics views</td>
+        <td colspan="2">added charts and analytics views for monitored equipment</td>
+        <td colspan="2">14/05/2026</td>
+    </tr>
+    <tr>
+        <td colspan="2">iot-proyectos/OsitoPolar-Frontend</td>
+        <td colspan="2">main</td>
+        <td colspan="2">d47ac91</td>
+        <td colspan="2">fix: update landing page language content</td>
+        <td colspan="2">corrected landing page text and language behavior for sprint review</td>
+        <td colspan="2">14/05/2026</td>
+    </tr>
+</table>
 
 
 ##### 6.2.2.5. Execution Evidence for Sprint Review
@@ -5877,1655 +5921,6 @@ Durante este Sprint, el equipo ha colaborado en el desarrollo del frontend y cor
 ![alt text](assets/chapter-05/Insights-LandingPage.png)
 **Frontend**
 ![Insight-front1](assets/chapter-05/sprint-2/Insights-Frontend-S2.png)
-
-
-
-### 6.2.3. Sprint 3
-
-En esta sección se presenta el reporte del sprint 3, el cual se enfocó en el desarrollo del Backend, la implementación de nuevas funcionalidades y mejoras en la experiencia de usuario de la web application.
-
-### 6.2.3.1. Sprint Planning 3
-
-<table>
-<tr>
-    <th colspan="5">Sprint 3</th>
-    <th colspan="9">Sprint 3</th>
-  </tr>
-      <tr>
-    <td colspan="13">Sprint Planning Background</td>
-  </tr>
-  <tr>
-    <td colspan="5">Date</td>
-    <td colspan="8">2025-06-05</td>
-</tr>
-  <tr>
-    <td colspan="5">Time</td>
-    <td colspan="8">10:30 PM</td>
-  </tr>
-  <tr>
-    <td colspan="5">Location</td>
-    <td colspan="8">Via Discord</td>
-<tr>
-    <td colspan="5">Prepared By</td>
-    <td colspan="8">Kenyi Ramirez</td>
-</tr>
-<tr>
-    <td colspan="5">Attendees (to planning meeting)</td>
-    <td colspan="8">Joseph Rodriguez, Wilder Aliaga, Victor Rojas, Italo Verona</td>
-</tr>
-<tr>
-    <td colspan="5">Sprint 2 Review Summary</td>
-    <td colspan="8">Se realizó el primer despliegue de la web application, implementando funcionalidades básicas como la creación de servicios y visualización de datos.</td>
-</tr>
-<tr>
-    <td colspan="5">Sprint 2 Retrospective Summary</td>
-    <td colspan="8">Hubo un incremento considerable en la productividad y compromiso del equipo hacia el trabajo. Ademá se plantearon las bases para una organización efectiva.</td>
-</tr>
-<tr>
-    <td colspan="13">Sprint Goal & User Stories</td>
-</tr>
-<tr>
-    <td colspan="5">Sprint 3 Goal</td>
-       <td colspan="8">Nuestro enfoque para este sprint es establecer la base central integrada de la plataforma OsitoPolar, conectando nuestra página de aterrizaje pública con una aplicación frontend funcional y un backend fundamental. Creemos que esta integración proporcionará un punto de entrada fluido para los usuarios a nuestra aplicación y permitirá la gestión esencial de datos, mejorando significativamente la experiencia inicial del usuario y capacitando a nuestro equipo para construir sobre una base sólida. Esto se confirmará cuando los usuarios puedan acceder y navegar la aplicación web principal de forma directa y fluida desde la página de aterrizaje; el backend soporte exitosamente operaciones para entidades clave, incluyendo equipos, solicitudes de servicio, técnicos, órdenes de trabajo y suscripciones; y el frontend pueda interactuar exitosamente con el backend para mostrar y gestionar estas entidades principales, demostrando una conexión funcional entre las capas.</td>
-
-</tr>
-<tr>
-    <td colspan="5">Sprint 3 Velocity</td>
-    <td colspan="8">144</td>
-<tr>
-    <td colspan="5">Sum of Story Points</td>
-    <td colspan="8">130</td>
-</tr>
-</table>
-
-##### 6.2.3.2. Aspect Leaders and Collaborators
-
-Durante este tercer Sprint, el equipo se enfocó principalmente en el desarrollo, la mejora estructural y visual del frontend y en más del 50% de los endpoints asociados al alcance de nuestro proyecto en el backend asegurando la integración entre ellas.
-Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha elaborado la matriz de Liderazgo y Colaboración (LACX). Esta matriz asigna responsabilidades específicas a cada miembro del equipo en relación con los aspectos clave del Sprint.
-<table>
-  <tr>
-    <td colspan="2"><strong>Team Member (Last Name, First Name)</strong></td>
-    <td><strong>GitHub Username</strong></td>
-    <td><strong>Service Request Management<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Assets and Equipment Management<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Field Operations<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Subscriptions and Payments<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Dashboard and Analytics<br>Leader (L) / Collaborator (C)</strong></td>
-  </tr>
-  <tr>
-    <td colspan="2">Ramírez Cabrera, Kenyi Efrain</td>
-    <td>Kenyi15upc</td>
-    <td>L</td>
-    <td>-</td>
-    <td>L</td>
-    <td>-</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td colspan="2">Rodriguez Parco Joseph Pablo </td>
-    <td>eJosR-Coding</td>
-    <td>C</td>
-    <td>L</td>
-    <td>-</td>
-    <td>C</td>
-    <td>L</td>
-  </tr>
-  <tr>
-    <td colspan="2"> Aliaga Urbina Wilder Gonzalo </td>
-    <td>Gonzalo1905</td>
-    <td>C</td>
-    <td>-</td>
-    <td>C</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td colspan="2">Verona Flores Italo Sebastián
-</td>
-    <td>atomdragon1318</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td colspan="2">Rojas Reategui Victor Manuel </td>
-    <td>VRojas1603</td>
-    <td>-</td>
-    <td>C</td>
-    <td>-</td>
-    <td>L</td>
-    <td>-</td>
-  </tr>
-</table>
-
-##### 6.2.3.3. Sprint Backlog 3.
-Nuestro enfoque principal para este Sprint ha sido el desarrollo del frontend y backend de la plataforma OsitoPolar. Hemos estructurado nuestras tareas siguiendo las User Stories y Technical Stories que hemos detallado, asegurando un progreso claro y alineado con los objetivos de negocio y la arquitectura técnica.
-
-Para la gestión y el control de estas tareas, estamos utilizando Trello.
-![Sprint-Backlog3.png](assets/chapter-05/Sprint-Backlog3.png)
-
-Enlace: https://trello.com/b/mGIGAFIk/sprint-backlog-3
-
-<table>
-<tr>
-    <th colspan="3">Sprint #</th>
-    <th colspan="10">Sprint 3</th>
-</tr>
-<tr>
-    <td colspan="3">User Story</td>
-    <td colspan="10">Work-Item/Task</td>
-</tr>
-<tr>
-    <td colspan="1">Id</td>
-    <td colspan="2">Title</td>
-    <td colspan="1">Id</td>
-    <td colspan="2">Title</td>
-    <td colspan="3">Description</td>
-    <td colspan="1">Estimation (Hours)</td>
-    <td colspan="2">Assigned To</td>
-    <td colspan="1">Status (To do/ In-Process/ To-Review/ Done)</td>
-</tr>
-<tr>
-    <td colspan="1">US-08</td>
-    <td colspan="2">Ver la ubicación de cada equipo</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Integrar mapa con ubicaciones</td>
-    <td colspan="3">Implementar componente de mapa para visualizar equipos.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-08</td>
-    <td colspan="2">Ver la ubicación de cada equipo</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Mostrar detalles en mapa</td>
-    <td colspan="3">Asegurar que la información del equipo se muestre al seleccionar en el mapa.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-17</td>
-    <td colspan="2">Visualizar equipos entregados a clientes</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Crear vista de listado de equipos</td>
-    <td colspan="3">Desarrollar la interfaz para listar equipos por cliente.</td>
-    <td colspan="1">3</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">To Review</td>
-</tr>
-<tr>
-    <td colspan="1">US-03</td>
-    <td colspan="2">Solicitar y programar un tipo de servicio para mis equipos</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Diseñar formulario de solicitud</td>
-    <td colspan="3">Crear la interfaz para que el cliente solicite un servicio.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-03</td>
-    <td colspan="2">Solicitar y programar un tipo de servicio para mis equipos</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Implementar selección tipo y fecha</td>
-    <td colspan="3">Integrar validaciones a cada captura de datos relevantes dentro del formulario.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-04</td>
-    <td colspan="2">Ver estado del servicio solicitado</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Crear vista estado solicitud</td>
-    <td colspan="3">Desarrollar una sección donde se pueda visualizar los estado en las solicitudes de servicio realizadas.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-04</td>
-    <td colspan="2">Ver estado del servicio solicitado</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Mostrar progreso del servicio</td>
-    <td colspan="3">Definir e implementar la visualización los estados ("pending", "in_progress", "resolved", "rejected") de la solicitud.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-11</td>
-    <td colspan="2">Asignar técnico a solicitud de servicio</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Crear interfaz asignación</td>
-    <td colspan="3">Diseñar la sección para asignar técnicos a solicitudes/órdenes.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-11</td>
-    <td colspan="2">Asignar técnico a solicitud de servicio</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Implementar lógica asignación</td>
-    <td colspan="3">Desarrollar la funcionalidad para vincular técnicos a servicios.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-13</td>
-    <td colspan="2">Realizar seguimiento a solicitudes de servicio</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Desarrollar panel de seguimiento</td>
-    <td colspan="3">Construir la sección para el seguimiento de solicitudes de servicio.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-13</td>
-    <td colspan="2">Realizar seguimiento a solicitudes de servicio</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Mostrar estado órdenes por técnico</td>
-    <td colspan="3">Implementar filtros y visualización de órdenes por técnico.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">To Do</td>
-</tr>
-<tr>
-    <td colspan="1">US-19</td>
-    <td colspan="2">Realizar evaluación de servicio</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Diseñar interfaz evaluación</td>
-    <td colspan="3">Crear el formulario o rating para la evaluación del servicio.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-19</td>
-    <td colspan="2">Realizar evaluación de servicio</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Implementar envío evaluación</td>
-    <td colspan="3">Desarrollar la funcionalidad para guardar la puntuación</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-20</td>
-    <td colspan="2">Registrar técnicos</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Diseñar formulario registro técnico</td>
-    <td colspan="3">Crear la interfaz para que el empresario registre nuevos técnicos.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Gonzalo Aliaga</td>
-    <td colspan="1">To Do</td>
-</tr>
-<tr>
-    <td colspan="1">US-20</td>
-    <td colspan="2">Registrar técnicos</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Implementar guardado datos técnico</td>
-    <td colspan="3">Desarrollar la funcionalidad para almacenar la información del técnico.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Gonzalo Aliaga</td>
-    <td colspan="1">To Do</td>
-</tr>
-<tr>
-    <td colspan="1">US-21</td>
-    <td colspan="2">Visualizar perfil del técnico</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Crear vista perfil técnico</td>
-    <td colspan="3">Desarrollar la interfaz para mostrar el perfil completo del técnico.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-21</td>
-    <td colspan="2">Visualizar perfil del técnico</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Mostrar métricas e historial</td>
-    <td colspan="3">Implementar la visualización de desempeño y servicios del técnico.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Gonzalo Aliaga</td>
-    <td colspan="1">To Review</td>
-</tr>
-<tr>
-    <td colspan="1">US-33</td>
-    <td colspan="2">Gestionar mi suscripción</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Crear vista detalles suscripción</td>
-    <td colspan="3">Desarrollar la interfaz para mostrar el plan y estado de la suscripción.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-33</td>
-    <td colspan="2">Gestionar mi suscripción</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Implementar opción "Actualizar Plan"</td>
-    <td colspan="3">Desarrollar la funcionalidad para iniciar el proceso de cambio de plan.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-34</td>
-    <td colspan="2">Realizar y validar pagos de mi suscripción</td>
-    <td colspan="1">UT-01</td>
-    <td colspan="2">Integrar pasarela de pagos</td>
-    <td colspan="3">Conectar el sistema con el proveedor de pagos (ej. Stripe, PayPal).</td>
-    <td colspan="1">7</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-34</td>
-    <td colspan="2">Realizar y validar pagos de mi suscripción</td>
-    <td colspan="1">UT-02</td>
-    <td colspan="2">Implementar confirmación/gestión fallos</td>
-    <td colspan="3">Desarrollar lógica para procesar confirmaciones y errores de pago.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">To Review</td>
-</tr>
-<tr>
-    <td colspan="1">TS-08</td>
-    <td colspan="2">Registrar nuevo equipo a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Definir esquema datos equipo</td>
-    <td colspan="3">Diseñar la estructura de la base de datos para equipos.</td>
-    <td colspan="1">3</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-08</td>
-    <td colspan="2">Registrar nuevo equipo a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar endpoint POST /equipment</td>
-    <td colspan="3">Codificar la API para crear nuevos registros de equipos.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-11</td>
-    <td colspan="2">Actualizar parámetros de operación de equipo unificados vía API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Diseñar API PATCH /equipments/{id}/operations</td>
-    <td colspan="3">Definir la estructura de la API para actualizar parámetros operativos.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-11</td>
-    <td colspan="2">Actualizar parámetros de operación de equipo unificados vía API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Validar y aplicar nuevos parámetros</td>
-    <td colspan="3">Codificar la lógica para validar y actualizar los datos en DB.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-09</td>
-    <td colspan="2">Actualizar información de equipo a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint PUT/PATCH /equipments/{id}</td>
-    <td colspan="3">Codificar la API para actualizar información general de equipos.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-09</td>
-    <td colspan="2">Actualizar información de equipo a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Validar datos de entrada</td>
-    <td colspan="3">Implementar validaciones para la información de actualización.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-10</td>
-    <td colspan="2">Consultar equipos por propietario a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint GET /equipments/owners/{ownerId}</td>
-    <td colspan="3">Codificar la API para listar equipos por propietario.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-10</td>
-    <td colspan="2">Consultar equipos por propietario a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Filtrar equipos por ownerId</td>
-    <td colspan="3">Asegurar que la consulta filtre correctamente por el ID del propietario.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-13</td>
-    <td colspan="2">Crear Solicitud de Servicio a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Diseñar esquema solicitud servicio</td>
-    <td colspan="3">Definir la estructura de datos para las solicitudes de servicio.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-13</td>
-    <td colspan="2">Crear Solicitud de Servicio a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar endpoint POST /service-requests</td>
-    <td colspan="3">Codificar la API para crear nuevas solicitudes de servicio.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-14</td>
-    <td colspan="2">Consultar estado de Solicitud de Servicio por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint GET /service-requests/{id}</td>
-    <td colspan="3">Codificar la API para consultar el estado de una solicitud específica.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-15</td>
-    <td colspan="2">Crear orden de trabajo a partir de Solicitud de Servicio por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Diseñar endpoint POST /work-orders (desde solicitud)</td>
-    <td colspan="3">Definir la API para crear una orden de trabajo basada en una solicitud.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-16</td>
-    <td colspan="2">Crear orden de trabajo a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Diseñar esquema Orden de Trabajo</td>
-    <td colspan="3">Definir la estructura de datos para las órdenes de trabajo.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-16</td>
-    <td colspan="2">Crear orden de trabajo a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar endpoint POST /work-orders</td>
-    <td colspan="3">Codificar la API para crear nuevas órdenes de trabajo directamente.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-29</td>
-    <td colspan="2">Asignar técnico a Orden de Trabajo por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint PUT /work-orders/{id}/technicians</td>
-    <td colspan="3">Codificar la API para asignar o reasignar un técnico a una orden.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-17</td>
-    <td colspan="2">Consultar órdenes de Trabajo por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint GET /work-orders</td>
-    <td colspan="3">Codificar la API para listar todas las órdenes de trabajo.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-18</td>
-    <td colspan="2">Actualizar estado de Orden de Trabajo por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint PUT/PATCH /work-orders/{id}/status</td>
-    <td colspan="3">Codificar la API para actualizar el estado de una orden de trabajo.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-27</td>
-    <td colspan="2">Evaluar servicio a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint POST /reviews</td>
-    <td colspan="3">Codificar la API para crear nuevas evaluaciones de servicio.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-27</td>
-    <td colspan="2">Evaluar servicio a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar PUT /reviews/{id}</td>
-    <td colspan="3">Codificar la API para actualizar evaluaciones existentes.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-28</td>
-    <td colspan="2">Consultar evaluaciones de servicio a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint GET /reviews</td>
-    <td colspan="3">Codificar la API para listar todas las evaluaciones de servicio.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-28</td>
-    <td colspan="2">Consultar evaluaciones de servicio a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Permitir filtros por servicio/cliente/técnico</td>
-    <td colspan="3">Implementar filtros avanzados en la API de evaluaciones.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">To Do</td>
-</tr>
-<tr>
-    <td colspan="1">TS-30</td>
-    <td colspan="2">Añadir feedback de cliente a Orden de Trabajo por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint PUT /work-orders/{id}/feedback</td>
-    <td colspan="3">Codificar la API para añadir feedback de cliente a una orden.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Kenyi Ramírez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-07</td>
-    <td colspan="2">Consultar perfil del técnico con métricas por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint GET /technicians/{id}</td>
-    <td colspan="3">Codificar la API para obtener el perfil detallado de un técnico.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Gonzalo Aliaga</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-38</td>
-    <td colspan="2">Obtener Calificación Promedio del Técnico</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar lógica de cálculo promedio</td>
-    <td colspan="3">Codificar la funcionalidad para calcular el promedio de las calificaciones del técnico.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Kenyi Ramirez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-38</td>
-    <td colspan="2">Obtener Calificación Promedio del Técnico</td>
-    <td colspan="1">TT-03</td>
-    <td colspan="2">Integrar con datos de evaluaciones</td>
-    <td colspan="3">Conectar la lógica de cálculo con la base de datos de evaluaciones de servicio del técnico.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Kenyi Ramirez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-05</td>
-    <td colspan="2">Registrar nuevo técnico a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint POST /technicians</td>
-    <td colspan="3">Codificar la API para registrar nuevos técnicos.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Gonzalo Aliaga</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-12</td>
-    <td colspan="2">Crear y Consultar lecturas de Equipo vía API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar POST /equipments/{id}/readings</td>
-    <td colspan="3">Codificar la API para registrar nuevas lecturas de equipo.</td>
-    <td colspan="1">5</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-12</td>
-    <td colspan="2">Crear y Consultar lecturas de Equipo vía API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar GET /equipments/{id}/readings</td>
-    <td colspan="3">Codificar la API para consultar el historial de lecturas.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-32</td>
-    <td colspan="2">Obtener lecturas y resúmenes analíticos de equipos por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar GET /analytics/equipments/{id}/readings</td>
-    <td colspan="3">Codificar la API para obtener lecturas de telemetría con filtros.</td>
-    <td colspan="1">6</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-32</td>
-    <td colspan="2">Obtener lecturas y resúmenes analíticos de equipos por API</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar GET /analytics/equipments/{id}/summaries</td>
-    <td colspan="3">Codificar la API para obtener resúmenes analíticos de equipo.</td>
-    <td colspan="1">7</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-37</td>
-    <td colspan="2">Obtener vista general de analíticas de múltiples equipos por API</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar endpoint GET /analytics/equipments/overview</td>
-    <td colspan="3">Codificar la API para la vista general analítica de múltiples equipos.</td>
-    <td colspan="1">8</td>
-    <td colspan="2">Joseph Rodríguez</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-33</td>
-    <td colspan="2">Obtener Suscripciones a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar GET /subscriptions</td>
-    <td colspan="3">Codificar la API para recuperar todas las suscripciones.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-33</td>
-    <td colspan="2">Obtener Suscripciones a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Implementar GET /subscriptions/{id}</td>
-    <td colspan="3">Codificar la API para recuperar una suscripción específica por ID.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-34</td>
-    <td colspan="2">Actualizar Suscripción a un Nuevo Plan a través de API RESTful</td>
-    <td colspan="1">TT-01</td>
-    <td colspan="2">Implementar POST /subscriptions/upgrade</td>
-    <td colspan="3">Codificar la API para procesar la actualización de un plan.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">TS-34</td>
-    <td colspan="2">Actualizar Suscripción a un Nuevo Plan a través de API RESTful</td>
-    <td colspan="1">TT-02</td>
-    <td colspan="2">Validar plan y suscripción</td>
-    <td colspan="3">Implementar lógica de validación para la transición de planes.</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Victor Rojas</td>
-    <td colspan="1">To Review</td>
-</tr>
-</table>
-
-##### 6.2.3.4. Development Evidence for Sprint Review.
-
-En esta sección se presentan los commits realizados en el repositorio de backend y frontend durante el sprint 3.
-
-*Commits realizados en el repositorio de frontend durante el sprint 3:*
-A continuación se presenta un registro de los cambios realizados en la interfaz de usuario de nuestra aplicación. Cada commit detalla las modificaciones efectuadas en el diseño, la estructura y la interacción de los elementos visuales durante este Sprint.
-
-<table border="1">
-  <tr>
-    <th>Repository</th>
-    <th>Branch</th>
-    <th>Commit Id</th>
-    <th>Commit Message</th>
-    <th>Commit Message Body</th>
-    <th>Committed on (Date)</th>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>main</td>
-    <td>394b441</td>
-    <td>Merge pull request #20 from Inteligencia-Artesanal-Aplicaciones-Web/dev</td>
-    <td>Merge pull request #20 from Inteligencia-Artesanal-Aplicaciones-Web/dev</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>main</td>
-    <td>15b12ba</td>
-    <td>Merge pull request #19 from Inteligencia-Artesanal-Aplicaciones-Web/feat/service-management</td>
-    <td>Merge pull request #19 from Inteligencia-Artesanal-Aplicaciones-Web/feat/service-management</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>main</td>
-    <td>43b8e4f</td>
-    <td>Merge pull request #18 from Inteligencia-Artesanal-Aplicaciones-Web/dev</td>
-    <td>Merge pull request #18 from Inteligencia-Artesanal-Aplicaciones-Web/dev</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>main</td>
-    <td>f129d79</td>
-    <td>Merge pull request #17 from Inteligencia-Artesanal-Aplicaciones-Web/dev</td>
-    <td>Merge pull request #17 from Inteligencia-Artesanal-Aplicaciones-Web/dev</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>main</td>
-    <td>852e8be</td>
-    <td>Merge pull request #16 from Inteligencia-Artesanal-Aplicaciones-Web/feat/field-operations</td>
-    <td>Merge pull request #16 from Inteligencia-Artesanal-Aplicaciones-Web/feat/field-operations</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>49ad111</td>
-    <td>feat(router): add work-order list, new work-orders and technician list routes</td>
-    <td>feat(router): add work-order list, new work-orders and technician list routes</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>f135d53</td>
-    <td>feat(i18n): add work-order and technician</td>
-    <td>feat(i18n): add work-order and technician</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>cb42721</td>
-    <td>feat(field-operations): add new work-order component</td>
-    <td>feat(field-operations): add new work-order component</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>16aba8f</td>
-    <td>feat(field-operations): add work-order list component</td>
-    <td>feat(field-operations): add work-order list component</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>906e24d</td>
-    <td>feat(field-operations): add work-order detail modal styles</td>
-    <td>feat(field-operations): add work-order detail modal styles</td>
-    <td>18/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>494055f</td>
-    <td>feat(field-operations): add work-order detail modal</td>
-    <td>feat(field-operations): add work-order detail modal</td>
-    <td>18/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>f786497</td>
-    <td>feat(field-operations): add technician list component</td>
-    <td>feat(field-operations): add technician list component</td>
-    <td>18/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>a60fdaa</td>
-    <td>feat(field-operations): move Technician dialog styles to styles.css</td>
-    <td>feat(field-operations): move Technician dialog styles to styles.css</td>
-    <td>18/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>2c72c67</td>
-    <td>feat(field-operations): add technician detail modal component</td>
-    <td>feat(field-operations): add technician detail modal component</td>
-    <td>18/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend</td>
-    <td>feat/field-operations</td>
-    <td>1251bf8</td>
-    <td>feat(field-operations): add entity and service for WorkOrder and Technician</td>
-    <td>feat(field-operations): add entity and service for WorkOrder and Technician</td>
-    <td>18/06/2025</td>
-  </tr>
-</table>
-
-
-**Commits realizados en el repositorio de backend durante el sprint 3:**
-
-A continuación se presenta un registro detallado de los commits realizados en el repositorio, enfocados a la parte de backend. Cada entrada incluye el identificador único del commit (ID), descripciones realizados durante la elaboracion de esta.
-
-<table>
-  <tr>
-    <td colspan="1">Repository</td>
-    <td colspan="1">Branch</td>
-    <td colspan="1">Commit Id</td>
-    <td colspan="1">Commit Message</td>
-    <td colspan="1">Commit Message Body</td>
-    <td colspan="1">Commited on (Date)</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>f31a9c2</td>
-    <td>feat(Subscriptions): update Program.cs with Repository, CommandService, and QueryService.</td>
-    <td>feat(Subscriptions): update Program.cs with Repository, CommandService, and QueryService.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>c7b84e9</td>
-    <td>feat(Subscriptions): add ApplySubscriptionsConfiguration method to AppDbContext.cs for subscriptions setup.</td>
-    <td>feat(Subscriptions): add ApplySubscriptionsConfiguration method to AppDbContext.cs for subscriptions setup.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>e12cba1</td>
-    <td>feat(Subscriptions): add SubscriptionsController.cs.</td>
-    <td>feat(Subscriptions): add SubscriptionsController.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>bd8a674</td>
-    <td>feat(Subscriptions): add SubscriptionResourceFromEntityAssembler.cs.</td>
-    <td>feat(Subscriptions): add SubscriptionResourceFromEntityAssembler.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>ae99f21</td>
-    <td>feat(Subscriptions): add UpgradeSubscriptionCommandFromResourceAssembler.cs.</td>
-    <td>feat(Subscriptions): add UpgradeSubscriptionCommandFromResourceAssembler.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>67d42cb</td>
-    <td>feat(Subscriptions): add SubscriptionResource.cs.</td>
-    <td>feat(Subscriptions): add SubscriptionResource.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>a1248f5</td>
-    <td>feat(Subscriptions): add SubscriptionRepository.cs.</td>
-    <td>feat(Subscriptions): add SubscriptionRepository.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>ba1c970</td>
-    <td>feat(Subscriptions): add ISubscriptionCommandService.cs.</td>
-    <td>feat(Subscriptions): add ISubscriptionCommandService.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>c4d7e03</td>
-    <td>feat(Subscriptions): add SubscriptionQueryService.cs.</td>
-    <td>feat(Subscriptions): add SubscriptionQueryService.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>ecaf42a</td>
-    <td>feat(Subscriptions): add SubscriptionsCommandServices.cs.</td>
-    <td>feat(Subscriptions): add SubscriptionsCommandServices.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-  <tr>
-    <td>https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform</td>
-    <td>develop</td>
-    <td>d13c7d1</td>
-    <td>feat(Subscriptions): add ISubscriptionRepository.cs.</td>
-    <td>feat(Subscriptions): add ISubscriptionRepository.cs.</td>
-    <td>19/06/2025</td>
-  </tr>
-</table>
-
-
-
-
-##### 6.2.3.5. Execution Evidence for Sprint Review.
-
-En esta sección se presentan las evidencias de la ejecución de la aplicación para el sprint 3.
-En esta sección, presentamos una recopilación visual y detallada de los avances logrados durante el sprint.
-
-![front1.png](assets/chapter-05/TB2/front1.png)
-![front2.png](assets/chapter-05/TB2/front2.png)
-![front3.png](assets/chapter-05/TB2/front3.png)
-![front4.png](assets/chapter-05/TB2/front4.png)
-![front5.png](assets/chapter-05/TB2/front5.png)
-![front6.png](assets/chapter-05/TB2/front6.png)
-![front7.png](assets/chapter-05/TB2/front7.png)
-![front8.png](assets/chapter-05/TB2/front8.png)
-![front9.png](assets/chapter-05/TB2/front9.png)
-![front10.png](assets/chapter-05/TB2/front10.png)
-![front11.png](assets/chapter-05/TB2/front11.png)
-![front12.png](assets/chapter-05/TB2/front12.png)
-![front13.png](assets/chapter-05/TB2/front13.png)
-![front14.png](assets/chapter-05/TB2/front14.png)
-
-
-##### 6.2.3.6. Services Documentation Evidence for Sprint Review.
-
-Durante este sprint se logró documentar un total de 25 endpoints correspondientes a 6 controladores principales de la API. La documentación fue realizada utilizando Swagger, una herramienta que facilita la exploración, prueba y validación de servicios REST. Esta interfaz está disponible accediendo a la siguiente URL configurada en el servidor (https://ositopolar-platform.onrender.com/index.html).
-
-<p>A continuación, se detallan los controladores y sus respectivos endpoints documentados:</p>
-
-<h4>WorkOrderController</h4>
-<p>Se encarga de la gestión de órdenes de trabajo. Incluye endpoints para creación, obtención, actualización de estado y resolución.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>POST</td><td>/api/v1/work-orders</td><td>Crear nueva orden de trabajo</td></tr>
-    <tr><td>GET</td><td>/api/v1/work-orders</td><td>Obtener todas las órdenes</td></tr>
-    <tr><td>GET</td><td>/api/v1/work-orders/{workOrderId}</td><td>Obtener orden por ID</td></tr>
-    <tr><td>PUT</td><td>/api/v1/work-orders/{workOrderId}/status</td><td>Actualizar estado de la orden</td></tr>
-    <tr><td>PUT</td><td>/api/v1/work-orders/{workOrderId}/resolution</td><td>Agregar resolución a la orden</td></tr>
-  </tbody>
-</table>
-
-![WO.png](assets/chapter-05/TB2/fixServices/WO.png)
-![WO1.png](assets/chapter-05/TB2/fixServices/WO1.png)
-![WO2.png](assets/chapter-05/TB2/fixServices/WO2.png)
-![WO3.png](assets/chapter-05/TB2/fixServices/WO3.png)
-
-<h4>PaymentsController</h4>
-<p>Gestiona los pagos realizados por los usuarios.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>POST</td><td>/api/v1/payments/create-checkout-session</td><td>Crea una orden de pago.</td></tr>
-    <tr><td>POST</td><td>/api/v1/payments/webhook</td><td>Stripe Webhook</td></tr>
-  </tbody>
-</table>
-
-![P1.png](assets/chapter-05/TB2/fixServices/P1.png)
-![P2.png](assets/chapter-05/TB2/fixServices/P2.png)
-
-
-<h4>SubscriptionController</h4>
-<p>Permite gestionar suscripciones de los usuarios.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GET</td><td>/api/v1/subscriptions/{subscriptionId}</td><td>Obtener suscripción por ID</td></tr>
-    <tr><td>GET</td><td>/api/v1/subscriptions</td><td>Listar todas las suscripciones</td></tr>
-    <tr><td>POST</td><td>/api/v1/subscriptions/upgrade</td><td>Actualizar plan de suscripción</td></tr>
-  </tbody>
-</table>
-
-![S.png](assets/chapter-05/TB2/fixServices/S.png)
-![S1.png](assets/chapter-05/TB2/fixServices/S1.png)
-![S2.png](assets/chapter-05/TB2/fixServices/S2.png)
-![S3.png](assets/chapter-05/TB2/fixServices/S3.png)
-
-
-<h4>ServiceRequestController</h4>
-<p>Encargado de manejar solicitudes de servicio por parte de los usuarios.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>POST</td><td>/api/v1/service-requests</td><td>Crear solicitud de servicio</td></tr>
-    <tr><td>GET</td><td>/api/v1/service-requests</td><td>Obtener todas las solicitudes</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}</td><td>Actualizar solicitud existente</td></tr>
-    <tr><td>GET</td><td>/api/v1/service-requests/{serviceRequestId}</td><td>Obtener solicitud por ID</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/assign-technician</td><td>Asignar técnico</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/feedback</td><td>Añadir feedback de cliente</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/reject</td><td>Rechazar solicitud</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/cancel</td><td>Cancelar solicitud</td></tr>
-  </tbody>
-</table>
-
-![SR.png](assets/chapter-05/TB2/fixServices/SR.png)
-![SR1.png](assets/chapter-05/TB2/fixServices/SR1.png)
-![SR2.png](assets/chapter-05/TB2/fixServices/SR2.png)
-![SR3.png](assets/chapter-05/TB2/fixServices/SR3.png)
-
-
-<h4>EquipmentController</h4>
-<p>Gestiona el inventario de equipos y sus lecturas operacionales.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GET</td><td>/api/v1/equipments</td><td>Obtener todos los equipos</td></tr>
-    <tr><td>POST</td><td>/api/v1/equipments</td><td>Crear nuevo equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/equipments/{equipmentId}</td><td>Obtener equipo por ID</td></tr>
-    <tr><td>PUT</td><td>/api/v1/equipments/{equipmentId}</td><td>Actualizar equipo completo</td></tr>
-    <tr><td>DELETE</td><td>/api/v1/equipments/{equipmentId}</td><td>Eliminar equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/equipments/owners/{ownerId}</td><td>Obtener equipos por dueño</td></tr>
-    <tr><td>PATCH</td><td>/api/v1/equipments/{equipmentId}/operations</td><td>Actualizar parámetros operativos</td></tr>
-    <tr><td>POST</td><td>/api/v1/equipments/{equipmentId}/readings</td><td>Crear lectura de equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/equipments/{equipmentId}/readings</td><td>Obtener lecturas del equipo</td></tr>
-  </tbody>
-</table>
-
-![E.png](assets/chapter-05/TB2/fixServices/E.png)
-![E1.png](assets/chapter-05/TB2/fixServices/E1.png)
-![E2.png](assets/chapter-05/TB2/fixServices/E2.png)
-![E3.png](assets/chapter-05/TB2/fixServices/E3.png)
-
-
-<h4>TechnicianController</h4>
-<p>Gestión de técnicos del sistema.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>POST</td><td>/api/v1/technicians</td><td>Crear nuevo técnico</td></tr>
-    <tr><td>GET</td><td>/api/v1/technicians</td><td>Obtener todos los técnicos</td></tr>
-    <tr><td>GET</td><td>/api/v1/technicians/{technicianId}</td><td>Obtener técnico por ID</td></tr>
-    <tr><td>GET</td><td>/api/v1/technicians/{technicianId}/average-rating</td><td>Obtener promedio de calificaciones</td></tr>
-  </tbody>
-</table>
-
-![T.png](assets/chapter-05/TB2/fixServices/T.png)
-![T1.png](assets/chapter-05/TB2/fixServices/T1.png)
-![T2.png](assets/chapter-05/TB2/fixServices/T2.png)
-![T3.png](assets/chapter-05/TB2/fixServices/T3.png)
-
-
-<h4>AnalyticsController</h4>
-<p>Provee datos analíticos sobre los equipos registrados.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GET</td><td>/api/v1/analytics/equipments/{equipmentId}/readings</td><td>Obtener lecturas del equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/analytics/equipments/{equipmentId}/summaries</td><td>Obtener resumen analítico</td></tr>
-    <tr><td>GET</td><td>/api/v1/analytics/equipments/overview</td><td>Vista general de equipos</td></tr>
-  </tbody>
-</table>
-
-![A.png](assets/chapter-05/TB2/fixServices/A.png)
-![A1.png](assets/chapter-05/TB2/fixServices/A1.png)
-![A2.png](assets/chapter-05/TB2/fixServices/A2.png)
-![A3.png](assets/chapter-05/TB2/fixServices/A3.png)
-
-
-##### 6.2.3.7. Software Deployment Evidence for Sprint Review.
-Despliegue de la base de datos en FreeSqlDatabase
-
-![sql1.png](assets/chapter-05/TB2/sql1.png)
-![s1l2.png](assets/chapter-05/TB2/sql2.png)
-
-Despligue de Backend en Render:
-
-![s1l2.png](assets/chapter-05/TB2/render1.png)
-![s1l2.png](assets/chapter-05/TB2/render2.png)
-![s1l2.png](assets/chapter-05/TB2/render3.png)
-
-##### 6.2.3.8. Team Collaboration Insights during Sprint.
-
-**Frontend**
-![Insights Frontend.png](assets/chapter-05/TB2/Insights%20Frontend.png)
-
-**Backend**
-![Insights Backend.png](assets/chapter-05/TB2/Insights%20Backend.png)
-
-### 6.2.4. Sprint 4
-
-En esta sección se presenta el reporte del sprint 4, el cual se enfocó en la culminación del desarrollo de la plataforma, implementando nuevas funcionalidades y mejoras en la experiencia de usuario.
-
-### 6.2.4.1. Sprint Planning 4
-**(POR TERMINAR)**
-<table>
-<tr>
-    <th colspan="5">Sprint 4</th>
-    <th colspan="9">Sprint 4</th>
-  </tr>
-      <tr>
-    <td colspan="13">Sprint Planning Background</td>
-  </tr>
-  <tr>
-    <td colspan="5">Date</td>
-    <td colspan="8">2025-07-03</td>
-</tr>
-  <tr>
-    <td colspan="5">Time</td>
-    <td colspan="8">10:30 PM</td>
-  </tr>
-  <tr>
-    <td colspan="5">Location</td>
-    <td colspan="8">Via Discord</td>
-<tr>
-    <td colspan="5">Prepared By</td>
-    <td colspan="8">Kenyi Ramirez</td>
-</tr>
-<tr>
-    <td colspan="5">Attendees (to planning meeting)</td>
-    <td colspan="8">Joseph Rodriguez, Wilder Aliaga, Victor Rojas, Anyelo  Alejos</td>
-</tr>
-<tr>
-    <td colspan="5">Sprint 3 Review Summary</td>
-    <td colspan="8">Se implementaron funcionalidades críticas en el frontend, avanzando en la integración del sistema.</td>
-</tr>
-<tr>
-    <td colspan="5">Sprint 3 Retrospective Summary</td>
-    <td colspan="8">El equipo mostró un alto nivel de colaboración, con mejoras sustanciales en la organización y planificación.</td>
-</tr>
-<tr>
-    <td colspan="13">Sprint Goal & User Stories</td>
-</tr>
-<tr>
-    <td colspan="5">Sprint 4 Goal</td>
-       <td colspan="8"></td>
-
-</tr>
-<tr>
-    <td colspan="5">Sprint 4 Velocity</td>
-    <td colspan="8"></td>
-<tr>
-    <td colspan="5">Sum of Story Points</td>
-    <td colspan="8"></td>
-</tr>
-</table>
-
-##### 6.2.4.2. Aspect Leaders and Collaborators
-
-Durante este cuarto Sprint, el equipo se enfocó ...
-Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha elaborado la matriz de Liderazgo y Colaboración (LACX). Esta matriz asigna responsabilidades específicas a cada miembro del equipo en relación con los aspectos clave del Sprint.
-<table>
-  <tr>
-    <td colspan="2"><strong>Team Member (Last Name, First Name)</strong></td>
-    <td><strong>GitHub Username</strong></td>
-    <td><strong>Service Request Management<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Assets and Equipment Management<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Field Operations<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Subscriptions and Payments<br>Leader (L) / Collaborator (C)</strong></td>
-    <td><strong>Dashboard and Analytics<br>Leader (L) / Collaborator (C)</strong></td>
-  </tr>
-  <tr>
-    <td colspan="2">Ramírez Cabrera, Kenyi Efrain</td>
-    <td>Kenyi15upc</td>
-    <td>L</td>
-    <td>-</td>
-    <td>L</td>
-    <td>-</td>
-    <td>C</td>
-  </tr>
-  <tr>
-    <td colspan="2">Rodriguez Parco Joseph Pablo </td>
-    <td>eJosR-Coding</td>
-    <td>C</td>
-    <td>L</td>
-    <td>-</td>
-    <td>C</td>
-    <td>L</td>
-  </tr>
-  <tr>
-    <td colspan="2"> Aliaga Urbina Wilder Gonzalo </td>
-    <td>Gonzalo1905</td>
-    <td>C</td>
-    <td>-</td>
-    <td>C</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td colspan="2">Verona Flores Italo Sebastián
-</td>
-    <td>atomdragon1318</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td colspan="2">Rojas Reategui Victor Manuel </td>
-    <td>VRojas1603</td>
-    <td>-</td>
-    <td>C</td>
-    <td>-</td>
-    <td>L</td>
-    <td>-</td>
-  </tr>
-</table>
-
-##### 6.2.4.3. Sprint Backlog 4.
-Nuestro enfoque principal para este Sprint ha sido el desarrollo del frontend y backend de la plataforma OsitoPolar. Hemos estructurado nuestras tareas siguiendo las User Stories y Technical Stories que hemos detallado, asegurando un progreso claro y alineado con los objetivos de negocio y la arquitectura técnica.
-
-Para la gestión y el control de estas tareas, estamos utilizando Trello.
-
-Enlace: 
-**(POR TERMINAR)**
-
-##### 6.2.4.4. Development Evidence for Sprint Review.
-
-En esta sección se presentan los commits realizados en el repositorio de backend y frontend durante el sprint 4.
-
-**Commits realizados en el repositorio de frontend durante el sprint 4:**
-
-A continuación se presenta un registro de los cambios realizados en la interfaz de usuario de nuestra aplicación. Cada commit detalla las modificaciones efectuadas en el diseño, la estructura y la interacción de los elementos visuales durante este Sprint.
-
-| Repository          | Branch | Commit Id | Commit Message                                                                                         | Commit Message Body                                                                                      | Committed on (Date) |
-|---------------------|--------|-----------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|---------------------|
-| OsitoPolar-Frontend | main   | 3f5aa82   | feat(service-management): add styles to company-service-request-cards                                 | feat(service-management): add styles to company-service-request-cards                                   | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | 755c72d   | feat(service-management): add rating attribute and integrate technician assignment and service request handling | feat(service-management): add rating attribute and integrate technician assignment and service request handling | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | 9d70416   | Merge pull request #17 from Inteligencia-Artesanal-Aplicaciones-Web/dev                               | Merge pull request #17 from Inteligencia-Artesanal-Aplicaciones-Web/dev                                 | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | ee48102   | Merge pull request #16 from Inteligencia-Artesanal-Aplicaciones-Web/feat/field-operations             | Merge pull request #16 from Inteligencia-Artesanal-Aplicaciones-Web/feat/field-operations               | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | a52a80b   | feat(router): add work-order list, new work-orders and technician list routes                         | feat(router): add work-order list, new work-orders and technician list routes                           | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | 4135053   | feat(i18n): add work-order and technician                                                              | feat(i18n): add work-order and technician                                                                | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | 4a0e49e   | feat(field-operations): add new work-order component                                                   | feat(field-operations): add new work-order component                                                     | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | 1ec3102   | feat(field-operations): add work-order list component                                                  | feat(field-operations): add work-order list component                                                    | ~3 weeks ago        |
-| OsitoPolar-Frontend | main   | 906e244   | feat(field-operations): add work-order detail modal styles                                             | feat(field-operations): add work-order detail modal styles                                               | Jun 18, 2025        |
-| OsitoPolar-Frontend | main   | 186c9ae   | feat(field-operations): add work-order detail modal                                                    | feat(field-operations): add work-order detail modal                                                      | Jun 18, 2025        |
-| OsitoPolar-Frontend | main   | 56ffb1c   | feat(field-operations): add technician list component                                                  | feat(field-operations): add technician list component                                                    | Jun 18, 2025        |
-| OsitoPolar-Frontend | main   | f9f68e6   | feat(field-operations): move Technician dialog styles to styles.css                                   | feat(field-operations): move Technician dialog styles to styles.css                                     | Jun 18, 2025        |
-| OsitoPolar-Frontend | main   | a43ed02   | feat(i18n): add translation key for “plans” option.                                                    | feat(i18n): add translation key for “plans” option.                                                      | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | 1ef80bb   | feat(router): add new route for plans.                                                                 | feat(router): add new route for plans.                                                                   | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | 635d9ba   | fix(subscription): update plan entity.                                                                 | fix(subscription): update plan entity.                                                                   | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | ed11792   | feat(subscription): add plan-card and plans components.                                                | feat(subscription): add plan-card and plans components.                                                  | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | 362ec9e   | fix(subscription): fix internalization labels.                                                         | fix(subscription): fix internalization labels.                                                           | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | 1b99dcd   | update(db): add plans for providers and clients.                                                       | update(db): add plans for providers and clients.                                                         | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | a0c3a56   | feat(subscription): implement plans-tab component.                                                     | feat(subscription): implement plans-tab component.                                                       | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | f32c2fa   | fix(subscription): change class to const.                                                              | fix(subscription): change class to const.                                                                | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | 89e8f92   | fix(index): add rental and contact const missing in feat/plans branch.                                 | fix(index): add rental and contact const missing in feat/plans branch.                                   | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | b5d717a   | Merge branch ‘dev’ into feat/plans                                                                     | Merge branch ‘dev’ into feat/plans                                                                       | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | d3478f1   | feat(subscription): add subscription service.js                                                        | feat(subscription): add subscription service.js                                                          | Jun 15, 2025        |
-| OsitoPolar-Frontend | main   | 82350e2   | Merge pull request #15 from Inteligencia-Artesanal-Aplicaciones-Web/dev                               | Merge pull request #15 from Inteligencia-Artesanal-Aplicaciones-Web/dev                                 | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | 4de5867   | Updated contact and added translation (#14)                                                            | Updated contact and added translation (#14)                                                              | Jun 14, 2025        |
-| OsitoPolar-Frontend | dev    | 35cfb92   | Merge branch ‘dev’                                                                                     | Merge branch ‘dev’                                                                                       | Jun 14, 2025        |
-| OsitoPolar-Frontend | dev    | b1b88f2   | Merge branch ‘feat/rent-management' into dev                                                           | Merge branch ‘feat/rent-management' into dev                                                             | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | 0776e57   | Created rent-managment (#13)                                                                           | Created rent-managment (#13)                                                                             | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | 9f6b9cb   | feat(rental): add localization to rental hero section, payment modal, and pricing summary components   | feat(rental): add localization to rental hero section, payment modal, and pricing summary components     | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | 0b3016e   | feat(rental): add localization for rental equipment grid, summary, and filter components               | feat(rental): add localization for rental equipment grid, summary, and filter components                 | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | 2f2eaa3   | feat(rental): add localization for rental configuration and equipment components                       | feat(rental): add localization for rental configuration and equipment components                         | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | b9e0d3a   | feat(rental): add localization for rental components in English and Spanish                            | feat(rental): add localization for rental components in English and Spanish                              | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | e1a70fb   | chore(plans): add plan.entity.js                                                                       | chore(plans): add plan.entity.js                                                                         | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | 3f03bda   | chore(db): add “plans” and “providerPlans” structure                                                   | chore(db): add “plans” and “providerPlans” structure                                                     | Jun 14, 2025        |
-| OsitoPolar-Frontend | main   | 4dc4821   | chore(plans): add plan.entity.js                                                                       | chore(plans): add plan.entity.js                                                                         | last month          |
-| OsitoPolar-Frontend | main   | 49e16cf   | chore(db): add “plans” and “providerPlans” structure                                                   | chore(db): add “plans” and “providerPlans” structure                                                     | last month          |
-| OsitoPolar-Frontend | main   | e5d7299   | feat(navbar): add ‘Plans’ link to main navigation                                                      | feat(navbar): add ‘Plans’ link to main navigation                                                        | last month          |
-| OsitoPolar-Frontend | main   | 28bd08f   | fix(index): refactor routes array                                                                      | fix(index): refactor routes array                                                                        | last month          |
-| OsitoPolar-Frontend | main   | 3749fd0   | feat(i18n): add translation key for “plans” option                                                     | feat(i18n): add translation key for “plans” option                                                       | last month          |
-| OsitoPolar-Frontend | main   | 5fc5701   | feat(rental): add rental page header component with back navigation                                    | feat(rental): add rental page header component with back navigation                                      | last month          |
-| OsitoPolar-Frontend | main   | a0e8055   | feat(rental): add loading state component for rental processes                                         | feat(rental): add loading state component for rental processes                                           | last month          |
-| OsitoPolar-Frontend | main   | 76d1fa5   | feat(rental): add rental configuration form and equipment summary components                           | feat(rental): add rental configuration form and equipment summary components                             | last month          |
-| OsitoPolar-Frontend | main   | bde70a6   | feat(rental): refactor rental checkout page with new components and improved loading/error handling    | feat(rental): refactor rental checkout page with new components and improved loading/error handling      | last month          |
-| OsitoPolar-Frontend | main   | c9b4e65   | feat(rental): add rental equipment card and grid components for displaying equipment                   | feat(rental): add rental equipment card and grid components for displaying equipment                     | Jun 13, 2025        |
-
-
-**Commits realizados en el repositorio de backend durante el sprint 4:**
-
-A continuación se presenta un registro detallado de los commits realizados en el repositorio, enfocados a la parte de backend. Cada entrada incluye el identificador único del commit (ID), descripciones realizados durante la elaboracion de esta.
-
-| Repository         | Branch   | Commit Id | Commit Message                                                                                  | Commit Message Body                                                                           | Committed on (Date) |
-|--------------------|----------|-----------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------|
-| OsitoPolar-Backend | develop  | 6b5f228   | Merge branch ‘develop’                                                                          | Merge branch ‘develop’                                                                      | Jul 10, 2025   |
-| OsitoPolar-Backend | develop  | 3c5a953   | fix: update project files.                                                                      | fix: update project files.                                                                  | Jul 10, 2025   |
-| OsitoPolar-Backend | develop  | c99bdda   | Merge branch ‘feat/iam2' into develop                                                           | Merge branch ‘feat/iam2' into develop                                                       | Jul 10, 2025   |
-| OsitoPolar-Backend | develop  | 6b033de   | feat(middleware): enhance request authorization with detailed logging and error handling       | feat(middleware): enhance request authorization with detailed logging and error handling     | Jul 9, 2025    |
-| OsitoPolar-Backend | develop  | 78ad87f   | Merge branch ‘develop’                                                                          | Merge branch ‘develop’                                                                      | Jul 9, 2025    |
-| OsitoPolar-Backend | develop  | 721d852   | fix(technicians): minor error in data type.                                                     | fix(technicians): minor error in data type.                                                 | Jul 9, 2025    |
-| OsitoPolar-Backend | develop  | 4a83fc0   | Merge branch ‘fix/deploy’ into develop                                                          | Merge branch ‘fix/deploy’ into develop                                                      | Jul 9, 2025    |
-| OsitoPolar-Backend | develop  | dc0b7d1   | feat(Program): clean up comments and improve logging output                                     | feat(Program): clean up comments and improve logging output                                 | Jul 9, 2025    |
-| OsitoPolar-Backend | develop  | ff2a5b9   | feat(config): update database connection string and add token settings                         | feat(config): update database connection string and add token settings                      | Jul 9, 2025    |
-| OsitoPolar-Backend | develop  | c0fd7ad   | fix(Equipments): update GetAllEquipments to filter by owner and improve error handling         | fix(Equipments): update GetAllEquipments to filter by owner and improve error handling      | Jul 8, 2025    |
-| OsitoPolar-Backend | develop  | b2f92a9   | fix(Payments): update endpoint paths for checkout session and webhook                          | fix(Payments): update endpoint paths for checkout session and webhook                       | Jul 8, 2025    |
-| OsitoPolar-Backend | develop  | 15cddd2   | fix(ServiceRequests): update service request status endpoint to handle reject and cancel actions | fix(ServiceRequests): update service request status endpoint to handle reject and cancel actions | Jul 8, 2025    |
-| OsitoPolar-Backend | develop  | d9fcde5   | feat(Program.cs): add service request and technician API                             | feat(Program.cs): add service request and technician API                             | Jul 5, 2025    |
-| OsitoPolar-Backend | develop  | 11d9724   | fix(Technician): fix rating atribute                                                 | fix(Technician): fix rating atribute                                                 | Jul 5, 2025    |
-| OsitoPolar-Backend | develop  | 8331740   | Merge branch ‘develop’                                                               | Merge branch ‘develop’                                                               | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | 767e260   | chore: modify origins in cors.                                                       | chore: modify origins in cors.                                                       | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | 75fdaeb   | Merge branch ‘develop’                                                               | Merge branch ‘develop’                                                               | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | f35e23a   | fix: refactor comments.                                                              | fix: refactor comments.                                                              | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | 9735e3b   | fix(Technicians): fix                                                                 | fix(Technicians): fix                                                                | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | af644af   | fix(Technicians): fix rating atribute                                                 | fix(Technicians): fix rating atribute                                                | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | 6a2c94b   | chore: update hosting credentials.                                                   | chore: update hosting credentials.                                                   | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | 563f911   | fix: fix Program.cs                                                                  | fix: fix Program.cs                                                                  | Jul 4, 2025    |
-| OsitoPolar-Backend | develop  | 563f911   | fix: fix Program.cs                                                  | fix: fix Program.cs                                                    | Jul 3, 2025 |
-| OsitoPolar-Backend | develop  | 438ac5    | feat(iam): fix bounded context                                       | feat(iam): fix bounded context                                         | Jul 3, 2025|
-| OsitoPolar-Backend | develop  | 99116e8   | feat(profiles): add dependency injection rules                       | feat(profiles): add dependency injection rules                         | Jul 3, 2025|
-| OsitoPolar-Backend | develop  | 22ba1aa   | feat(iam): add bounded context                                       | feat(iam): add bounded context                                         | Jul 3, 2025|
-| OsitoPolar-Backend | develop  | 22732fa   | feat(profiles): add bounded context                                  | feat(profiles): add bounded context                                    | Jul 3, 2025|
-| OsitoPolar-Backend | develop  | 095ec21   | feat(appsettings): add appsettings for freeSqlDatabase.             | feat(appsettings): add appsettings for freeSqlDatabase.               | Jun 21, 2025   |
-| OsitoPolar-Backend | develop  | aceb970   | feat(Settings): add user-specific settings for code inspection exclusions | feat(Settings): add user-specific settings for code inspection exclusions | Jun 21, 2025   |
-| OsitoPolar-Backend | develop  | 68473d0   | feat(Payment): add CreatePaymentSessionCommand record for payment session creation | feat(Payment): add CreatePaymentSessionCommand record for payment session creation | Jun 21, 2025   |
-| OsitoPolar-Backend | develop  | 15b412b   | feat(Stripe): add Stripe configuration to appsettings for development, production, and general use | feat(Stripe): add Stripe configuration to appsettings for development, production, and general use | Jun 21, 2025   |
-| OsitoPolar-Backend | develop  | 439f9ee   | fix(dependencies): update package versions for EntityFrameworkCore and add Stripe.net | fix(dependencies): update package versions for EntityFrameworkCore and add Stripe.net | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 43d27bf   | feat(Payment): add Payment class for managing payment details and status updates | feat(Payment): add Payment class for managing payment details and status updates | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | e2830d9   | feat(Payment): add PaymentAudit class for tracking created and updated dates   | feat(Payment): add PaymentAudit class for tracking created and updated dates     | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 088cf19   | feat(Payment): implement PaymentCommandService for handling payment sessions and webhooks | feat(Payment): implement PaymentCommandService for handling payment sessions and webhooks | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | a6b2ec4   | feat(Payment): implement PaymentRepository and PaymentsController for Stripe integration | feat(Payment): implement PaymentRepository and PaymentsController for Stripe integration | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | cac2d23   | feat(Payment): add PaymentStatus enum to represent various payment states       | feat(Payment): add PaymentStatus enum to represent various payment states        | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 7944b88   | feat(Payment): add command for processing payment webhook with Stripe session ID and event type | feat(Payment): add command for processing payment webhook with Stripe session ID and event type | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | bc3a866   | fix(Deployment): update development port and add Stripe configuration and services | fix(Deployment): update development port and add Stripe configuration and services | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 819594e   | feat(Subscription): store features as JSON and add computed property for serialization | feat(Subscription): store features as JSON and add computed property for serialization | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 98de59d   | fix(SubscriptionRepository): implement temporary solution to return null for users without active subscriptions | fix(SubscriptionRepository): implement temporary solution to return null for users without active subscriptions | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 7ccadc2   | feat(Subscriptions): refactor upgrade plan logic to process upgrades without existing subscription | feat(Subscriptions): refactor upgrade plan logic to process upgrades without existing subscription | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | bc65113   | feat(Stripe): implement Stripe service for checkout sessions and webhook validation | feat(Stripe): implement Stripe service for checkout sessions and webhook validation | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 873f4a6   | feat(Deployment): update development configuration with connection strings and logging levels | feat(Deployment): update development configuration with connection strings and logging levels | Jun 21, 2025        |
-| OsitoPolar-Backend | develop  | 4fdf788   | feat(Deployment): enhance production configuration and kebab-case routing       | feat(Deployment): enhance production configuration and kebab-case routing       | Jun 21, 2025        |
-| OsitoPolar-Backend | feat/deployment-test1 | dc94c7b   | Merge branch ‘develop’ into feat/deployment-test1                               | Merge branch ‘develop’ into feat/deployment-test1                               | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | d4e2ba2   | Merge pull request #12 from Inteligencia-Artesanal-Aplicaciones-Web/feat/analytics | Merge pull request #12 from Inteligencia-Artesanal-Aplicaciones-Web/feat/analytics | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | 67b9947   | fix(deployment): update Program.cs.                                             | fix(deployment): update Program.cs.                                             | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | 8e78919   | fix(deployment): update Program.cs.                                             | fix(deployment): update Program.cs.                                             | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | 950bdf8   | feat(deployment): add docker image.                                             | feat(deployment): add docker image.                                             | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | e979a6f   | feat(deployment): add appsettings.Production.json.                              | feat(deployment): add appsettings.Production.json.                              | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | f082050   | feat(Analytics): add unified resource for equipment readings                    | feat(Analytics): add unified resource for equipment readings                    | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | 1ba50e0   | feat(Equipment): move equipment reading creation to Equipment Management        | feat(Equipment): move equipment reading creation to Equipment Management        | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | e252e9c   | feat(Equipment): add resource for creating equipment readings                   | feat(Equipment): add resource for creating equipment readings                   | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | cef30fb   | feat(Analytics): add unified resource for analytics summaries                   | feat(Analytics): add unified resource for analytics summaries                   | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | fa82332   | feat(Analytics): unify equipment readings and analytics endpoints               | feat(Analytics): unify equipment readings and analytics endpoints               | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | 9287401   | feat(Equipment): add EquipmentOperationParametersResource                                            | feat(Equipment): add EquipmentOperationParametersResource                                              | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | 167759c   | feat(Equipment): implement Handle method                                                             | feat(Equipment): implement Handle method                                                               | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | 0f0cfbc   | feat(Equipment): add DeleteEquipmentCommand for equipment deletion functionality related to analytics | feat(Equipment): add DeleteEquipmentCommand for equipment deletion functionality related to analytics | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | dfd06ae   | feat(Equipment): add Handle method for DeleteEquipmentCommand in IEquipmentCommandService related to analytics | feat(Equipment): add Handle method for DeleteEquipmentCommand in IEquipmentCommandService related to analytics | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | b159352   | feat(Equipment): add UpdateEquipmentResource for updating equipment details                          | feat(Equipment): add UpdateEquipmentResource for updating equipment details                            | Jun 20, 2025        |
-| OsitoPolar-Backend | develop  | a25b5db   | Merge branch ‘develop’                                                                              | Merge branch ‘develop’                                                                                 | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 464b81b   | feat(Subscriptions): update Program.cs with Repository, CommandService, and QueryService.           | feat(Subscriptions): update Program.cs with Repository, CommandService, and QueryService.             | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 0ccda81   | feat(Subscriptions): add ApplySubscriptionsConfiguration method to AppDbContext.cs for subscriptions setup. | feat(Subscriptions): add ApplySubscriptionsConfiguration method to AppDbContext.cs for subscriptions setup. | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | de6ec23   | feat(Subscriptions): add SubscriptionsController.cs.                                                 | feat(Subscriptions): add SubscriptionsController.cs.                                                   | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 71df9de   | feat(Subscriptions): add ModelBuilderExtensions.cs.                            | feat(Subscriptions): add ModelBuilderExtensions.cs.                                  | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 2638d6c   | feat(Subscriptions): add SubscriptionResourceFromEntityAssembler.cs.           | feat(Subscriptions): add SubscriptionResourceFromEntityAssembler.cs.                 | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 911ae50   | feat(Subscriptions): add UpgradeSubscriptionCommandFromResourceAssembler.cs.   | feat(Subscriptions): add UpgradeSubscriptionCommandFromResourceAssembler.cs.         | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | d6e5130   | feat(Subscriptions): add SubscriptionResource.cs.                              | feat(Subscriptions): add SubscriptionResource.cs.                                    | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | c60fba7   | feat(Subscriptions): add SubscriptionRepository.cs.                            | feat(Subscriptions): add SubscriptionRepository.cs.                                  | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 514830c   | feat(Subscriptions): add ISubscriptionCommandService.cs.                       | feat(Subscriptions): add ISubscriptionCommandService.cs.                             | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | eb50f8b   | feat(Subscriptions): add ISubscriptionCommandService.cs.                       | feat(Subscriptions): add ISubscriptionCommandService.cs.                             | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | b4dfa15   | feat(Subscriptions): add SubscriptionQueryService.cs.                          | feat(Subscriptions): add SubscriptionQueryService.cs.                                | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 3f5279f   | feat(Subscriptions): add SubscriptionsCommandServices.cs.                      | feat(Subscriptions): add SubscriptionsCommandServices.cs.                            | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 9a38037   | feat(Subscriptions): add ISubscriptionRepository.cs.                            | feat(Subscriptions): add ISubscriptionRepository.cs.                                 | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 7d259ed   | feat(Subscriptions): add queries to Subscriptions.                             | feat(Subscriptions): add queries to Subscriptions.                                   | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 84d5d76   | feat(Subscriptions): add UpgradePlanCommand.cs.                                | feat(Subscriptions): add UpgradePlanCommand.cs.                                      | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | 52eb592   | feat(Subscriptions): add Aggregates.                                           | feat(Subscriptions): add Aggregates.                                                 | Jun 19, 2025        |
-| OsitoPolar-Backend | develop  | dacd508   | Merge pull request #11 from Inteligencia-Artesanal-Aplicaciones-Web/feat/service-requests            | Merge pull request #11 from Inteligencia-Artesanal-Aplicaciones-Web/feat/service-requests             | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 20ed869   | fix(ServiceRequests): fix IServiceRequestCommandService and ModelBuilderExtensions                   | fix(ServiceRequests): fix IServiceRequestCommandService and ModelBuilderExtensions                    | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 86cbc95   | Merge pull request #10 from Inteligencia-Artesanal-Aplicaciones-Web/feat/work-orders                 | Merge pull request #10 from Inteligencia-Artesanal-Aplicaciones-Web/feat/work-orders                  | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | d765ac7   | feat(WorkOrders): add foreign key relations for WorkOrder with ServiceRequest, Technician, and Equipment | feat(WorkOrders): add foreign key relations for WorkOrder with ServiceRequest, Technician, and Equipment | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 698001e   | feat(WorkOrders): update WorkOrdersController                                                        | feat(WorkOrders): update WorkOrdersController                                                         | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 0767c70   | feat(WorkOrders): add UpdateWorkOrderStatusCommandFromResourceAssembler                              | feat(WorkOrders): add UpdateWorkOrderStatusCommandFromResourceAssembler                               | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | df842d6   | fix(WorkOrders): update WorkOrderCommandService and WorOrderCommandService                           | fix(WorkOrders): update WorkOrderCommandService and WorOrderCommandService                            | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 7fa1d13   | fix(WorkOrders): Refactor WorkOrder constructor to accept nullable ServiceRequestId and rename feedback method | fix(WorkOrders): Refactor WorkOrder constructor to accept nullable ServiceRequestId and rename feedback method | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | b159990   | Merge pull request #8 from Inteligencia-Artesanal-Aplicaciones-Web/feat/service-requests            | Merge pull request #8 from Inteligencia-Artesanal-Aplicaciones-Web/feat/service-requests             | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | dc33795   | feat(ServiceRequests): Add Equipment and Technician relationships to ServiceRequest EF configuration with appropriate foreign key constraints | feat(ServiceRequests): Add Equipment and Technician relationships to ServiceRequest EF configuration with appropriate foreign key constraints | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 4f09949   | feat(ServiceRequests): added Reject and Cancel endpoints                                              | feat(ServiceRequests): added Reject and Cancel endpoints                                               | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | a2dcfc0   | feat(Analytics): add RecordTemperatureReadingCommand for capturing temperature readings       | feat(Analytics): add RecordTemperatureReadingCommand for capturing temperature readings         | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | a16d8b7   | feat(Analytics): add TemperatureRange value object for temperature range representation       | feat(Analytics): add TemperatureRange value object for temperature range representation         | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 8f69635   | feat(Analytics): add TemperatureReading entity for equipment temperature data                 | feat(Analytics): add TemperatureReading entity for equipment temperature data                   | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 6c8f2b1   | feat(Analytics): add TemperatureReadingAudit for tracking created and updated dates           | feat(Analytics): add TemperatureReadingAudit for tracking created and updated dates             | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 02ded63   | feat(Analytics): add TemperatureReadingResource for API response representation               | feat(Analytics): add TemperatureReadingResource for API response representation                 | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 84e8c51   | feat(Analytics): add TemperatureReadingResourceFromEntityAssembler for transforming TemperatureReading entities to resources | feat(Analytics): add TemperatureReadingResourceFromEntityAssembler for transforming TemperatureReading entities to resources | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 4d5cb8b   | Merge pull request #5 from Inteligencia-Artesanal-Aplicaciones-Web/develop                    | Merge pull request #5 from Inteligencia-Artesanal-Aplicaciones-Web/develop                      | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 21c7b45   | Merge pull request #4 from Inteligencia-Artesanal-Aplicaciones-Web/feat/equipment-management  | Merge pull request #4 from Inteligencia-Artesanal-Aplicaciones-Web/feat/equipment-management    | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 1b14a67   | fix(EquipmentManagement): update Equipment class to use Entities for EnergyConsumption and Rentalinfo to avoid future errors | fix(EquipmentManagement): update Equipment class to use Entities for EnergyConsumption and Rentalinfo to avoid future errors | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | 42bc758   | feat(EquipmentManagement): add ModelBuilderExtensions for Equipment context configuration     | feat(EquipmentManagement): add ModelBuilderExtensions for Equipment context configuration       | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | c50e588   | feat(EquipmentManagement): add IEquipmentCommandService and IEquipmentRepository for command and data access operations | feat(EquipmentManagement): add IEquipmentCommandService and IEquipmentRepository for command and data access operations | Jun 18, 2025        |
-| OsitoPolar-Backend | develop  | b37c3ca   | feat(EquipmentManagement): add IEquipmentQueryService and Location entity for equipment management | feat(EquipmentManagement): add IEquipmentQueryService and Location entity for equipment management | Jun 18, 2025        |
-
-##### 6.2.4.5. Execution Evidence for Sprint Review.
-
-En esta sección se presentan las evidencias de la ejecución de la aplicación para el sprint 4.
-En esta sección, presentamos una recopilación visual y detallada de los avances logrados durante el sprint.
-
-
-##### 6.2.4.6. Services Documentation Evidence for Sprint Review.
-
-Durante este sprint se logró documentar un total de 25 endpoints correspondientes a 6 controladores principales de la API. La documentación fue realizada utilizando Swagger, una herramienta que facilita la exploración, prueba y validación de servicios REST. Esta interfaz está disponible accediendo a la siguiente URL configurada en el servidor (https://ositopolar-platform.onrender.com).
-
-<p>A continuación, se detallan los controladores y sus respectivos endpoints documentados:</p>
-**(MODIFICAR)**
-<h4>WorkOrderController</h4>
-<p>Se encarga de la gestión de órdenes de trabajo. Incluye endpoints para creación, obtención, actualización de estado y resolución.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>POST</td><td>/api/v1/work-orders</td><td>Crear nueva orden de trabajo</td></tr>
-    <tr><td>GET</td><td>/api/v1/work-orders</td><td>Obtener todas las órdenes</td></tr>
-    <tr><td>GET</td><td>/api/v1/work-orders/{workOrderId}</td><td>Obtener orden por ID</td></tr>
-    <tr><td>PUT</td><td>/api/v1/work-orders/{workOrderId}/status</td><td>Actualizar estado de la orden</td></tr>
-    <tr><td>PUT</td><td>/api/v1/work-orders/{workOrderId}/resolution</td><td>Agregar resolución a la orden</td></tr>
-  </tbody>
-</table>
-
-![WO.png](assets/chapter-05/TB2/fixServices/WO.png)
-![WO1.png](assets/chapter-05/TB2/fixServices/WO1.png)
-![WO2.png](assets/chapter-05/TB2/fixServices/WO2.png)
-![WO3.png](assets/chapter-05/TB2/fixServices/WO3.png)
-
-
-
-<h4>SubscriptionController</h4>
-<p>Permite gestionar suscripciones de los usuarios.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GET</td><td>/api/v1/subscriptions/{subscriptionId}</td><td>Obtener suscripción por ID</td></tr>
-    <tr><td>GET</td><td>/api/v1/subscriptions</td><td>Listar todas las suscripciones</td></tr>
-    <tr><td>POST</td><td>/api/v1/subscriptions/upgrade</td><td>Actualizar plan de suscripción</td></tr>
-  </tbody>
-</table>
-
-![S.png](assets/chapter-05/TB2/fixServices/S.png)
-![S1.png](assets/chapter-05/TB2/fixServices/S1.png)
-![S2.png](assets/chapter-05/TB2/fixServices/S2.png)
-![S3.png](assets/chapter-05/TB2/fixServices/S3.png)
-
-
-<h4>ServiceRequestController</h4>
-<p>Encargado de manejar solicitudes de servicio por parte de los usuarios.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>POST</td><td>/api/v1/service-requests</td><td>Crear solicitud de servicio</td></tr>
-    <tr><td>GET</td><td>/api/v1/service-requests</td><td>Obtener todas las solicitudes</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}</td><td>Actualizar solicitud existente</td></tr>
-    <tr><td>GET</td><td>/api/v1/service-requests/{serviceRequestId}</td><td>Obtener solicitud por ID</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/assign-technician</td><td>Asignar técnico</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/feedback</td><td>Añadir feedback de cliente</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/reject</td><td>Rechazar solicitud</td></tr>
-    <tr><td>PUT</td><td>/api/v1/service-requests/{serviceRequestId}/cancel</td><td>Cancelar solicitud</td></tr>
-  </tbody>
-</table>
-
-![SR.png](assets/chapter-05/TB2/fixServices/SR.png)
-![SR1.png](assets/chapter-05/TB2/fixServices/SR1.png)
-![SR2.png](assets/chapter-05/TB2/fixServices/SR2.png)
-![SR3.png](assets/chapter-05/TB2/fixServices/SR3.png)
-
-
-<h4>EquipmentController</h4>
-<p>Gestiona el inventario de equipos y sus lecturas operacionales.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GET</td><td>/api/v1/equipments</td><td>Obtener todos los equipos</td></tr>
-    <tr><td>POST</td><td>/api/v1/equipments</td><td>Crear nuevo equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/equipments/{equipmentId}</td><td>Obtener equipo por ID</td></tr>
-    <tr><td>PUT</td><td>/api/v1/equipments/{equipmentId}</td><td>Actualizar equipo completo</td></tr>
-    <tr><td>DELETE</td><td>/api/v1/equipments/{equipmentId}</td><td>Eliminar equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/equipments/owners/{ownerId}</td><td>Obtener equipos por dueño</td></tr>
-    <tr><td>PATCH</td><td>/api/v1/equipments/{equipmentId}/operations</td><td>Actualizar parámetros operativos</td></tr>
-    <tr><td>POST</td><td>/api/v1/equipments/{equipmentId}/readings</td><td>Crear lectura de equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/equipments/{equipmentId}/readings</td><td>Obtener lecturas del equipo</td></tr>
-  </tbody>
-</table>
-
-![E.png](assets/chapter-05/TB2/fixServices/E.png)
-![E1.png](assets/chapter-05/TB2/fixServices/E1.png)
-![E2.png](assets/chapter-05/TB2/fixServices/E2.png)
-![E3.png](assets/chapter-05/TB2/fixServices/E3.png)
-
-
-<h4>TechnicianController</h4>
-<p>Gestión de técnicos del sistema.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>POST</td><td>/api/v1/technicians</td><td>Crear nuevo técnico</td></tr>
-    <tr><td>GET</td><td>/api/v1/technicians</td><td>Obtener todos los técnicos</td></tr>
-    <tr><td>GET</td><td>/api/v1/technicians/{technicianId}</td><td>Obtener técnico por ID</td></tr>
-    <tr><td>GET</td><td>/api/v1/technicians/{technicianId}/average-rating</td><td>Obtener promedio de calificaciones</td></tr>
-  </tbody>
-</table>
-
-![T.png](assets/chapter-05/TB2/fixServices/T.png)
-![T1.png](assets/chapter-05/TB2/fixServices/T1.png)
-![T2.png](assets/chapter-05/TB2/fixServices/T2.png)
-![T3.png](assets/chapter-05/TB2/fixServices/T3.png)
-
-
-<h4>AnalyticsController</h4>
-<p>Provee datos analíticos sobre los equipos registrados.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Verbo HTTP</th>
-      <th>Endpoint</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>GET</td><td>/api/v1/analytics/equipments/{equipmentId}/readings</td><td>Obtener lecturas del equipo</td></tr>
-    <tr><td>GET</td><td>/api/v1/analytics/equipments/{equipmentId}/summaries</td><td>Obtener resumen analítico</td></tr>
-    <tr><td>GET</td><td>/api/v1/analytics/equipments/overview</td><td>Vista general de equipos</td></tr>
-  </tbody>
-</table>
-
-![A.png](assets/chapter-05/TB2/fixServices/A.png)
-![A1.png](assets/chapter-05/TB2/fixServices/A1.png)
-![A2.png](assets/chapter-05/TB2/fixServices/A2.png)
-![A3.png](assets/chapter-05/TB2/fixServices/A3.png)
-
-
-##### 6.2.4.7. Software Deployment Evidence for Sprint Review.
-(Por hacer)
-
-
-##### 6.2.4.8. Team Collaboration Insights during Sprint.
-
-**Landing Page**
-![landinginsights.png](assets/TF/landinginsights.png)
-
-
-**Frontend**
-![frontinsights.png](assets/TF/frontinsights.png)
-
-
-**Backend**
-![backinsights.png](assets/TF/backinsights.png)
-
 
 
 ## 6.3. Validation Interviews.
@@ -7908,13 +6303,15 @@ Este trabajo ha demostrado que OsitoPolar no solo resuelve un problema real, sin
 
 ## Anexos
 
-- Organización GitHub: https://github.com/Inteligencia-Artesanal-Aplicaciones-Web
-- Repositorio de la Landing Page: https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/Landing-Page
-- Repositorio Frontend: https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend
-- Repositorio Backend: https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Platform
-- Video de demostración de la Landing Page: [Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223286_upc_edu_pe/EWpS23aHI95KiF5rJXhOyHgBoHAL62jYwnz8m4zMqxkGwA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bwYjby)
-- Video de exposicion AV1: [Video de exposicion AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222001_upc_edu_pe/ESOPHU5GHEZGgBnK1e7uFVcBotVap94eOrrzWJIRhrJREQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=irIdp1)
-- Video de exposicion TP: [Video de exposicion TP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222001_upc_edu_pe/EUSP6C-FnFZFhqELTWnDrfgBBnB-QgeehRsw6agebPFu-A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=G9ZqQ4)
-- Video de exposicion AV2: [Video de exposicion AV2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222001_upc_edu_pe/EbXmWKN2jitDrR5rM7lc3VoBA6YsEcvhG_dhuVWPwLl2ZQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ULdQc8)
+- Organización GitHub: https://github.com/iot-proyectos
+- Repositorio de la Landing Page: https://github.com/iot-proyectos/LandingPage
+- Repositorio Frontend: https://github.com/iot-proyectos/OsitoPolar-Frontend
+- Repositorio Backend: https://github.com/iot-proyectos/OsitoPolar-Backend
+- Repositorio Mobile: https://github.com/iot-proyectos/OsitoPolar-Mobile
+- Video de demostración de la Landing Page: [Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQAeOr9bSx-2T4NJ5MMy6oFYAUG9i8dFYt45TIvlXmJ_M_I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=DOgTz1)
+- Video de exposicion AV1: [Video de exposicion AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u2032222001_upc_edu_pe/ESOPHU5GHEZGgBnK1e7uFVcBotVap94eOrrzWJIRhrJREQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=irIdp1)
+- Video de exposicion TP: [Video de exposicion TP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u2023222001_upc_edu_pe/EUSP6C-FnFZFhqELTWnDrfgBBnB-QgeehRsw6agebPFu-A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=G9ZqQ4)
+- Video de exposicion AV2: [Video de exposicion AV2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQCHuZtyO5dITpQWo22Mfl_VAafEa-kbuvAf8CAHE5-czF0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=DllWug)
 - Video de exposicion TF: [Video de exposicion TF]()
-- Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222001_upc_edu_pe/EX7h3-WbRbpNqTqMmM-NKdwBEXUEHMmcoY4pT1Q0epIOkQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Dwh3nQ)
+- Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322001_upc_edu_pe/EX7h3-WbRbpNqTqMmM-NKdwBEXUEHMmcoY4pT1Q0epIOkQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9y)
+
