@@ -1,76 +1,74 @@
-<p align="center">
-COURSE PROJECT
-
-<p align="center">
-    <img src="assets/UPC_logo_transparente.png" alt="UPCLOGO" width="250" height="250"</img><br>
-    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
-    <br>
-    <strong>Facultad de Ingeniería</strong><br>
-    <strong>Carrera de Ingeniería de Software</strong><br>
-    <strong>Ciclo 2026-1</strong>
-</p>
-
-<p align="center">
-  <strong>Código del curso: </strong>1ASI0572<br>
-  <strong>Curso: </strong>Desarrollo de Soluciones IOT
-</p>
-
-<p align="center">
-  <strong>NRC: 6776</strong>
-</p>
-
-<p align="center">
-    <strong>Profesor: </strong>Leon Baca, Marco Antonio
-</p>
-
-<p align="center">
-    <strong>Informe de Trabajo Final</strong>
-</p>
-
-<p align="center">
-    <strong>Nombre del startup: </strong> IA: Inteligencia Artesanal
-</p>
-
-<p align="center">
-    <strong>Nombre del producto:</strong> OsitoPolar
-</p>
-
-<div>
-    <h3 align="center">Integrantes del equipo:</h3>
-    </div>
-<div>
-     <table align="center">
-        <tr>
-            <th style="text-align:center;">Nombre</th>
-            <th style="text-align:center;">Código</th>
-        </tr>
-        <tr>
-            <td>Mora Blas, Diego Alonzo</td>
-            <td>U20231c069</td>
-        </tr>
-        <tr>
-            <td>Cacho Seminario, Diego Alonso</td>
-            <td>U202223990</td>
-        </tr>
-        <tr>
-            <td>Hernandez Poma, Sebastian Eduardo</td>
-            <td>U20231C996</td>
-        </tr>
-        <tr>
-            <td>Medina Cruzado, Raúl Adrian</td>
-            <td>U202210938</td>
-        </tr>
-        <tr>
-            <td>Inga Orihuela, Christian Fabrizio</td>
-            <td>U20231C111</td>
-        </tr>
-    </table>
+<div align="center">
+  <img src="assets/UPC_logo_transparente.png" alt="UPCLOGO" width="100" height="100"><br><br>
+  
+  <h2>Universidad Peruana de Ciencias Aplicadas</h2>
+  <h3>Carrera de Ingeniería de Software</h3>
+  
+  <br>
+  
+  <p><strong>1ASI0572</strong></p>
+  <p><strong>Desarrollo de Soluciones IoT</strong></p>
+  
+  <br>
+  
+  <p><strong>NRC</strong></p>
+  <p>6776</p>
+  
+  <br>
+  
+  <h2><strong>Informe del Trabajo Final</strong></h2>
+  
+  <br>
+  
+  <p><strong>Docente</strong></p>
+  <p>León Baca, Marco Antonio</p>
+  
+  <br>
+  
+  <p><strong>Equipo</strong></p>
+  <p>IA: Inteligencia Artesanal</p>
+  
+  <br>
+  
+  <p><strong>Proyecto</strong></p>
+  <p>OsitoPolar</p>
+  
+  <br>
+  
+  <p><strong>Integrantes</strong></p>
+  
+  <table align="center">
+    <tr>
+      <th style="text-align:center;">Código</th>
+      <th style="text-align:center;">Apellidos y Nombres</th>
+    </tr>
+    <tr>
+      <td style="text-align:center;">U20231c069</td>
+      <td style="text-align:center;">Mora Blas, Diego Alonzo</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">U202223990</td>
+      <td style="text-align:center;">Cacho Seminario, Diego Alonso</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">U20231C996</td>
+      <td style="text-align:center;">Hernandez Poma, Sebastian Eduardo</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">U202210938</td>
+      <td style="text-align:center;">Medina Cruzado, Raúl Adrian</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">U20231C111</td>
+      <td style="text-align:center;">Inga Orihuela, Christian Fabrizio</td>
+    </tr>
+  </table>
+  
+  <br><br><br>
+  
+  <p><strong>Período 202610</strong></p>
 </div>
 
-<p align="center">
-    <strong>Junio, 2026</strong>
-</p>
-<br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Registro de Versiones del Informe
