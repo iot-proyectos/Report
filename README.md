@@ -295,15 +295,6 @@
             - [6.2.3.6. Services Documentation Evidence for Sprint Review](#6236-services-documentation-evidence-for-sprint-review)
             - [6.2.3.7. Software Deployment Evidence for Sprint Review](#6237-software-deployment-evidence-for-sprint-review)
             - [6.2.3.8. Team Collaboration Insights during Sprint](#6238-team-collaboration-insights-during-sprint)
-        - [6.2.4. Sprint 4](#624-sprint-4)
-            - [6.2.4.1. Sprint Planning 4](#6241-sprint-planning-4)
-            - [6.2.4.2. Aspect Leaders and Collaborators](#6242-aspect-leaders-and-collaborators)
-            - [6.2.4.3. Sprint Backlog 4](#6243-sprint-backlog-4)
-            - [6.2.4.4. Development Evidence for Sprint Review](#6244-development-evidence-for-sprint-review)
-            - [6.2.4.5. Execution Evidence for Sprint Review](#6245-execution-evidence-for-sprint-review)
-            - [6.2.4.6. Services Documentation Evidence for Sprint Review](#6246-services-documentation-evidence-for-sprint-review)
-            - [6.2.4.7. Software Deployment Evidence for Sprint Review](#6247-software-deployment-evidence-for-sprint-review)
-            - [6.2.4.8. Team Collaboration Insights during Sprint](#6248-team-collaboration-insights-during-sprint)
     - [6.3. Validation Interviews](#63-validation-interviews)
         - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
         - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
@@ -5920,6 +5911,86 @@ Durante este Sprint, el equipo ha colaborado en el desarrollo del frontend y cor
 **Frontend**
 ![Insight-front1](assets/chapter-05/sprint-2/Insights-Frontend-S2.png)
 
+### 6.2.3. Sprint 3
+
+Este tercer y último sprint representa la fase de consolidación técnica del proyecto OsitoPolar. El enfoque principal radicó en la integración del hardware físico (Edge Device) con la infraestructura Cloud, y la culminación de la aplicación móvil para el consumo y visualización de telemetría en tiempo real, cerrando así el ciclo de vida del desarrollo.
+
+#### 6.2.3.1. Sprint Planning 3
+
+| Sprint 3 | |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-06-05 |
+| Time | 8:00 PM |
+| Location | Vía Discord |
+| Prepared By | Cacho Seminario, Diego Alonso |
+| Attendees | Diego Mora, Christian Inga, Sebastian Hernandez, Raúl Medina, Diego Cacho |
+| **Sprint 2 Review Summary** | Durante el segundo Sprint logramos desplegar satisfactoriamente la aplicación web y corregir los errores de la Landing Page, obteniendo un MVP web funcional. Sin embargo, quedó pendiente la integración nativa móvil y la captura real de telemetría IoT. |
+| **Sprint 2 Retrospective Summary** | Identificamos que la separación de tareas mejoró nuestro rendimiento, pero las pruebas de integración entre frontend y backend tomaron más tiempo del estimado. Acordamos realizar pruebas conjuntas tempranas para la integración del hardware. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | Lograr la comunicación bidireccional exitosa entre los dispositivos IoT (Edge) y la Base de Datos en la nube, y reflejar estos datos de manera dinámica y en tiempo real en la aplicación móvil nativa. Esto se validará cuando un cambio físico en el sensor de temperatura se visualice correctamente en la app móvil. |
+| **Sprint 3 Velocity** | 25 |
+| **Sum of Story Points** | 25 |
+
+#### 6.2.3.2. Aspect Leaders and Collaborators
+Para garantizar el éxito de esta fase crítica de integración, las responsabilidades se distribuyeron aprovechando la especialización técnica de cada miembro:
+
+| Team Member (Last Name, First Name) | GitHub Username | Lógica Edge & Hardware IoT<br>Leader (L) / Collaborator (C) | Desarrollo App Móvil<br>Leader (L) / Collaborator (C) | Endpoints Cloud & BD<br>Leader (L) / Collaborator (C) | Despliegue y Pruebas E2E<br>Leader (L) / Collaborator (C) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Cacho Seminario, Diego Alonso | Memesitos | C | L | C | C |
+| Hernandez Poma, Sebastian Eduardo | Necxuz18 | C | C | C | L |
+| Medina Cruzado, Raúl Adrian | imisterdg | L | C | C | C |
+| Inga Orihuela, Christian Fabrizio | Christian1905 | C | C | C | L |
+| Mora Blas, Diego Alonzo | diegoalonzomora | C | C | L | C |
+
+#### 6.2.3.3. Sprint Backlog 3
+Durante este sprint se abordaron las siguientes Historias de Usuario (User Stories) críticas para completar el ecosistema IoT:
+
+| ID | Title | Description | Estimation (Hours) | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **US-15** | Generar API Key dinámica | Como técnico, quiero registrar un nuevo dispositivo generando una API Key dinámica para asegurar su autenticación. | 3 | Done |
+| **US-16** | Envío de telemetría IoT | Como dispositivo Edge, quiero enviar paquetes de telemetría (temperatura/humedad) al servidor Cloud para su almacenamiento. | 5 | Done |
+| **US-17** | Visualizar historial móvil | Como usuario de la app móvil, quiero visualizar el historial de temperatura de mis equipos en tiempo real. | 6 | Done |
+| **US-18** | Despliegue de DB en Cloud | Como administrador del sistema, quiero que la base de datos se despliegue en un entorno Cloud para acceso global. | 2 | Done |
+| **US-19** | Pruebas E2E de telemetría | Como equipo de QA, queremos validar la ingesta de datos desde el hardware hasta la interfaz visual mediante pruebas E2E. | 4 | Done |
+
+#### 6.2.3.4. Development Evidence for Sprint Review
+
+**Mobile App (Generación de API Keys y Consumo):**
+Se implementó la lógica en el `ManagementViewModel` de Android utilizando Kotlin y corrutinas. Se integró la librería `java.util.UUID` para generar llaves criptográficas únicas al momento de crear un dispositivo, enviándolas al backend a través de Retrofit. Asimismo, se construyó el flujo `fetchHistory()` para mapear las respuestas JSON de temperaturas a objetos de estado visuales en Jetpack Compose.
+
+**Edge Device (Captura de Telemetría):**
+Se desarrolló el firmware del microcontrolador encargado de leer los sensores físicos. Se implementó un ciclo de captura que empaqueta los datos de temperatura y humedad en formato JSON y los transmite mediante peticiones HTTP POST al endpoint expuesto por la Cloud API, adjuntando la API Key en los headers para su autorización.
+
+**Backend (Endpoints de Integración):**
+Se actualizó el repositorio del dispositivo para soportar la creación bajo demanda (Lazy Creation) de mapas (Sections) en caso de usuarios nuevos, asegurando que el despliegue multi-tenant funcione sin errores. Se expusieron y aseguraron las rutas para servir el historial de lecturas a la aplicación móvil.
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review
+Se ejecutó una batería de pruebas integrales para garantizar la resiliencia del sistema:
+1.  **API Testing (Postman):** Se verificó la correcta inserción de datos simulando el envío de payloads desde el dispositivo IoT, confirmando respuestas HTTP 201 (Created) y el manejo de errores HTTP 401 (Unauthorized) al enviar API Keys inválidas.
+2.  **Hardware Testing:** Se validó que el Edge Device pudiera recuperar la conexión tras caídas simuladas de la red Wi-Fi, asegurando la continuidad de la telemetría.
+3.  **Mobile UI Testing:** Se comprobó que el flujo de registro de dispositivos bloqueara intentos con campos vacíos y mostrara correctamente los cuadros de diálogo de éxito con las llaves generadas.
+
+#### 6.2.3.6. Execution Evidence for Sprint Review
+La ejecución exitosa del proyecto se evidenció mediante:
+* La captura de registros en la consola del backend confirmando la recepción continua de datos: `[OsitoPolar] Telemetry received from device X`.
+* La creación automática de "Sections" vacías para nuevos usuarios directamente desde la interacción móvil.
+* La visualización fluida de la lista del historial de temperaturas en la interfaz de Android, diferenciando visualmente las lecturas normales de aquellas que superaban los umbrales de alerta (ej. temperaturas menores a -10°C).
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review
+La documentación de los servicios fue actualizada para reflejar los nuevos contratos de comunicación establecidos en este sprint. Se detallaron los esquemas de petición y respuesta para la inyección de telemetría, especificando la obligatoriedad del header de autorización para los dispositivos IoT. Esta documentación servirá como guía definitiva para la futura integración de nuevos modelos de sensores al ecosistema OsitoPolar.
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review
+La arquitectura se migró exitosamente de un entorno de desarrollo local a una infraestructura de producción en la nube:
+* **Base de Datos:** Migración a **Neon.tech** (PostgreSQL Serverless), permitiendo alta disponibilidad y conexión remota. Se ejecutaron las migraciones correspondientes utilizando Prisma.
+* **Backend API:** Despliegue en **Railway**, configurando las variables de entorno (`DATABASE_URL`, claves JWT y de pago) para aceptar peticiones externas.
+* **Mobile App:** Modificación del `BASE_URL` en el cliente Retrofit para apuntar al servidor de producción, culminando con la generación del archivo APK (Android Package Kit) firmado y listo para su distribución e instalación en dispositivos físicos.
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint
+La comunicación del equipo durante este sprint de cierre fue intensiva y altamente coordinada. 
+* Se utilizó **GitHub** para el manejo de ramas (branching) separando los desarrollos del firmware IoT y la interfaz móvil, resolviendo conflictos de integración de manera colaborativa.
+* Se mantuvo una trazabilidad completa de los avances mediante herramientas de gestión ágil, actualizando los estados de las tareas.
+* Las reuniones de sincronización en Discord fueron fundamentales para desbloquear cuellos de botella técnicos, especialmente durante la calibración de los tiempos de envío entre el sensor físico y la recepción en el servidor Railway.
 
 ## 6.3. Validation Interviews.
 En esta sección se presentan los detalles de las entrevistas de validación realizadas.
