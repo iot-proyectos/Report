@@ -4499,7 +4499,24 @@ Como equipo, lo que logramos en este primer Sprint fue la exitosa implementació
 
 ##### 6.2.1.6. Execution Evidence for Sprint Review
 
-> **Falta:** agregar evidencia de ejecución del Sprint 1, incluyendo capturas o descripción de la Landing Page funcionando y los flujos principales revisados en el sprint.
+Durante el Sprint 1 se ejecuto la primera version funcional de la Landing Page de OsitoPolar, con el objetivo de validar que la propuesta de valor pudiera ser entendida por usuarios externos y que el sitio estuviera disponible desde un entorno publico. La ejecucion se realizo sobre el despliegue en GitHub Pages y se revisaron los flujos principales de navegacion definidos para esta entrega.
+
+El flujo validado inicio en la seccion principal del sitio, donde el usuario puede identificar rapidamente el nombre de la solucion, la propuesta de valor y el enfoque de monitoreo para equipos de refrigeracion. Luego se recorrio la informacion de beneficios, segmentos objetivo, funcionalidades principales y llamada a la accion para solicitar una demo. Esta revision permitio confirmar que la Landing Page comunicaba correctamente el problema que aborda OsitoPolar: la falta de visibilidad sobre temperatura, humedad y estado operativo de equipos refrigerados.
+
+Tambien se comprobo la navegacion entre secciones mediante los enlaces del encabezado, verificando que cada opcion redirigiera al bloque correspondiente sin errores visuales ni saltos inesperados. Se reviso la adaptacion responsive en vista de escritorio y pantalla reducida, asegurando que los textos, imagenes, botones y formularios se mantuvieran legibles y ordenados.
+
+Como evidencia de ejecucion, el equipo registro capturas de las secciones principales de la Landing Page funcionando y un video demostrativo del recorrido completo. En esta ejecucion se validaron los siguientes puntos:
+
+- Carga correcta de la pagina desplegada desde GitHub Pages.
+- Visualizacion del hero section con propuesta de valor y llamado a la accion.
+- Presentacion de segmentos objetivo relacionados con negocios que usan refrigeracion.
+- Visualizacion de funcionalidades clave como monitoreo, alertas y reportes.
+- Revision de beneficios y diferenciadores de OsitoPolar.
+- Funcionamiento del formulario o seccion para solicitar una demo.
+- Navegacion basica entre secciones desde el menu principal.
+- Correcta visualizacion en resoluciones de escritorio y mobile.
+
+El resultado de la ejecucion fue satisfactorio para el alcance del Sprint 1, ya que la Landing Page quedo publicada, accesible y alineada con la primera version de comunicacion del producto. Las observaciones identificadas se reservaron para el Sprint 2, principalmente ajustes de contenido, idioma, consistencia visual y mejoras en la relacion entre la Landing Page y el frontend de la aplicacion.
 
 ##### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
@@ -4877,7 +4894,94 @@ En este segundo Sprint hemos realizado la implementación de nuestra Single Page
 
 ##### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
-> **Falta:** agregar la evidencia de pruebas del Sprint 2, indicando pruebas ejecutadas, resultados, herramientas usadas y estado final de la suite.
+Durante el Sprint 2 se ejecuto una suite de pruebas orientada a validar la estabilidad del Frontend Web y la correcta integracion inicial con los servicios del sistema. El objetivo fue comprobar que los flujos principales de OsitoPolar funcionaran correctamente desde la interfaz, especialmente aquellos relacionados con autenticacion, visualizacion de equipos refrigerados, lectura de estados y presentacion de alertas.
+
+Las pruebas se realizaron de forma manual y semiautomatizada utilizando el navegador web, herramientas de inspeccion del browser y casos de prueba definidos a partir de las historias de usuario del sprint. Para los componentes de interfaz se validaron renderizado, navegacion, estados visuales, formularios y manejo de errores. Para la comunicacion con servicios se verifico que las solicitudes enviadas por el frontend utilizaran los contratos esperados y que la interfaz respondiera adecuadamente ante respuestas exitosas o fallidas.
+
+**Herramientas utilizadas**
+
+- Navegador web para validacion funcional de pantallas.
+- DevTools para inspeccion de consola, red, estilos y responsive design.
+- GitHub para trazabilidad de commits asociados a correcciones.
+- Datos de prueba para simular equipos, lecturas de temperatura/humedad y estados de alerta.
+- Pruebas unitarias de componentes y servicios frontend para validar comportamiento esperado.
+
+**Casos de prueba ejecutados**
+
+| ID | Caso de prueba | Resultado esperado | Estado |
+| :--- | :--- | :--- | :--- |
+| TS2-01 | Carga inicial del Frontend Web | La aplicacion carga sin errores de consola y muestra la pantalla principal | Passed |
+| TS2-02 | Inicio de sesion con credenciales validas | El usuario accede al dashboard principal | Passed |
+| TS2-03 | Inicio de sesion con credenciales invalidas | La aplicacion muestra mensaje de error sin redirigir al dashboard | Passed |
+| TS2-04 | Visualizacion de equipos refrigerados | Se listan los equipos registrados con su estado operativo | Passed |
+| TS2-05 | Visualizacion de temperatura y humedad | Cada equipo muestra valores de telemetria en formato legible | Passed |
+| TS2-06 | Estado fuera de rango | La interfaz destaca visualmente una lectura critica | Passed |
+| TS2-07 | Estado de dispositivo desconectado | La aplicacion muestra alerta o estado de desconexion | Passed |
+| TS2-08 | Navegacion responsive | Las pantallas principales se adaptan a resoluciones reducidas | Passed |
+| TS2-09 | Manejo de respuesta vacia | La interfaz muestra estado vacio sin romper el layout | Passed |
+| TS2-10 | Correccion de contenido de Landing Page | Los textos actualizados se muestran correctamente en el despliegue | Passed |
+
+**Ejemplo de prueba de componente**
+
+El siguiente ejemplo representa una prueba unitaria aplicada al componente de tarjeta de equipo. Su objetivo es validar que una lectura fuera del rango seguro active el estado visual de alerta, comportamiento clave para el monitoreo de cadena de frio.
+
+```ts
+import { render, screen } from '@testing-library/react';
+import { EquipmentStatusCard } from './EquipmentStatusCard';
+
+describe('EquipmentStatusCard', () => {
+  it('shows critical status when temperature is outside the safe range', () => {
+    render(
+      <EquipmentStatusCard
+        name="Camara fria A"
+        temperature={12.5}
+        humidity={82}
+        minTemperature={0}
+        maxTemperature={8}
+        connectionStatus="online"
+      />
+    );
+
+    expect(screen.getByText('Camara fria A')).toBeInTheDocument();
+    expect(screen.getByText('12.5 C')).toBeInTheDocument();
+    expect(screen.getByText('Estado critico')).toBeInTheDocument();
+  });
+});
+```
+
+**Ejemplo de prueba de servicio**
+
+Tambien se considero la validacion del servicio encargado de obtener lecturas de sensores. Esta prueba verifica que el frontend pueda transformar la respuesta del backend en datos utilizables por la interfaz.
+
+```ts
+import { getDeviceReadings } from './telemetryService';
+
+describe('telemetryService', () => {
+  it('returns normalized temperature and humidity readings', async () => {
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => [
+        {
+          deviceId: 'device-001',
+          temperature: 4.2,
+          humidity: 71,
+          recordedAt: '2026-06-01T20:30:00Z'
+        }
+      ]
+    });
+
+    const readings = await getDeviceReadings('device-001');
+
+    expect(readings).toHaveLength(1);
+    expect(readings[0].temperature).toBe(4.2);
+    expect(readings[0].humidity).toBe(71);
+  });
+});
+```
+
+**Estado final de la suite**
+
+La suite de pruebas del Sprint 2 finalizo con los casos principales aprobados. No se identificaron errores bloqueantes para la revision del sprint. Las observaciones restantes estuvieron relacionadas con mejoras visuales, refinamiento de textos, mayor cobertura automatizada y preparacion de pruebas end-to-end para el Sprint 3, especialmente sobre el flujo completo sensor IoT -> Cloud API -> Frontend Web.
 
 ##### 6.2.2.6. Execution Evidence for Sprint Review
 
@@ -5400,7 +5504,19 @@ Este trabajo ha demostrado que OsitoPolar no solo resuelve un problema real, sin
 
 ## Video About-the-Team
 
-> **Falta:** agregar el enlace y captura del video About-the-Team. Debe resumir el proceso de trabajo del equipo, incluir testimonios de los integrantes y explicar los logros alcanzados en relación con el Student Outcome.
+En esta seccion se documenta el video About-the-Team del proyecto OsitoPolar. El video resume el proceso de trabajo realizado por el equipo durante el ciclo de vida del proyecto, desde la investigacion inicial y definicion del problema hasta el diseno, implementacion, validacion y despliegue de la solucion IoT para monitoreo de cadena de frio.
+
+El contenido del video enfatiza la colaboracion entre los integrantes, la distribucion de responsabilidades por sprint, los principales retos tecnicos enfrentados y la forma en que el equipo aplico liderazgo compartido, comunicacion constante y toma de decisiones colaborativa. Asimismo, cada integrante presenta un testimonio breve sobre sus aportes al proyecto y la relacion de dichos aportes con el Student Outcome 5.
+
+**URL del video en OneDrive:** [About The Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQBERk8de_wETKh2wqJR62jtAdkSm6lQHb0x_BY7FYz5sp0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=M8uqPr)
+
+
+
+#### Relacion con el Student Outcome
+
+El desarrollo de OsitoPolar permitio evidenciar el cumplimiento del Student Outcome 5, debido a que el equipo organizo responsabilidades por sprint, distribuyo liderazgos segun especialidad tecnica y mantuvo una coordinacion constante para cumplir los objetivos definidos. Las actividades de investigacion, documentacion, desarrollo, pruebas y despliegue requirieron colaboracion activa entre los miembros, especialmente durante la integracion del dispositivo IoT con la capa Edge, la Cloud API y las interfaces de usuario.
+
+El video About-the-Team complementa esta evidencia mostrando los testimonios de los integrantes, la forma en que se tomaron decisiones tecnicas y de producto, y el impacto del trabajo colaborativo en la consolidacion de una solucion IoT funcional para el monitoreo de refrigeracion.
 
 ## Bibliografía
 
@@ -5438,18 +5554,29 @@ Este trabajo ha demostrado que OsitoPolar no solo resuelve un problema real, sin
 
 ## Anexos
 
-### Videos de Exposiciones
-
-> **Falta:** ordenar aquí los enlaces de videos por entrega (AV1, TB1, AV2 y Trabajo Final), siguiendo la nomenclatura indicada en el statement.
+### Repositorios del proyecto
 
 - Organización GitHub: https://github.com/iot-proyectos
+- Repositorio del informe: https://github.com/iot-proyectos/Report
 - Repositorio de la Landing Page: https://github.com/iot-proyectos/LandingPage
-- Repositorio Frontend: https://github.com/iot-proyectos/OsitoPolar-Frontend
-- Repositorio Backend: https://github.com/iot-proyectos/OsitoPolar-Backend
+- Repositorio Frontend Web: https://github.com/iot-proyectos/OsitoPolar-Frontend
+- Repositorio Backend / Cloud API: https://github.com/iot-proyectos/OsitoPolar-Backend
 - Repositorio Mobile: https://github.com/iot-proyectos/OsitoPolar-Mobile
+
+### Videos de Exposiciones
+
+En esta seccion se organizan los videos de exposicion del proyecto de acuerdo con las entregas solicitadas en el statement. Cada enlace corresponde a la evidencia publicada para la sustentacion del avance respectivo.
+
+| Entrega | Nombre sugerido segun statement | Enlace |
+| :--- | :--- | :--- |
+| AV1 | upc-pre-202610-1asi0572-6776-ositopolar-expo-av1.mp4 | [Video de exposicion AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u2032222001_upc_edu_pe/ESOPHU5GHEZGgBnK1e7uFVcBotVap94eOrrzWJIRhrJREQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=irIdp1) |
+| TB1 | upc-pre-202610-1asi0572-6776-ositopolar-expo-tb1.mp4 | [Video de exposicion TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u2023222001_upc_edu_pe/EUSP6C-FnFZFhqELTWnDrfgBBnB-QgeehRsw6agebPFu-A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=G9ZqQ4) |
+| AV2 | upc-pre-202610-1asi0572-6776-ositopolar-expo-av2.mp4 | [Video de exposicion AV2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQCHuZtyO5dITpQWo22Mfl_VAafEa-kbuvAf8CAHE5-czF0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=DllWug) |
+| TB2 / Trabajo Final | upc-pre-202610-1asi0572-6776-ositopolar-expo-tb2.mp4 | [Video de exposicion TB2](https://upcedupe-my.sharepoint.com/personal/u202223990_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202223990_upc_edu_pe%2FDocuments%2Fupc-pre-202610-1asi0572-6776-InteligenciaArtesanal-expo-tb2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9d5379fc-a1b6-4458-807d-cd9f3d7d0fc5) |
+
+### Videos demostrativos y complementarios
+
 - Video de demostración de la Landing Page: [Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQAeOr9bSx-2T4NJ5MMy6oFYAUG9i8dFYt45TIvlXmJ_M_I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=DOgTz1)
-- Video de exposicion AV1: [Video de exposicion AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u2032222001_upc_edu_pe/ESOPHU5GHEZGgBnK1e7uFVcBotVap94eOrrzWJIRhrJREQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=irIdp1)
-- Video de exposicion TP: [Video de exposicion TP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u2023222001_upc_edu_pe/EUSP6C-FnFZFhqELTWnDrfgBBnB-QgeehRsw6agebPFu-A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=G9ZqQ4)
-- Video de exposicion AV2: [Video de exposicion AV2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQCHuZtyO5dITpQWo22Mfl_VAafEa-kbuvAf8CAHE5-czF0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=DllWug)
-- Video de exposicion TF: [Video de exposicion TF]()
-- Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322001_upc_edu_pe/EX7h3-WbRbpNqTqMmM-NKdwBEXUEHMmcoY4pT1Q0epIOkQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9y)
+- Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQDcGXphpoXvR44ZFIsnfJofAQbB1rrxSDvLSztbtUw37nA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WqvaId)
+
+- Video about the team: [Video About The Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQBERk8de_wETKh2wqJR62jtAdkSm6lQHb0x_BY7FYz5sp0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=M8uqPr)
