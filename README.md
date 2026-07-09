@@ -4815,12 +4815,11 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
 
 ##### 6.2.1.3. Sprint Backlog 1
 
-El objetivo principal de este Sprint es elaborar la Landing Page de nuestra plataforma OsitoPolar. Para ello, dividimos el desarrollo de esta según las User Stories pertenecientes a la Epic enfocada en Landing Page. La plataforma elegida para ser la herramienta de control de tareas fue Trello, el cuál se presenta una captura de pantalla de nuestro tablero y su enlace público.
+El objetivo principal de este Sprint es elaborar la Landing Page de OsitoPolar, comunicando claramente que la plataforma permite monitorear la cadena de frio con dispositivos IoT, visualizar temperatura y humedad en tiempo real, recibir alertas ante desconexion o valores fuera de rango y conocer los planes disponibles para negocios con infraestructura refrigerada. La plataforma elegida para el control de tareas fue Trello.
 
 ![Trello-SprintBacklog1.png]( assets/chapter-05/Trello-SprintBacklog1.png)
 
 Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
-
 
 <table>
 <tr>
@@ -4843,160 +4842,150 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
 </tr>
 <tr>
     <td colspan="1">US-23</td>
-    <td colspan="2">Visualizar propuesta de valor principal</td>
+    <td colspan="2">Entender la propuesta de monitoreo de cadena de frio</td>
     <td colspan="1">UT-01</td>
-    <td colspan="2">Crear la sección 'Hero'</td>
-    <td colspan="3">Añadir la sección donde se muestra nuestra propuesta de valor principal y las entidades que confían en nosotros</td>
+    <td colspan="2">Crear seccion Hero enfocada en IoT</td>
+    <td colspan="3">Presentar a OsitoPolar como una plataforma web para vigilar temperatura, humedad y estado de conexion de equipos refrigerados.</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
+    <td colspan="2">Medina Cruzado, Raul Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-23</td>
-    <td colspan="2">Visualizar propuesta de valor principal</td>
+    <td colspan="2">Entender la propuesta de monitoreo de cadena de frio</td>
     <td colspan="1">UT-02</td>
-    <td colspan="2">Añadir estilos CSS</td>
-    <td colspan="3">Aplicar estilos según el diseño aprobado</td>
+    <td colspan="2">Aplicar estilos visuales del Hero</td>
+    <td colspan="3">Aplicar estilos para comunicar tecnologia, refrigeracion, monitoreo continuo y confianza operativa.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-23</td>
-    <td colspan="2">Visualizar propuesta de valor principal</td>
+    <td colspan="2">Entender la propuesta de monitoreo de cadena de frio</td>
     <td colspan="1">UT-03</td>
-    <td colspan="2">Añadir interacciones con JS</td>
-    <td colspan="3">Agregar efectos y validaciones según el diseño</td>
+    <td colspan="2">Agregar interacciones iniciales</td>
+    <td colspan="3">Agregar desplazamiento, botones y comportamiento basico para dirigir al usuario a planes, beneficios y solicitud de demo.</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
+    <td colspan="2">Medina Cruzado, Raul Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-24</td>
-    <td colspan="2">Explorar soluciones específicas para mi rubro</td>
+    <td colspan="2">Identificar beneficios por tipo de negocio refrigerado</td>
     <td colspan="1">UT-04</td>
-    <td colspan="2">Crear la sección 'Beneficios'</td>
-    <td colspan="3">Añadir la sección donde se visualizan las soluciones específicas a cada segmento (beneficios) </td>
+    <td colspan="2">Crear seccion Beneficios</td>
+    <td colspan="3">Mostrar beneficios para negocios con refrigeradores, congeladores, camaras frias y almacenes refrigerados.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-24</td>
-    <td colspan="2">Explorar soluciones específicas para mi rubro</td>
+    <td colspan="2">Identificar beneficios por tipo de negocio refrigerado</td>
     <td colspan="1">UT-05</td>
-    <td colspan="2">Añadir estilos CSS</td>
-    <td colspan="3">Aplicar estilos según el diseño aprobado de 'Beneficios'</td>
+    <td colspan="2">Estilizar tarjetas de beneficios</td>
+    <td colspan="3">Aplicar estilos a beneficios como prevencion de perdidas, visibilidad en tiempo real y respuesta temprana ante alertas.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-24</td>
-    <td colspan="2">Explorar soluciones específicas para mi rubro</td>
+    <td colspan="2">Identificar beneficios por tipo de negocio refrigerado</td>
     <td colspan="1">UT-06</td>
-    <td colspan="2">Añadir interacciones con JS</td>
-    <td colspan="3">Agregar efectos y validaciones según el diseño de 'Beneficios'</td>
+    <td colspan="2">Agregar interacciones en beneficios</td>
+    <td colspan="3">Agregar comportamiento visual para destacar beneficios de monitoreo, trazabilidad y alertas por fuera de rango.</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
+    <td colspan="2">Medina Cruzado, Raul Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-25</td>
-    <td colspan="2">Comprender funcionalidades destacadas</td>
+    <td colspan="2">Comprender funcionalidades IoT principales</td>
     <td colspan="1">UT-07</td>
-    <td colspan="2">Crear la sección 'Funcionalidades'</td>
-    <td colspan="3">Añadir la sección donde se visualizan las funciones principales de la plataforma</td>
+    <td colspan="2">Crear seccion Funcionalidades</td>
+    <td colspan="3">Presentar funcionalidades: registro de dispositivos, dashboard, temperatura/humedad, alertas, historial y planos interactivos.</td>
     <td colspan="1">1</td>
     <td colspan="2">Mora Blas, Diego Alonzo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-25</td>
-    <td colspan="2">Comprender funcionalidades destacadas</td>
+    <td colspan="2">Comprender funcionalidades IoT principales</td>
     <td colspan="1">UT-08</td>
-    <td colspan="2">Añadir estilos CSS</td>
-    <td colspan="3">Aplicar estilos según el diseño aprobado de 'Funcionalidades'</td>
+    <td colspan="2">Aplicar estilos a funcionalidades</td>
+    <td colspan="3">Ordenar visualmente las funciones alrededor del monitoreo de cadena de frio y la gestion de dispositivos IoT.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-25</td>
-    <td colspan="2">Comprender funcionalidades destacadas</td>
+    <td colspan="2">Comprender funcionalidades IoT principales</td>
     <td colspan="1">UT-09</td>
-    <td colspan="2">Añadir interacciones con JS</td>
-    <td colspan="3">Agregar efectos y validaciones según el diseño de 'Funcionalidades'</td>
+    <td colspan="2">Agregar interacciones a funcionalidades</td>
+    <td colspan="3">Agregar efectos y validaciones visuales para explicar los flujos de monitoreo, alerta y visualizacion historica.</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
+    <td colspan="2">Medina Cruzado, Raul Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-26</td>
-    <td colspan="2">Solicitar una demo fácilmente</td>
+    <td colspan="2">Solicitar una demo de monitoreo IoT</td>
     <td colspan="1">UT-10</td>
-    <td colspan="2">Crear la sección 'Solicitar Demo'</td>
-    <td colspan="3">Añadir la sección donde se puede solicitar una demo de nuestra plataforma</td>
+    <td colspan="2">Crear seccion Solicitar Demo</td>
+    <td colspan="3">Permitir que negocios interesados pidan una demostracion de monitoreo de equipos refrigerados.</td>
     <td colspan="1">1</td>
     <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-26</td>
-    <td colspan="2">Solicitar una demo fácilmente</td>
+    <td colspan="2">Solicitar una demo de monitoreo IoT</td>
     <td colspan="1">UT-11</td>
-    <td colspan="2">Añadir estilos CSS</td>
-    <td colspan="3">Aplicar estilos según el diseño aprobado de 'Solicitar demo'</td>
+    <td colspan="2">Estilizar formulario de demo</td>
+    <td colspan="3">Aplicar estilos al formulario y orientar los campos a empresas con equipos o instalaciones refrigeradas.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-26</td>
-    <td colspan="2">Solicitar una demo fácilmente</td>
+    <td colspan="2">Solicitar una demo de monitoreo IoT</td>
     <td colspan="1">UT-12</td>
-    <td colspan="2">Añadir interacciones con JS</td>
-    <td colspan="3">Agregar efectos y validaciones según el diseño de 'Solicitar demo'</td>
+    <td colspan="2">Validar interacciones del formulario</td>
+    <td colspan="3">Agregar validaciones basicas para los datos del negocio, contacto y tipo de infraestructura refrigerada.</td>
     <td colspan="1">0.5</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
+    <td colspan="2">Medina Cruzado, Raul Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-27</td>
-    <td colspan="2">Conocer misión y visión de la startup</td>
+    <td colspan="2">Conocer mision y vision de OsitoPolar</td>
     <td colspan="1">UT-13</td>
-    <td colspan="2">Crear la sección 'Nosotros'</td>
-    <td colspan="3">Añadir la sección donde se visualiza la misión y visión de nuestra startup</td>
+    <td colspan="2">Crear seccion Nosotros</td>
+    <td colspan="3">Explicar la vision del equipo sobre proteccion de cadena de frio mediante monitoreo IoT accesible.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Mora Blas, Diego Alonzo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
-    <td colspan="1">US-27</td>
-    <td colspan="2">Conocer misión y visión de la startup</td>
+    <td colspan="1">US-28</td>
+    <td colspan="2">Consultar planes de uso</td>
     <td colspan="1">UT-14</td>
-    <td colspan="2">Añadir estilos CSS</td>
-    <td colspan="3">Aplicar estilos según el diseño aprobado de 'Nosotros'</td>
+    <td colspan="2">Crear seccion Planes</td>
+    <td colspan="3">Presentar planes de uso, incluyendo una opcion empresarial con planos interactivos para ubicar dispositivos.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Cacho Seminario, Diego Alonso</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
-    <td colspan="1">US-27</td>
-    <td colspan="2">Conocer misión y visión de la startup</td>
-    <td colspan="1">UT-15</td>
-    <td colspan="2">Añadir interacciones con JS</td>
-    <td colspan="3">Agregar efectos y validaciones según el diseño de 'Nosotros'</td>
-    <td colspan="1">0.5</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-00</td>
     <td colspan="2">-</td>
-    <td colspan="1">NT-16</td>
+    <td colspan="1">NT-15</td>
     <td colspan="2">Implementar cambio de idioma</td>
-    <td colspan="3">Implementar la funcionalidad de cambio de idioma en la landing page</td>
+    <td colspan="3">Implementar cambio de idioma para comunicar la propuesta de monitoreo IoT en espanol e ingles.</td>
     <td colspan="1">2</td>
     <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
@@ -5004,16 +4993,15 @@ Enlace: https://trello.com/b/xAOjqyPz/inteligenciaartesanal-ositopolar
 <tr>
     <td colspan="1">US-00</td>
     <td colspan="2">-</td>
-    <td colspan="1">NT-17</td>
-    <td colspan="2">Añadir imágenes complementarias</td>
-    <td colspan="3">Agregar imágenes complementarias en las diferentes secciones del landing page</td>
+    <td colspan="1">NT-16</td>
+    <td colspan="2">Agregar imagenes de cadena de frio</td>
+    <td colspan="3">Agregar imagenes relacionadas con sensores, refrigeracion, dashboard y monitoreo de condiciones ambientales.</td>
     <td colspan="1">0.5</td>
     <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 
 </table>
-
 ##### 6.2.1.4. Development Evidence for Sprint Review
 
 En este primer Sprint hemos realizado la implementación de nuestra Landing Page, donde todo el equipo ha aportado en varias tareas. En la siguiente tabla se muestran los commits realizados.
@@ -5646,7 +5634,7 @@ Con el fin de organizar de manera más eficiente el trabajo colaborativo, se ha 
 
 ##### 6.2.2.3. Sprint Backlog 2
 
-El objetivo principal de este Sprint es elaborar la Single Page Aplication (frontend) de nuestra plataforma OsitoPolar. Para ello, dividimos el desarrollo de esta según las User Stories pertenecientes a la Epic y prioridad enfocada a los usuarios. La plataforma elegida para ser la herramienta de control de tareas fue Trello.
+El objetivo principal de este Sprint es implementar la primera version de la plataforma web de OsitoPolar, enfocada en registrar dispositivos IoT, visualizar el estado de equipos refrigerados, consultar temperatura y humedad, configurar rangos seguros y recibir alertas cuando un dispositivo se desconecta o cuando las condiciones salen del rango definido. La plataforma elegida para el control de tareas fue Trello.
 
 <table>
 <tr>
@@ -5669,113 +5657,133 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
 </tr>
 <tr>
     <td colspan="1">US-06</td>
-    <td colspan="2">Agregar equipos</td>
+    <td colspan="2">Registrar dispositivos IoT</td>
     <td colspan="1">UT-01</td>
-    <td colspan="2">Implementar estructura</td>
-    <td colspan="3">Crear los componentes, entidades y servicios de los equipos</td>
+    <td colspan="2">Crear estructura de dispositivos</td>
+    <td colspan="3">Crear componentes, entidades y servicios para registrar sensores asociados a refrigeradores, congeladores, camaras frias o almacenes.</td>
     <td colspan="1">2</td>
     <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-06</td>
-    <td colspan="2">Agregar equipos</td>
+    <td colspan="2">Registrar dispositivos IoT</td>
     <td colspan="1">UT-02</td>
-    <td colspan="2">Implementar operaciones CRUD</td>
-    <td colspan="3">Implementar las operaciones CREATE, READ, UPDATE AND DELETE de los equipos y cada uno de sus atributos </td>
+    <td colspan="2">Implementar CRUD de dispositivos</td>
+    <td colspan="3">Implementar crear, listar, editar y eliminar dispositivos con nombre, ubicacion, tipo de activo, estado de conexion y rangos seguros.</td>
     <td colspan="1">3</td>
     <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-09</td>
-    <td colspan="2">Ver consumo energético de equipos</td>
+    <td colspan="2">Visualizar temperatura y humedad en tiempo real</td>
     <td colspan="1">UT-03</td>
-    <td colspan="2">Añadir datos de consumo energético</td>
-    <td colspan="3">Crear un component y service diseñado para este atributo</td>
+    <td colspan="2">Crear modelo de telemetria</td>
+    <td colspan="3">Definir estructura para lecturas de temperatura, humedad, fecha, dispositivo y estado de recepcion.</td>
     <td colspan="1">3</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
-    <td colspan="1">To Do</td>
+    <td colspan="2">Medina Cruzado, Raul Adrian</td>
+    <td colspan="1">Done</td>
 </tr>
 <tr>
-    <td colspan="1">US-31</td>
-    <td colspan="2">Controlar encendido y apagado del equipo</td>
+    <td colspan="1">US-09</td>
+    <td colspan="2">Visualizar temperatura y humedad en tiempo real</td>
     <td colspan="1">UT-04</td>
-    <td colspan="2">Funcionalidad para apagar y encender el equipo</td>
-    <td colspan="3">Añadir estados de apagado y encendido a la entidad Equipment </td>
-    <td colspan="1">2</td>
+    <td colspan="2">Implementar dashboard de monitoreo</td>
+    <td colspan="3">Mostrar tarjetas de dispositivos con temperatura, humedad, estado de conexion y condicion actual dentro/fuera de rango.</td>
+    <td colspan="1">3</td>
     <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
-    <td colspan="1">US-31</td>
-    <td colspan="2">Controlar encendido y apagado del equipo</td>
+    <td colspan="1">US-10</td>
+    <td colspan="2">Configurar rangos seguros</td>
     <td colspan="1">UT-05</td>
-    <td colspan="2">Agregar y diseñar botón para cambiar entre estados</td>
-    <td colspan="3">Aplicar un button para activar la funcionalidad</td>
-    <td colspan="1">1</td>
+    <td colspan="2">Agregar controles de rango</td>
+    <td colspan="3">Permitir definir temperatura y humedad minima y maxima por dispositivo o tipo de activo refrigerado.</td>
+    <td colspan="1">2</td>
     <td colspan="2">Cacho Seminario, Diego Alonso</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
-    <td colspan="1">US-32</td>
-    <td colspan="2">Ajustar temperatura del equipo</td>
+    <td colspan="1">US-10</td>
+    <td colspan="2">Configurar rangos seguros</td>
     <td colspan="1">UT-06</td>
-    <td colspan="2">Controlar el ajuste de temperatura de un equipo en concreto</td>
-    <td colspan="3">Aplicar la lógica para implementar el cambio del atributo temperatura de la entidad Equipment</td>
-    <td colspan="1">3</td>
+    <td colspan="2">Validar valores de configuracion</td>
+    <td colspan="3">Aplicar validaciones para evitar rangos incoherentes y mostrar mensajes de error claros al usuario.</td>
+    <td colspan="1">2</td>
     <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
-    <td colspan="1">US-32</td>
-    <td colspan="2">Ajustar temperatura del equipo</td>
-    <td colspan="1">UT-07</td>
-    <td colspan="2">Agregar gráficos analíticos sobre el cambio de temperatura</td>
-    <td colspan="3">Implementar gráficos que muestren el cambio de temperatura</td>
-    <td colspan="1">4</td>
-    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
-    <td colspan="1">Done</td>
-</tr>
-<tr>
     <td colspan="1">US-07</td>
-    <td colspan="2">Recibir alerta de falla en equipo</td>
-    <td colspan="1">UT-08</td>
-    <td colspan="2">Implementar notificaciones</td>
-    <td colspan="3">Crear components, models y services de notificaciones</td>
+    <td colspan="2">Recibir alertas por fuera de rango</td>
+    <td colspan="1">UT-07</td>
+    <td colspan="2">Crear modulo de alertas</td>
+    <td colspan="3">Crear componentes, modelos y servicios para alertas por temperatura, humedad y criticidad.</td>
     <td colspan="1">3</td>
     <td colspan="2">Mora Blas, Diego Alonzo</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
     <td colspan="1">US-07</td>
-    <td colspan="2">Recibir alerta de falla en equipo</td>
-    <td colspan="1">UT-09</td>
-    <td colspan="2">Agregar funcionalidad para que la notificación alerte cuando se presenta una falla </td>
-    <td colspan="3">Crear la lógica para que la alerta funcione cuando haya una anomalía en la temperatura del equipo</td>
-    <td colspan="1">2</td>
-    <td colspan="2">Medina Cruzado, Raúl Adrian</td>
+    <td colspan="2">Recibir alertas por fuera de rango</td>
+    <td colspan="1">UT-08</td>
+    <td colspan="2">Implementar reglas de alerta</td>
+    <td colspan="3">Crear la logica que marque una lectura como alerta cuando temperatura o humedad salgan del rango seguro configurado.</td>
+    <td colspan="1">3</td>
+    <td colspan="2">Medina Cruzado, Raul Adrian</td>
     <td colspan="1">Done</td>
 </tr>
 <tr>
-    <td colspan="1">US-08</td>
-    <td colspan="2">Solicitar mantenimiento preventivo</td>
-    <td colspan="1">UT-10</td>
-    <td colspan="2">Implementar el registro de solicitud de mantenimiento</td>
-    <td colspan="3">Crear components, services y models para la solicitud de mantenimiento</td>
+    <td colspan="1">US-11</td>
+    <td colspan="2">Detectar dispositivos desconectados</td>
+    <td colspan="1">UT-09</td>
+    <td colspan="2">Agregar estado de conexion</td>
+    <td colspan="3">Mostrar dispositivos conectados, desconectados o sin lectura reciente en el dashboard.</td>
     <td colspan="1">2</td>
     <td colspan="2">Cacho Seminario, Diego Alonso</td>
-    <td colspan="1">To Do</td>
+    <td colspan="1">Done</td>
 </tr>
 <tr>
-    <td colspan="1">US-08</td>
-    <td colspan="2">Solicitar mantenimiento preventivo</td>
-    <td colspan="1">UT-11</td>
-    <td colspan="2">Implementar CRUD para los servicios de mantenimiento preventivo</td>
-    <td colspan="3">Crear las operaciones que permitan crear, ver y eliminar</td>
+    <td colspan="1">US-11</td>
+    <td colspan="2">Detectar dispositivos desconectados</td>
+    <td colspan="1">UT-10</td>
+    <td colspan="2">Generar alerta de desconexion</td>
+    <td colspan="3">Crear alerta cuando un dispositivo no reporte lecturas dentro del intervalo esperado.</td>
     <td colspan="1">2</td>
     <td colspan="2">Inga Orihuela, Christian Fabrizio</td>
-    <td colspan="1">To Do</td>
+    <td colspan="1">Done</td>
+</tr>
+<tr>
+    <td colspan="1">US-12</td>
+    <td colspan="2">Consultar historico de condiciones</td>
+    <td colspan="1">UT-11</td>
+    <td colspan="2">Agregar graficos historicos</td>
+    <td colspan="3">Implementar graficos de temperatura y humedad por dispositivo para analizar variaciones y eventos fuera de rango.</td>
+    <td colspan="1">4</td>
+    <td colspan="2">Hernandez Poma, Sebastian Eduardo</td>
+    <td colspan="1">Done</td>
+</tr>
+<tr>
+    <td colspan="1">US-28</td>
+    <td colspan="2">Gestionar planes de uso</td>
+    <td colspan="1">UT-12</td>
+    <td colspan="2">Crear vista de planes</td>
+    <td colspan="3">Mostrar planes disponibles, limites por cantidad de dispositivos y beneficios del plan empresarial.</td>
+    <td colspan="1">2</td>
+    <td colspan="2">Mora Blas, Diego Alonzo</td>
+    <td colspan="1">Done</td>
+</tr>
+<tr>
+    <td colspan="1">US-29</td>
+    <td colspan="2">Ubicar dispositivos en planos interactivos</td>
+    <td colspan="1">UT-13</td>
+    <td colspan="2">Dise�ar vista inicial de plano</td>
+    <td colspan="3">Crear una primera vista para ubicar dispositivos dentro de una instalacion refrigerada como funcionalidad del plan empresarial.</td>
+    <td colspan="1">3</td>
+    <td colspan="2">Cacho Seminario, Diego Alonso</td>
+    <td colspan="1">To-Review</td>
 </tr>
 
 </table>
@@ -5783,7 +5791,6 @@ El objetivo principal de este Sprint es elaborar la Single Page Aplication (fron
 ![sprintbacklog2.png]( assets/chapter-05/sprint2/sprintbacklog2.png)
 
 Link Trello Sprint Backlog #2: https://shorturl.at/VgV08
-
 ##### 6.2.2.4. Development Evidence for Sprint Review
 
 En este segundo Sprint hemos realizado la implementación de nuestra Single Page Aplication. En la siguiente tabla se muestran los commits realizados.
@@ -5963,16 +5970,18 @@ Para garantizar el éxito de esta fase crítica de integración, las responsabil
 | Mora Blas, Diego Alonzo | diegoalonzomora | C | C | L | C |
 
 #### 6.2.3.3. Sprint Backlog 3
-Durante este sprint se abordaron las siguientes Historias de Usuario (User Stories) críticas para completar el ecosistema IoT:
+Durante este sprint se abordaron las historias de usuario criticas para completar el ecosistema IoT de OsitoPolar, integrando el dispositivo fisico, la recepcion de telemetria en la nube, las alertas automaticas y la visualizacion empresarial de dispositivos dentro de instalaciones refrigeradas.
 
 | ID | Title | Description | Estimation (Hours) | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **US-15** | Generar API Key dinámica | Como técnico, quiero registrar un nuevo dispositivo generando una API Key dinámica para asegurar su autenticación. | 3 | Done |
-| **US-16** | Envío de telemetría IoT | Como dispositivo Edge, quiero enviar paquetes de telemetría (temperatura/humedad) al servidor Cloud para su almacenamiento. | 5 | Done |
-| **US-17** | Visualizar historial móvil | Como usuario de la app móvil, quiero visualizar el historial de temperatura de mis equipos en tiempo real. | 6 | Done |
-| **US-18** | Despliegue de DB en Cloud | Como administrador del sistema, quiero que la base de datos se despliegue en un entorno Cloud para acceso global. | 2 | Done |
-| **US-19** | Pruebas E2E de telemetría | Como equipo de QA, queremos validar la ingesta de datos desde el hardware hasta la interfaz visual mediante pruebas E2E. | 4 | Done |
-
+| **US-15** | Generar API Key para dispositivo IoT | Como administrador, quiero generar una API Key por dispositivo para autenticar el envio de telemetria desde sensores instalados en equipos refrigerados. | 3 | Done |
+| **US-16** | Enviar telemetria de temperatura y humedad | Como dispositivo IoT, quiero enviar lecturas de temperatura y humedad al servidor Cloud para que la plataforma muestre el estado de la cadena de frio en tiempo real. | 5 | Done |
+| **US-17** | Visualizar historico de lecturas | Como usuario, quiero revisar el historico de temperatura y humedad por dispositivo para analizar variaciones, incidentes y tiempos fuera de rango. | 5 | Done |
+| **US-18** | Detectar alertas por condiciones fuera de rango | Como usuario, quiero recibir alertas cuando la temperatura o humedad salgan del rango seguro configurado para proteger los productos refrigerados. | 4 | Done |
+| **US-19** | Detectar dispositivos desconectados | Como usuario, quiero recibir una alerta cuando un dispositivo deje de reportar datos para identificar fallas de conectividad o problemas del sensor. | 3 | Done |
+| **US-20** | Desplegar base de datos y API en Cloud | Como equipo de desarrollo, queremos desplegar la base de datos y la API en un entorno Cloud para recibir telemetria desde dispositivos reales. | 2 | Done |
+| **US-21** | Ubicar dispositivos en plano interactivo | Como usuario empresarial, quiero ubicar dispositivos dentro de un plano de mi instalacion para identificar rapidamente donde ocurre una alerta. | 4 | To-Review |
+| **US-22** | Validar flujo end-to-end IoT | Como equipo de QA, queremos validar el flujo completo sensor -> Cloud API -> dashboard web para asegurar que las lecturas y alertas se visualicen correctamente. | 4 | Done |
 #### 6.2.3.4. Development Evidence for Sprint Review
 
 **Mobile App (Generación de API Keys y Consumo):**
