@@ -231,15 +231,6 @@
         - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
     - [5.6. IoT Device Design](#56-iot-device-design)
-    - [5.7. Domain-Driven Software Architecture](#57-domain-driven-software-architecture)
-        - [5.7.1. Software Architecture Context Diagram](#571-software-architecture-context-diagram)
-        - [5.7.2. Software Architecture Container Diagrams](#572-software-architecture-container-diagrams)
-        - [5.7.3. Software Architecture Components Diagrams](#573-software-architecture-components-diagrams)
-    - [5.8. Software Object-Oriented Design](#58-software-object-oriented-design)
-        - [5.8.1. Class Diagrams](#581-class-diagrams)
-        - [5.8.2. Class Dictionary](#582-class-dictionary)
-    - [5.9. Database Design](#59-database-design)
-        - [5.9.1. Database Diagram](#591-database-diagram)
 
 
 - [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
@@ -2936,148 +2927,38 @@ La estructura de navegación y las opciones disponibles en **OsitoPolar** están
 ### 5.3. Landing Page UI Design
 #### 5.3.1. Landing Page Wireframe
 
-El wireframe de la página de inicio de OsitoPolar organiza los elementos clave para ofrecer una navegación intuitiva. Incluye un encabezado con el logo y un menú de navegación, seguido de una propuesta de valor clara con botones de acción destacados como "Solicitar Demo" y "¿Cómo Funciona?". La página cuenta con secciones para describir a los usuarios objetivo, las funcionalidades clave del sistema, y los beneficios que ofrece OsitoPolar. Al final, se encuentra un formulario de contacto para que los usuarios soliciten una demo, junto con enlaces legales en el pie de página.
+El wireframe de la Landing Page organiza la propuesta de valor de OsitoPolar alrededor del monitoreo de cadena de frio, mostrando de forma clara los beneficios de controlar temperatura, humedad, alertas y dispositivos IoT desde una plataforma web.
 
 <figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/LandingPageWireframe.png"
-       alt="Wireframe de la Landing Page: Diseño de baja fidelidad de la página principal."
-       style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
+  <img src="assets/LandingPage/Landing1.png"
+       alt="Landing Page de OsitoPolar: seccion principal y propuesta de valor."
+       style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 1:</strong> Wireframe de la Landing Page.
+    <strong>Figura 1:</strong> Landing Page - Seccion principal.
   </figcaption>
 </figure>
-
 
 #### 5.3.2. Landing Page Mockup
 
-El Landing Page Mock-up de OsitoPolar muestra un diseño limpio y organizado, con una estructura intuitiva que guía a los usuarios a través de la plataforma. Incluye una propuesta de valor destacada en la parte superior, seguida de secciones clave como las funcionalidades del sistema, los beneficios para empresas y proveedores, y una explicación clara de cómo funciona el servicio. También cuenta con testimonios de clientes, detalles sobre la empresa y un formulario para solicitar una demo, todo con un enfoque en facilitar la conversión de visitantes a usuarios activos.
-
-- Esta es la primera sección, llamada "Inicio". En esta se puede ver la propuesta de valor que ofrece nuestra plataforma junto con un "Call to Action" que se agregará a futuro.
+El mock-up actualizado de la Landing Page presenta la identidad visual y las secciones principales de OsitoPolar. Las capturas muestran el enfoque comercial del producto, sus funcionalidades de monitoreo IoT, la explicacion del servicio y los puntos de contacto para convertir visitantes en potenciales usuarios.
 
 <figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup1.png"
-       alt="Mockup 1 de la Landing Page: Diseño visual de la sección superior."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
+  <img src="assets/LandingPage/Landing2.png"
+       alt="Landing Page de OsitoPolar: funcionalidades y beneficios del monitoreo IoT."
+       style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 1:</strong> Mockup 1 - Inicio - Landing Page.
+    <strong>Figura 2:</strong> Landing Page - Funcionalidades y beneficios.
   </figcaption>
 </figure>
 
-
-- Esta segunda sección hace una breve descripción de a quiénes está dirigido la plataforma.
-
 <figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup2.png"
-       alt="Mockup 2 de la Landing Page: Diseño visual de la sección de características."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
+  <img src="assets/LandingPage/Landing3.png"
+       alt="Landing Page de OsitoPolar: secciones finales y contacto."
+       style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 2:</strong> Mockup 2  - ¿Para quién es? - Landing Page.
+    <strong>Figura 3:</strong> Landing Page - Informacion final y contacto.
   </figcaption>
 </figure>
-
-
-- En "Funcionalidades Clave" se presentan las principales funcionalidades que ofrece la plataforma.
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup3.png"
-       alt="Mockup 3 de la Landing Page: Diseño visual de la sección de testimonios."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 3:</strong> Mockup 3 - Funcionalidades - Landing Page.
-  </figcaption>
-</figure>
-
-
-- En "Beneficios" se presentan los beneficios que ofrece la plataforma para empresas y proveedores.
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup4.png"
-       alt="Mockup 4 de la Landing Page: Diseño visual de la sección de precios."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 4:</strong> Mockup 4 - Beneficios para negocios - Landing Page.
-  </figcaption>
-</figure>
-
-
-- En "Beneficios" se presentan los beneficios que ofrece la plataforma para proveedores.
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup5.png"
-       alt="Mockup 5 de la Landing Page: Diseño visual de la sección de preguntas frecuentes."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 5:</strong> Mockup 5 - Beneficios para proveedores - Landing Page.
-  </figcaption>
-</figure>
-
-
-- En "Como funciona" se describe el flujo del funcionamiento de la plataforma.
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup6.png"
-       alt="Mockup 6 de la Landing Page: Diseño visual del pie de página."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 6:</strong> Mockup 6 - ¿Como funciona? - Landing Page.
-  </figcaption>
-</figure>
-
-
-- En "Sobre Nosotros" se presenta nuestra Misión y Visión como startup. 
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup7.png"
-       alt="Mockup 7 de la Landing Page: Vista detallada de un elemento interactivo."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 7:</strong> Mockup 7 - Sobre Nosotros - Landing Page.
-  </figcaption>
-</figure>
-
-
-- En "Lo que dicen nuestros clientes" se visualizan las reseñas de los usuarios que usaron nuestra plataforma.
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup8.png"
-       alt="Mockup 8 de la Landing Page: Vista detallada de un formulario de contacto."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 8:</strong> Mockup 8 - Lo que dicen nuestros clientes - Landing Page.
-  </figcaption>
-</figure>
-
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup9.png"
-       alt="Mockup 9 de la Landing Page: Sección de llamada a la acción."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 9:</strong> Mockup 9 - Lo que dicen nuestros clientes - Landing Page.
-  </figcaption>
-</figure>
-
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup10.png"
-       alt="Mockup 10 de la Landing Page: Vista de la navegación superior."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 10:</strong> Mockup 10 - Lo que dicen nuestros clientes - Landing Page.
-  </figcaption>
-</figure>
-
-
-- En "Contacto" se presenta un formulario de contacto para que los usuarios puedan solicitar una demo.
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Landing%20Page%20Mockups/mockup11.png"
-       alt="Mockup 11 de la Landing Page: Vista de la sección de beneficios clave."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 11:</strong> Mockup 11 - Contacto - Landing Page.
-  </figcaption>
-</figure>
-
 
 
 ### 5.4. Applications UX/UI Design
@@ -3622,118 +3503,6 @@ Link del prototipo: https://shorturl.at/oIUJN
 
 > **Falta:** documentar el diseño del dispositivo IoT físico, incluyendo componentes electrónicos, sensores, actuadores si aplica, diagrama de conexión, flujo de datos Embedded Application -> Edge API -> Cloud API y evidencias del prototipo físico.
 
-### 5.7. Domain-Driven Software Architecture
-En esta sección se presenta la arquitectura de software basada en el dominio para OsitoPolar. Se detallan los diferentes diagramas que ilustran la estructura y organización del sistema, así como los componentes clave que lo integran, mostrando cómo se interconectan para proporcionar una solución eficiente y escalable.
-
-#### 5.7.1. Software Architecture Context Diagram
-Este diagrama muestra cómo interactúan los usuarios (Clientes y Empresas Proveedoras) con OsitoPolar. Los usuarios usan la plataforma para gestionar y monitorear equipos de refrigeración. Además, OsitoPolar se conecta con los servicios de correo para enviar notificaciones y con el servicio de pago para procesar transacciones.
-
-![System Context Diagram](assets/NuevoC4/C1_Contexto-dark.png)
-*Leyenda:*
-![Key](assets/NuevoC4/C1_Contexto-dark-key.png)
-
-#### 5.7.2. Software Architecture Container Diagrams
-Este diagrama ilustra los diferentes contenedores dentro de OsitoPolar y cómo interactúan entre sí. Los contenedores representan las diferentes capas y servicios que componen la plataforma, como la interfaz de usuario (webapp), la API y la base de datos.
-
-![Container Diagram](assets/NuevoC4/C2_Contenedores-dark.png)
-*Leyenda:*
-![Key](assets/NuevoC4/C2_Contenedores-dark-key.png)
-
-#### 5.7.3. Software Architecture Components Diagrams
-
-
-**Cloud Backend Components**
-
-![Cloud Backend Components Diagram](assets/NuevoC4/C3_Backend-dark.png)
-
-![Key](assets/NuevoC4/C3_Backend-dark-key.png)
-
-**Edge Server Components**
-
-![Edge Server Components Diagram](assets/NuevoC4/C3_Edge-dark.png)
-
-![Key](assets/NuevoC4/C3_Edge-dark-key.png)
-
-
-### 5.8. Software Object-Oriented Design
-En esta sección se presenta el diseño de software orientado a objetos para OsitoPolar. Se incluyen diagramas de clases y un diccionario de clases que detallan la estructura y los atributos de las principales entidades del sistema, ofreciendo una visión clara de cómo se organizan y gestionan los componentes clave dentro de la plataforma.
-
-#### 5.8.1. Class Diagrams
-
-El diagrama de clases proporciona una representación visual de las clases del sistema, sus atributos y las relaciones entre ellas.
-
-![Class-UML.png]( assets/chapter04/Class-UML.png)
-
-#### 5.8.2. Class Dictionary
-
-## Clase: Solicitud
-| Nº | Nombre de atributo | Descripción                                              | Tipo de dato      |
-|----|--------------------|----------------------------------------------------------|-------------------|
-| 1  | name_equipo        | Almacena el nombre del equipo solicitado.                | Equipo            |
-| 2  | name_usuario       | Almacena el nombre del usuario que realiza la solicitud. | Usuario           |
-| 3  | orden              | Almacena el número de orden de la solicitud.             | unsigned long int |
-| 4  | description        | Almacena la descripción de la solicitud.                 | varchar           |
-| 5  | time               | Almacena el tiempo estimado o requerido.                 | float             |
-| 6  | status             | Almacena el estado de la solicitud.                      | char              |
-
-## Clase: Cliente
-| Nº | Nombre de atributo | Descripción                                | Tipo de dato |
-|----|--------------------|--------------------------------------------|--------------|
-| 1  | name               | Almacena el nombre del cliente.            | string       |
-| 2  | email              | Almacena el correo del cliente.            | string       |
-| 3  | password           | Almacena la contraseña del cliente.        | string       |
-| 4  | username           | Almacena el nombre de usuario del cliente. | string       |
-| 5  | phone              | Almacena el teléfono del cliente.          | string       |
-| 6  | user_type          | Almacena el tipo de usuario.               | char         |
-
-## Clase: Company
-| Nº | Nombre de atributo | Descripción                                     | Tipo de dato |
-|----|--------------------|-------------------------------------------------|--------------|
-| 1  | name               | Almacena el nombre de la empresa.               | string       |
-| 2  | email              | Almacena el correo electrónico de la empresa.   | string       |
-| 3  | password           | Almacena la contraseña de la empresa.           | string       |
-| 4  | username           | Almacena el nombre de usuario de la empresa.    | string       |
-| 5  | plan               | Almacena el tipo de plan que posee la empresa.  | char         |
-| 6  | phone              | Almacena el teléfono de contacto de la empresa. | string       |
-| 7  | business_type      | Almacena el tipo de negocio de la empresa.      | char         |
-| 8  | location           | Almacena la ubicación física de la empresa.     | string       |
-
-##  Clase: Cuenta
-| Nº | Nombre de atributo | Descripción                                         | Tipo de dato |
-|----|--------------------|-----------------------------------------------------|--------------|
-| 1  | name (company)     | Almacena el nombre de la empresa asociada.          | Company      |
-| 2  | name (usuario)     | Almacena el nombre del usuario asociado.            | Usuario      |
-| 3  | cost               | Almacena el costo del equipo vinculado a la cuenta. | Equipo       |
-| 4  | status             | Almacena el estado de la cuenta.                    | char         |
-
-##  Clase: Mantenimiento
-| Nº | Nombre de atributo | Descripción                                     | Tipo de dato |
-|----|--------------------|-------------------------------------------------|--------------|
-| 1  | name               | Almacena el nombre del equipo en mantenimiento. | Equipo       |
-| 2  | status             | Almacena el estado del mantenimiento.           | char         |
-
-##  Clase: Notificación
-| Nº | Nombre de atributo | Descripción                                                  | Tipo de dato |
-|----|--------------------|--------------------------------------------------------------|--------------|
-| 1  | name               | Almacena el nombre de la notificación.                       | varchar      |
-| 2  | description        | Almacena la descripción de la notificación.                  | varchar      |
-| 3  | name_company       | Almacena el nombre de la empresa asociada a la notificación. | Company      |
-| 4  | name_cliente       | Almacena el nombre del cliente destinatario.                 | Cliente      |
-| 5  | status             | Indica si la notificación ha sido leída o procesada.         | bool         |
-
-### 5.9. Database Design
-
-Esta sección presenta la estructura lógica del sistema desde el punto de vista de almacenamiento y organización de los datos. Se describen las entidades principales del sistema, sus atributos, tipos de datos y relaciones entre ellas. El modelo de base de datos ha sido diseñado para garantizar integridad, consistencia y eficiencia en el acceso a la información.
-
-
-
-#### 5.9.1. Database Diagram
-
-El diagrama de base de datos ilustra gráficamente cómo se relacionan las tablas dentro del sistema, incluyendo sus claves primarias, claves foráneas y los tipos de relaciones existentes (uno a uno, uno a muchos o muchos a muchos).
-
-![diagram-class.png]( assets/chapter04/diagram-class.png)
-
-<div style="page-break-after: always"></div>
 
 ## Capítulo VI: Product Implementation, Validation & Deployment 
 
