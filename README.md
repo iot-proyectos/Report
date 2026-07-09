@@ -1218,7 +1218,18 @@ Desde la perspectiva del usuario, este mapa nos permite visualizar su situación
 
 ### 2.4. Big Picture EventStorming.
 
-> **Falta:** completar el Big Picture EventStorming con el diagrama/captura correspondiente y una explicación breve de los eventos principales del dominio, actores, comandos, políticas y sistemas externos identificados.
+El Big Picture EventStorming de OsitoPolar permite visualizar el flujo principal del dominio, desde el registro de usuarios y dispositivos IoT hasta el monitoreo de temperatura y humedad, la detección de condiciones fuera de rango, la generación de alertas y la consulta de información histórica desde la plataforma web.
+
+En el modelado se identificaron actores como el usuario, el usuario Business, el dispositivo IoT ESP32, el Edge Server y el Cloud Backend. Los eventos principales incluyen el registro del dispositivo, la generación de API Key, la captura de lecturas, la detección de temperatura o humedad fuera de rango, la desconexión de dispositivos, el envío de notificaciones y la activación de funcionalidades empresariales como planos interactivos.
+
+<figure style="page-break-inside: avoid; text-align: center;">
+  <img src="assets/TF/Event_Storming.jpg"
+       alt="Big Picture EventStorming de OsitoPolar."
+       style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
+  <figcaption style="font-size: 0.9em; color: #555;">
+    <strong>Figura 1:</strong> Big Picture EventStorming de OsitoPolar.
+  </figcaption>
+</figure>
 
 ### 2.5. Ubiquitous Language.
 
@@ -3501,7 +3512,53 @@ Link del prototipo: https://shorturl.at/oIUJN
 
 ### 5.6. IoT Device Design
 
-> **Falta:** documentar el diseño del dispositivo IoT físico, incluyendo componentes electrónicos, sensores, actuadores si aplica, diagrama de conexión, flujo de datos Embedded Application -> Edge API -> Cloud API y evidencias del prototipo físico.
+#### Introduccion
+
+El dispositivo IoT de OsitoPolar esta disenado para monitorear en tiempo real las condiciones de equipos de refrigeracion, como refrigeradores, congeladores, camaras frias o almacenes refrigerados. Su objetivo es medir temperatura y humedad, enviar la informacion hacia la plataforma web y permitir la deteccion temprana de condiciones fuera del rango seguro o desconexiones del equipo.
+
+Las decisiones de diseno priorizan una arquitectura simple, de bajo costo y alineada con el flujo definido para el sistema: el dispositivo captura datos mediante sensores, el firmware del ESP32 procesa y transmite las lecturas, el Edge Server recibe la informacion localmente y la Cloud API centraliza los datos para visualizacion, alertas y analitica.
+
+#### Componentes del dispositivo
+
+El nodo IoT esta compuesto por los siguientes elementos:
+
+- **Microcontrolador ESP32-WROOM-32D:** unidad principal de procesamiento del dispositivo. Gestiona la lectura de sensores, controla los actuadores de alerta local y transmite los datos hacia el Edge Server mediante conectividad Wi-Fi.
+- **Sensor DHT22:** sensor digital encargado de medir temperatura y humedad relativa dentro del equipo o ambiente refrigerado. Permite detectar desviaciones que puedan comprometer la cadena de frio.
+- **LED RGB:** actuador visual utilizado para representar el estado del equipo monitoreado. Por ejemplo, verde para condiciones normales, amarillo para advertencia y rojo para alerta critica.
+- **Buzzer activo:** actuador sonoro para alertas locales cuando la temperatura o humedad salen del rango seguro, o cuando se detecta una condicion critica.
+- **Resistencia pull-up de 4.7kOhm o 10kOhm:** utilizada en la linea DATA del sensor DHT22 para estabilizar la senal digital.
+- **Resistencias limitadoras de corriente:** utilizadas para proteger los pines del ESP32 y los canales del LED RGB.
+- **Breadboard:** placa de prototipado usada para organizar las conexiones de alimentacion, tierra y senales entre los componentes.
+- **Fuente de alimentacion USB 5V:** alimenta el ESP32 durante el prototipado. Desde el microcontrolador se distribuye energia a los componentes segun los voltajes requeridos.
+
+#### Flujo de datos del dispositivo
+
+1. El sensor DHT22 captura la temperatura y humedad del ambiente refrigerado.
+2. El firmware del ESP32 lee los valores del sensor en intervalos definidos.
+3. El ESP32 valida si las lecturas se encuentran dentro de los rangos configurados para el equipo.
+4. Si existe una condicion fuera de rango, el dispositivo activa el LED RGB y el buzzer como alerta local.
+5. El ESP32 envia las mediciones al Edge Server mediante una solicitud HTTP o un canal de comunicacion equivalente.
+6. El Edge Server recibe los datos, los normaliza y los reenvia hacia la Cloud API.
+7. La plataforma web muestra las mediciones en tiempo real y genera alertas para los usuarios responsables.
+
+#### Convencion de colores de cables
+
+| Color | Funcion |
+| --- | --- |
+| Rojo | Alimentacion 5V desde la fuente USB hacia el ESP32 o el breadboard |
+| Negro | GND o tierra comun para todos los componentes |
+| Amarillo | Senal DATA del sensor DHT22 hacia un pin GPIO del ESP32 |
+| Verde | Canal de senal del LED RGB para estado normal |
+| Azul | Canal de senal del LED RGB para estado de advertencia |
+| Morado | Canal de senal del LED RGB para estado critico |
+| Naranja | Senal de control del buzzer activo hacia un pin GPIO del ESP32 |
+
+#### Relacion con la arquitectura de software
+
+- **Embedded Application:** corresponde al firmware ejecutado en el ESP32. Se encarga de leer el sensor DHT22, controlar los actuadores locales y preparar los datos para envio.
+- **Edge API:** recibe las lecturas generadas por el dispositivo IoT, funcionando como punto intermedio entre el hardware y la nube.
+- **Cloud API:** centraliza la informacion de dispositivos, mediciones, alertas y reglas de negocio de la plataforma OsitoPolar.
+- **Web Application:** permite a los usuarios visualizar el estado de sus equipos, revisar historicos y recibir alertas por temperatura, humedad o desconexion.
 
 
 ## Capítulo VI: Product Implementation, Validation & Deployment 
