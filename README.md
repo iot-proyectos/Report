@@ -3518,6 +3518,10 @@ El dispositivo IoT de OsitoPolar esta disenado para monitorear en tiempo real la
 
 Las decisiones de diseno priorizan una arquitectura simple, de bajo costo y alineada con el flujo definido para el sistema: el dispositivo captura datos mediante sensores, el firmware del ESP32 procesa y transmite las lecturas, el Edge Server recibe la informacion localmente y la Cloud API centraliza los datos para visualizacion, alertas y analitica.
 
+![IoT Device Design](assets/TF/IotDevice.png)
+
+Figura 82. IoT Device Design de OsitoPolar.
+
 #### Componentes del dispositivo
 
 El nodo IoT esta compuesto por los siguientes elementos:
