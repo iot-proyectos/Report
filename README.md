@@ -157,6 +157,12 @@
             - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
             - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
             - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+        - [4.1.2. Context Mapping](#412-context-mapping)
+        - [4.1.3. Software Architecture](#413-software-architecture)
+            - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+            - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+            - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+            - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
     - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
         - [4.2.1. Bounded Context: IAM (Identity and Access Management)](#421-bounded-context-iam-identity-and-access-management)
             - [4.2.1.1. Domain Layer](#4211-domain-layer)
@@ -176,7 +182,7 @@
             - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
                 - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
                 - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-        - [4.2.3. Bounded Context: Equipment Management](#423-bounded-context-equipment-management)
+        - [4.2.3. Bounded Context: Analytics](#423-bounded-context-analytics)
             - [4.2.3.1. Domain Layer](#4231-domain-layer)
             - [4.2.3.2. Interface Layer](#4232-interface-layer)
             - [4.2.3.3. Application Layer](#4233-application-layer)
@@ -185,7 +191,7 @@
             - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
                 - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
                 - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-        - [4.2.4. Bounded Context: Service Requests](#424-bounded-context-service-requests)
+        - [4.2.4. Bounded Context: Subscriptions and Payments](#424-bounded-context-subscriptions-and-payments)
             - [4.2.4.1. Domain Layer](#4241-domain-layer)
             - [4.2.4.2. Interface Layer](#4242-interface-layer)
             - [4.2.4.3. Application Layer](#4243-application-layer)
@@ -194,7 +200,7 @@
             - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
                 - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
                 - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-        - [4.2.5. Bounded Context: Work Orders](#425-bounded-context-work-orders)
+        - [4.2.5. Bounded Context: Notifications](#425-bounded-context-notifications)
             - [4.2.5.1. Domain Layer](#4251-domain-layer)
             - [4.2.5.2. Interface Layer](#4252-interface-layer)
             - [4.2.5.3. Application Layer](#4253-application-layer)
@@ -203,33 +209,6 @@
             - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
                 - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
                 - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-        - [4.2.6. Bounded Context: Analytics](#426-bounded-context-analytics)
-            - [4.2.6.1. Domain Layer](#4261-domain-layer)
-            - [4.2.6.2. Interface Layer](#4262-interface-layer)
-            - [4.2.6.3. Application Layer](#4263-application-layer)
-            - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
-            - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-                - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-        - [4.2.7. Bounded Context: Subscriptions and Payments](#427-bounded-context-subscriptions-and-payments)
-            - [4.2.7.1. Domain Layer](#4271-domain-layer)
-            - [4.2.7.2. Interface Layer](#4272-interface-layer)
-            - [4.2.7.3. Application Layer](#4273-application-layer)
-            - [4.2.7.4. Infrastructure Layer](#4274-infrastructure-layer)
-            - [4.2.7.5. Bounded Context Software Architecture Component Level Diagrams](#4275-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.7.6. Bounded Context Software Architecture Code Level Diagrams](#4276-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.7.6.1. Bounded Context Domain Layer Class Diagrams](#42761-bounded-context-domain-layer-class-diagrams)
-                - [4.2.7.6.2. Bounded Context Database Design Diagram](#42762-bounded-context-database-design-diagram)
-        - [4.2.8. Bounded Context: Technicians](#428-bounded-context-technicians)
-            - [4.2.8.1. Domain Layer](#4281-domain-layer)
-            - [4.2.8.2. Interface Layer](#4282-interface-layer)
-            - [4.2.8.3. Application Layer](#4283-application-layer)
-            - [4.2.8.4. Infrastructure Layer](#4284-infrastructure-layer)
-            - [4.2.8.5. Bounded Context Software Architecture Component Level Diagrams](#4285-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.8.6. Bounded Context Software Architecture Code Level Diagrams](#4286-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.8.6.1. Bounded Context Domain Layer Class Diagrams](#42861-bounded-context-domain-layer-class-diagrams)
-                - [4.2.8.6.2. Bounded Context Database Design Diagram](#42862-bounded-context-database-design-diagram)
 
 
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
@@ -403,13 +382,13 @@ Visión: Queremos ser la empresa lider en gestión y mantenimiento de equipos de
 
 | Las 5Ws y 2Hs | Pregunta                                           | Descripción                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| What?         | ¿Cuál es el problema?                              | Actualmente, los negocios que dependen de equipos de congelación enfrentan grandes desafíos operativos ante fallas inesperadas o falta de mantenimiento. Las fallas térmicas, los altos consumos energéticos no detectados a tiempo y la ausencia de un monitoreo constante pueden derivar en la pérdida de productos, reducción de la calidad del servicio y pérdidas económicas importantes. |
-| When?         | ¿Cuándo sucede este problema?                      | Estas situaciones ocurren principalmente durante horarios de operación continua, especialmente en momentos donde no hay personal técnico disponible de forma inmediata, o cuando no se ha realizado un seguimiento adecuado del estado del equipo a lo largo del tiempo.                                                                                                                       |
-| Where?        | ¿Dónde se produce este suceso?                     | El problema afecta a negocios ubicados en todo el país, principalmente en Lima, donde la cadena de frío es esencial en sectores como alimentación, medicina y distribución. También impacta a empresas proveedoras de refrigeración que atienden múltiples clientes sin una plataforma centralizada de control.                                                                                |
-| Who?          | ¿Quiénes están involucrados?                       | Están involucrados tanto los administradores y dueños de negocios que utilizan congeladoras como los técnicos y empresas proveedoras de servicios de refrigeración.                                                                                                                                                                                                                            |
-| Why?          | ¿Cuál es la causa del problema?                    | La causa principal es la falta de soluciones tecnológicas accesibles que integren monitoreo, alertas, historial y programación automática en un solo lugar. Muchas empresas aún dependen de sistemas manuales o no tienen control de lo que sucede con sus equipos hasta que ocurre una falla crítica.                                                                                         |
-| How?          | ¿Qué llevó a la persona a llegar a esta situación? | Lo que llevó a los negocios y técnicos a este punto ha sido la acumulación de imprevistos y la falta de digitalización en el mantenimiento preventivo, que genera una alta dependencia de intervenciones reactivas en vez de planificadas. Esto incrementa los costos, los tiempos de respuesta y el desgaste operativo.                                                                       |
-| How much?     | ¿Cuánto es el impacto financiero?                  | Aunque el impacto económico varía según el tipo de negocio, la pérdida por una falla en un equipo de refrigeración puede ascender desde cientos hasta miles de soles en productos dañados, sin considerar el tiempo operativo perdido, la pérdida de clientes y la inversión en reparación o reposición de equipos.                                                                            |
+| What?         | ¿Cuál es el problema?                              | Actualmente, los negocios que dependen de refrigeradores, congeladores, cámaras frías o almacenes refrigerados no siempre cuentan con visibilidad continua sobre su cadena de frío. La falta de monitoreo en tiempo real de temperatura, humedad y estado de conexión impide detectar desviaciones críticas antes de que afecten la calidad de los productos. |
+| When?         | ¿Cuándo sucede este problema?                      | El problema ocurre durante la operación diaria y continua de los equipos de frío, especialmente fuera del horario de supervisión manual, durante la noche, en cambios de turno o cuando un dispositivo deja de enviar lecturas sin que el responsable lo note a tiempo. |
+| Where?        | ¿Dónde se produce este suceso?                     | Se produce en negocios e instalaciones donde la cadena de frío es crítica, como restaurantes, minimarkets, supermercados, laboratorios, cámaras frías y almacenes refrigerados. En estos espacios, una variación de temperatura o humedad puede comprometer inventario sensible. |
+| Who?          | ¿Quiénes están involucrados?                       | Están involucrados los dueños, administradores y responsables operativos de negocios que almacenan productos sensibles al frío, así como el personal encargado de revisar las condiciones de los equipos y tomar decisiones ante alertas o incidentes. |
+| Why?          | ¿Cuál es la causa del problema?                    | La causa principal es la dependencia de revisiones manuales, registros dispersos o equipos sin conectividad que no permiten saber en tiempo real si la temperatura y humedad están dentro del rango seguro. Además, cuando un dispositivo se desconecta, muchas veces no existe una alerta inmediata. |
+| How?          | ¿Qué llevó a la persona a llegar a esta situación? | La falta de una plataforma centralizada de monitoreo IoT obliga a los negocios a reaccionar cuando el problema ya ocurrió: productos dañados, condiciones fuera de rango o ausencia de datos históricos para identificar patrones. Esta baja visibilidad dificulta prevenir incidentes y mantener trazabilidad de la cadena de frío. |
+| How much?     | ¿Cuánto es el impacto financiero?                  | El impacto económico puede ir desde pérdidas parciales de inventario hasta la pérdida total de productos perecibles, medicamentos o insumos sensibles. A esto se suman costos por reposición, interrupción operativa, reclamos de clientes y pérdida de confianza por no poder demostrar que las condiciones de conservación fueron seguras. |
 
 ### 1.2.2 Lean UX Process
 
@@ -1750,17 +1729,17 @@ A continuación se presenta el diagrama del Context Mapping utilizando notación
 
 ##### 4.1.3.2. Software Architecture Context Level Diagrams.
 
-![System Context Diagram](assets/chapter04/DSL/Contexto-dark.png)
+![System Context Diagram](assets/NuevoC4/C1_Contexto-dark.png)
 *Leyenda:*
-![Key](assets/chapter04/DSL/Contexto-dark-key.png)
+![Key](assets/NuevoC4/C1_Contexto-dark-key.png)
 
-##### 4.1.3.2. Software Architecture Container Level Diagrams.
+##### 4.1.3.3. Software Architecture Container Level Diagrams.
 
-![Container Diagram](assets/chapter04/DSL/Contenedores-dark.png)
+![Container Diagram](assets/NuevoC4/C2_Contenedores-dark.png)
 *Leyenda:*
-![Key](assets/chapter04/DSL/Contenedores-dark-key.png)
+![Key](assets/NuevoC4/C2_Contenedores-dark-key.png)
 
-##### 4.1.3.3. Software Architecture Deployment Diagrams.
+##### 4.1.3.4. Software Architecture Deployment Diagrams.
 
 ![Deployment Diagram](assets/chapter04/DSL/DeploymentDiagram-dark.png)
 *Leyenda:*
@@ -1890,11 +1869,11 @@ La capa de infraestructura provee las implementaciones concretas de los contrato
 
 ##### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-![IAM Component Diagram](assets/chapter04/DSL/IAM_Components-dark.png)
+![IAM Component Diagram](assets/NuevoC4/C3_Backend-dark.png)
 
 **Leyenda:**
 
-![IAM Component Diagram Key](assets/chapter04/DSL/IAM_Components-dark-key.png)
+![IAM Component Diagram Key](assets/NuevoC4/C3_Backend-dark-key.png)
 
 ---
 
@@ -1921,7 +1900,7 @@ classDiagram
     class Role {
         <<enumeration>>
         ADMIN
-        TECHNICIAN
+        OPERATOR
         CLIENT
     }
 
@@ -1971,7 +1950,7 @@ classDiagram
 
 ###### 4.2.1.6.2. Bounded Context Database Design Diagram
 
-![IAM Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+![IAM Database Design](assets/NuevoC4/C2_Contenedores-dark.png)
 
 ---
 
@@ -1979,7 +1958,7 @@ classDiagram
 
 ##### 4.2.2.1. Domain Layer
 
-El Domain Layer del bounded context **Profiles** gestiona la información personal de los usuarios registrados en la plataforma (clientes y técnicos). Se encarga de representar los datos de perfil de manera estructurada mediante Value Objects, garantizando la validación de cada dato de dominio.
+El Domain Layer del bounded context **Profiles** gestiona la información personal de los usuarios registrados en la plataforma, como administradores, operadores y responsables de monitoreo. Se encarga de representar los datos de perfil de manera estructurada mediante Value Objects, garantizando la validación de cada dato de dominio.
 
 **Aggregate Root:**
 
@@ -2075,11 +2054,11 @@ La capa de infraestructura provee la implementación concreta de persistencia me
 
 ##### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Profiles Component Diagram](assets/chapter04/DSL/Profiles_Components-dark.png)
+![Profiles Component Diagram](assets/NuevoC4/C3_Backend-dark.png)
 
 **Leyenda:**
 
-![Profiles Component Diagram Key](assets/chapter04/DSL/Profiles_Components-dark-key.png)
+![Profiles Component Diagram Key](assets/NuevoC4/C3_Backend-dark-key.png)
 
 ---
 
@@ -2160,642 +2139,14 @@ La capa de infraestructura provee la implementación concreta de persistencia me
 
 ###### 4.2.2.6.2. Bounded Context Database Design Diagram
 
-![Profiles Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+![Profiles Database Design](assets/NuevoC4/C2_Contenedores-dark.png)
 
 ---
 
-#### 4.2.3. Bounded Context: Equipment Management
+
+#### 4.2.3. Bounded Context: Analytics
 
 ##### 4.2.3.1. Domain Layer
-
-El Domain Layer del bounded context **Equipment Management** gestiona el ciclo de vida completo de los equipos de refrigeración y climatización que la plataforma monitorea. Permite crear, actualizar y consultar equipos, así como gestionar su estado operativo, ubicación y consumo energético.
-
-**Aggregate Root:**
-
-- `Equipment` — Entidad raíz que representa un equipo físico. Contiene `Id`, `EquipmentIdentifier` (VO), `OwnerId`, `OwnershipType`, `Status`, `Type`, `Location`, `RentalInfo` y `EnergyConsumption`. Expone métodos como `UpdateLocation`, `UpdatePowerState` y `UpdateTemperature`.
-
-**Entities:**
-
-- `Location(Coordinates, Address)` — Representa la ubicación física del equipo.
-- `RentalInfo` — Información de alquiler del equipo (si aplica).
-- `EnergyConsumption` — Registro de consumo energético del equipo.
-
-**Value Objects:**
-
-- `EquipmentIdentifier(SerialNumber, Model, Brand)` — Identificador único de negocio del equipo.
-- `Coordinates(Latitude, Longitude)` — Coordenadas geográficas.
-- `EEquipmentStatus` — Enum: `Active`, `Inactive`, `UnderMaintenance`, `Retired`.
-- `EEquipmentType` — Enum: `Refrigerator`, `Freezer`, `AirConditioner`, etc.
-- `EOwnershipType` — Enum: `Owned`, `Rented`.
-
-**Commands:**
-
-- `CreateEquipmentCommand`
-- `UpdateEquipmentLocationCommand`
-- `UpdateEquipmentPowerStateCommand`
-- `UpdateEquipmentTemperatureCommand`
-- `DeleteEquipmentCommand`
-
-**Queries:**
-
-- `GetAllEquipmentsQuery`
-- `GetEquipmentByIdQuery(int Id)`
-- `GetEquipmentsByOwnerIdQuery(int OwnerId)`
-- `GetEquipmentsByStatusQuery(EEquipmentStatus Status)`
-- `GetEquipmentsByTypeQuery(EEquipmentType Type)`
-
-**Repositories:**
-
-- `IEquipmentRepository` — Contrato de persistencia con búsquedas por OwnerId, Status y Type.
-
-**Domain Services:**
-
-- `IEquipmentCommandService`
-- `IEquipmentQueryService`
-
----
-
-##### 4.2.3.2. Interface Layer
-
-**Controllers REST:**
-
-- `EquipmentsController` (`/api/v1/equipments`)
-    - `POST /` — Crea un nuevo equipo.
-    - `GET /` — Lista todos los equipos.
-    - `GET /{id}` — Retorna equipo por ID.
-    - `PUT /{id}/location` — Actualiza ubicación.
-    - `PUT /{id}/power-state` — Actualiza estado de encendido.
-    - `PUT /{id}/temperature` — Actualiza temperatura configurada.
-    - `DELETE /{id}` — Elimina un equipo.
-
-**Resources:**
-
-- `CreateEquipmentResource`, `EquipmentResource`, `UpdateEquipmentLocationResource`, `UpdateEquipmentPowerStateResource`, `UpdateEquipmentTemperatureResource`, `EquipmentOperationParametersResource`
-
-**Assemblers:**
-
-- `CreateEquipmentCommandFromResourceAssembler`
-- `EquipmentResourceFromEntityAssembler`
-
----
-
-##### 4.2.3.3. Application Layer
-
-**Command Services:**
-
-- `EquipmentCommandService` — Implementa `IEquipmentCommandService`.
-    - `Handle(CreateEquipmentCommand)`: Crea y persiste un nuevo equipo.
-    - `Handle(UpdateEquipmentLocationCommand)`: Actualiza la ubicación del equipo.
-    - `Handle(UpdateEquipmentPowerStateCommand)`: Cambia el estado de energía.
-    - `Handle(UpdateEquipmentTemperatureCommand)`: Actualiza la temperatura configurada.
-    - `Handle(DeleteEquipmentCommand)`: Elimina el equipo del sistema.
-
-**Query Services:**
-
-- `EquipmentQueryService` — Implementa `IEquipmentQueryService`.
-    - Maneja todas las queries de búsqueda de equipos.
-
----
-
-##### 4.2.3.4. Infrastructure Layer
-
-**Persistence (EFC):**
-
-- `EquipmentRepository` — Implementa `IEquipmentRepository` con EF Core.
-- `ModelBuilderExtensions.ApplyEquipmentConfiguration()` — Configura las tablas:
-    - `equipments` — Tabla principal con columnas de identificador, tipo, estado, propietario.
-    - Value Objects `EquipmentIdentifier`, `Coordinates` mapeados como owned entities.
-    - Relaciones con `energy_consumptions`, `locations`, `rental_infos`.
-
----
-
-##### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-
-![Equipment Component Diagram](assets/chapter04/DSL/Equipment_Components-dark.png)
-
-**Leyenda:**
-
-![Equipment Component Diagram Key](assets/chapter04/DSL/Equipment_Components-dark-key.png)
-
----
-
-##### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
-
-###### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
-
-```mermaid
-classDiagram
-    class Equipment {
-        -Long id
-        -Long ownerProfileId
-        -String name
-        -String brand
-        -String model
-        -String serialNumber
-        -EquipmentType type
-        -EquipmentStatus status
-        -TemperatureRange tempRange
-        -Decimal maxConsumption
-        +activate() void
-        +deactivate() void
-        +setMaintenance() void
-        +triggerAlert() void
-        +updateThresholds(range TemperatureRange) void
-    }
-
-    class TemperatureRange {
-        <<value object>>
-        -Decimal minTemp
-        -Decimal maxTemp
-        -Decimal minHumidity
-        -Decimal maxHumidity
-        +isWithinRange(temp, humidity) Boolean
-    }
-
-    class EquipmentType {
-        <<enumeration>>
-        REFRIGERATOR
-        FREEZER
-        COLD_ROOM
-        SHOWCASE
-        OTHER
-    }
-
-    class EquipmentStatus {
-        <<enumeration>>
-        ACTIVE
-        INACTIVE
-        MAINTENANCE
-        ALERT
-    }
-
-    class EquipmentDocument {
-        -Long id
-        -Long equipmentId
-        -DocumentType docType
-        -String fileUrl
-        -DateTime uploadedAt
-    }
-
-    class IEquipmentRepository {
-        <<interface>>
-        +findById(id Long) Equipment
-        +findByOwnerId(ownerId Long) List~Equipment~
-        +save(equipment Equipment) Equipment
-        +delete(id Long) void
-    }
-
-    class EquipmentRepository {
-        <<repository>>
-    }
-
-    class EquipmentService {
-        <<service>>
-        +registerEquipment(command RegisterEquipmentCommand) Equipment
-        +updateEquipment(id Long, command UpdateEquipmentCommand) Equipment
-        +getEquipmentByOwner(ownerId Long) List~Equipment~
-        +changeStatus(id Long, status EquipmentStatus) void
-    }
-
-    Equipment --> EquipmentType
-    Equipment --> EquipmentStatus
-    Equipment --> TemperatureRange
-    Equipment "1" --> "0..*" EquipmentDocument
-    EquipmentService --> IEquipmentRepository
-    IEquipmentRepository <|.. EquipmentRepository
-```
-
-###### 4.2.3.6.2. Bounded Context Database Design Diagram
-
-![Equipment Database Design](assets/chapter04/DSL/Contenedores-dark.png)
-
----
-
-#### 4.2.4. Bounded Context: Service Requests
-
-##### 4.2.4.1. Domain Layer
-
-El Domain Layer del bounded context **Service Requests** gestiona las solicitudes de servicio técnico que los clientes realizan para sus equipos. Modela el flujo completo desde la creación de la solicitud hasta su resolución, incluyendo asignación de técnico, cambios de estado y retroalimentación del cliente.
-
-**Aggregate Root:**
-
-- `ServiceRequest` — Entidad raíz con `Id`, `OrderNumber`, `Title`, `Description`, `IssueDetails`, `Status`, `Priority`, `Urgency`, `IsEmergency`, `ServiceType`, `ClientId`, `CompanyId`, `EquipmentId`, `AssignedTechnicianId`, fechas de programación, detalles de resolución y `CustomerFeedbackRating`.
-
-**Value Objects (Enums):**
-
-- `EServiceRequestStatus` — `Pending`, `Accepted`, `InProgress`, `Resolved`, `Cancelled`, `Rejected`.
-- `EPriority` — `Low`, `Medium`, `High`, `Critical`.
-- `EUrgency` — `Normal`, `Urgent`, `Emergency`.
-- `EServiceType` — `Diagnostic`, `Repair`, `Maintenance`, `Installation`.
-
-**Commands:**
-
-- `CreateServiceRequestCommand`
-- `UpdateServiceRequestCommand`
-- `UpdateServiceRequestStatusCommand`
-- `AssignTechnicianToServiceRequestCommand`
-- `CancelServiceRequestCommand`
-- `RejectServiceRequestCommand`
-- `AddCustomerFeedbackToServiceRequestCommand`
-
-**Queries:**
-
-- `GetAllServiceRequestsQuery`
-- `GetServiceRequestByIdQuery(int Id)`
-- `GetServiceRequestsByStatusQuery(EServiceRequestStatus Status)`
-- `GetServiceRequestsByEquipmentIdQuery(int EquipmentId)`
-
-**Domain Methods (comportamiento en el agregado):**
-
-- `AssignTechnician(technicianId)` — Asigna técnico y cambia estado a `Accepted`.
-- `UpdateStatus(newStatus)` — Cambia el estado con reglas de negocio.
-- `Reject()` — Solo desde estado `Pending`.
-- `Cancel()` — No permitido desde `Resolved`, `Cancelled` o `Rejected`.
-- `AddResolutionDetails(...)` — Agrega resolución y cambia a `Resolved`.
-- `AddCustomerFeedback(rating)` — Solo desde `Resolved`, rating 1-5.
-
----
-
-##### 4.2.4.2. Interface Layer
-
-**Controllers REST:**
-
-- `ServiceRequestsController` (`/api/v1/service-requests`)
-    - `POST /` — Crea una nueva solicitud.
-    - `GET /` — Lista todas las solicitudes.
-    - `GET /{id}` — Retorna solicitud por ID.
-    - `PUT /{id}/status` — Actualiza el estado.
-    - `PUT /{id}/assign-technician` — Asigna técnico.
-    - `PUT /{id}/customer-feedback` — Agrega retroalimentación.
-    - `PUT /{id}/cancel` — Cancela la solicitud.
-    - `PUT /{id}/reject` — Rechaza la solicitud.
-
-**Resources:**
-
-- `CreateServiceRequestResource`, `ServiceRequestResource`, `UpdateServiceRequestResource`, `UpdateServiceRequestStatusResource`, `AssignTechnicianToServiceRequestResource`, `AddCustomerFeedbackToServiceRequestResource`
-
-**Assemblers:**
-
-- `CreateServiceRequestCommandFromResourceAssembler`
-- `ServiceRequestResourceFromEntityAssembler`
-- `AssignTechnicianToServiceRequestCommandFromResourceAssembler`
-- `AddCustomerFeedbackToServiceRequestCommandFromResourceAssembler`
-- `UpdateServiceRequestCommandFromResourceAssembler`
-
----
-
-##### 4.2.4.3. Application Layer
-
-**Command Services:**
-
-- `ServiceRequestCommandService` — Implementa `IServiceRequestCommandService`.
-    - Maneja todos los comandos: crear, actualizar, asignar técnico, cancelar, rechazar, agregar feedback.
-
-**Query Services:**
-
-- `ServiceRequestQueryService` — Implementa `IServiceRequestQueryService`.
-    - Maneja todas las queries de búsqueda y filtrado de solicitudes.
-
----
-
-##### 4.2.4.4. Infrastructure Layer
-
-**Persistence (EFC):**
-
-- `ServiceRequestRepository` — Implementa `IServiceRequestRepository`.
-- `ModelBuilderExtensions.ApplyServiceRequestsConfiguration()` — Configura la tabla `service_requests` con todas las columnas, enums como strings y relaciones con `equipments`.
-
----
-
-##### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-
-![ServiceRequest Component Diagram](assets/chapter04/DSL/ServiceRequest_Components-dark.png)
-
-**Leyenda:**
-
-![ServiceRequest Component Diagram Key](assets/chapter04/DSL/ServiceRequest_Components-dark-key.png)
-
----
-
-##### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
-
-###### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
-
-```mermaid
-classDiagram
-    class SensorReading {
-        -Long id
-        -Long equipmentId
-        -String deviceId
-        -Decimal temperature
-        -Decimal humidity
-        -Decimal consumptionKwh
-        -DateTime readingAt
-        -ReadingSource source
-        +isAnomalous(rules List~BusinessRule~) Boolean
-    }
-
-    class Alert {
-        -Long id
-        -Long equipmentId
-        -Long readingId
-        -AlertType alertType
-        -Severity severity
-        -String message
-        -Decimal triggeredValue
-        -Decimal thresholdValue
-        -Boolean resolved
-        -DateTime resolvedAt
-        +resolve() void
-        +isActive() Boolean
-    }
-
-    class BusinessRule {
-        -Long id
-        -Long equipmentId
-        -RuleType ruleType
-        -Decimal thresholdValue
-        -Severity severity
-        -Boolean isActive
-        +evaluate(reading SensorReading) Boolean
-        +activate() void
-        +deactivate() void
-    }
-
-    class AlertType {
-        <<enumeration>>
-        HIGH_TEMP
-        LOW_TEMP
-        HIGH_HUMIDITY
-        LOW_HUMIDITY
-        HIGH_CONSUMPTION
-        CONNECTION_LOST
-    }
-
-    class RuleType {
-        <<enumeration>>
-        MAX_TEMP
-        MIN_TEMP
-        MAX_HUMIDITY
-        MIN_HUMIDITY
-        MAX_CONSUMPTION
-    }
-
-    class Severity {
-        <<enumeration>>
-        LOW
-        MEDIUM
-        HIGH
-        CRITICAL
-    }
-
-    class ReadingSource {
-        <<enumeration>>
-        PHYSICAL
-        SIMULATED
-    }
-
-    class ThresholdEvaluationService {
-        <<domain service>>
-        +evaluate(reading SensorReading, rules List~BusinessRule~) List~Alert~
-        +generateAlert(reading SensorReading, rule BusinessRule) Alert
-    }
-
-    class ISensorReadingRepository {
-        <<interface>>
-        +save(reading SensorReading) SensorReading
-        +findByEquipmentId(id Long) List~SensorReading~
-        +findByDateRange(equipmentId Long, from DateTime, to DateTime) List~SensorReading~
-    }
-
-    class IAlertRepository {
-        <<interface>>
-        +save(alert Alert) Alert
-        +findActiveByEquipmentId(id Long) List~Alert~
-        +resolve(alertId Long) void
-    }
-
-    class IBusinessRuleRepository {
-        <<interface>>
-        +findActiveByEquipmentId(id Long) List~BusinessRule~
-        +save(rule BusinessRule) BusinessRule
-    }
-
-    class SensorReadingRepository {
-        <<repository>>
-    }
-
-    class AlertRepository {
-        <<repository>>
-    }
-
-    class BusinessRuleRepository {
-        <<repository>>
-    }
-
-    SensorReading --> ReadingSource
-    Alert --> AlertType
-    Alert --> Severity
-    BusinessRule --> RuleType
-    BusinessRule --> Severity
-    Alert --> SensorReading
-    ThresholdEvaluationService --> SensorReading
-    ThresholdEvaluationService --> BusinessRule
-    ThresholdEvaluationService --> Alert
-    ISensorReadingRepository <|.. SensorReadingRepository
-    IAlertRepository <|.. AlertRepository
-    IBusinessRuleRepository <|.. BusinessRuleRepository
-```
-
-###### 4.2.4.6.2. Bounded Context Database Design Diagram
-
-![ServiceRequest Database Design](assets/chapter04/DSL/Contenedores-dark.png)
-
----
-
-#### 4.2.5. Bounded Context: Work Orders
-
-##### 4.2.5.1. Domain Layer
-
-El Domain Layer del bounded context **Work Orders** gestiona las órdenes de trabajo que se generan para atender las solicitudes de servicio. Una `WorkOrder` representa el trabajo técnico concreto que un técnico debe ejecutar sobre un equipo, incluyendo programación, asignación, resolución y retroalimentación.
-
-**Aggregate Root:**
-
-- `WorkOrder` — Entidad raíz con `Id`, `WorkOrderNumber` (generado automáticamente como `WO-YYYYMMDD-XXXXXXXX`), `ServiceRequestId` (opcional), `Title`, `Description`, `IssueDetails`, `Status`, `Priority`, `AssignedTechnicianId`, `ScheduledDate`, `TimeSlot`, `ServiceAddress`, `ResolutionDetails`, `TechnicianNotes`, `Cost`, `CustomerFeedbackRating` y `EquipmentId`.
-
-**Value Objects (Enums):**
-
-- `EWorkOrderStatus` — `Created`, `Assigned`, `InProgress`, `Completed`, `Resolved`, `Cancelled`.
-- (Comparte `EPriority` y `EServiceType` del namespace de ServiceRequests).
-
-**Commands:**
-
-- `CreateWorkOrderCommand`
-- `UpdateWorkOrderStatusCommand`
-- `AssignTechnicianToWorkOrderCommand`
-- `AddWorkOrderResolutionDetailsCommand`
-- `AddWorkOrderCustomerFeedbackCommand`
-
-**Queries:**
-
-- `GetAllWorkOrdersQuery`
-- `GetWorkOrderByIdQuery(int Id)`
-- `GetWorkOrderByWorkOrderNumberQuery(string Number)`
-- `GetWorkOrderByServiceRequestIdQuery(int ServiceRequestId)`
-- `GetWorkOrdersByEquipmentIdQuery(int EquipmentId)`
-- `GetWorkOrdersByStatusQuery(EWorkOrderStatus Status)`
-- `GetWorkOrdersByTechnicianIdQuery(int TechnicianId)`
-
-**Domain Methods:**
-
-- `AssignTechnician(technicianId)` — Asigna técnico y cambia a estado `Assigned`.
-- `UpdateStatus(newStatus)` — Cambia el estado, registra `ActualCompletionDate` si es `Completed`/`Resolved`.
-- `AddResolutionDetails(resolution, notes, cost)` — Agrega resolución y marca como `Resolved`.
-- `SetCustomerFeedbackRating(rating)` — Rating 1-5 con validación.
-
----
-
-##### 4.2.5.2. Interface Layer
-
-**Controllers REST:**
-
-- `WorkOrdersController` (`/api/v1/work-orders`)
-    - `POST /` — Crea una nueva orden de trabajo.
-    - `GET /` — Lista todas las órdenes.
-    - `GET /{id}` — Retorna orden por ID.
-    - `PUT /{id}/status` — Actualiza el estado.
-    - `PUT /{id}/assign-technician` — Asigna técnico.
-    - `PUT /{id}/resolution` — Agrega detalles de resolución.
-    - `PUT /{id}/customer-feedback` — Agrega retroalimentación del cliente.
-
-**Resources:**
-
-- `CreateWorkOrderResource`, `WorkOrderResource`, `UpdateWorkOrderStatusResource`, `AssignTechnicianResource`, `AddCustomerFeedbackResource`
-
-**Assemblers:**
-
-- `CreateWorkOrderCommandFromResourceAssembler`
-- `WorkOrderResourceFromEntityAssembler`
-- `UpdateWorkOrderStatusCommandFromResourceAssembler`
-- `AddWorkOrderCustomerFeedbackCommandFromResourceAssembler`
-
----
-
-##### 4.2.5.3. Application Layer
-
-**Command Services:**
-
-- `WorkOrderCommandService` — Implementa `IWorkOrderCommandService`.
-    - Maneja todos los comandos: crear, actualizar estado, asignar técnico, agregar resolución y feedback.
-
-**Query Services:**
-
-- `WorkOrderQueryService` — Implementa `IWorkOrderQueryService`.
-    - Maneja todas las queries de búsqueda por ID, número, técnico, equipo y estado.
-
----
-
-##### 4.2.5.4. Infrastructure Layer
-
-**Persistence (EFC):**
-
-- `WorkOrderRepository` — Implementa `IWorkOrderRepository`.
-- `ModelBuilderExtensions.ApplyWorkOrdersConfiguration()` — Configura la tabla `work_orders` con todas las columnas, enums como strings y FK a `equipments`.
-
----
-
-##### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-
-![WorkOrder Component Diagram](assets/chapter04/DSL/WorkOrder_Components-dark.png)
-
-**Leyenda:**
-
-![WorkOrder Component Diagram Key](assets/chapter04/DSL/WorkOrder_Components-dark-key.png)
-
----
-
-##### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
-
-###### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
-
-```mermaid
-classDiagram
-    class ServiceRequest {
-        -Long id
-        -Long ownerProfileId
-        -Long equipmentId
-        -Long providerProfileId
-        -String title
-        -String description
-        -Priority priority
-        -RequestStatus status
-        -DateTime requestedAt
-        +accept(providerId Long) void
-        +complete() void
-        +cancel() void
-        +assignProvider(providerId Long) void
-    }
-
-    class Priority {
-        <<enumeration>>
-        LOW
-        MEDIUM
-        HIGH
-        URGENT
-    }
-
-    class RequestStatus {
-        <<enumeration>>
-        PENDING
-        ACCEPTED
-        IN_PROGRESS
-        COMPLETED
-        CANCELLED
-    }
-
-    class ServiceRequestPhoto {
-        -Long id
-        -Long serviceRequestId
-        -String photoUrl
-        -DateTime uploadedAt
-    }
-
-    class IServiceRequestRepository {
-        <<interface>>
-        +findById(id Long) ServiceRequest
-        +findByOwnerId(ownerId Long) List~ServiceRequest~
-        +findByProviderId(providerId Long) List~ServiceRequest~
-        +save(request ServiceRequest) ServiceRequest
-    }
-
-    class ServiceRequestRepository {
-        <<repository>>
-    }
-
-    class ServiceRequestService {
-        <<service>>
-        +createRequest(command CreateServiceRequestCommand) ServiceRequest
-        +acceptRequest(requestId Long, providerId Long) ServiceRequest
-        +completeRequest(requestId Long) ServiceRequest
-        +cancelRequest(requestId Long) void
-    }
-
-    ServiceRequest --> Priority
-    ServiceRequest --> RequestStatus
-    ServiceRequest "1" --> "0..*" ServiceRequestPhoto
-    ServiceRequestService --> IServiceRequestRepository
-    IServiceRequestRepository <|.. ServiceRequestRepository
-```
-
-###### 4.2.5.6.2. Bounded Context Database Design Diagram
-
-![WorkOrder Database Design](assets/chapter04/DSL/Contenedores-dark.png)
-
----
-
-#### 4.2.6. Bounded Context: Analytics
-
-##### 4.2.6.1. Domain Layer
 
 El Domain Layer del bounded context **Analytics** gestiona la recopilación y análisis de datos operativos de los equipos de refrigeración: lecturas de temperatura, consumo energético y promedios diarios de temperatura.
 
@@ -2833,7 +2184,7 @@ El Domain Layer del bounded context **Analytics** gestiona la recopilación y 
 
 ---
 
-##### 4.2.6.2. Interface Layer
+##### 4.2.3.2. Interface Layer
 
 **Controllers REST:**
 
@@ -2858,7 +2209,7 @@ El Domain Layer del bounded context **Analytics** gestiona la recopilación y 
 
 ---
 
-##### 4.2.6.3. Application Layer
+##### 4.2.3.3. Application Layer
 
 **Command Services:**
 
@@ -2875,7 +2226,7 @@ El Domain Layer del bounded context **Analytics** gestiona la recopilación y 
 
 ---
 
-##### 4.2.6.4. Infrastructure Layer
+##### 4.2.3.4. Infrastructure Layer
 
 **Persistence (EFC):**
 
@@ -2888,110 +2239,104 @@ El Domain Layer del bounded context **Analytics** gestiona la recopilación y 
 
 ---
 
-##### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Analytics Component Diagram](assets/chapter04/DSL/Analytics_Components-dark.png)
+![Analytics Component Diagram](assets/NuevoC4/C3_Backend-dark.png)
 
 **Leyenda:**
 
-![Analytics Component Diagram Key](assets/chapter04/DSL/Analytics_Components-dark-key.png)
+![Analytics Component Diagram Key](assets/NuevoC4/C3_Backend-dark-key.png)
 
 ---
 
-##### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
-###### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 ```mermaid
 classDiagram
-    class WorkOrder {
+    class AnalyticsReport {
         -Long id
-        -Long serviceRequestId
-        -Long technicianId
-        -Long equipmentId
-        -String title
-        -String description
-        -WorkOrderStatus status
-        -DateTime scheduledAt
-        -String diagnosis
-        -String solution
-        +start() void
-        +complete(diagnosis, solution String) void
-        +cancel() void
-        +addActivity(activity WorkOrderActivity) void
+        -Long deviceId
+        -DateTime generatedAt
+        -Decimal safeRangeCompliance
+        +calculateCompliance() Decimal
+        +export() File
     }
 
-    class WorkOrderStatus {
+    class SensorReading {
+        -Long id
+        -Long deviceId
+        -Decimal temperature
+        -Decimal humidity
+        -DateTime timestamp
+        -ReadingStatus status
+        +isOutOfRange(range SafeRange) Boolean
+    }
+
+    class DailyReadingAverage {
+        -Long id
+        -Long deviceId
+        -Date date
+        -Decimal averageTemperature
+        -Decimal averageHumidity
+        -Decimal minTemperature
+        -Decimal maxTemperature
+    }
+
+    class SafeRange {
+        <<valueObject>>
+        -Decimal minTemperature
+        -Decimal maxTemperature
+        -Decimal minHumidity
+        -Decimal maxHumidity
+        +contains(temperature, humidity) Boolean
+    }
+
+    class ReadingStatus {
         <<enumeration>>
-        ASSIGNED
-        IN_PROGRESS
-        COMPLETED
-        CANCELLED
+        NORMAL
+        WARNING
+        CRITICAL
+        DISCONNECTED
     }
 
-    class WorkOrderActivity {
-        -Long id
-        -Long workOrderId
-        -ActivityType activityType
-        -String description
-        -String fileUrl
-        -DateTime loggedAt
-    }
-
-    class ActivityType {
-        <<enumeration>>
-        NOTE
-        PHOTO
-        STATUS_CHANGE
-        PART_USED
-    }
-
-    class SparePart {
-        -Long id
-        -Long workOrderId
-        -String partName
-        -Integer quantity
-        -Decimal unitCost
-        +totalCost() Decimal
-    }
-
-    class IWorkOrderRepository {
+    class IAnalyticsRepository {
         <<interface>>
-        +findById(id Long) WorkOrder
-        +findByTechnicianId(id Long) List~WorkOrder~
-        +findByEquipmentId(id Long) List~WorkOrder~
-        +save(workOrder WorkOrder) WorkOrder
+        +findReadingsByDeviceId(deviceId Long) List~SensorReading~
+        +findDailyAverages(deviceId Long) List~DailyReadingAverage~
+        +saveReading(reading SensorReading) SensorReading
+        +saveReport(report AnalyticsReport) AnalyticsReport
     }
 
-    class WorkOrderRepository {
+    class AnalyticsRepository {
         <<repository>>
     }
 
-    class WorkOrderService {
+    class AnalyticsService {
         <<service>>
-        +createWorkOrder(command CreateWorkOrderCommand) WorkOrder
-        +startWorkOrder(id Long) WorkOrder
-        +completeWorkOrder(id Long, command CompleteWorkOrderCommand) WorkOrder
-        +addActivity(id Long, activity WorkOrderActivity) void
+        +recordReading(command RecordReadingCommand) SensorReading
+        +getReadings(deviceId Long, hours Integer) List~SensorReading~
+        +generateComplianceReport(deviceId Long) AnalyticsReport
     }
 
-    WorkOrder --> WorkOrderStatus
-    WorkOrder "1" --> "0..*" WorkOrderActivity
-    WorkOrder "1" --> "0..*" SparePart
-    WorkOrderActivity --> ActivityType
-    WorkOrderService --> IWorkOrderRepository
-    IWorkOrderRepository <|.. WorkOrderRepository
+    SensorReading --> ReadingStatus
+    SensorReading --> SafeRange
+    AnalyticsReport --> SensorReading
+    DailyReadingAverage --> SensorReading
+    AnalyticsService --> IAnalyticsRepository
+    IAnalyticsRepository <|.. AnalyticsRepository
 ```
 
-###### 4.2.6.6.2. Bounded Context Database Design Diagram
+###### 4.2.3.6.2. Bounded Context Database Design Diagram
 
-![Analytics Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+![Analytics Database Design](assets/NuevoC4/C2_Contenedores-dark.png)
 
 ---
 
-#### 4.2.7. Bounded Context: Subscriptions and Payments
+#### 4.2.4. Bounded Context: Subscriptions and Payments
 
-##### 4.2.7.1. Domain Layer
+##### 4.2.4.1. Domain Layer
 
 El Domain Layer del bounded context **Subscriptions and Payments** gestiona los planes de suscripción y el procesamiento de pagos de los usuarios de la plataforma, integrándose con Stripe como pasarela de pago externa.
 
@@ -3029,7 +2374,7 @@ El Domain Layer del bounded context **Subscriptions and Payments** gestiona lo
 
 ---
 
-##### 4.2.7.2. Interface Layer
+##### 4.2.4.2. Interface Layer
 
 **Controllers REST:**
 
@@ -3052,7 +2397,7 @@ El Domain Layer del bounded context **Subscriptions and Payments** gestiona lo
 
 ---
 
-##### 4.2.7.3. Application Layer
+##### 4.2.4.3. Application Layer
 
 **Command Services:**
 
@@ -3070,7 +2415,7 @@ El Domain Layer del bounded context **Subscriptions and Payments** gestiona lo
 
 ---
 
-##### 4.2.7.4. Infrastructure Layer
+##### 4.2.4.4. Infrastructure Layer
 
 **Persistence (EFC):**
 
@@ -3085,19 +2430,19 @@ El Domain Layer del bounded context **Subscriptions and Payments** gestiona lo
 
 ---
 
-##### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Subscriptions Component Diagram](assets/chapter04/DSL/Subscriptions_Components-dark.png)
+![Subscriptions Component Diagram](assets/NuevoC4/C3_Backend-dark.png)
 
 **Leyenda:**
 
-![Subscriptions Component Diagram Key](assets/chapter04/DSL/Subscriptions_Components-dark-key.png)
+![Subscriptions Component Diagram Key](assets/NuevoC4/C3_Backend-dark-key.png)
 
 ---
 
-##### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
-###### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 ```mermaid
 classDiagram
@@ -3107,7 +2452,7 @@ classDiagram
         -String description
         -Decimal priceMonthly
         -Integer maxEquipment
-        -Integer maxTechnicians
+        -Integer maxDevices
         -Boolean isActive
         +activate() void
         +deactivate() void
@@ -3181,106 +2526,118 @@ classDiagram
     ISubscriptionRepository <|.. SubscriptionRepository
 ```
 
-###### 4.2.7.6.2. Bounded Context Database Design Diagram
+###### 4.2.4.6.2. Bounded Context Database Design Diagram
 
-![Subscriptions Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+![Subscriptions Database Design](assets/NuevoC4/C2_Contenedores-dark.png)
 
 ---
 
-#### 4.2.8. Bounded Context: Technicians
+#### 4.2.5. Bounded Context: Notifications
 
-##### 4.2.8.1. Domain Layer
+##### 4.2.5.1. Domain Layer
 
-El Domain Layer del bounded context **Technicians** gestiona la información de los técnicos de servicio disponibles en la plataforma. Permite registrar técnicos, consultarlos y calcular métricas de rendimiento como el promedio de calificaciones recibidas.
+El Domain Layer del bounded context **Notifications** gestiona las notificaciones críticas de OsitoPolar. Su responsabilidad principal es informar a los usuarios cuando una lectura de temperatura o humedad sale del rango seguro, cuando un dispositivo IoT se desconecta o cuando ocurre un evento relevante para la continuidad de la cadena de frío.
 
-**Entity Principal:**
+**Aggregate Root:**
 
-- `Technician` — Entidad principal con `Id`, `FirstName`, `LastName`, `Email`, `Phone`, `Specialization`, `IsAvailable` y `AverageRating`. Representa a un técnico de mantenimiento de equipos de refrigeración.
+- `Notification` — Entidad raíz con `Id`, `UserId`, `Channel`, `Type`, `Title`, `Body`, `ReferenceId`, `ReferenceType`, `IsRead` y `SentAt`. Representa una alerta o mensaje enviado al usuario.
+- `NotificationPreference` — Entidad que define los canales y tipos de alerta habilitados por usuario.
 
 **Domain Events:**
 
-- `TechnicianCreatedEvent` — Evento publicado al crear un nuevo técnico.
+- `TemperatureOutOfRangeDetected` — Evento recibido cuando una lectura excede el rango seguro.
+- `HumidityOutOfRangeDetected` — Evento recibido cuando una lectura de humedad excede el rango seguro.
+- `DeviceDisconnectedDetected` — Evento recibido cuando un dispositivo deja de reportar telemetría.
 
 **Commands:**
 
-- `CreateTechnicianCommand(FirstName, LastName, Email, Phone, Specialization)`
+- `SendNotificationCommand(UserId, Type, Channel, Title, Body, ReferenceId)`
+- `UpdateNotificationPreferencesCommand(UserId, EmailEnabled, PushEnabled, AlertTemperature, AlertHumidity, AlertDisconnection)`
+- `MarkNotificationAsReadCommand(NotificationId)`
 
 **Queries:**
 
-- `GetAllTechniciansQuery` — Retorna todos los técnicos.
-- `GetTechnicianByIdQuery(int Id)` — Retorna técnico por ID.
-- `GetTechnicianAverageRatingQuery(int TechnicianId)` — Calcula el promedio de calificaciones del técnico.
+- `GetNotificationsByUserIdQuery(int UserId)` — Retorna las notificaciones de un usuario.
+- `GetUnreadNotificationsQuery(int UserId)` — Retorna notificaciones pendientes de lectura.
+- `GetNotificationPreferencesQuery(int UserId)` — Retorna las preferencias configuradas.
 
 **Repositories:**
 
-- `ITechnicianRepository` — Contrato de persistencia con búsqueda por ID y listado.
+- `INotificationRepository` — Contrato de persistencia para notificaciones.
+- `INotificationPreferenceRepository` — Contrato de persistencia para preferencias de notificación.
 
 **Domain Services:**
 
-- `ITechnicianCommandService`
-- `ITechnicianQueryService`
+- `INotificationCommandService`
+- `INotificationQueryService`
 
 ---
 
-##### 4.2.8.2. Interface Layer
+##### 4.2.5.2. Interface Layer
 
 **Controllers REST:**
 
-- `TechniciansController` (`/api/v1/technicians`)
-    - `POST /` — Registra un nuevo técnico.
-    - `GET /` — Lista todos los técnicos.
-    - `GET /{id}` — Retorna técnico por ID.
+- `NotificationsController` (`/api/v1/notifications`)
+    - `GET /users/{userId}` — Lista las notificaciones del usuario.
+    - `GET /users/{userId}/unread` — Lista notificaciones no leídas.
+    - `PUT /{notificationId}/read` — Marca una notificación como leída.
+- `NotificationPreferencesController` (`/api/v1/notification-preferences`)
+    - `GET /users/{userId}` — Consulta preferencias de notificación.
+    - `PUT /users/{userId}` — Actualiza preferencias.
 
 **Resources:**
 
-- `CreateTechnicianResource(FirstName, LastName, Email, Phone, Specialization)`
-- `TechnicianResource(Id, FirstName, LastName, Email, Phone, Specialization, IsAvailable, AverageRating)`
+- `NotificationResource(Id, UserId, Channel, Type, Title, Body, IsRead, SentAt)`
+- `UpdateNotificationPreferencesResource(EmailEnabled, PushEnabled, AlertTemperature, AlertHumidity, AlertDisconnection)`
 
 **Assemblers:**
 
-- `CreateTechnicianCommandFromResourceAssembler`
-- `TechnicianResourceFromEntityAssembler`
+- `NotificationResourceFromEntityAssembler`
+- `UpdateNotificationPreferencesCommandFromResourceAssembler`
 
 ---
 
-##### 4.2.8.3. Application Layer
+##### 4.2.5.3. Application Layer
 
 **Command Services:**
 
-- `TechnicianCommandService` — Implementa `ITechnicianCommandService`.
-    - `Handle(CreateTechnicianCommand)`: Valida y persiste el nuevo técnico. Publica `TechnicianCreatedEvent`.
+- `NotificationCommandService` — Implementa `INotificationCommandService`.
+    - `Handle(SendNotificationCommand)`: Registra la notificación y la envía por el canal configurado.
+    - `Handle(UpdateNotificationPreferencesCommand)`: Actualiza las preferencias del usuario.
+    - `Handle(MarkNotificationAsReadCommand)`: Marca una notificación como leída.
 
 **Query Services:**
 
-- `TechnicianQueryService` — Implementa `ITechnicianQueryService`.
-    - `Handle(GetAllTechniciansQuery)`: Retorna lista de todos los técnicos.
-    - `Handle(GetTechnicianByIdQuery)`: Retorna técnico por ID.
-    - `Handle(GetTechnicianAverageRatingQuery)`: Calcula y retorna el promedio de calificaciones.
+- `NotificationQueryService` — Implementa `INotificationQueryService`.
+    - `Handle(GetNotificationsByUserIdQuery)`: Retorna las notificaciones del usuario.
+    - `Handle(GetUnreadNotificationsQuery)`: Retorna notificaciones no leídas.
+    - `Handle(GetNotificationPreferencesQuery)`: Retorna preferencias del usuario.
 
 ---
 
-##### 4.2.8.4. Infrastructure Layer
+##### 4.2.5.4. Infrastructure Layer
 
 **Persistence (EFC):**
 
-- `TechnicianRepository` — Implementa `ITechnicianRepository` usando EF Core.
-- `ModelBuilderExtensions.ApplyTechniciansConfiguration()` — Configura la tabla `technicians` con columnas de datos personales, especialización, disponibilidad y calificación promedio.
+- `NotificationRepository` — Implementa `INotificationRepository` usando EF Core.
+- `NotificationPreferenceRepository` — Implementa `INotificationPreferenceRepository` usando EF Core.
+- `ModelBuilderExtensions.ApplyNotificationsConfiguration()` — Configura las tablas `notifications` y `notification_preferences`.
 
 ---
 
-##### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Notifications Component Diagram](assets/chapter04/DSL/Notifications_Components-dark.png)
+![Notifications Component Diagram](assets/NuevoC4/C3_Backend-dark.png)
 
 **Leyenda:**
 
-![Notifications Component Diagram Key](assets/chapter04/DSL/Notifications_Components-dark-key.png)
+![Notifications Component Diagram Key](assets/NuevoC4/C3_Backend-dark-key.png)
 
 ---
 
-##### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
-###### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 ```mermaid
 classDiagram
@@ -3308,8 +2665,9 @@ classDiagram
 
     class NotificationType {
         <<enumeration>>
-        ALERT
-        WORK_ORDER
+        TEMPERATURE_ALERT
+        HUMIDITY_ALERT
+        DEVICE_DISCONNECTED
         PAYMENT
         SYSTEM
     }
@@ -3321,7 +2679,8 @@ classDiagram
         -Boolean pushEnabled
         -Boolean alertHighTemp
         -Boolean alertLowTemp
-        -Boolean alertWorkOrder
+        -Boolean alertHumidity
+        -Boolean alertDisconnection
         -String fcmToken
         +updateFcmToken(token String) void
         +toggle(channel NotificationChannel) void
@@ -3353,9 +2712,9 @@ classDiagram
     INotificationRepository <|.. NotificationRepository
 ```
 
-###### 4.2.8.6.2. Bounded Context Database Design Diagram
+###### 4.2.5.6.2. Bounded Context Database Design Diagram
 
-![Notifications Database Design](assets/chapter04/DSL/Contenedores-dark.png)
+![Notifications Database Design](assets/NuevoC4/C2_Contenedores-dark.png)
 
 ## Capítulo V: Solution UI/UX Design
 
@@ -3725,24 +3084,12 @@ El Landing Page Mock-up de OsitoPolar muestra un diseño limpio y organizado, co
 
 #### 5.4.1. Applications Wireframes
 
-Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y organización de las pantallas principales, especificando la ubicación de los elementos de la interfaz de usuario y la navegación. Estos esquemas visuales sirven como una guía precisa para el diseño final, asegurando una experiencia de usuario fluida e intuitiva. Los wireframes están enfocados en la funcionalidad y facilidad de uso, permitiendo que diseñadores y desarrolladores visualicen cómo los usuarios interactúan con la aplicación, optimizando la disposición de los elementos para crear una experiencia eficiente y atractiva.
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Apps%20Wireframes/AlquilarEquipos-Clientes.png"
-       alt="Wireframe: Interfaz de alquiler de equipos para clientes."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 1:</strong> Wireframe - Alquilar Equipos (Clientes).
-  </figcaption>
-</figure>
-
-
-<figure style="page-break-inside: avoid; text-align: center;">
+Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y organización de las pantallas principales, especificando la ubicación de los elementos de la interfaz de usuario y la navegación. Estos esquemas visuales sirven como una guía precisa para el diseño final, asegurando una experiencia de usuario fluida e intuitiva. Los wireframes están enfocados en la funcionalidad y facilidad de uso, permitiendo que diseñadores y desarrolladores visualicen cómo los usuarios interactúan con la aplicación, optimizando la disposición de los elementos para crear una experiencia eficiente y atractiva.<figure style="page-break-inside: avoid; text-align: center;">
   <img src="assets/chapter04/Web%20Apps%20Wireframes/Contacto-Clientes.png"
        alt="Wireframe: Pantalla de contacto para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 2:</strong> Wireframe - Contacto (Clientes).
+    <strong>Figura 1:</strong> Wireframe - Contacto (Clientes).
   </figcaption>
 </figure>
 
@@ -3751,7 +3098,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de contacto para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 3:</strong> Wireframe - Contacto (Empresa).
+    <strong>Figura 2:</strong> Wireframe - Contacto (Empresa).
   </figcaption>
 </figure>
 
@@ -3760,7 +3107,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Panel de control para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 4:</strong> Wireframe - Control (Clientes).
+    <strong>Figura 3:</strong> Wireframe - Control (Clientes).
   </figcaption>
 </figure>
 
@@ -3769,7 +3116,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Vista de estado de cuenta para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 5:</strong> Wireframe - Estado de Cuenta (Clientes).
+    <strong>Figura 4:</strong> Wireframe - Estado de Cuenta (Clientes).
   </figcaption>
 </figure>
 
@@ -3778,7 +3125,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Vista de estado de cuenta para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 6:</strong> Wireframe - Estado de Cuenta (Empresa).
+    <strong>Figura 5:</strong> Wireframe - Estado de Cuenta (Empresa).
   </figcaption>
 </figure>
 
@@ -3787,7 +3134,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de analíticas completas para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 7:</strong> Wireframe - Analíticas Completas (Clientes).
+    <strong>Figura 6:</strong> Wireframe - Analíticas Completas (Clientes).
   </figcaption>
 </figure>
 
@@ -3796,7 +3143,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de inicio para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 8:</strong> Wireframe - Inicio (Clientes).
+    <strong>Figura 7:</strong> Wireframe - Inicio (Clientes).
   </figcaption>
 </figure>
 
@@ -3805,7 +3152,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de inicio para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 9:</strong> Wireframe - Inicio (Empresa).
+    <strong>Figura 8:</strong> Wireframe - Inicio (Empresa).
   </figcaption>
 </figure>
 
@@ -3814,7 +3161,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de inicio de la aplicación."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 10:</strong> Wireframe - Inicio de la Aplicación.
+    <strong>Figura 9:</strong> Wireframe - Inicio de la Aplicación.
   </figcaption>
 </figure>
 
@@ -3823,7 +3170,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de inicio de sesión para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 11:</strong> Wireframe - Inicio de Sesión (Clientes).
+    <strong>Figura 10:</strong> Wireframe - Inicio de Sesión (Clientes).
   </figcaption>
 </figure>
 
@@ -3832,7 +3179,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de inicio de sesión para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 12:</strong> Wireframe - Inicio de Sesión (Empresa).
+    <strong>Figura 11:</strong> Wireframe - Inicio de Sesión (Empresa).
   </figcaption>
 </figure>
 
@@ -3841,7 +3188,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla 'Mi Cuenta' para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 13:</strong> Wireframe - Mi Cuenta (Clientes).
+    <strong>Figura 12:</strong> Wireframe - Mi Cuenta (Clientes).
   </figcaption>
 </figure>
 
@@ -3850,16 +3197,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla 'Mi Cuenta' para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 14:</strong> Wireframe - Mi Cuenta (Empresa).
-  </figcaption>
-</figure>
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Apps%20Wireframes/MisClientes%2CT%C3%A9cnicos-Empresa.png"
-       alt="Wireframe: Gestión de clientes y técnicos para la empresa."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 15:</strong> Wireframe - Mis Clientes y Técnicos (Empresa).
+    <strong>Figura 13:</strong> Wireframe - Mi Cuenta (Empresa).
   </figcaption>
 </figure>
 
@@ -3868,7 +3206,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Vista de 'Mis Equipos' para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 16:</strong> Wireframe - Mis Equipos (Clientes).
+    <strong>Figura 14:</strong> Wireframe - Mis Equipos (Clientes).
   </figcaption>
 </figure>
 
@@ -3877,7 +3215,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Detalle 1 de 'Mis Equipos' para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 17:</strong> Wireframe - Mis Equipos (Clientes, Detalle 1).
+    <strong>Figura 15:</strong> Wireframe - Mis Equipos (Clientes, Detalle 1).
   </figcaption>
 </figure>
 
@@ -3886,7 +3224,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Detalle 2 de 'Mis Equipos' para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 18:</strong> Wireframe - Mis Equipos (Clientes, Detalle 2).
+    <strong>Figura 16:</strong> Wireframe - Mis Equipos (Clientes, Detalle 2).
   </figcaption>
 </figure>
 
@@ -3895,7 +3233,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Vista de 'Mis Equipos' para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 19:</strong> Wireframe - Mis Equipos (Empresa).
+    <strong>Figura 17:</strong> Wireframe - Mis Equipos (Empresa).
   </figcaption>
 </figure>
 
@@ -3904,7 +3242,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de notificaciones para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 20:</strong> Wireframe - Notificaciones (Clientes).
+    <strong>Figura 18:</strong> Wireframe - Notificaciones (Clientes).
   </figcaption>
 </figure>
 
@@ -3913,7 +3251,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de notificaciones para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 21:</strong> Wireframe - Notificaciones (Empresa).
+    <strong>Figura 19:</strong> Wireframe - Notificaciones (Empresa).
   </figcaption>
 </figure>
 
@@ -3922,7 +3260,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de registro para clientes."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 22:</strong> Wireframe - Registro (Clientes).
+    <strong>Figura 20:</strong> Wireframe - Registro (Clientes).
   </figcaption>
 </figure>
 
@@ -3931,25 +3269,7 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
        alt="Wireframe: Pantalla de registro para la empresa."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 23:</strong> Wireframe - Registro (Empresa).
-  </figcaption>
-</figure>
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Apps%20Wireframes/Solicitudes-Empresa.png"
-       alt="Wireframe: Pantalla de gestión de solicitudes para la empresa."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 24:</strong> Wireframe - Solicitudes (Empresa).
-  </figcaption>
-</figure>
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Apps%20Wireframes/%C3%93rdenesDeTrabajo-Empresa.png"
-       alt="Wireframe: Pantalla de órdenes de trabajo para la empresa."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 25:</strong> Wireframe - Órdenes de Trabajo (Empresa).
+    <strong>Figura 21:</strong> Wireframe - Registro (Empresa).
   </figcaption>
 </figure>
 
@@ -4150,20 +3470,11 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
 </figure>
 
 <figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Applications%20Mock-ups/AlquilarEquipos-Clientes.png"
-       alt="Mockup: Proceso de alquiler de equipos para clientes en la aplicación web."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 8:</strong> Mockup - Alquilar Equipos (Clientes).
-  </figcaption>
-</figure>
-
-<figure style="page-break-inside: avoid; text-align: center;">
   <img src="assets/chapter04/Web%20Applications%20Mock-ups/Contacto-Clientes.png"
        alt="Mockup: Pantalla de contacto y soporte para clientes en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 9:</strong> Mockup - Contacto (Clientes).
+    <strong>Figura 8:</strong> Mockup - Contacto (Clientes).
   </figcaption>
 </figure>
 
@@ -4172,7 +3483,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Centro de notificaciones para clientes en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 10:</strong> Mockup - Notificaciones (Clientes).
+    <strong>Figura 9:</strong> Mockup - Notificaciones (Clientes).
   </figcaption>
 </figure>
 
@@ -4181,7 +3492,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Panel de control o vista de actividad para clientes en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 11:</strong> Mockup - Control (Clientes).
+    <strong>Figura 10:</strong> Mockup - Control (Clientes).
   </figcaption>
 </figure>
 
@@ -4190,7 +3501,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Vista de estado de cuenta y facturación para clientes en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 12:</strong> Mockup - Estado de Cuenta (Clientes).
+    <strong>Figura 11:</strong> Mockup - Estado de Cuenta (Clientes).
   </figcaption>
 </figure>
 
@@ -4199,7 +3510,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Configuración de perfil y cuenta para clientes en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 13:</strong> Mockup - Mi Cuenta (Clientes).
+    <strong>Figura 12:</strong> Mockup - Mi Cuenta (Clientes).
   </figcaption>
 </figure>
 
@@ -4208,10 +3519,9 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Panel de analíticas completas para clientes en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 14:</strong> Mockup - Analíticas Completas (Clientes).
+    <strong>Figura 13:</strong> Mockup - Analíticas Completas (Clientes).
   </figcaption>
 </figure>
-
 
 - **Mockups Empresa:**
 
@@ -4220,7 +3530,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Pantalla de inicio de sesión para la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 15:</strong> Mockup - Inicio de Sesión (Empresa).
+    <strong>Figura 14:</strong> Mockup - Inicio de Sesión (Empresa).
   </figcaption>
 </figure>
 
@@ -4229,7 +3539,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Pantalla de registro para la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 16:</strong> Mockup - Registro (Empresa).
+    <strong>Figura 15:</strong> Mockup - Registro (Empresa).
   </figcaption>
 </figure>
 
@@ -4238,7 +3548,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Pantalla de inicio del panel de la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 17:</strong> Mockup - Inicio (Empresa).
+    <strong>Figura 16:</strong> Mockup - Inicio (Empresa).
   </figcaption>
 </figure>
 
@@ -4247,7 +3557,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Pantalla de contacto y soporte para la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 18:</strong> Mockup - Contacto (Empresa).
+    <strong>Figura 17:</strong> Mockup - Contacto (Empresa).
   </figcaption>
 </figure>
 
@@ -4256,7 +3566,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Vista de estado de cuenta y facturación para la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 19:</strong> Mockup - Estado de Cuenta (Empresa).
+    <strong>Figura 18:</strong> Mockup - Estado de Cuenta (Empresa).
   </figcaption>
 </figure>
 
@@ -4265,16 +3575,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Configuración de perfil y cuenta para la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 20:</strong> Mockup - Mi Cuenta (Empresa).
-  </figcaption>
-</figure>
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Applications%20Mock-ups/MisClientes%2CT%C3%A9cnicos-Empresa.png"
-       alt="Mockup: Gestión de clientes y técnicos para la empresa en la aplicación web."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 21:</strong> Mockup - Mis Clientes y Técnicos (Empresa).
+    <strong>Figura 19:</strong> Mockup - Mi Cuenta (Empresa).
   </figcaption>
 </figure>
 
@@ -4283,7 +3584,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Vista de 'Mis Equipos' para la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 22:</strong> Mockup - Mis Equipos (Empresa).
+    <strong>Figura 20:</strong> Mockup - Mis Equipos (Empresa).
   </figcaption>
 </figure>
 
@@ -4292,28 +3593,9 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
        alt="Mockup: Centro de notificaciones para la empresa en la aplicación web."
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
   <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 23:</strong> Mockup - Notificaciones (Empresa).
+    <strong>Figura 21:</strong> Mockup - Notificaciones (Empresa).
   </figcaption>
 </figure>
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Applications%20Mock-ups/Solicitudes-Empresa.png"
-       alt="Mockup: Gestión de solicitudes entrantes para la empresa en la aplicación web."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 24:</strong> Mockup - Solicitudes (Empresa).
-  </figcaption>
-</figure>
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter04/Web%20Applications%20Mock-ups/%C3%93rdenesDeTrabajo-Empresa.png"
-       alt="Mockup: Gestión de órdenes de trabajo para la empresa en la aplicación web."
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 25:</strong> Mockup - Órdenes de Trabajo (Empresa).
-  </figcaption>
-</figure>
-
 
 Link de los mockups: https://shorturl.at/jMDBY
 
@@ -4346,98 +3628,32 @@ En esta sección se presenta la arquitectura de software basada en el dominio pa
 #### 5.7.1. Software Architecture Context Diagram
 Este diagrama muestra cómo interactúan los usuarios (Clientes y Empresas Proveedoras) con OsitoPolar. Los usuarios usan la plataforma para gestionar y monitorear equipos de refrigeración. Además, OsitoPolar se conecta con los servicios de correo para enviar notificaciones y con el servicio de pago para procesar transacciones.
 
-![System Context Diagram](assets/chapter04/DSL/Contexto-dark.png)
+![System Context Diagram](assets/NuevoC4/C1_Contexto-dark.png)
 *Leyenda:*
-![Key](assets/chapter04/DSL/Contexto-dark-key.png)
+![Key](assets/NuevoC4/C1_Contexto-dark-key.png)
 
 #### 5.7.2. Software Architecture Container Diagrams
 Este diagrama ilustra los diferentes contenedores dentro de OsitoPolar y cómo interactúan entre sí. Los contenedores representan las diferentes capas y servicios que componen la plataforma, como la interfaz de usuario (webapp), la API y la base de datos.
 
-![Container Diagram](assets/chapter04/DSL/Contenedores-dark.png)
+![Container Diagram](assets/NuevoC4/C2_Contenedores-dark.png)
 *Leyenda:*
-![Key](assets/chapter04/DSL/Contenedores-dark-key.png)
+![Key](assets/NuevoC4/C2_Contenedores-dark-key.png)
 
 #### 5.7.3. Software Architecture Components Diagrams
 
-**IAM Bounded Context**
 
-Este diagrama representa los componentes encargados de la gestión de identidad y acceso, incluyendo autenticación, autorización y administración de usuarios.
+**Cloud Backend Components**
 
-![IAM Components Diagram](assets/chapter04/DSL/IAM_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/IAM_Components-dark-key.png)
+![Cloud Backend Components Diagram](assets/NuevoC4/C3_Backend-dark.png)
 
-**Profiles Bounded Context**
+![Key](assets/NuevoC4/C3_Backend-dark-key.png)
 
-Este diagrama describe los componentes que gestionan los perfiles de usuarios y empresas dentro de la plataforma OsitoPolar.
+**Edge Server Components**
 
-![Profiles Components Diagram](assets/chapter04/DSL/Profiles_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/Profiles_Components-dark-key.png)
+![Edge Server Components Diagram](assets/NuevoC4/C3_Edge-dark.png)
 
-**Equipment Management Bounded Context**
+![Key](assets/NuevoC4/C3_Edge-dark-key.png)
 
-Este diagrama representa los componentes encargados de la gestión de equipos de refrigeración. Los usuarios pueden registrar equipos, monitorearlos en tiempo real y consultar su estado.
-
-![Equipment Components Diagram](assets/chapter04/DSL/Equipment_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/Equipment_Components-dark-key.png)
-
-**IoT Monitoring Bounded Context**
-
-Este diagrama describe los componentes responsables del monitoreo IoT de los equipos, incluyendo la recopilación y procesamiento de datos de sensores en tiempo real.
-
-![IoT Monitoring Components Diagram](assets/chapter04/DSL/IoTMonitoring_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/IoTMonitoring_Components-dark-key.png)
-
-**Edge API Bounded Context**
-
-Este diagrama ilustra los componentes del API perimetral que actúa como punto de entrada para los dispositivos IoT y la comunicación con los servicios de la plataforma.
-
-![Edge API Components Diagram](assets/chapter04/DSL/EdgeAPI_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/EdgeAPI_Components-dark-key.png)
-
-**Service Request Bounded Context**
-
-Este diagrama describe los componentes encargados de gestionar las solicitudes de servicio técnico, desde su creación hasta su resolución.
-
-![Service Request Components Diagram](assets/chapter04/DSL/ServiceRequest_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/ServiceRequest_Components-dark-key.png)
-
-**Work Order Bounded Context**
-
-Este diagrama se centra en la gestión de órdenes de trabajo, mostrando los componentes involucrados en el ciclo de vida completo de una orden de trabajo técnico.
-
-![Work Order Components Diagram](assets/chapter04/DSL/WorkOrder_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/WorkOrder_Components-dark-key.png)
-
-**Subscriptions Bounded Context**
-
-Este diagrama representa los componentes que gestionan los planes de suscripción, facturación y acceso diferenciado a funcionalidades según el plan contratado.
-
-![Subscriptions Components Diagram](assets/chapter04/DSL/Subscriptions_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/Subscriptions_Components-dark-key.png)
-
-**Notifications Bounded Context**
-
-Este diagrama describe los componentes que gestionan el envío de notificaciones, alertas y comunicaciones hacia los usuarios sobre el estado de equipos y eventos relevantes.
-
-![Notifications Components Diagram](assets/chapter04/DSL/Notifications_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/Notifications_Components-dark-key.png)
-
-**Analytics Bounded Context**
-
-Este diagrama ilustra los componentes encargados del procesamiento y visualización de datos analíticos, métricas de rendimiento y reportes de los equipos monitoreados.
-
-![Analytics Components Diagram](assets/chapter04/DSL/Analytics_Components-dark.png)
-*Leyenda:*
-![Key](assets/chapter04/DSL/Analytics_Components-dark-key.png)
 
 ### 5.8. Software Object-Oriented Design
 En esta sección se presenta el diseño de software orientado a objetos para OsitoPolar. Se incluyen diagramas de clases y un diccionario de clases que detallan la estructura y los atributos de las principales entidades del sistema, ofreciendo una visión clara de cómo se organizan y gestionan los componentes clave dentro de la plataforma.
@@ -4459,17 +3675,6 @@ El diagrama de clases proporciona una representación visual de las clases del s
 | 4  | description        | Almacena la descripción de la solicitud.                 | varchar           |
 | 5  | time               | Almacena el tiempo estimado o requerido.                 | float             |
 | 6  | status             | Almacena el estado de la solicitud.                      | char              |
-
-## Clase: Equipo
-| Nº | Nombre de atributo | Descripción                             | Tipo de dato      |
-|----|--------------------|-----------------------------------------|-------------------|
-| 1  | name               | Almacena el nombre del equipo.          | string            |
-| 2  | cost               | Almacena el costo del equipo.           | float             |
-| 3  | details_tecnicos   | Almacena detalles técnicos del equipo.  | varchar           |
-| 4  | serie              | Almacena el número de serie del equipo. | unsigned long int |
-| 5  | code               | Almacena el código del equipo.          | unsigned long int |
-| 6  | status             | Almacena el estado del equipo.          | char              |
-| 7  | notes              | Almacena notas adicionales del equipo.  | varchar           |
 
 ## Clase: Cliente
 | Nº | Nombre de atributo | Descripción                                | Tipo de dato |
