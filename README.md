@@ -139,15 +139,16 @@
         - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
         - [2.3.4. Empathy Mapping](#234-empathy-mapping)
         - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-    - [2.4. Ubiquitous Language](#24-ubiquitous-language)
+    - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
+    - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 
 
 
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2. User Stories](#32-user-stories)
-    - [3.3. Impact Mapping](#33-impact-mapping)
-    - [3.4. Product Backlog](#34-product-backlog)
+    - [3.1. User Stories](#31-user-stories)
+    - [3.2. Impact Mapping](#32-impact-mapping)
+    - [3.3. Product Backlog](#33-product-backlog)
+    - [3.4. To-Be Scenario Mapping](#34-to-be-scenario-mapping)
 
 
 - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
@@ -231,10 +232,10 @@
                 - [4.2.8.6.2. Bounded Context Database Design Diagram](#42862-bounded-context-database-design-diagram)
 
 
-- [Capítulo V: Product Design](#capítulo-v-product-design)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
     - [5.1. Style Guidelines](#51-style-guidelines)
         - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-        - [5.1.2. Web Style Guidelines](#512-web-style-guidelines)
+        - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
     - [5.2. Information Architecture](#52-information-architecture)
         - [5.2.1. Organization Systems](#521-organization-systems)
         - [5.2.2. Labeling Systems](#522-labeling-systems)
@@ -244,21 +245,22 @@
     - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
         - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
         - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
-    - [5.4. Web Applications UX/UI Design](#54-web-applications-uxui-design)
-        - [5.4.1. Web Applications Wireframes](#541-web-applications-wireframes)
-        - [5.4.2. Web Applications Wireflow Diagrams](#542-web-applications-wireflow-diagrams)
-        - [5.4.3. Web Applications Mock-ups](#543-web-applications-mock-ups)
-        - [5.4.4. Web Applications User Flow Diagrams](#544-web-applications-user-flow-diagrams)
-    - [5.5. Web Applications Prototyping](#55-web-applications-prototyping)
-    - [5.6. Domain-Driven Software Architecture](#56-domain-driven-software-architecture)
-        - [5.6.1. Software Architecture Context Diagram](#561-software-architecture-context-diagram)
-        - [5.6.2. Software Architecture Container Diagrams](#562-software-architecture-container-diagrams)
-        - [5.6.3. Software Architecture Components Diagrams](#563-software-architecture-components-diagrams)
-    - [5.7. Software Object-Oriented Design](#57-software-object-oriented-design)
-        - [5.7.1. Class Diagrams](#571-class-diagrams)
-        - [5.7.2. Class Dictionary](#572-class-dictionary)
-    - [5.8. Database Design](#58-database-design)
-        - [5.8.1. Database Diagram](#581-database-diagram)
+    - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+        - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+        - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
+        - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+        - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+    - [5.5. Applications Prototyping](#55-applications-prototyping)
+    - [5.6. IoT Device Design](#56-iot-device-design)
+    - [5.7. Domain-Driven Software Architecture](#57-domain-driven-software-architecture)
+        - [5.7.1. Software Architecture Context Diagram](#571-software-architecture-context-diagram)
+        - [5.7.2. Software Architecture Container Diagrams](#572-software-architecture-container-diagrams)
+        - [5.7.3. Software Architecture Components Diagrams](#573-software-architecture-components-diagrams)
+    - [5.8. Software Object-Oriented Design](#58-software-object-oriented-design)
+        - [5.8.1. Class Diagrams](#581-class-diagrams)
+        - [5.8.2. Class Dictionary](#582-class-dictionary)
+    - [5.9. Database Design](#59-database-design)
+        - [5.9.1. Database Diagram](#591-database-diagram)
 
 
 - [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
@@ -273,36 +275,41 @@
             - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
             - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
             - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
-            - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-execution-evidence-for-sprint-review)
-            - [6.2.1.6. Services Documentation Evidence for Sprint Review](#6216-services-documentation-evidence-for-sprint-review)
-            - [6.2.1.7. Software Deployment Evidence for Sprint Review](#6217-software-deployment-evidence-for-sprint-review)
-            - [6.2.1.8. Team Collaboration Insights during Sprint](#6218-team-collaboration-insights-during-sprint)
+            - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+            - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+            - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+            - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+            - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
         - [6.2.2. Sprint 2](#622-sprint-2)
             - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
             - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
             - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-2)
             - [6.2.2.4. Development Evidence for Sprint Review](#6224-development-evidence-for-sprint-review)
-            - [6.2.2.5. Execution Evidence for Sprint Review](#6225-execution-evidence-for-sprint-review)
-            - [6.2.2.6. Services Documentation Evidence for Sprint Review](#6226-services-documentation-evidence-for-sprint-review)
-            - [6.2.2.7. Software Deployment Evidence for Sprint Review](#6227-software-deployment-evidence-for-sprint-review)
-            - [6.2.2.8. Team Collaboration Insights during Sprint](#6228-team-collaboration-insights-during-sprint)
+            - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225-testing-suite-evidence-for-sprint-review)
+            - [6.2.2.6. Execution Evidence for Sprint Review](#6226-execution-evidence-for-sprint-review)
+            - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
+            - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
+            - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
         - [6.2.3. Sprint 3](#623-sprint-3)
             - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
             - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
             - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
             - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
-            - [6.2.3.5. Execution Evidence for Sprint Review](#6235-execution-evidence-for-sprint-review)
-            - [6.2.3.6. Services Documentation Evidence for Sprint Review](#6236-services-documentation-evidence-for-sprint-review)
-            - [6.2.3.7. Software Deployment Evidence for Sprint Review](#6237-software-deployment-evidence-for-sprint-review)
-            - [6.2.3.8. Team Collaboration Insights during Sprint](#6238-team-collaboration-insights-during-sprint)
+            - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+            - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+            - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+            - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+            - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
     - [6.3. Validation Interviews](#63-validation-interviews)
         - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
         - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
         - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
     - [6.4. Video About-the-Product](#64-video-about-the-product)
-- [Conclusiones](#conclusiones)
+- [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+    - [Videos de Exposiciones](#videos-de-exposiciones)
 
 
 <div style="page-break-after: always"></div>
@@ -1239,7 +1246,11 @@ Desde la perspectiva del usuario, este mapa nos permite visualizar su situación
   </figcaption>
 </figure>
 
-### 2.4. Ubiquitous Language.
+### 2.4. Big Picture EventStorming.
+
+> **Falta:** completar el Big Picture EventStorming con el diagrama/captura correspondiente y una explicaci�n breve de los eventos principales del dominio, actores, comandos, pol�ticas y sistemas externos identificados.
+
+### 2.5. Ubiquitous Language.
 
 
 1. **User Profile (Perfil de Usuario):** Datos e información operativa que OsitoPolar recopila de cada usuario para personalizar su experiencia.
@@ -1284,34 +1295,7 @@ Desde la perspectiva del usuario, este mapa nos permite visualizar su situación
 
 ## Capítulo III: Requirements Specification
 
-### 3.1. To-Be Scenario Mapping.
-**Segmento objetivo #1: CLIENTES (DUEÑOS DE EQUIPOS DE REFRIGERACIÓN)**
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter03/To-Be-Scenario-segment-1.png"
-       alt="To Be Scenario Mapping Segmento 1: Interacción ideal de Clientes (Dueños de equipos de refrigeración)."
-       style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 1:</strong> To Be Scenario Mapping Clientes (Segmento 1).
-  </figcaption>
-</figure>
-
-
-**Segmento objetivo #2: EMPRESAS PROVEEDORAS DE SERVICIOS Y EQUIPOS DE REFRIGERACIÓN**
-
-
-<figure style="page-break-inside: avoid; text-align: center;">
-  <img src="assets/chapter03/To-Be-Scenario-segment-2.png"
-       alt="To Be Scenario Mapping Segmento 2: Interacción ideal de Empresas Proveedoras de Servicios y Equipos de Refrigeración."
-       style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    <strong>Figura 2:</strong> To Be Scenario Mapping - Empresas Proveedoras (Segmento 2).
-  </figcaption>
-</figure>
-
-<div style="page-break-after: always"></div>
-
-### 3.2. User Stories.
+### 3.1. User Stories.
 
 Las historias de usuario desarrolladas en este proyecto fueron elaboradas en conjunto por el equipo de desarrollo de OsitoPolar, considerando las necesidades y funcionalidades clave tanto para los clientes (dueños de equipos de refrigeración) como para los empresarios (proveedores de equipos y servicios de mantenimiento y refrigeración). Las historias fueron organizadas bajo épicas que agrupan funcionalidades similares. Los criterios de aceptación de todas las historias siguen la sintaxis Gherkin.
 El trabajo fue realizado de manera colaborativa, priorizando la comprensión del problema desde la perspectiva del usuario final. Para facilitar la organización, priorización y trazabilidad de las tareas, se utilizó la plataforma Trello
@@ -1379,7 +1363,7 @@ El trabajo fue realizado de manera colaborativa, priorizando la comprensión del
 
 <div style="page-break-after: always"></div>
 
-### 3.3. Impact Mapping.
+### 3.2. Impact Mapping.
 
 El siguiente Impact Mapping fue desarrollado en UXPressia de manera colaborativa por el equipo de OsitoPolar para alinear los objetivos de negocio con los requerimientos funcionales de la plataforma.
 
@@ -1395,7 +1379,7 @@ El siguiente Impact Mapping fue desarrollado en UXPressia de manera colaborativa
 
 <div style="page-break-after: always"></div>
 
-### 3.4. Product Backlog.
+### 3.3. Product Backlog.
 
 A continuación, presentaremos el Product Backlog, el cual contiene todas las funcionalidades y características necesarias para el desarrollo de la plataforma. Este listado incluye tanto las historias de usuario como las tareas técnicas que facilitarán el progreso del proyecto. Para priorizar las tareas, se ha utilizado la escala Fibonacci (1, 2, 3, 5, 8, 13, 21), la cual ayuda a estimar el esfuerzo relativo requerido para completar cada tarea. Además, hemos asignado cada item a un sprint, de acuerdo con su relevancia y dependencias.
 
@@ -1463,6 +1447,34 @@ Escala de Story Points (Fibonacci):
 | 37    | US-37         | Evaluar servicio                               | Como desarrollador, quiero implementar un endpoint RESTful que permita a los clientes registrar y actualizar una evaluación de servicio, para reflejar su experiencia.     | 8            |
 
 <div style="page-break-after: always"></div>
+
+### 3.4. To-Be Scenario Mapping.
+**Segmento objetivo #1: CLIENTES (DUEÑOS DE EQUIPOS DE REFRIGERACIÓN)**
+
+<figure style="page-break-inside: avoid; text-align: center;">
+  <img src="assets/chapter03/To-Be-Scenario-segment-1.png"
+       alt="To Be Scenario Mapping Segmento 1: Interacción ideal de Clientes (Dueños de equipos de refrigeración)."
+       style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
+  <figcaption style="font-size: 0.9em; color: #555;">
+    <strong>Figura 1:</strong> To Be Scenario Mapping Clientes (Segmento 1).
+  </figcaption>
+</figure>
+
+
+**Segmento objetivo #2: EMPRESAS PROVEEDORAS DE SERVICIOS Y EQUIPOS DE REFRIGERACIÓN**
+
+
+<figure style="page-break-inside: avoid; text-align: center;">
+  <img src="assets/chapter03/To-Be-Scenario-segment-2.png"
+       alt="To Be Scenario Mapping Segmento 2: Interacción ideal de Empresas Proveedoras de Servicios y Equipos de Refrigeración."
+       style="max-width: 95%; height: auto; display: block; margin: 0 auto;">
+  <figcaption style="font-size: 0.9em; color: #555;">
+    <strong>Figura 2:</strong> To Be Scenario Mapping - Empresas Proveedoras (Segmento 2).
+  </figcaption>
+</figure>
+
+<div style="page-break-after: always"></div>
+
 
 ## Capítulo IV: Solution Software Design
 ### 4.1. Strategic-Level Domain-Driven Design.
@@ -3346,7 +3358,7 @@ classDiagram
 
 ![Notifications Database Design](assets/chapter04/DSL/Contenedores-dark.png)
 
-## Capítulo V: Product Design 
+## Capítulo V: Solution UI/UX Design
 
 ### 5.1. Style Guidelines
 #### 5.1.1. General Style Guidelines
@@ -3710,9 +3722,9 @@ El Landing Page Mock-up de OsitoPolar muestra un diseño limpio y organizado, co
 
 
 
-## 5.4. Web Applications UX/UI Design
+### 5.4. Applications UX/UI Design
 
-#### 5.4.1. Web Applications Wireframes
+#### 5.4.1. Applications Wireframes
 
 Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y organización de las pantallas principales, especificando la ubicación de los elementos de la interfaz de usuario y la navegación. Estos esquemas visuales sirven como una guía precisa para el diseño final, asegurando una experiencia de usuario fluida e intuitiva. Los wireframes están enfocados en la funcionalidad y facilidad de uso, permitiendo que diseñadores y desarrolladores visualicen cómo los usuarios interactúan con la aplicación, optimizando la disposición de los elementos para crear una experiencia eficiente y atractiva.
 
@@ -3943,11 +3955,11 @@ Los wireframes de las aplicaciones web de OsitoPolar delinean la estructura y or
 </figure>
 
 
-#### 5.4.2. Web Applications Wireflow Diagrams
+#### 5.4.2. Applications Wireflow Diagrams
 En esta sección se presentan los Wireflows para cada objetivo del usuario, teniendo en cuenta los User Personas relevantes. Cada diagrama ilustra el flujo de interacción del usuario y cómo las acciones realizadas afectan las pantallas dentro de la aplicación.
 
 
-### **User Goal 1**: 
+#### **User Goal 1**: 
 Como dueño de un negocio que utiliza equipos de refrigeración quiero estar pendiente del estado de cada equipo registrado.
 
 **Task Flow**
@@ -3972,7 +3984,7 @@ Como dueño de un negocio que utiliza equipos de refrigeración quiero estar pen
 </figure>
 
 
-### **User Goal 2**:
+#### **User Goal 2**:
 Como dueño de un negocio que utiliza equipos de refrigeración quiero lograr administrar los nuevos equipos que registre.
 
 **Task Flow**
@@ -3997,7 +4009,7 @@ Como dueño de un negocio que utiliza equipos de refrigeración quiero lograr ad
 </figure>
 
 
-### **User Goal 3**:
+#### **User Goal 3**:
 Como dueño de un negocio que utiliza equipos de refrigeración quiero revisar las estadísticas completas de mis equipos.
 
 **Task Flow**
@@ -4022,7 +4034,7 @@ Como dueño de un negocio que utiliza equipos de refrigeración quiero revisar l
 </figure>
 
 
-### **User Goal 4**:
+#### **User Goal 4**:
 Como dueño de un negocio que utiliza equipos de refrigeración quiero pedir nuevos equipos a un proveedor de manera sencilla.
 
 **Task Flow**
@@ -4047,7 +4059,7 @@ Como dueño de un negocio que utiliza equipos de refrigeración quiero pedir nue
 </figure>
 
 
-### **User Goal 5**:
+#### **User Goal 5**:
 Como proveedor de equipos de refrigeración quiero estar pendiente de los ordenes de pedios de mis clientes.
 
 **Task Flow**
@@ -4072,7 +4084,7 @@ Como proveedor de equipos de refrigeración quiero estar pendiente de los ordene
 </figure>
 
 
-#### 5.4.3. Web Applications Mock-ups
+#### 5.4.3. Applications Mock-ups
 En esta sección se presentan y detallan los mock-ups de las aplicaciones de OsitoPolar. Se resalta la aplicación de los principios de diseño, la arquitectura de la información, el diseño inclusivo y el Design System implementado en los productos digitales. Cada mock-up muestra cómo estos conceptos se integran en la interfaz de usuario. A continuación, se mostrarán las maquetas de la aplicación web, que representan visualmente cómo se verá y funcionará la plataforma OsitoPolar. Estas maquetas son fundamentales para comunicar el diseño a los desarrolladores y clientes, asegurando que la experiencia del usuario se alinee con la visión del proyecto.
 
 <figure style="page-break-inside: avoid; text-align: center;">
@@ -4306,7 +4318,7 @@ En esta sección se presentan y detallan los mock-ups de las aplicaciones de Osi
 
 Link de los mockups: https://shorturl.at/jMDBY
 
-#### 5.4.4. Web Applications User Flow Diagrams
+#### 5.4.4. Applications User Flow Diagrams
 ### User Goal 1: 
 - Como dueño de un negocio que utiliza equipos de refrigeración quiero estar pendiente del estado de cada equipo registrado.
 ![userflow1.png]( assets/chapter04/userflows/userflow1.png)
@@ -4321,28 +4333,32 @@ Link de los mockups: https://shorturl.at/jMDBY
 
 
 
-### 5.5. Web Applications Prototyping
+### 5.5. Applications Prototyping
 A continuación se presenta el prototipo de la aplicación web de OsitoPolar, el cual permite a los usuarios interactuar con la interfaz y explorar las diversas secciones de la plataforma. Este prototipo incluye las funcionalidades clave y características de la aplicación, proporcionando una vista preliminar de la experiencia del usuario. Además, facilita la evaluación y prueba de la interfaz antes de su implementación final, asegurando que el diseño sea intuitivo y eficiente.
 Link del prototipo: https://shorturl.at/oIUJN
 
-### 5.6 Domain Driven Software Architecture
+### 5.6. IoT Device Design
+
+> **Falta:** documentar el diseño del dispositivo IoT físico, incluyendo componentes electrónicos, sensores, actuadores si aplica, diagrama de conexión, flujo de datos Embedded Application -> Edge API -> Cloud API y evidencias del prototipo físico.
+
+### 5.7. Domain-Driven Software Architecture
 En esta sección se presenta la arquitectura de software basada en el dominio para OsitoPolar. Se detallan los diferentes diagramas que ilustran la estructura y organización del sistema, así como los componentes clave que lo integran, mostrando cómo se interconectan para proporcionar una solución eficiente y escalable.
 
-#### 5.6.1. Software Architecture Context Diagram
+#### 5.7.1. Software Architecture Context Diagram
 Este diagrama muestra cómo interactúan los usuarios (Clientes y Empresas Proveedoras) con OsitoPolar. Los usuarios usan la plataforma para gestionar y monitorear equipos de refrigeración. Además, OsitoPolar se conecta con los servicios de correo para enviar notificaciones y con el servicio de pago para procesar transacciones.
 
 ![System Context Diagram](assets/chapter04/DSL/Contexto-dark.png)
 *Leyenda:*
 ![Key](assets/chapter04/DSL/Contexto-dark-key.png)
 
-#### 5.6.2. Software Architecture Container Diagrams
+#### 5.7.2. Software Architecture Container Diagrams
 Este diagrama ilustra los diferentes contenedores dentro de OsitoPolar y cómo interactúan entre sí. Los contenedores representan las diferentes capas y servicios que componen la plataforma, como la interfaz de usuario (webapp), la API y la base de datos.
 
 ![Container Diagram](assets/chapter04/DSL/Contenedores-dark.png)
 *Leyenda:*
 ![Key](assets/chapter04/DSL/Contenedores-dark-key.png)
 
-#### 5.6.3. Software Architecture Components Diagrams
+#### 5.7.3. Software Architecture Components Diagrams
 
 **IAM Bounded Context**
 
@@ -4424,16 +4440,16 @@ Este diagrama ilustra los componentes encargados del procesamiento y visualizaci
 *Leyenda:*
 ![Key](assets/chapter04/DSL/Analytics_Components-dark-key.png)
 
-### 5.7. Software Object-Oriented Design
+### 5.8. Software Object-Oriented Design
 En esta sección se presenta el diseño de software orientado a objetos para OsitoPolar. Se incluyen diagramas de clases y un diccionario de clases que detallan la estructura y los atributos de las principales entidades del sistema, ofreciendo una visión clara de cómo se organizan y gestionan los componentes clave dentro de la plataforma.
 
-#### 5.7.1. Class Diagrams
+#### 5.8.1. Class Diagrams
 
 El diagrama de clases proporciona una representación visual de las clases del sistema, sus atributos y las relaciones entre ellas.
 
 ![Class-UML.png]( assets/chapter04/Class-UML.png)
 
-#### 5.7.2. Class Dictionary
+#### 5.8.2. Class Dictionary
 
 ## Clase: Solicitud
 | Nº | Nombre de atributo | Descripción                                              | Tipo de dato      |
@@ -4501,13 +4517,13 @@ El diagrama de clases proporciona una representación visual de las clases del s
 | 4  | name_cliente       | Almacena el nombre del cliente destinatario.                 | Cliente      |
 | 5  | status             | Indica si la notificación ha sido leída o procesada.         | bool         |
 
-### 5.8. Database Design
+### 5.9. Database Design
 
 Esta sección presenta la estructura lógica del sistema desde el punto de vista de almacenamiento y organización de los datos. Se describen las entidades principales del sistema, sus atributos, tipos de datos y relaciones entre ellas. El modelo de base de datos ha sido diseñado para garantizar integridad, consistencia y eficiencia en el acceso a la información.
 
 
 
-#### 5.8.1. Database Diagram
+#### 5.9.1. Database Diagram
 
 El diagrama de base de datos ilustra gráficamente cómo se relacionan las tablas dentro del sistema, incluyendo sus claves primarias, claves foráneas y los tipos de relaciones existentes (uno a uno, uno a muchos o muchos a muchos).
 
@@ -5111,7 +5127,7 @@ En este primer Sprint hemos realizado la implementación de nuestra Landing Page
 
 </table>
 
-##### 6.2.1.5 Testing Suite Evidence for Sprint Review
+##### 6.2.1.5. Testing Suite Evidence for Sprint Review
 
 En esta sección se presenta la evidencia de las pruebas realizadas sobre el microservicio BC-Profiles (Profiles Bounded Context) durante el Sprint Review. Se aplicaron pruebas unitarias y de integración para validar el correcto funcionamiento de las capas Domain, Application e Interfaces del servicio.
 
@@ -5452,10 +5468,6 @@ Como equipo, lo que logramos en este primer Sprint fue la exitosa implementació
   ![LandingPage-Evidence4Tec.png]( assets/chapter-05/LandingPage-Evidence4Tec.png)
 
 
-- También se encuentra la sección de nuestra misión y visión.
-  ![LandingPage-Evidence5.png]( assets/chapter-05/LandingPage-Evidence5.png)
-
-
 - Por último, está la sección donde podemos solicitar una demo.
   ![LandingPage-Evidence6.png]( assets/chapter-05/LandingPage-Evidence6.png)
 
@@ -5463,11 +5475,15 @@ Como equipo, lo que logramos en este primer Sprint fue la exitosa implementació
 - Para más detalles, visualizar el video: [Video demostrativo de la landing page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQAeOr9bSx-2T4NJ5MMy6oFYAUG9i8dFYt45TIvlXmJ_M_I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2Kps8L)
 
 
-##### 6.2.1.6. Services Documentation Evidence for Sprint Review
+##### 6.2.1.6. Execution Evidence for Sprint Review
+
+> **Falta:** agregar evidencia de ejecución del Sprint 1, incluyendo capturas o descripción de la Landing Page funcionando y los flujos principales revisados en el sprint.
+
+##### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
 Durante este Sprint solo se realizó la Landing Page, no se han documentado nuevos Endpoints relacionados con el alcance definido, por lo tanto, no se dispone de documentación generada en OpenAPI para esta entrega.
 
-##### 6.2.1.7. Software Deployment Evidence for Sprint Review
+##### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
 Durante el presente Sprint, se llevó a cabo el despliegue de la Landing Page del proyecto utilizando GitHub Pages como proveedor de hosting. Esta actividad forma parte del proceso de Deployment, siendo un primer paso en la publicación de productos desarrollados en este Sprint.
 
@@ -5501,9 +5517,9 @@ Durante el presente Sprint, se llevó a cabo el despliegue de la Landing Page de
    ![Deployment-step6-2.png]( assets/chapter-05/Deployment-step6-2.png)
 
 7. Podemos visualizar el resultado.
-   ![Deployment-step7.png]( assets/chapter-05/Deployment-step7.png)
+   ![Deployment-step7.png]( assets/chapter-05/Landing-Page.png)
 
-##### 6.2.1.8. Team Collaboration Insights during Sprint
+##### 6.2.1.9. Team Collaboration Insights during Sprint
 
 Durante este Sprint, el equipo ha colaborado activamente en el desarrollo de la Landing Page. Las actividades fueron gestionadas a través de GitHub, permitiendo una trazabilidad clara de los aportes de cada miembro del equipo. Se realizaron tareas de codificación, revisión, organización del repositorio y mejoras visuales y funcionales del producto.
 Cada miembro del equipo tuvo participación activa, realizando commits, revisando código, y apoyando en la estructura y documentación del proyecto.
@@ -5818,7 +5834,11 @@ En este segundo Sprint hemos realizado la implementación de nuestra Single Page
 </table>
 
 
-##### 6.2.2.5. Execution Evidence for Sprint Review
+##### 6.2.2.5. Testing Suite Evidence for Sprint Review
+
+> **Falta:** agregar la evidencia de pruebas del Sprint 2, indicando pruebas ejecutadas, resultados, herramientas usadas y estado final de la suite.
+
+##### 6.2.2.6. Execution Evidence for Sprint Review
 
 En este segundo Sprint realizamos mejoras y correcciones de idioma en la Landing Page y la implementación de nuestro Frontend.
 
@@ -5857,11 +5877,11 @@ En este segundo Sprint realizamos mejoras y correcciones de idioma en la Landing
 - Por último, la sección por defecto que muestra el mensaje que nos indica que la página no ha sido encontrada.
 ![SPA-Evidence6-S2.png]( assets/chapter-05/sprint-2/SPA-Evidence6-S2.png)
 
-##### 6.2.2.6. Services Documentation Evidence for Sprint Review
+##### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
 No se emplearon servicios adicionales, ya que este segundo sprint se centró exclusivamente en la implementación de la primera versión del web application.
 
-##### 6.2.2.7. Software Deployment Evidence for Sprint Review
+##### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
 Durante este Sprint hemos desplegado el frontend.
 
@@ -5896,7 +5916,7 @@ Durante este Sprint hemos desplegado el frontend.
 
 ![deploymentfinalS2.png]( assets/chapter-05/sprint-2/deploymentfinalS2.png)
 
-##### 6.2.2.8. Team Collaboration Insights during Sprint
+##### 6.2.2.9. Team Collaboration Insights during Sprint
 
 Durante este Sprint, el equipo ha colaborado en el desarrollo del frontend y correcciones de diseño e idioma. Los miembros del equipo revisaban y señalaban ciertos errores a quién se encargaba de los commits. Por falta de tiempo y experiencia en el equipo no se pudo realizar una colaboración perfecta. Las actividades fueron gestionadas a través de GitHub, permitiendo una trazabilidad clara de los aportes de cada miembro del equipo. Se realizaron tareas de codificación, revisión, organización del repositorio y mejoras visuales y funcionales del producto.
 
@@ -6303,13 +6323,12 @@ En esta sección tenemos el análisis de las entrevistas por segmentos objetivos
 ## 6.4. Video About-the-Product.
 En esta sección se muestra una captura del video about the product que se encuentra incrustado en el landing page, además del link en los anexos.
 
-Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222001_upc_edu_pe/EX7h3-WbRbpNqTqMmM-NKdwBEXUEHMmcoY4pT1Q0epIOkQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Dwh3nQ)
+Video about the product: [Video about the product]()
 
-![alt text](assets/chapter-05/sprint4/about-the-product.png)
+ [//]: # (FALTA)
 
 
-
-## Conclusiones
+## Conclusiones y recomendaciones
 
 A lo largo del desarrollo del modelo de negocio digital OsitoPolar, hemos logrado validar la necesidad real y urgente de soluciones tecnológicas en el sector de refrigeración, tanto en los negocios que dependen de estos equipos como en las empresas proveedoras de servicios técnicos.
 El proceso de investigación, entrevistas y análisis ha revelado importantes hallazgos que refuerzan la relevancia de nuestra propuesta de valor.
@@ -6334,6 +6353,11 @@ Algunas recomendaciones que tomamos en cuenta que podrían impulsar el desarroll
 
 Este trabajo ha demostrado que OsitoPolar no solo resuelve un problema real, sino que tiene el potencial de transformar la forma en que se gestiona la refrigeración comercial y técnica en el Perú. Los próximos pasos deberán enfocarse en escalar esta solución de manera sostenible y centrada en el usuario.
 
+
+
+## Video About-the-Team
+
+> **Falta:** agregar el enlace y captura del video About-the-Team. Debe resumir el proceso de trabajo del equipo, incluir testimonios de los integrantes y explicar los logros alcanzados en relación con el Student Outcome.
 
 ## Bibliografía
 
@@ -6371,6 +6395,10 @@ Este trabajo ha demostrado que OsitoPolar no solo resuelve un problema real, sin
 
 ## Anexos
 
+### Videos de Exposiciones
+
+> **Falta:** ordenar aquí los enlaces de videos por entrega (AV1, TB1, AV2 y Trabajo Final), siguiendo la nomenclatura indicada en el statement.
+
 - Organización GitHub: https://github.com/iot-proyectos
 - Repositorio de la Landing Page: https://github.com/iot-proyectos/LandingPage
 - Repositorio Frontend: https://github.com/iot-proyectos/OsitoPolar-Frontend
@@ -6382,4 +6410,3 @@ Este trabajo ha demostrado que OsitoPolar no solo resuelve un problema real, sin
 - Video de exposicion AV2: [Video de exposicion AV2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c111_upc_edu_pe/IQCHuZtyO5dITpQWo22Mfl_VAafEa-kbuvAf8CAHE5-czF0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=DllWug)
 - Video de exposicion TF: [Video de exposicion TF]()
 - Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322001_upc_edu_pe/EX7h3-WbRbpNqTqMmM-NKdwBEXUEHMmcoY4pT1Q0epIOkQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9y)
-
