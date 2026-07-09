@@ -5470,9 +5470,7 @@ En esta sección tenemos el análisis de las entrevistas por segmentos objetivos
 ## 6.4. Video About-the-Product.
 En esta sección se muestra una captura del video about the product que se encuentra incrustado en el landing page, además del link en los anexos.
 
-Video about the product: [Video about the product]()
-
- [//]: # (FALTA)
+Video about the product: [Video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQDcGXphpoXvR44ZFIsnfJofAQbB1rrxSDvLSztbtUw37nA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WqvaId)
 
 
 ## Conclusiones y recomendaciones
